@@ -1,0 +1,108 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "deep_theorem",
+  "dataset_size": 1146735807,
+  "description": "",
+  "download_size": 554423240,
+  "features": {
+    "id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "source": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "ori_question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "ori_solution": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "domain": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "difficulty": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "rationale": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "informal_theorem": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "informal_theorem_qa": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "proof": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "truth_value": {
+      "dtype": "bool",
+      "_type": "Value"
+    },
+    "pos": {
+      "question": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "response": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "truth_value": {
+        "dtype": "bool",
+        "_type": "Value"
+      }
+    },
+    "neg": {
+      "question": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "response": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "truth_value": {
+        "dtype": "bool",
+        "_type": "Value"
+      }
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 1701159047,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 1146735807,
+      "num_examples": 120754,
+      "shard_lengths": [
+        51252,
+        55251,
+        14251
+      ],
+      "dataset_name": "deep_theorem"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
