@@ -10,8 +10,7 @@ model = AutoModelForCausalLM.from_pretrained(
     device_map="auto"
 )
 problem = """
-Let $p: E \to X$ be a covering map, where $X$ is a connected topological space. Prove that all fibers $p^{-1}(x)$ for $x \in X$ have the same cardinality.
-"""
+Let $H \subset \mathbb{C}^n$ be an open set and let $V \subset H$ be an analytic set of codimension $\geq 2$ in $H$. Suppose $f: H \setminus V \to \mathbb{C}$ is a holomorphic function. Prove that $f$ has a unique holomorphic extension to the whole set $H$."""
 
 # prepare the model input
 prompt = f"""
@@ -56,7 +55,7 @@ text = tokenizer.apply_chat_template(
     messages,
     tokenize=False,
     add_generation_prompt=True,
-    enable_thinking=False # Switches between thinking and non-thinking modes. Default is True.
+    enable_thinking=True # Switches between thinking and non-thinking modes. Default is True.
 )
 model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
 
