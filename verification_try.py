@@ -13,64 +13,41 @@ problem = """
 Let $p: E \to X$ be a covering map, where $X$ is a connected topological space. Prove that all fibers $p^{-1}(x)$ for $x \in X$ have the same cardinality.
 """
 g = """
-We are given a covering map $ p: E \to X $, where $ X $ is a connected topological space, and we are to prove or disprove that all fibers $ p^{-1}(x) $ for $ x \in X $ have the same cardinality.
+To prove this theorem, we can start by exploiting the local triviality inherent in the definition of a covering map.
 
----
+First, let
+\[
+p \colon E \to X
+\]
+be a covering map, where \(X\) is a connected topological space. By the definition of a covering map, for every \(x \in X\) there exists an open neighborhood \(V\) of \(x\) and a discrete nonempty set \(I\) such that there is a homeomorphism
+\[
+\phi \colon p^{-1}(V) \to V \times I
+\]
+which commutes with the projection onto \(V\). This implies that for any point \(y \in V\), the fiber \(p^{-1}(y)\) is in bijection with \(I\) and hence
+\[
+\# p^{-1}(y) = \# I.
+\]
+In other words, the cardinality of the fiber is locally constant.
 
-### Step 1: Recall the Definition of a Covering Map
+Now, define an equivalence relation \(\sim\) on \(X\) by
+\[
+x \sim x' \quad \Longleftrightarrow \quad \# p^{-1}(x) = \# p^{-1}(x').
+\]
+Clearly, this relation is reflexive, symmetric, and transitive. Moreover, the local triviality shows that if \(x \in X\) and \(V\) is an open neighborhood of \(x\) as described above, then for all \(y \in V\),
+\[
+\# p^{-1}(y) = \# p^{-1}(x),
+\]
+so every point \(y\) in \(V\) satisfies \(y \sim x\). This implies that each equivalence class of \(\sim\) is open in \(X\).
 
-A map $ p: E \to X $ is a **covering map** if for every point $ x \in X $, there exists an open neighborhood $ U $ of $ x $ such that $ p^{-1}(U) $ is a disjoint union of open sets in $ E $, each of which is mapped homeomorphically onto $ U $ by $ p $.
+Since \(X\) is connected, it cannot be partitioned into two (or more) disjoint, nonempty open sets. Therefore, the only possibility is that there is exactly one equivalence class under \(\sim\). In other words, for any \(x, x' \in X\),
+\[
+\# p^{-1}(x) = \# p^{-1}(x'),
+\]
+so all fibers \(p^{-1}(x)\) have the same cardinality.
 
-This means that the preimage of any point $ x \in X $, i.e., the fiber $ p^{-1}(x) $, is a discrete set (since it is the image of a discrete union under a homeomorphism), and each point in $ p^{-1}(x) $ has a neighborhood in $ E $ that maps homeomorphically to a neighborhood of $ x $ in $ X $.
+Thus, the theorem is proved.
 
----
-
-### Step 2: Use the Connectedness of $ X $
-
-Since $ X $ is connected, we can use the fact that the cardinality of the fibers is constant across $ X $, under certain conditions. This is a well-known result in covering space theory.
-
----
-
-### Step 3: Use the Path Lifting Property
-
-A covering map has the **path lifting property**: given a path $ \gamma: [0,1] \to X $ and a point $ e_0 \in p^{-1}(\gamma(0)) $, there exists a unique lift $ \tilde{\gamma}: [0,1] \to E $ such that $ p(\tilde{\gamma}(t)) = \gamma(t) $ and $ \tilde{\gamma}(0) = e_0 $.
-
-This property implies that the fibers are not only discrete, but also that the number of points in each fiber is consistent across the space.
-
----
-
-### Step 4: Use the Local Homeomorphism Property
-
-Since $ p $ is a covering map, it is a local homeomorphism. That is, for every point $ e \in E $, there is an open neighborhood $ V \subset E $ of $ e $ such that $ p(V) $ is open in $ X $, and $ p|_V: V \to p(V) $ is a homeomorphism.
-
-In particular, for any $ x \in X $, the fiber $ p^{-1}(x) $ is a discrete set, and the map $ p $ restricts to a bijection from each component of $ p^{-1}(U) $ to $ U $, for any neighborhood $ U $ of $ x $.
-
----
-
-### Step 5: Use the Connectedness of $ X $ to Conclude Equal Fiber Cardinality
-
-Now consider the function $ f: X \to \mathbb{N} \cup \{ \infty \} $, defined by $ f(x) = |p^{-1}(x)| $. We want to show that $ f $ is constant.
-
-Let $ x_0 \in X $, and suppose that $ |p^{-1}(x_0)| = n $. Since $ X $ is connected, we can construct a path from $ x_0 $ to any other point $ x \in X $, and use the path lifting property to show that the fiber $ p^{-1}(x) $ must also have $ n $ elements.
-
-This is a standard result in covering space theory, and it can be found in textbooks such as:
-
-- *Algebraic Topology* by Allen Hatcher (Chapter 1, Section 1)
-- *Topology* by James Munkres (Chapter 54, Section 1)
-
-In particular, the key idea is that the fiber cardinality is constant on each path component of $ X $, and since $ X $ is connected, the fiber cardinality is constant everywhere.
-
----
-
-### Conclusion
-
-We have shown that for a covering map $ p: E \to X $, where $ X $ is connected, the fibers $ p^{-1}(x) $ for $ x \in X $ all have the same cardinality.
-
-$$
-\boxed{\text{The statement is true. All fibers } p^{-1}(x) \text{ have the same cardinality.}}
-$$
 """
-
 # prepare the model input
 prompt = f"""
 You are an expert mathematician grading a candidate proof for logical 
@@ -120,6 +97,7 @@ Disposition rules (apply exactly one):
 
 
 """
+
 messages = [
     {"role": "user", "content": prompt}
 ]
