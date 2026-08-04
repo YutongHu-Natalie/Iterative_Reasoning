@@ -1,3 +1,10 @@
 DeepTheorem/
 venv/
 Data/Processed_DeepTheorem/
+Data/Processed_DeepTheorem_StepNumbered/data-00000-of-00002.arrow
+.gitignore
+.gitignore
+Data/Processed_DeepTheorem_StepNumbered/data-00001-of-00002.arrow
+Data/Processed_DeepTheorem_StepNumbered/dataset_info.json
+.gitignore
+Data/Processed_DeepTheorem_StepNumbered/state.json
