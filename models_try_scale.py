@@ -1,7 +1,8 @@
+import json
 from datasets import load_from_disk
 from transformers import AutoModelForCausalLM, AutoTokenizer
-import tqdm
-import time 
+from tqdm import tqdm
+import time
 
 # Collect informal questions into a list
 def load_qas():
@@ -22,7 +23,7 @@ def load_tokenizer_and_model(model_path):
         torch_dtype="auto",
         device_map="auto"
     )
-    return model
+    return tokenizer, model
 
 
 
