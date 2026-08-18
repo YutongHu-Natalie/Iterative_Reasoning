@@ -1,0 +1,140 @@
+{
+  "5.0": {
+    "target": 14,
+    "total_available": 25500,
+    "selected": 14,
+    "category_counts": {
+      "Algebra": 2,
+      "Calculus": 2,
+      "Applied Mathematics": 2,
+      "Geometry": 2,
+      "Discrete Mathematics": 2,
+      "Linear Algebra": 2,
+      "Number Theory": 2
+    }
+  },
+  "5.5": {
+    "target": 14,
+    "total_available": 396,
+    "selected": 14,
+    "category_counts": {
+      "Algebra": 2,
+      "Calculus": 2,
+      "Applied Mathematics": 2,
+      "Geometry": 2,
+      "Discrete Mathematics": 2,
+      "Linear Algebra": 2,
+      "Number Theory": 2
+    }
+  },
+  "6.0": {
+    "target": 14,
+    "total_available": 41216,
+    "selected": 14,
+    "category_counts": {
+      "Algebra": 2,
+      "Calculus": 2,
+      "Applied Mathematics": 2,
+      "Geometry": 2,
+      "Discrete Mathematics": 2,
+      "Linear Algebra": 2,
+      "Number Theory": 2
+    }
+  },
+  "6.5": {
+    "target": 14,
+    "total_available": 210,
+    "selected": 14,
+    "category_counts": {
+      "Algebra": 2,
+      "Calculus": 2,
+      "Applied Mathematics": 2,
+      "Geometry": 2,
+      "Discrete Mathematics": 2,
+      "Linear Algebra": 2,
+      "Number Theory": 2
+    }
+  },
+  "7.0": {
+    "target": 14,
+    "total_available": 22,
+    "selected": 14,
+    "category_counts": {
+      "Discrete Mathematics": 4,
+      "Algebra": 3,
+      "Geometry": 3,
+      "Calculus": 2,
+      "Number Theory": 2
+    }
+  },
+  "7.5": {
+    "target": 1,
+    "total_available": 1,
+    "selected": 1,
+    "category_counts": {
+      "Calculus": 1
+    }
+  },
+  "8.0": {
+    "target": 14,
+    "total_available": 44795,
+    "selected": 14,
+    "category_counts": {
+      "Algebra": 2,
+      "Calculus": 2,
+      "Applied Mathematics": 2,
+      "Geometry": 2,
+      "Discrete Mathematics": 2,
+      "Linear Algebra": 2,
+      "Number Theory": 2
+    }
+  },
+  "8.5": {
+    "target": 5,
+    "total_available": 5,
+    "selected": 5,
+    "category_counts": {
+      "Calculus": 4,
+      "Discrete Mathematics": 1
+    }
+  },
+  "9.0": {
+    "target": 14,
+    "total_available": 8520,
+    "selected": 14,
+    "category_counts": {
+      "Algebra": 2,
+      "Calculus": 2,
+      "Applied Mathematics": 2,
+      "Geometry": 2,
+      "Discrete Mathematics": 2,
+      "Linear Algebra": 2,
+      "Number Theory": 2
+    }
+  },
+  "9.5": {
+    "target": 14,
+    "total_available": 16,
+    "selected": 14,
+    "category_counts": {
+      "Algebra": 5,
+      "Discrete Mathematics": 4,
+      "Calculus": 2,
+      "Applied Mathematics": 1,
+      "Geometry": 1,
+      "Other": 1
+    }
+  },
+  "10.0": {
+    "target": 14,
+    "total_available": 73,
+    "selected": 14,
+    "category_counts": {
+      "Algebra": 3,
+      "Calculus": 3,
+      "Applied Mathematics": 3,
+      "Discrete Mathematics": 3,
+      "Geometry": 2
+    }
+  }
+}
