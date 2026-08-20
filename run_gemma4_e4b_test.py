@@ -93,13 +93,19 @@ def generate_answer(question, processor, model, enable_thinking, max_new_tokens)
         **GEN_KWARGS,
     )
 
-    # skip_special_tokens=False is required for parse_response to find the
-    # thinking/channel delimiter tokens.
-    response = processor.decode(outputs[0][input_len:], skip_special_tokens=False)
-    parsed = processor.parse_response(response, prefix=inputs["input_ids"])
+    if enable_thinking:
+        # skip_special_tokens=False is required for parse_response to find the
+        # thinking/channel delimiter tokens.
+        response = processor.decode(outputs[0][input_len:], skip_special_tokens=False)
+        parsed = processor.parse_response(response, prefix=inputs["input_ids"])
+        thinking = parsed.get("thinking")
+        answer = (parsed.get("answer") or "").strip()
+    else:
+        # E4B does not emit channel tags when thinking is disabled, so
+        # parse_response has nothing to split on -- decode directly instead.
+        thinking = None
+        answer = processor.decode(outputs[0][input_len:], skip_special_tokens=True).strip()
 
-    thinking = parsed.get("thinking")
-    answer = (parsed.get("answer") or "").strip()
     return thinking, answer
 
 
