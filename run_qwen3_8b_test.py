@@ -44,10 +44,11 @@ Your task is to determine whether the statement is true (and prove it) or false 
 - For disproof, a single valid counterexample is sufficient
 
 
-After working through the problem in your scratchpad, provide your final answer with:
+After working through the problem, provide your final answer with:
 - A clear statement of whether you have proved or disproved the claim
 - A complete, step-by-step proof or disproof with clear reasoning at each step
 - Concise but sufficient justification for each step
+- Number each step
 
 Format your response as follows:
 <answer>

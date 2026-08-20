@@ -3,7 +3,7 @@
 #SBATCH --output=./logs/qwen3_8b_balanced_%j.out
 #SBATCH --error=./logs/qwen3_8b_balanced_%j.err
 #SBATCH --gres=gpu:1
-#SBATCH --time=8:00:00
+#SBATCH --time=32:00:00
 #SBATCH --mem=30G
 #SBATCH --cpus-per-task=8
 
@@ -18,6 +18,6 @@ source ./venv/bin/activate
 
 # Add --thinking to enable Qwen3 thinking mode (slower, uses a different
 # sampling config). Non-thinking mode runs by default.
-python ./run_qwen3_8b_test.py
+python ./run_qwen3_8b_test.py 
 
 echo "Job finished at $(date)"
