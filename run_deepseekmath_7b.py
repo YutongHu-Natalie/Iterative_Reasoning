@@ -68,17 +68,18 @@ def generate_answer(question, tokenizer, model, max_new_tokens):
     prompt = build_prompt(question)
 
     messages = [{"role": "user", "content": prompt}]
-    input_ids = tokenizer.apply_chat_template(
+    text = tokenizer.apply_chat_template(
         messages,
+        tokenize=False,
         add_generation_prompt=True,
-        return_tensors="pt",
-    ).to(model.device)
+    )
+    inputs = tokenizer(text, return_tensors="pt").to(model.device)
 
     outputs = model.generate(
-        input_ids,
+        **inputs,
         max_new_tokens=max_new_tokens,
     )
-    output_ids = outputs[0][input_ids.shape[1]:].tolist()
+    output_ids = outputs[0][inputs["input_ids"].shape[1]:].tolist()
 
     answer = tokenizer.decode(output_ids, skip_special_tokens=True)
     return answer.strip()
