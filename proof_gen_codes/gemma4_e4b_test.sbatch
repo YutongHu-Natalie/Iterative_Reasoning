@@ -18,6 +18,6 @@ source ./venv/bin/activate
 
 # Add --thinking to enable Qwen3 thinking mode (slower, uses a different
 # sampling config). Non-thinking mode runs by default.
-python ./run_gemma4_e4b_test.py --thinking
+python ./proof_gen_codes/run_gemma4_e4b_test.py --thinking
 
 echo "Job finished at $(date)"

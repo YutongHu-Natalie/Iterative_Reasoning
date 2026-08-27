@@ -26,6 +26,6 @@ source ./venv_deepseekmath/bin/activate
 # Pass instruct or rl as the first sbatch arg, e.g.:
 #   sbatch deepseekmath_7b_test.sbatch rl
 VARIANT=${1:-instruct}
-python ./run_deepseekmath_7b.py --variant "$VARIANT"
+python ./proof_gen_codes/run_deepseekmath_7b.py --variant "$VARIANT"
 
 echo "Job finished at $(date)"

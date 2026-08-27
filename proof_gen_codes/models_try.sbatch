@@ -13,5 +13,5 @@ echo "SLURM allocated GPUs: $CUDA_VISIBLE_DEVICES"
 nvidia-smi
 cd /local/scratch/yhu383/Iterative_Reasoning
 source ./venv/bin/activate
-python ./models_try_scale.py
+python ./proof_gen_codes/models_try_scale.py
 echo "Job finished at $(date)"

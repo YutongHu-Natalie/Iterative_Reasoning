@@ -1,10 +1,10 @@
-"""Run Qwen3-8B over the balanced (difficulty x category) test set and save its proofs.
+"""Run Qwen2.5-Math-7B-Instruct over the balanced (difficulty x category) test set and save its proofs.
 
 Loads Data/Balanced_Model_Test_Set, generates a proof/disproof for each
 `informal_theorem_qa`, and writes one JSON record per row containing every
 original metadata column (id, domain, difficulty, source, ...) plus the
-model's thinking (if enabled) and final answer, so results can be sliced by
-difficulty/category later without re-joining against the source dataset.
+model's final answer, so results can be sliced by difficulty/category later
+without re-joining against the source dataset.
 """
 import argparse
 import json
@@ -14,13 +14,10 @@ from datasets import load_from_disk
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from tqdm import tqdm
 
-MODEL_PATH = "../models/Qwen3-8B"
-DATASET_PATH = "./Data/Balanced_Model_Test_Set"
+MODEL_PATH = "../../models/Qwen2.5-Math-7B"
+DATASET_PATH = "../Data/Balanced_Model_Test_Set"
 
-# Qwen3 recommended sampling params for thinking vs non-thinking mode
-THINKING_GEN_KWARGS = dict(temperature=0.6, top_p=0.95, top_k=20, min_p=0)
-NON_THINKING_GEN_KWARGS = dict(temperature=0.7, top_p=0.8, top_k=20, min_p=0)
-THINK_END_TOKEN_ID = 151668  # </think>
+
 
 
 def build_prompt(problem):
@@ -48,7 +45,6 @@ After working through the problem, provide your final answer with:
 - A clear statement of whether you have proved or disproved the claim
 - A complete, step-by-step proof or disproof with clear reasoning at each step
 - Concise but sufficient justification for each step
-- Number each step
 
 Format your response as follows:
 <answer>
@@ -62,52 +58,37 @@ Remember: Mathematical rigor and correctness are paramount. It is better to ackn
 """
 
 
-def generate_answer(question, tokenizer, model, enable_thinking, max_new_tokens):
+def generate_answer(question, tokenizer, model, max_new_tokens):
     prompt = build_prompt(question)
 
     text = tokenizer.apply_chat_template(
-        [{"role": "user", "content": prompt}],
+        [
+            {"role": "system", "content": "Please prove or disprove the given mathematical statements with step-by-step clear and logical reasoning."},
+            {"role": "user", "content": prompt}],
         tokenize=False,
-        add_generation_prompt=True,
-        enable_thinking=enable_thinking,
+        add_generation_prompt=True
     )
     inputs = tokenizer(text, return_tensors="pt").to(model.device)
 
-    gen_kwargs = THINKING_GEN_KWARGS if enable_thinking else NON_THINKING_GEN_KWARGS
+
 
     outputs = model.generate(
         **inputs,
         max_new_tokens=max_new_tokens,
-        do_sample=True,
-        pad_token_id=tokenizer.eos_token_id,
-        **gen_kwargs,
+        pad_token_id=tokenizer.eos_token_id
     )
     output_ids = outputs[0][inputs["input_ids"].shape[1]:].tolist()
 
-    if enable_thinking:
-        try:
-            think_end = len(output_ids) - output_ids[::-1].index(THINK_END_TOKEN_ID)
-        except ValueError:
-            think_end = 0
-        thinking = tokenizer.decode(output_ids[:think_end], skip_special_tokens=True).strip("\n")
-        answer = tokenizer.decode(output_ids[think_end:], skip_special_tokens=True).strip("\n")
-        return thinking, answer.strip()
-
     answer = tokenizer.decode(output_ids, skip_special_tokens=True)
-    return None, answer.strip()
+    return answer.strip()
 
 
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", default=DATASET_PATH)
     parser.add_argument("--model-path", default=MODEL_PATH)
-    parser.add_argument(
-        "--thinking",
-        action="store_true",
-        help="Enable Qwen3 thinking mode (uses Temperature=0.6, TopP=0.95, TopK=20, MinP=0).",
-    )
     parser.add_argument("--max-new-tokens", type=int, default=32768)
-    parser.add_argument("--out", default=None, help="Defaults to Results/qwen3_8b_<mode>.json")
+    parser.add_argument("--out", default=None, help="Defaults to Results/qwen2.5_math_7b.json")
     return parser.parse_args()
 
 
@@ -126,25 +107,22 @@ def main():
         device_map="auto",
     )
 
-    mode = "thinking" if args.thinking else "non_thinking"
-    out_path = args.out or f"./Results/qwen3_8b_{mode}.json"
+
+    out_path = args.out or f"../Results/qwen2.5_math_7b.json"
 
     results = []
     start = time.time()
-    for row in tqdm(rows, desc=f"Qwen3-8B ({mode})"):
-        thinking, answer = generate_answer(
+    for row in tqdm(rows, desc=f"Qwen2.5-Math-7B-Instruct"):
+        answer = generate_answer(
             row["informal_theorem_qa"],
             tokenizer,
             model,
-            enable_thinking=args.thinking,
             max_new_tokens=args.max_new_tokens,
         )
         results.append(
             {
                 **row,
-                "model": "Qwen3-8B",
-                "thinking_mode": args.thinking,
-                "thinking": thinking,
+                "model": "Qwen2.5-Math-7B",
                 "model_answer": answer,
             }
         )

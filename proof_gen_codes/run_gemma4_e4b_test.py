@@ -1,23 +1,24 @@
-"""Run Qwen2.5-Math-7B-Instruct over the balanced (difficulty x category) test set and save its proofs.
+"""Run Gemma4-E4B over the balanced (difficulty x category) test set and save its proofs.
 
 Loads Data/Balanced_Model_Test_Set, generates a proof/disproof for each
 `informal_theorem_qa`, and writes one JSON record per row containing every
 original metadata column (id, domain, difficulty, source, ...) plus the
-model's final answer, so results can be sliced by difficulty/category later
-without re-joining against the source dataset.
+model's thinking (if enabled) and final answer, so results can be sliced by
+difficulty/category later without re-joining against the source dataset.
 """
 import argparse
 import json
 import time
 
 from datasets import load_from_disk
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForMultimodalLM, AutoProcessor
 from tqdm import tqdm
 
-MODEL_PATH = "../models/Qwen2.5-Math-7B"
-DATASET_PATH = "./Data/Balanced_Model_Test_Set"
+MODEL_PATH = "../../models/Gemma4-E4B"
+DATASET_PATH = "../Data/Balanced_Model_Test_Set"
 
-
+# Gemma4 recommended sampling params (same for thinking and non-thinking mode)
+GEN_KWARGS = dict(temperature=1.0, top_p=0.95, top_k=64)
 
 
 def build_prompt(problem):
@@ -58,37 +59,67 @@ Remember: Mathematical rigor and correctness are paramount. It is better to ackn
 """
 
 
-def generate_answer(question, tokenizer, model, max_new_tokens):
+def generate_answer(question, processor, model, enable_thinking, max_new_tokens):
     prompt = build_prompt(question)
 
-    text = tokenizer.apply_chat_template(
-        [
-            {"role": "system", "content": "Please prove or disprove the given mathematical statements with step-by-step clear and logical reasoning."},
-            {"role": "user", "content": prompt}],
-        tokenize=False,
-        add_generation_prompt=True
-    )
-    inputs = tokenizer(text, return_tensors="pt").to(model.device)
+    messages = [
+        {
+            "role": "system",
+            "content": "Please prove or disprove the given mathematical statements with step-by-step clear and logical reasoning.",
+        },
+        {"role": "user", "content": prompt},
+    ]
 
+    inputs = processor.apply_chat_template(
+        messages,
+        tokenize=True,
+        return_dict=True,
+        return_tensors="pt",
+        add_generation_prompt=True,
+        enable_thinking=enable_thinking,
+    ).to(model.device)
+    input_len = inputs["input_ids"].shape[-1]
 
+    tokenizer = processor.tokenizer
+    pad_token_id = tokenizer.pad_token_id
+    if pad_token_id is None:
+        pad_token_id = tokenizer.eos_token_id
 
     outputs = model.generate(
         **inputs,
         max_new_tokens=max_new_tokens,
-        pad_token_id=tokenizer.eos_token_id
+        do_sample=True,
+        pad_token_id=pad_token_id,
+        **GEN_KWARGS,
     )
-    output_ids = outputs[0][inputs["input_ids"].shape[1]:].tolist()
 
-    answer = tokenizer.decode(output_ids, skip_special_tokens=True)
-    return answer.strip()
+    if enable_thinking:
+        # skip_special_tokens=False is required for parse_response to find the
+        # thinking/channel delimiter tokens.
+        response = processor.decode(outputs[0][input_len:], skip_special_tokens=False)
+        parsed = processor.parse_response(response, prefix=inputs["input_ids"])
+        thinking = parsed.get("thinking")
+        answer = (parsed.get("answer") or "").strip()
+    else:
+        # E4B does not emit channel tags when thinking is disabled, so
+        # parse_response has nothing to split on -- decode directly instead.
+        thinking = None
+        answer = processor.decode(outputs[0][input_len:], skip_special_tokens=True).strip()
+
+    return thinking, answer
 
 
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", default=DATASET_PATH)
     parser.add_argument("--model-path", default=MODEL_PATH)
+    parser.add_argument(
+        "--thinking",
+        action="store_true",
+        help="Enable Gemma4 thinking mode (model reasons before answering).",
+    )
     parser.add_argument("--max-new-tokens", type=int, default=32768)
-    parser.add_argument("--out", default=None, help="Defaults to Results/qwen2.5_math_7b.json")
+    parser.add_argument("--out", default=None, help="Defaults to Results/gemma4_e4b_<mode>.json")
     return parser.parse_args()
 
 
@@ -100,29 +131,32 @@ def main():
         ds = ds["train"]
     rows = ds.to_list()
 
-    tokenizer = AutoTokenizer.from_pretrained(args.model_path)
-    model = AutoModelForCausalLM.from_pretrained(
+    processor = AutoProcessor.from_pretrained(args.model_path)
+    model = AutoModelForMultimodalLM.from_pretrained(
         args.model_path,
-        torch_dtype="auto",
+        dtype="auto",
         device_map="auto",
     )
 
-
-    out_path = args.out or f"./Results/qwen2.5_math_7b.json"
+    mode = "thinking" if args.thinking else "non_thinking"
+    out_path = args.out or f"../Results/gemma4_e4b_{mode}.json"
 
     results = []
     start = time.time()
-    for row in tqdm(rows, desc=f"Qwen2.5-Math-7B-Instruct"):
-        answer = generate_answer(
+    for row in tqdm(rows, desc=f"Gemma4-E4B ({mode})"):
+        thinking, answer = generate_answer(
             row["informal_theorem_qa"],
-            tokenizer,
+            processor,
             model,
+            enable_thinking=args.thinking,
             max_new_tokens=args.max_new_tokens,
         )
         results.append(
             {
                 **row,
-                "model": "Qwen2.5-Math-7B",
+                "model": "Gemma4-E4B",
+                "thinking_mode": args.thinking,
+                "thinking": thinking,
                 "model_answer": answer,
             }
         )

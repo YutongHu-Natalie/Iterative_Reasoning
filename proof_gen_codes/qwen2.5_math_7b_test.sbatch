@@ -16,6 +16,6 @@ nvidia-smi
 cd /local/scratch/yhu383/Iterative_Reasoning
 source ./venv/bin/activate
 
-python ./run_qwen2.5math_test.py
+python ./proof_gen_codes/run_qwen2.5math_test.py
 
 echo "Job finished at $(date)"
