@@ -3,7 +3,7 @@
 #SBATCH --output=./logs/gemma4_e4b_balanced_%j.out
 #SBATCH --error=./logs/gemma4_e4b_balanced_%j.err
 #SBATCH --gres=gpu:1
-#SBATCH --time=8:00:00
+#SBATCH --time=24:00:00
 #SBATCH --mem=30G
 #SBATCH --cpus-per-task=8
 
@@ -18,6 +18,6 @@ source ./venv/bin/activate
 
 # Add --thinking to enable Qwen3 thinking mode (slower, uses a different
 # sampling config). Non-thinking mode runs by default.
-python ./run_gemma4_e4b_test.py 
+python ./run_gemma4_e4b_test.py --thinking
 
 echo "Job finished at $(date)"
