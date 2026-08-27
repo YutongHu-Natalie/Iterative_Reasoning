@@ -15,8 +15,13 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-python3.12 -m venv venv_deepseekmath
+# --without-pip avoids depending on ensurepip (often missing/unpackaged on
+# shared clusters without sudo); pip is bootstrapped below via get-pip.py,
+# which is already vendored in this repo.
+python3.12 -m venv --without-pip venv_deepseekmath
 source ./venv_deepseekmath/bin/activate
+
+python get-pip.py
 
 pip install --upgrade pip
 pip install torch==2.11.0
