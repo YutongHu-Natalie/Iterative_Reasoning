@@ -73,11 +73,20 @@ def generate_answer(question, tokenizer, model, max_new_tokens):
         tokenize=False,
         add_generation_prompt=True,
     )
-    inputs = tokenizer(text, return_tensors="pt").to(model.device)
+    # apply_chat_template already inlines bos_token into `text`; tokenizing
+    # with add_special_tokens=True (the default) would prepend a second BOS.
+    inputs = tokenizer(text, return_tensors="pt", add_special_tokens=False).to(model.device)
+
+    # DeepSeekMath's trained context is 4096 tokens total. Requesting more
+    # completion tokens than fit pushes generation past that window, which
+    # degrades into repetition loops rather than erroring, so clamp here.
+    context_limit = tokenizer.model_max_length
+    budget = context_limit - inputs["input_ids"].shape[1]
+    effective_max_new_tokens = max(1, min(max_new_tokens, budget))
 
     outputs = model.generate(
         **inputs,
-        max_new_tokens=max_new_tokens,
+        max_new_tokens=effective_max_new_tokens,
     )
     output_ids = outputs[0][inputs["input_ids"].shape[1]:].tolist()
 
@@ -100,7 +109,13 @@ def parse_args():
         help=f"Overrides the default path derived from --variant "
              f"({MODEL_BASE_DIR}/<Instruct|RL>).",
     )
-    parser.add_argument("--max-new-tokens", type=int, default=32768)
+    parser.add_argument(
+        "--max-new-tokens",
+        type=int,
+        default=3072,
+        help="Upper bound on completion length; also clamped per-row to fit "
+             "DeepSeekMath's 4096-token context alongside the prompt.",
+    )
     parser.add_argument("--out", default=None, help="Defaults to Results/deepseekmath_7b_<variant>.json")
     return parser.parse_args()
 
