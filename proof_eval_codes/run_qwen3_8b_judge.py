@@ -11,7 +11,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from eval_utils import RESULTS_DIR, run_judge
 
-MODEL_PATH = "../../models/Qwen3-8B"
+MODEL_PATH = "../models/Qwen3-8B"
 JUDGE_NAME = "Qwen3-8B"
 THINK_END_TOKEN_ID = 151668  # </think>
 

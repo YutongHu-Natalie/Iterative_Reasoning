@@ -14,8 +14,8 @@ from datasets import load_from_disk
 from transformers import AutoModelForMultimodalLM, AutoProcessor
 from tqdm import tqdm
 
-MODEL_PATH = "../../models/Gemma4-E4B"
-DATASET_PATH = "../Data/Balanced_Model_Test_Set"
+MODEL_PATH = "../models/Gemma4-E4B"
+DATASET_PATH = "./Data/Balanced_Model_Test_Set"
 
 # Gemma4 recommended sampling params (same for thinking and non-thinking mode)
 GEN_KWARGS = dict(temperature=1.0, top_p=0.95, top_k=64)
@@ -139,7 +139,7 @@ def main():
     )
 
     mode = "thinking" if args.thinking else "non_thinking"
-    out_path = args.out or f"../Results/gemma4_e4b_{mode}.json"
+    out_path = args.out or f"./Results/gemma4_e4b_{mode}.json"
 
     results = []
     start = time.time()

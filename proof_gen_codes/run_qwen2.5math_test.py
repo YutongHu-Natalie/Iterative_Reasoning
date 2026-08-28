@@ -14,8 +14,8 @@ from datasets import load_from_disk
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from tqdm import tqdm
 
-MODEL_PATH = "../../models/Qwen2.5-Math-7B"
-DATASET_PATH = "../Data/Balanced_Model_Test_Set"
+MODEL_PATH = "../models/Qwen2.5-Math-7B"
+DATASET_PATH = "./Data/Balanced_Model_Test_Set"
 
 
 
@@ -108,7 +108,7 @@ def main():
     )
 
 
-    out_path = args.out or f"../Results/qwen2.5_math_7b.json"
+    out_path = args.out or f"./Results/qwen2.5_math_7b.json"
 
     results = []
     start = time.time()

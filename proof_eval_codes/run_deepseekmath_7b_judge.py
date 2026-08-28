@@ -22,7 +22,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig
 
 from eval_utils import RESULTS_DIR, run_judge
 
-MODEL_BASE_DIR = "../../models/Deepseek-Math-7B"
+MODEL_BASE_DIR = "../models/Deepseek-Math-7B"
 VARIANT_SUBDIRS = {"instruct": "Instruct", "rl": "RL"}
 JUDGE_NAME = "DeepSeekMath-7B"
 MIN_OUTPUT_BUDGET = 128

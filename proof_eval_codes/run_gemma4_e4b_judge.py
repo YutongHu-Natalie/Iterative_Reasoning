@@ -11,7 +11,7 @@ from transformers import AutoModelForMultimodalLM, AutoProcessor
 
 from eval_utils import RESULTS_DIR, run_judge
 
-MODEL_PATH = "../../models/Gemma4-E4B"
+MODEL_PATH = "../models/Gemma4-E4B"
 JUDGE_NAME = "Gemma4-E4B"
 
 

@@ -1,6 +1,6 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-model_path = "../../models/Qwen3-8B"
+model_path = "../models/Qwen3-8B"
 
 # load the tokenizer and the model
 tokenizer = AutoTokenizer.from_pretrained(model_path)

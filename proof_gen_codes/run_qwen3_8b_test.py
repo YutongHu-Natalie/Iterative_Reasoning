@@ -14,8 +14,8 @@ from datasets import load_from_disk
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from tqdm import tqdm
 
-MODEL_PATH = "../../models/Qwen3-8B"
-DATASET_PATH = "../Data/Balanced_Model_Test_Set"
+MODEL_PATH = "../models/Qwen3-8B"
+DATASET_PATH = "./Data/Balanced_Model_Test_Set"
 
 # Qwen3 recommended sampling params for thinking vs non-thinking mode
 THINKING_GEN_KWARGS = dict(temperature=0.6, top_p=0.95, top_k=20, min_p=0)
@@ -127,7 +127,7 @@ def main():
     )
 
     mode = "thinking" if args.thinking else "non_thinking"
-    out_path = args.out or f"../Results/qwen3_8b_{mode}.json"
+    out_path = args.out or f"./Results/qwen3_8b_{mode}.json"
 
     results = []
     start = time.time()

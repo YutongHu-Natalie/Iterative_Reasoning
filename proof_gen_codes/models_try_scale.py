@@ -12,7 +12,7 @@ THINK_END_TOKEN_ID = 151668  # </think>
 
 # Collect informal questions into a list
 def load_qas():
-    ds = load_from_disk("../Data/Choose_Models")
+    ds = load_from_disk("./Data/Choose_Models")
     qas = ds.select_columns(["id", "informal_theorem_qa"]).to_list()
     return qas
     
@@ -21,7 +21,7 @@ def load_qas():
 
 # Load the tokenizer and the model
 
-model_path = "../../models/Qwen3-8B"
+model_path = "../models/Qwen3-8B"
 def load_tokenizer_and_model(model_path):
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = AutoModelForCausalLM.from_pretrained(

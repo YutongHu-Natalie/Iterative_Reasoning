@@ -21,9 +21,9 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig
 from tqdm import tqdm
 
-MODEL_BASE_DIR = "../../models/Deepseek-Math-7B"
+MODEL_BASE_DIR = "../models/Deepseek-Math-7B"
 VARIANT_SUBDIRS = {"instruct": "Instruct", "rl": "RL"}
-DATASET_PATH = "../Data/Balanced_Model_Test_Set"
+DATASET_PATH = "./Data/Balanced_Model_Test_Set"
 
 
 def build_prompt(problem):

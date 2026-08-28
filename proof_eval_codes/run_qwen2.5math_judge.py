@@ -11,7 +11,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from eval_utils import RESULTS_DIR, run_judge
 
-MODEL_PATH = "../../models/Qwen2.5-Math-7B"
+MODEL_PATH = "../models/Qwen2.5-Math-7B"
 JUDGE_NAME = "Qwen2.5-Math-7B"
 
 
