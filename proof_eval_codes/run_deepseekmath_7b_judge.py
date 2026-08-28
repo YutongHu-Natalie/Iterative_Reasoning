@@ -79,6 +79,13 @@ def parse_args():
         "--max-new-tokens", type=int, default=1024,
         help="Kept small since DeepSeekMath's whole context is only 4096 tokens.",
     )
+    parser.add_argument(
+        "--results", nargs="+", default=None,
+        help="Judge only these specific Results/*.json file(s) instead of scanning "
+             "--results-dir. E.g. --results ../Results/deepseekmath_7b_instruct.json "
+             "to judge a generator run that just finished, without rescanning the rest "
+             "(resuming already skips rows judged in an earlier run either way).",
+    )
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--save-every", type=int, default=5)
     return parser.parse_args()
@@ -103,6 +110,7 @@ def main():
         f"{JUDGE_NAME}-{args.variant.capitalize()}",
         generate_fn,
         results_dir=args.results_dir,
+        files=args.results,
         output_slug=f"deepseekmath_7b_{args.variant}",
         max_new_tokens=args.max_new_tokens,
         limit=args.limit,

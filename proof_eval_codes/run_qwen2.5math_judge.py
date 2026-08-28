@@ -41,6 +41,13 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model-path", default=MODEL_PATH)
     parser.add_argument("--results-dir", default=RESULTS_DIR)
+    parser.add_argument(
+        "--results", nargs="+", default=None,
+        help="Judge only these specific Results/*.json file(s) instead of scanning "
+             "--results-dir. E.g. --results ../Results/deepseekmath_7b_instruct.json "
+             "to judge a generator run that just finished, without rescanning the rest "
+             "(resuming already skips rows judged in an earlier run either way).",
+    )
     parser.add_argument("--max-new-tokens", type=int, default=4096)
     parser.add_argument(
         "--limit", type=int, default=None,
@@ -66,6 +73,7 @@ def main():
         JUDGE_NAME,
         generate_fn,
         results_dir=args.results_dir,
+        files=args.results,
         max_new_tokens=args.max_new_tokens,
         limit=args.limit,
         save_every=args.save_every,

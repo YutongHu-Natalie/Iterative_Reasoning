@@ -36,16 +36,26 @@ EVAL_PASS_DIR = RESULTS_DIR / "eval_pass"
 SCORE_FIELDS = ("score", "validity", "completeness", "correctness", "clarity")
 
 
-def iter_generated_rows(results_dir=RESULTS_DIR):
-    """Yield (judged_run, row) for every row in every Results/*.json file.
+def iter_generated_rows(results_dir=RESULTS_DIR, files=None):
+    """Yield (judged_run, row) for every row in the target Results/*.json file(s).
+
+    By default every *.json directly under `results_dir` is scanned (i.e.
+    every generator model's output). Pass `files` (an iterable of paths) to
+    scope a run to specific file(s) instead -- e.g. to judge just a
+    generator run that finished after the others, without re-touching rows
+    that are already resumed/skipped anyway.
 
     `judged_run` is the file stem (e.g. "qwen2.5_math_7b",
     "gemma4_e4b_thinking") -- the stable key identifying which generator
     run a proof came from, since the same dataset `id` repeats once per
     generator file.
     """
-    results_dir = Path(results_dir)
-    for path in sorted(results_dir.glob("*.json")):
+    if files is not None:
+        paths = sorted(Path(f) for f in files)
+    else:
+        paths = sorted(Path(results_dir).glob("*.json"))
+
+    for path in paths:
         judged_run = path.stem
         with open(path, encoding="utf-8") as f:
             rows = json.load(f)
@@ -150,12 +160,21 @@ def run_judge(
     judge_model_name,
     generate_fn,
     results_dir=RESULTS_DIR,
+    files=None,
     output_slug=None,
     max_new_tokens=4096,
     limit=None,
     save_every=5,
 ):
-    """Evaluate every row across Results/*.json with both judge prompts.
+    """Evaluate rows from Results/*.json with both judge prompts.
+
+    By default every generator's Results/*.json is scanned (cross-model
+    judging: this judge scores every model's proofs, not just its own).
+    Pass `files` to scope this run to specific result file(s) instead --
+    e.g. once a generator run that started later (like DeepSeekMath)
+    finishes, so you don't have to re-scan everything (resuming already
+    skips rows already judged, but `files` lets you target just the new
+    one explicitly).
 
     generate_fn(system_prompt, user_prompt, max_new_tokens) -> str must run
     the already-loaded local model over a single chat turn and return its
@@ -172,7 +191,7 @@ def run_judge(
     score_done = _done_keys(score_records)
     pass_done = _done_keys(pass_records)
 
-    rows = list(iter_generated_rows(results_dir))
+    rows = list(iter_generated_rows(results_dir, files=files))
     if limit:
         rows = rows[:limit]
 

@@ -62,6 +62,13 @@ def parse_args():
         "--max-new-tokens", type=int, default=None,
         help="Defaults to 8192 with --thinking (reasoning eats into the budget), else 4096.",
     )
+    parser.add_argument(
+        "--results", nargs="+", default=None,
+        help="Judge only these specific Results/*.json file(s) instead of scanning "
+             "--results-dir. E.g. --results ../Results/deepseekmath_7b_instruct.json "
+             "to judge a generator run that just finished, without rescanning the rest "
+             "(resuming already skips rows judged in an earlier run either way).",
+    )
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--save-every", type=int, default=5)
     return parser.parse_args()
@@ -86,6 +93,7 @@ def main():
         f"Qwen3-8B ({mode})",
         generate_fn,
         results_dir=args.results_dir,
+        files=args.results,
         output_slug=f"qwen3_8b_{mode}",
         max_new_tokens=max_new_tokens,
         limit=args.limit,
