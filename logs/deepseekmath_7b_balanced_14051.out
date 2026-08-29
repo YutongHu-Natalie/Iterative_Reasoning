@@ -1,0 +1,31 @@
+Job started at Thu Aug 27 13:42:27 EDT 2026
+Running on host: tebuna
+Job ID: 14051
+SLURM allocated GPUs: 0
+Thu Aug 27 13:42:27 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               Off |   00000000:1B:00.0 Off |                  Off |
+| 54%   79C    P0            296W /  300W |   39286MiB /  49140MiB |     96%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA RTX A6000               Off |   00000000:B5:00.0 Off |                  Off |
+| 52%   77C    P0            298W /  300W |   39286MiB /  49140MiB |     97%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A    375759      C   ...cratch/nchoi27/vllm_env/bin/python3      39276MiB |
+|    1   N/A  N/A    375755      C   ...cratch/nchoi27/vllm_env/bin/python3      39276MiB |
++-----------------------------------------------------------------------------------------+
+Wrote 132 results to ./Results/deepseekmath_7b_instruct.json in 831.1 min
+Job finished at Fri Aug 28 03:33:40 EDT 2026

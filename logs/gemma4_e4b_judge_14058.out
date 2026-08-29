@@ -1,0 +1,30 @@
+Job started at Thu Aug 27 23:30:14 EDT 2026
+Running on host: tebuna
+Job ID: 14058
+SLURM allocated GPUs: 0
+Thu Aug 27 23:30:14 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               Off |   00000000:B2:00.0 Off |                  Off |
+| 30%   26C    P8             17W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA RTX A6000               Off |   00000000:B5:00.0 Off |                  Off |
+| 30%   28C    P8             26W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[Gemma4-E4B (non_thinking)] wrote 660 score records to /local/scratch/yhu383/Iterative_Reasoning/Results/eval_scores/gemma4_e4b_non_thinking.json and 660 pass records to /local/scratch/yhu383/Iterative_Reasoning/Results/eval_pass/gemma4_e4b_non_thinking.json in 618.4 min
+Job finished at Fri Aug 28 09:48:56 EDT 2026
