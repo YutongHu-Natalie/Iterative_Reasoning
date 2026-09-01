@@ -1,0 +1,30 @@
+Job started at Tue Sep  1 00:40:13 EDT 2026
+Running on host: tebuna
+Job ID: 14066
+SLURM allocated GPUs: 0
+Tue Sep  1 00:40:13 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               Off |   00000000:1C:00.0 Off |                  Off |
+| 30%   29C    P8             17W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA RTX A6000               Off |   00000000:B5:00.0 Off |                  Off |
+| 30%   31C    P8             25W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[Qwen3-8B (non_thinking)] wrote 924 score records to /local/scratch/yhu383/Iterative_Reasoning/Results/eval_scores/qwen3_8b_non_thinking.json and 924 pass records to /local/scratch/yhu383/Iterative_Reasoning/Results/eval_pass/qwen3_8b_non_thinking.json in 363.7 min
+Job finished at Tue Sep  1 06:44:08 EDT 2026

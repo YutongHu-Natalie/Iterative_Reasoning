@@ -1,77 +1,0 @@
-Loading weights:   0%|          | 0/2076 [00:00<?, ?it/s]Loading weights:  15%|█▍        | 303/2076 [00:00<00:00, 3025.23it/s]Loading weights:  29%|██▉       | 606/2076 [00:00<00:00, 2832.77it/s]Loading weights:  43%|████▎     | 891/2076 [00:01<00:01, 666.17it/s] Loading weights:  58%|█████▊    | 1201/2076 [00:01<00:00, 978.58it/s]Loading weights:  70%|██████▉   | 1443/2076 [00:01<00:00, 1201.15it/s]Loading weights:  81%|████████  | 1674/2076 [00:01<00:00, 1294.25it/s]Loading weights:  91%|█████████ | 1881/2076 [00:01<00:00, 1394.91it/s]Loading weights: 100%|██████████| 2076/2076 [00:01<00:00, 1266.26it/s]
-Some parameters are on the meta device because they were offloaded to the cpu.
-Gemma4-E4B (non_thinking) judging:   0%|          | 0/660 [00:00<?, ?it/s]Gemma4-E4B (non_thinking) judging:   0%|          | 0/660 [00:05<?, ?it/s]
-Traceback (most recent call last):
-  File "/local/scratch/yhu383/Iterative_Reasoning/./proof_eval_codes/run_gemma4_e4b_judge.py", line 113, in <module>
-    main()
-  File "/local/scratch/yhu383/Iterative_Reasoning/./proof_eval_codes/run_gemma4_e4b_judge.py", line 100, in main
-    run_judge(
-  File "/local/scratch/yhu383/Iterative_Reasoning/proof_eval_codes/eval_utils.py", line 219, in run_judge
-    raw = generate_fn(
-          ^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/./proof_eval_codes/run_gemma4_e4b_judge.py", line 39, in generate_fn
-    outputs = model.generate(
-              ^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/transformers/generation/utils.py", line 2681, in generate
-    result = decoding_method(
-             ^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/transformers/generation/utils.py", line 2895, in _sample
-    outputs = model_forward(**model_inputs, return_dict=True)
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/accelerate/hooks.py", line 192, in new_forward
-    output = module._old_forward(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 911, in wrapper
-    output = func(self, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/transformers/models/gemma4/modeling_gemma4.py", line 2570, in forward
-    outputs = self.model(
-              ^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1040, in wrapper
-    output = func(self, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 911, in wrapper
-    output = func(self, *args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/transformers/models/gemma4/modeling_gemma4.py", line 2333, in forward
-    per_layer_inputs = self.language_model.get_per_layer_inputs(llm_input_ids, llm_inputs_embeds)
-                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/transformers/models/gemma4/modeling_gemma4.py", line 1782, in get_per_layer_inputs
-    return self.embed_tokens_per_layer(input_ids).reshape(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
-    return forward_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/accelerate/hooks.py", line 187, in new_forward
-    args, kwargs = module._hf_hook.pre_forward(module, *args, **kwargs)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/accelerate/hooks.py", line 50, in wrapper
-    return wrapper._compiled_fn(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1263, in _fn
-    return fn(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/accelerate/hooks.py", line 388, in pre_forward
-    set_module_tensor_to_device(
-  File "/local/scratch/yhu383/Iterative_Reasoning/venv/lib/python3.12/site-packages/accelerate/utils/modeling.py", line 353, in set_module_tensor_to_device
-    new_value = value.to(device, non_blocking=non_blocking)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 5.25 GiB. GPU 0 has a total capacity of 47.43 GiB of which 827.75 MiB is free. Process 375746 has 38.36 GiB memory in use. Including non-PyTorch memory, this process has 8.25 GiB memory in use. Of the allocated memory 2.71 GiB is allocated by PyTorch, and 5.23 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
