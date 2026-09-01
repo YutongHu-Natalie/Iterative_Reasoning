@@ -16,14 +16,22 @@ conclusion (in whatever form it takes) versus the dataset's `truth_value`,
 not against a specific boxed token.
 """
 
+JSON_ONLY_INSTRUCTION = (
+    r"Respond with a single JSON object and nothing else. Do not put the JSON "
+    r"inside \boxed{}, do not use any LaTeX commands (\text{}, \left\{, "
+    r"\right\}, etc.) anywhere in your response, and do not wrap it in "
+    r"markdown code fences. Use plain JSON syntax throughout: double-quoted "
+    r"keys and string values, and bare lowercase true/false for booleans."
+)
+
 SCORE_SYSTEM_PROMPT = (
     "You are an expert in scoring solutions for mathematical proof questions. "
-    "Respond with a single JSON object and nothing else."
+    + JSON_ONLY_INSTRUCTION
 )
 
 PASS_SYSTEM_PROMPT = (
     "You are an expert in mathematical theorem proving and logical analysis. "
-    "Respond with a single JSON object and nothing else."
+    + JSON_ONLY_INSTRUCTION
 )
 
 
@@ -65,7 +73,7 @@ Instructions:
    (0.4 x validity) + (0.3 x completeness) + (0.2 x correctness) + (0.1 x clarity).
 4. Provide a brief explanation (2-3 sentences) summarizing any errors or issues and justifying the score.
 
-Respond with exactly one JSON object and nothing else (no markdown code fences, no commentary outside the JSON), in this format:
+Respond with exactly one JSON object and nothing else (no markdown code fences, no commentary outside the JSON, no \\boxed{{}}, no LaTeX commands anywhere in the response), in this format:
 {{
   "score": <float>,
   "validity": <float>,
@@ -107,7 +115,7 @@ def build_pass_prompt(question: str, truth_value: bool, solution: str) -> str:
    - The response is valid only if every step is valid AND its final conclusion (proved vs. disproved) matches the ground truth above.
    - If it is invalid, identify the critical error(s) and how to fix them.
 
-Respond with exactly one JSON object and nothing else (no markdown code fences, no commentary outside the JSON), in this format:
+Respond with exactly one JSON object and nothing else (no markdown code fences, no commentary outside the JSON, no \\boxed{{}}, no LaTeX commands anywhere in the response), in this format:
 {{
   "steps": [
     {{"step": <int>, "description": "<short paraphrase of the step>", "valid": <true|false>, "justification": "<why this step is or is not valid>"}}
