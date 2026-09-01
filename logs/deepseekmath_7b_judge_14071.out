@@ -1,8 +1,8 @@
-Job started at Tue Sep  1 00:51:06 EDT 2026
+Job started at Tue Sep  1 12:47:31 EDT 2026
 Running on host: tebuna
-Job ID: 14068
+Job ID: 14071
 SLURM allocated GPUs: 0
-Tue Sep  1 00:51:06 2026       
+Tue Sep  1 12:47:31 2026       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
 |-----------------------------------------+------------------------+----------------------+
@@ -10,8 +10,8 @@ Tue Sep  1 00:51:06 2026
 | Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
 |                                         |                        |               MIG M. |
 |=========================================+========================+======================|
-|   0  NVIDIA RTX A6000               Off |   00000000:1E:00.0 Off |                  Off |
-| 30%   31C    P8             19W /  300W |       2MiB /  49140MiB |      0%      Default |
+|   0  NVIDIA RTX A6000               Off |   00000000:B2:00.0 Off |                  Off |
+| 30%   26C    P8             16W /  300W |       2MiB /  49140MiB |      0%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
 |   1  NVIDIA RTX A6000               Off |   00000000:B5:00.0 Off |                  Off |
@@ -26,5 +26,3 @@ Tue Sep  1 00:51:06 2026
 |=========================================================================================|
 |  No running processes found                                                             |
 +-----------------------------------------------------------------------------------------+
-[Qwen2.5-Math-7B] wrote 924 score records to /local/scratch/yhu383/Iterative_Reasoning/Results/eval_scores/qwen2.5_math_7b.json and 924 pass records to /local/scratch/yhu383/Iterative_Reasoning/Results/eval_pass/qwen2.5_math_7b.json in 849.4 min
-Job finished at Tue Sep  1 15:00:43 EDT 2026

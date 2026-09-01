@@ -1,0 +1,1727 @@
+[
+  {
+    "id": 39572,
+    "domain": [
+      "Number Theory -> Other",
+      "Algebra -> Abstract Algebra -> Other"
+    ],
+    "difficulty": 6.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 43425,
+    "domain": [
+      "Geometry -> Differential Geometry -> Curvature",
+      "Geometry -> Differential Geometry -> Other"
+    ],
+    "difficulty": 6.5,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 48395,
+    "domain": [
+      "Calculus -> Limits -> Other",
+      "Algebra -> Intermediate Algebra -> Exponential Functions"
+    ],
+    "difficulty": 5.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 53411,
+    "domain": [
+      "Applied Mathematics -> Statistical Methods -> Probability",
+      "Discrete Mathematics -> Algorithms -> Other"
+    ],
+    "difficulty": 6.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 97201,
+    "domain": [
+      "Algebra -> Intermediate Algebra -> Inequalities",
+      "Calculus -> Differential Calculus -> Limits",
+      "Discrete Mathematics -> Logic -> Other"
+    ],
+    "difficulty": 5.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 129091,
+    "domain": [
+      "Number Theory -> Prime Numbers",
+      "Discrete Mathematics -> Combinatorics",
+      "Algebra -> Abstract Algebra -> Other"
+    ],
+    "difficulty": 9.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 135682,
+    "domain": [
+      "Number Theory -> Congruences",
+      "Number Theory -> Prime Numbers"
+    ],
+    "difficulty": 5.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 150888,
+    "domain": [
+      "Discrete Mathematics -> Combinatorics",
+      "Applied Mathematics -> Probability -> Combinations"
+    ],
+    "difficulty": 5.5,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 157663,
+    "domain": [
+      "Calculus -> Integral Calculus -> Applications of Integrals",
+      "Calculus -> Integral Calculus -> Techniques of Integration"
+    ],
+    "difficulty": 6.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 166596,
+    "domain": [
+      "Discrete Mathematics -> Combinatorics -> Other",
+      "Algebra -> Abstract Algebra -> Field Theory"
+    ],
+    "difficulty": 6.5,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 177577,
+    "domain": [
+      "Linear Algebra -> Vectors",
+      "Linear Algebra -> Matrices",
+      "Linear Algebra -> Determinants"
+    ],
+    "difficulty": 6.5,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 183796,
+    "domain": [
+      "Number Theory -> Congruences",
+      "Algebra -> Abstract Algebra -> Group Theory"
+    ],
+    "difficulty": 5.5,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 194136,
+    "domain": [
+      "Linear Algebra -> Matrices -> Determinants",
+      "Linear Algebra -> Linear Transformations -> Other",
+      "Abstract Algebra -> Group Theory -> Other"
+    ],
+    "difficulty": 6.5,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 200926,
+    "domain": [
+      "Calculus -> Integral Calculus -> Techniques of Integration",
+      "Calculus -> Integral Calculus -> Applications of Integrals",
+      "Algebra -> Intermediate Algebra -> Other"
+    ],
+    "difficulty": 8.5,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 203641,
+    "domain": [
+      "Algebra -> Abstract Algebra -> Field Theory",
+      "Calculus -> Differential Calculus -> Applications Of Derivatives"
+    ],
+    "difficulty": 8.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 208814,
+    "domain": [
+      "Discrete Mathematics -> Logic -> Other",
+      "Algebra -> Abstract Algebra -> Other"
+    ],
+    "difficulty": 6.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 212365,
+    "domain": [
+      "Geometry -> Differential Geometry -> Other"
+    ],
+    "difficulty": 8.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 219054,
+    "domain": [
+      "Algebra -> Abstract Algebra -> Group Theory",
+      "Algebra -> Linear Algebra -> Linear Transformations"
+    ],
+    "difficulty": 6.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 219704,
+    "domain": [
+      "Geometry -> Differential Geometry -> Manifolds",
+      "Geometry -> Differential Geometry -> Other"
+    ],
+    "difficulty": 6.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 234324,
+    "domain": [
+      "Number Theory -> Prime Numbers",
+      "Number Theory -> Congruences"
+    ],
+    "difficulty": 7.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 245699,
+    "domain": [
+      "Algebra -> Linear Algebra -> Matrices",
+      "Algebra -> Linear Algebra -> Linear Transformations"
+    ],
+    "difficulty": 5.5,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 266823,
+    "domain": [
+      "Discrete Mathematics -> Combinatorics",
+      "Algebra -> Abstract Algebra -> Other"
+    ],
+    "difficulty": 5.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 270411,
+    "domain": [
+      "Calculus -> Integral Calculus -> Applications of Integrals",
+      "Calculus -> Integral Calculus -> Techniques of Integration",
+      "Algebra -> Intermediate Algebra -> Other"
+    ],
+    "difficulty": 8.5,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 276278,
+    "domain": [
+      "Geometry -> Differential Geometry -> Other",
+      "Calculus -> Differential Calculus -> Applications of Derivatives"
+    ],
+    "difficulty": 5.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 314441,
+    "domain": [
+      "Applied Mathematics -> Statistical Methods -> Other",
+      "Discrete Mathematics -> Logic -> Other"
+    ],
+    "difficulty": 5.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 363100,
+    "domain": [
+      "Discrete Mathematics -> Combinatorics",
+      "Algebra -> Abstract Algebra -> Other"
+    ],
+    "difficulty": 8.5,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 363369,
+    "domain": [
+      "Geometry -> Differential Geometry -> Curvature",
+      "Algebra -> Abstract Algebra -> Field Theory"
+    ],
+    "difficulty": 5.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 376489,
+    "domain": [
+      "Calculus -> Integral Calculus -> Techniques of Integration",
+      "Calculus -> Integral Calculus -> Applications of Integrals"
+    ],
+    "difficulty": 6.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 403550,
+    "domain": [
+      "Discrete Mathematics -> Combinatorics",
+      "Algebra -> Abstract Algebra -> Group Theory"
+    ],
+    "difficulty": 7.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 424022,
+    "domain": [
+      "Geometry -> Plane Geometry -> Polygons",
+      "Geometry -> Precalculus -> Trigonometric Functions"
+    ],
+    "difficulty": 5.5,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 431435,
+    "domain": [
+      "Geometry -> Differential Geometry -> Manifolds",
+      "Calculus -> Differential Calculus -> Applications of Derivatives"
+    ],
+    "difficulty": 6.5,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 431840,
+    "domain": [
+      "Calculus -> Differential Equations -> Ordinary Differential Equations (Odes)",
+      "Algebra -> Abstract Algebra -> Field Theory"
+    ],
+    "difficulty": 8.5,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 433947,
+    "domain": [
+      "Calculus -> Integral Calculus -> Applications of Integrals",
+      "Algebra -> Intermediate Algebra -> Other",
+      "Discrete Mathematics -> Algorithms -> Other"
+    ],
+    "difficulty": 8.5,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 454630,
+    "domain": [
+      "Geometry -> Plane Geometry -> Polygons -> Circles",
+      "Geometry -> Plane Geometry -> Polygons -> Angles",
+      "Algebra -> Intermediate Algebra -> Other"
+    ],
+    "difficulty": 7.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 482085,
+    "domain": [
+      "Number Theory -> Factorization -> Other",
+      "Algebra -> Abstract Algebra -> Field Theory"
+    ],
+    "difficulty": 8.0,
+    "truth_value": true,
+    "source": "stackexchange-math",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 501153,
+    "domain": [
+      "Calculus -> Differential Calculus -> Applications of Derivatives",
+      "Algebra -> Intermediate Algebra -> Other"
+    ],
+    "difficulty": 9.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 516674,
+    "domain": [
+      "Calculus -> Differential Equations -> Ordinary Differential Equations (Odes)",
+      "Calculus -> Differential Calculus -> Applications of Derivatives"
+    ],
+    "difficulty": 10.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 526253,
+    "domain": [
+      "Algebra -> Linear Algebra -> Determinants",
+      "Algebra -> Linear Algebra -> Matrices"
+    ],
+    "difficulty": 10.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 530223,
+    "domain": [
+      "Calculus -> Differential Equations -> Partial Differential Equations (PDEs)",
+      "Geometry -> Differential Geometry -> Other"
+    ],
+    "difficulty": 8.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 533197,
+    "domain": [
+      "Applied Mathematics -> Statistical Methods -> Other",
+      "Algebra -> Linear Algebra -> Other",
+      "Discrete Mathematics -> Algorithms -> Other"
+    ],
+    "difficulty": 10.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 537098,
+    "domain": [
+      "Algebra -> Linear Algebra -> Linear Transformations",
+      "Algebra -> Linear Algebra -> Vectors"
+    ],
+    "difficulty": 8.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 536856,
+    "domain": [
+      "Discrete Mathematics -> Graph Theory"
+    ],
+    "difficulty": 5.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 539440,
+    "domain": [
+      "Applied Mathematics -> Statistical Methods -> Probability",
+      "Calculus -> Integral Calculus -> Applications of Integrals"
+    ],
+    "difficulty": 6.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 540509,
+    "domain": [
+      "Linear Algebra -> Vectors",
+      "Linear Algebra -> Matrices -> Other",
+      "Calculus -> Integral Calculus -> Applications of Integrals"
+    ],
+    "difficulty": 9.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 544996,
+    "domain": [
+      "Algebra -> Linear Algebra -> Matrices",
+      "Calculus -> Integral Calculus -> Multi Variable",
+      "Discrete Mathematics -> Algorithms -> Other"
+    ],
+    "difficulty": 5.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 565516,
+    "domain": [
+      "Geometry -> Differential Geometry -> Manifolds",
+      "Discrete Mathematics -> Logic -> Other"
+    ],
+    "difficulty": 5.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 569729,
+    "domain": [
+      "Linear Algebra -> Matrices -> Linear Transformations",
+      "Abstract Algebra -> Field Theory -> Other"
+    ],
+    "difficulty": 5.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 588653,
+    "domain": [
+      "Discrete Mathematics -> Combinatorics",
+      "Algebra -> Intermediate Algebra -> Sequences And Series"
+    ],
+    "difficulty": 10.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 589287,
+    "domain": [
+      "Applied Mathematics -> Statistical Methods -> Probability",
+      "Discrete Mathematics -> Algorithms -> Other"
+    ],
+    "difficulty": 9.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 601124,
+    "domain": [
+      "Algebra -> Intermediate Algebra -> Polynomial Operations",
+      "Calculus -> Differential Calculus -> Derivatives"
+    ],
+    "difficulty": 9.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 603893,
+    "domain": [
+      "Algebra -> Abstract Algebra -> Group Theory",
+      "Discrete Mathematics -> Logic -> Other",
+      "Geometry -> Differential Geometry -> Other"
+    ],
+    "difficulty": 10.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 608525,
+    "domain": [
+      "Linear Algebra -> Matrices -> Other",
+      "Linear Algebra -> Linear Transformations -> Other",
+      "Calculus -> Differential Calculus -> Applications of Derivatives"
+    ],
+    "difficulty": 5.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 610916,
+    "domain": [
+      "Algebra -> Abstract Algebra -> Field Theory",
+      "Geometry -> Differential Geometry -> Other",
+      "Other -> Other"
+    ],
+    "difficulty": 6.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 620571,
+    "domain": [
+      "Linear Algebra -> Matrices -> Determinants",
+      "Linear Algebra -> Linear Transformations -> Other",
+      "Algebra -> Abstract Algebra -> Other"
+    ],
+    "difficulty": 5.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 629217,
+    "domain": [
+      "Calculus -> Differential Calculus -> Other",
+      "Discrete Mathematics -> Logic"
+    ],
+    "difficulty": 9.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 643593,
+    "domain": [
+      "Applied Mathematics -> Math Word Problems",
+      "Algebra -> Linear Algebra -> Other"
+    ],
+    "difficulty": 10.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 648656,
+    "domain": [
+      "Algebra -> Abstract Algebra -> Other",
+      "Applied Mathematics -> Other",
+      "Geometry -> Differential Geometry -> Other"
+    ],
+    "difficulty": 9.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 657543,
+    "domain": [
+      "Discrete Mathematics -> Combinatorics",
+      "Algebra -> Linear Algebra -> Matrices"
+    ],
+    "difficulty": 9.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 659169,
+    "domain": [
+      "Calculus -> Multivariable Calculus -> Limits",
+      "Mathematics -> Other"
+    ],
+    "difficulty": 6.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 661897,
+    "domain": [
+      "Algebra -> Abstract Algebra -> Field Theory",
+      "Geometry -> Differential Geometry -> Curvature"
+    ],
+    "difficulty": 9.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 675735,
+    "domain": [
+      "Applied Mathematics -> Statistical Methods -> Other",
+      "Calculus -> Differential Equations -> Stochastic Differential Equations"
+    ],
+    "difficulty": 8.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 688404,
+    "domain": [
+      "Calculus -> Differential Calculus -> Applications of Derivatives",
+      "Calculus -> Differential Equations -> Ordinary Differential Equations (Odes)"
+    ],
+    "difficulty": 8.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 696316,
+    "domain": [
+      "Geometry -> Differential Geometry -> Curvature",
+      "Calculus -> Differential Calculus -> Applications of Derivatives",
+      "Algebra -> Linear Algebra -> Other"
+    ],
+    "difficulty": 10.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 721877,
+    "domain": [
+      "Algebra -> Abstract Algebra -> Field Theory",
+      "Geometry -> Differential Geometry -> Manifolds",
+      "Geometry -> Non Euclidean Geometry -> Other"
+    ],
+    "difficulty": 9.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 723765,
+    "domain": [
+      "Discrete Mathematics -> Logic"
+    ],
+    "difficulty": 9.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 727598,
+    "domain": [
+      "Discrete Mathematics -> Algorithms -> Other"
+    ],
+    "difficulty": 5.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 732126,
+    "domain": [
+      "Calculus -> Integral Calculus -> Multi Variable",
+      "Discrete Mathematics -> Combinatorics -> Other"
+    ],
+    "difficulty": 9.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 734891,
+    "domain": [
+      "Geometry -> Differential Geometry -> Manifolds"
+    ],
+    "difficulty": 9.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 741313,
+    "domain": [
+      "Algebra -> Abstract Algebra -> Ring Theory",
+      "Algebra -> Abstract Algebra -> Other"
+    ],
+    "difficulty": 10.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 748930,
+    "domain": [
+      "Applied Mathematics -> Statistical Methods -> Probability",
+      "Discrete Mathematics -> Logic -> Other"
+    ],
+    "difficulty": 5.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 757111,
+    "domain": [
+      "Linear Algebra -> Matrices -> Determinants",
+      "Linear Algebra -> Matrices -> Other",
+      "Calculus -> Differential Calculus -> Applications of Derivatives"
+    ],
+    "difficulty": 6.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 761994,
+    "domain": [
+      "Calculus -> Integral Calculus -> Applications of Integrals",
+      "Calculus -> Integral Calculus -> Techniques of Integration"
+    ],
+    "difficulty": 10.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 762564,
+    "domain": [
+      "Number Theory -> Congruences",
+      "Discrete Mathematics -> Combinatorics"
+    ],
+    "difficulty": 9.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 767607,
+    "domain": [
+      "Discrete Mathematics -> Combinatorics",
+      "Algebra -> Intermediate Algebra -> Polynomial Operations"
+    ],
+    "difficulty": 6.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 773301,
+    "domain": [
+      "Discrete Mathematics -> Graph Theory",
+      "Discrete Mathematics -> Logic -> Other"
+    ],
+    "difficulty": 9.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 780481,
+    "domain": [
+      "Calculus -> Integral Calculus -> Techniques of Integration",
+      "Calculus -> Integral Calculus -> Single Variable",
+      "Algebra -> Intermediate Algebra -> Other"
+    ],
+    "difficulty": 7.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 783993,
+    "domain": [
+      "Calculus -> Integral Calculus -> Techniques of Integration"
+    ],
+    "difficulty": 9.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 794139,
+    "domain": [
+      "Linear Algebra -> Matrices -> Linear Transformations",
+      "Applied Mathematics -> Statistical Methods -> Other"
+    ],
+    "difficulty": 8.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 794421,
+    "domain": [
+      "Discrete Mathematics -> Logic -> Other",
+      "Geometry -> Differential Geometry -> Manifolds"
+    ],
+    "difficulty": 10.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 821608,
+    "domain": [
+      "Applied Mathematics -> Statistical Methods -> Probability"
+    ],
+    "difficulty": 10.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 828100,
+    "domain": [
+      "Geometry -> Differential Geometry -> Other",
+      "Discrete Mathematics -> Group Theory -> Other"
+    ],
+    "difficulty": 8.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 834904,
+    "domain": [
+      "Discrete Mathematics -> Combinatorics",
+      "Algebra -> Abstract Algebra -> Other"
+    ],
+    "difficulty": 8.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 841094,
+    "domain": [
+      "Discrete Mathematics -> Logic -> Other",
+      "Geometry -> Non Euclidean Geometry -> Other"
+    ],
+    "difficulty": 9.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 841960,
+    "domain": [
+      "Applied Mathematics -> Statistical Methods -> Probability",
+      "Discrete Mathematics -> Combinatorics"
+    ],
+    "difficulty": 5.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 842563,
+    "domain": [
+      "Applied Mathematics -> Statistical Methods -> Other",
+      "Algebra -> Linear Algebra -> Linear Transformations",
+      "Discrete Mathematics -> Algorithms -> Other"
+    ],
+    "difficulty": 8.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 844386,
+    "domain": [
+      "Algebra -> Abstract Algebra -> Group Theory",
+      "Algebra -> Linear Algebra -> Other"
+    ],
+    "difficulty": 9.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 847475,
+    "domain": [
+      "Calculus -> Integral Calculus -> Applications of Integrals",
+      "Algebra -> Intermediate Algebra -> Other"
+    ],
+    "difficulty": 5.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 852698,
+    "domain": [
+      "Applied Mathematics -> Statistical Methods -> Probability",
+      "Discrete Mathematics -> Algorithms -> Other"
+    ],
+    "difficulty": 9.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 855307,
+    "domain": [
+      "Linear Algebra -> Matrices -> Determinants",
+      "Calculus -> Differential Calculus -> Applications of Derivatives"
+    ],
+    "difficulty": 6.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  },
+  {
+    "id": 867006,
+    "domain": [
+      "Number Theory -> Prime Numbers",
+      "Number Theory -> Factorization",
+      "Algebra -> Intermediate Algebra -> Other"
+    ],
+    "difficulty": 6.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "deepseekmath_7b_instruct",
+    "judged_model": "DeepSeekMath-7B-Instruct",
+    "judged_thinking_mode": null,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": true,
+    "valid": null,
+    "summary": null,
+    "steps": [],
+    "raw_response": ""
+  }
+]
