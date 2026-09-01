@@ -170,20 +170,62 @@ def extract_json(text):
     if start != -1 and end != -1 and end > start:
         candidates.append(text[start:end + 1])
 
+    candidates.extend(_boxed_json_candidates(text))
+
     last_error = "empty response"
     for candidate in candidates:
         try:
             return json.loads(candidate), None
         except json.JSONDecodeError as e:
             last_error = str(e)
-
-    for candidate in _boxed_json_candidates(text):
+        # Math-tuned judges routinely write LaTeX inside JSON string values
+        # (e.g. "...the vector \\mathbf{w}...") without escaping the
+        # backslash. That's invalid JSON (\\m isn't a legal escape) even
+        # though the surrounding structure is otherwise well-formed, so it's
+        # worth a second attempt with stray backslashes escaped.
         try:
-            return json.loads(candidate), None
+            return json.loads(_escape_bad_backslashes(candidate)), None
         except json.JSONDecodeError as e:
             last_error = str(e)
 
     return None, last_error
+
+
+_VALID_JSON_ESCAPES = set('"\\/bfnrtu')
+_HEX_DIGITS = set("0123456789abcdefABCDEF")
+
+
+def _escape_bad_backslashes(text):
+    """Double up backslashes that aren't part of a legal JSON escape sequence
+    (\\", \\\\, \\/, \\b, \\f, \\n, \\r, \\t, \\uXXXX), so LaTeX like
+    "\\alpha" or "\\mathbf{w}" embedded in a JSON string value parses as a
+    literal backslash instead of json.loads raising "Invalid \\escape".
+    """
+    out = []
+    i, n = 0, len(text)
+    while i < n:
+        c = text[i]
+        if c == "\\" and i + 1 < n:
+            nxt = text[i + 1]
+            if nxt in _VALID_JSON_ESCAPES:
+                if nxt == "u":
+                    hex4 = text[i + 2:i + 6]
+                    if len(hex4) == 4 and all(ch in _HEX_DIGITS for ch in hex4):
+                        out.append(text[i:i + 6])
+                        i += 6
+                        continue
+                    out.append("\\\\")
+                    i += 1
+                    continue
+                out.append(text[i:i + 2])
+                i += 2
+                continue
+            out.append("\\\\")
+            i += 1
+            continue
+        out.append(c)
+        i += 1
+    return "".join(out)
 
 
 def _clamp01(x):

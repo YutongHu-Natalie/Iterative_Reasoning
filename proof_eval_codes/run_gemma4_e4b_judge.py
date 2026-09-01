@@ -48,7 +48,17 @@ def build_generate_fn(processor, model, enable_thinking):
             # find the thinking/channel delimiter tokens.
             response = processor.decode(outputs[0][input_len:], skip_special_tokens=False)
             parsed = processor.parse_response(response, prefix=inputs["input_ids"])
-            return (parsed.get("answer") or "").strip()
+            answer = (parsed.get("answer") or "").strip()
+            if answer:
+                return answer
+            # No distinct answer channel found -- most likely generation hit
+            # max_new_tokens before finishing its reasoning (thinking mode
+            # eats into the budget) and never reached the answer, or
+            # parse_response failed to find the channel boundary. Either way,
+            # save the raw decoded text instead of discarding it to "": the
+            # judge JSON may still be recoverable from it (by eye, or by
+            # extract_json's repair pass), whereas an empty string is not.
+            return processor.decode(outputs[0][input_len:], skip_special_tokens=True).strip()
 
         # E4B does not emit channel tags when thinking is disabled, so
         # parse_response has nothing to split on -- decode directly instead.
