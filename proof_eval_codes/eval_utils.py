@@ -63,12 +63,100 @@ def iter_generated_rows(results_dir=RESULTS_DIR, files=None):
             yield judged_run, row
 
 
+def _repair_boxed_latex_text(m):
+    inner = m.group(1).replace("\\", "").strip()
+    low = inner.lower()
+    if low in ("true", "false"):
+        return low
+    return '"' + inner.replace('"', '\\"') + '"'
+
+
+def _normalize_boxed_latex(t):
+    """Turn Qwen2.5-Math-style \\boxed{\\text{key}: value, ...} pseudo-JSON into
+    real JSON text. Math-tuned models like Qwen2.5-Math tend to answer in their
+    trained \\boxed{}/\\text{} competition-math style despite being told to
+    respond with raw JSON, e.g.:
+
+      \\boxed{\\{\\text{score}: 1, \\text{explanation}: \\text{Looks correct.}\\}}
+
+    or the same idea via \\left\\{ / \\right\\} delimiters, and sometimes with a
+    stray quote standing in for the closing brace (\\text{score": 1). This
+    string-level pass converts those into plain JSON syntax; the caller still
+    validates the result with json.loads, so a text that doesn't actually
+    match this pattern just fails to parse afterward same as before.
+    """
+    # \text{key" (missing leading quote; embedded quote stands in for the
+    # closing brace) -> "key"
+    t = re.sub(r'\\text\{([^{}"]*)"', lambda m: '"' + m.group(1).strip() + '"', t)
+    # \text{...} -> "..." (or bare true/false), applied innermost-out
+    prev = None
+    while prev != t:
+        prev = t
+        t = re.sub(r"\\text\{([^{}]*)\}", _repair_boxed_latex_text, t)
+    for a, b in [("\\left\\{", "{"), ("\\right\\}", "}"),
+                 ("\\left[", "["), ("\\right]", "]"),
+                 ("\\{", "{"), ("\\}", "}")]:
+        t = t.replace(a, b)
+    t = t.replace("\\(", "(").replace("\\)", ")")
+    t = re.sub(r",\s*([}\]])", r"\1", t)  # trailing commas
+    return t
+
+
+def _boxed_brace_span(t, start):
+    """Return the substring of `t` from `start` (a '{') to its matching '}',
+    counting brace depth. If the span runs off the end of the string without
+    closing (a truncated/malformed generation), close it at the last '}'
+    actually present rather than at the string's end, since there is often
+    trailing prose (e.g. a stray "\\]") after the real content.
+    """
+    depth = 0
+    last_close = -1
+    for i in range(start, len(t)):
+        c = t[i]
+        if c == "{":
+            depth += 1
+        elif c == "}":
+            depth -= 1
+            last_close = i
+            if depth == 0:
+                return t[start:i + 1]
+    if depth > 0 and last_close != -1:
+        return t[start:last_close + 1] + ("}" * depth)
+    return None
+
+
+def _boxed_json_candidates(text):
+    """Best-effort JSON object candidates recovered from a \\boxed{}-style
+    response. Returns [] if `text` has no \\boxed marker to anchor on.
+    """
+    idx = text.rfind("\\boxed")
+    if idx == -1:
+        return []
+    tail = _normalize_boxed_latex(text[idx:])
+    start = tail.find("{")
+    if start == -1:
+        return []
+    span = _boxed_brace_span(tail, start)
+    if not span:
+        return []
+    candidates = [span]
+    # \boxed{ ... } double-wraps the actual object in an extra brace pair
+    # (\boxed's own "{"..."}" plus the escaped "\{"..."\}" standing in for
+    # the JSON's own braces) -- try the inner object too.
+    if span[1:2] == "{" and span[-2:-1] == "}":
+        candidates.append(span[1:-1])
+    return candidates
+
+
 def extract_json(text):
     """Best-effort extraction of a single JSON object from raw model output.
 
     Local instruct models often wrap JSON in ```json fences or add a
     sentence before/after it despite instructions not to, so this tries a
-    few fallbacks before giving up. Returns (parsed_dict_or_None, error_str).
+    few fallbacks before giving up. Math-tuned models (e.g. Qwen2.5-Math)
+    tend to instead answer in their trained \\boxed{}/\\text{} LaTeX style,
+    which needs a dedicated repair pass since it isn't valid JSON no matter
+    how it's sliced. Returns (parsed_dict_or_None, error_str).
     """
     text = text.strip()
     candidates = [text]
@@ -88,6 +176,13 @@ def extract_json(text):
             return json.loads(candidate), None
         except json.JSONDecodeError as e:
             last_error = str(e)
+
+    for candidate in _boxed_json_candidates(text):
+        try:
+            return json.loads(candidate), None
+        except json.JSONDecodeError as e:
+            last_error = str(e)
+
     return None, last_error
 
 
