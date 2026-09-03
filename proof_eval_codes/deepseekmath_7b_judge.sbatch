@@ -4,7 +4,7 @@
 #SBATCH --error=./logs/deepseekmath_7b_judge_%j.err
 #SBATCH --gres=gpu:1
 #SBATCH --time=32:00:00
-#SBATCH --mem=30G
+#SBATCH --mem=40G
 #SBATCH --cpus-per-task=8
 
 echo "Job started at $(date)"

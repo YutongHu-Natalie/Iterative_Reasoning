@@ -18,6 +18,6 @@ source ./venv/bin/activate
 
 # Add --thinking to enable Gemma4 thinking mode before it emits the judge
 # JSON (slower). Non-thinking mode runs by default.
-python ./proof_eval_codes/run_gemma4_e4b_judge.py
+python ./proof_eval_codes/run_gemma4_e4b_judge.py --thinking
 
 echo "Job finished at $(date)"
