@@ -148,6 +148,33 @@ def _boxed_json_candidates(text):
     return candidates
 
 
+def _last_balanced_object(text):
+    """Scan backward from the last '}' to find the smallest complete,
+    brace-balanced object ending there.
+
+    More robust than a naive text[first '{' : last '}'] slice when stray
+    braces appear before the real JSON -- e.g. run_gemma4_e4b_judge.py's
+    raw-decode fallback (used when parse_response can't find the answer
+    channel) saves the model's full chain-of-thought ahead of its JSON
+    verdict, and that chain-of-thought is full of LaTeX like \\frac{a}{b},
+    whose braces would otherwise get swept into the naive slice and break
+    it even though the JSON itself is well-formed.
+    """
+    end = text.rfind("}")
+    while end != -1:
+        depth = 0
+        for i in range(end, -1, -1):
+            c = text[i]
+            if c == "}":
+                depth += 1
+            elif c == "{":
+                depth -= 1
+                if depth == 0:
+                    return text[i:end + 1]
+        end = text.rfind("}", 0, end)
+    return None
+
+
 def extract_json(text):
     """Best-effort extraction of a single JSON object from raw model output.
 
@@ -169,6 +196,10 @@ def extract_json(text):
     end = text.rfind("}")
     if start != -1 and end != -1 and end > start:
         candidates.append(text[start:end + 1])
+
+    balanced = _last_balanced_object(text)
+    if balanced:
+        candidates.append(balanced)
 
     candidates.extend(_boxed_json_candidates(text))
 

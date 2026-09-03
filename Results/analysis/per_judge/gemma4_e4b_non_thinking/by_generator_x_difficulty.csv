@@ -1,0 +1,78 @@
+judged_run,generator,difficulty,n_pass,pass_rate,n_score,mean_score
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,5.0,14,0.07142857142857142,14,0.6414285714285715
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,5.5,14,0.07142857142857142,14,0.5707142857142857
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,6.0,14,0.5,14,0.7839285714285714
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,6.5,14,0.07142857142857142,14,0.5164285714285715
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,7.0,14,0.0,14,0.4035714285714286
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,7.5,1,0.0,1,0.75
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,8.0,14,0.0,14,0.48928571428571427
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,8.5,5,0.0,5,0.15
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,9.0,14,0.0,14,0.4857142857142857
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,9.5,14,0.14285714285714285,14,0.31428571428571433
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,10.0,14,0.42857142857142855,14,0.6996428571428571
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,5.0,14,0.07142857142857142,14,0.6871428571428572
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,5.5,14,0.35714285714285715,14,0.6378571428571428
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,6.0,14,0.5,14,0.7532142857142857
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,6.5,14,0.0,14,0.5571428571428572
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,7.0,14,0.0,14,0.5964285714285714
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,7.5,1,0.0,1,0.45
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,8.0,14,0.21428571428571427,14,0.6714285714285715
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,8.5,5,0.0,5,0.37
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,9.0,14,0.07142857142857142,14,0.5571428571428572
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,9.5,14,0.21428571428571427,14,0.4642857142857143
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,10.0,14,0.6428571428571429,14,0.7464285714285713
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),5.0,14,0.8571428571428571,14,0.96
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),5.5,14,1.0,14,0.9710714285714285
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),6.0,14,0.9285714285714286,14,0.9596428571428571
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),6.5,14,0.8571428571428571,14,0.9446428571428571
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),7.0,14,0.7857142857142857,14,0.8775000000000001
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),7.5,1,1.0,1,0.93
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),8.0,14,0.8571428571428571,14,0.9450000000000001
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),8.5,5,0.4,5,0.724
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),9.0,14,0.8571428571428571,14,0.8953571428571429
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),9.5,14,0.8571428571428571,14,0.8721428571428571
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),10.0,14,0.7857142857142857,14,0.9178571428571428
+gemma4_e4b_thinking,Gemma4-E4B (thinking),5.0,14,0.0,14,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),5.5,14,0.0,14,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),6.0,14,0.0,14,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),6.5,14,0.0,14,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),7.0,14,0.0,14,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),7.5,1,0.0,1,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),8.0,14,0.0,14,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),8.5,5,0.0,5,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),9.0,14,0.0,14,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),9.5,14,0.0,14,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),10.0,14,0.07142857142857142,14,0.0
+qwen2.5_math_7b,Qwen2.5-Math-7B,5.0,14,0.35714285714285715,14,0.8114285714285714
+qwen2.5_math_7b,Qwen2.5-Math-7B,5.5,14,0.5,14,0.8789285714285714
+qwen2.5_math_7b,Qwen2.5-Math-7B,6.0,14,0.8571428571428571,14,0.8967857142857143
+qwen2.5_math_7b,Qwen2.5-Math-7B,6.5,14,0.21428571428571427,14,0.7478571428571429
+qwen2.5_math_7b,Qwen2.5-Math-7B,7.0,14,0.14285714285714285,14,0.7617857142857142
+qwen2.5_math_7b,Qwen2.5-Math-7B,7.5,1,1.0,1,0.95
+qwen2.5_math_7b,Qwen2.5-Math-7B,8.0,14,0.35714285714285715,14,0.7553571428571428
+qwen2.5_math_7b,Qwen2.5-Math-7B,8.5,5,0.0,5,0.42000000000000004
+qwen2.5_math_7b,Qwen2.5-Math-7B,9.0,14,0.2857142857142857,14,0.6271428571428571
+qwen2.5_math_7b,Qwen2.5-Math-7B,9.5,14,0.14285714285714285,14,0.5907142857142856
+qwen2.5_math_7b,Qwen2.5-Math-7B,10.0,14,0.42857142857142855,14,0.8378571428571429
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),5.0,14,0.8571428571428571,14,0.9335714285714286
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),5.5,14,0.5714285714285714,14,0.9517857142857142
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),6.0,14,0.9285714285714286,14,0.9450000000000001
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),6.5,14,0.5714285714285714,14,0.9217857142857142
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),7.0,14,0.42857142857142855,14,0.8621428571428572
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),7.5,1,1.0,1,0.975
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),8.0,14,0.7142857142857143,14,0.8964285714285715
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),8.5,5,0.2,5,0.6060000000000001
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),9.0,13,0.6153846153846154,14,0.8414285714285714
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),9.5,14,0.5714285714285714,14,0.8257142857142857
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),10.0,14,0.8571428571428571,14,0.9435714285714285
+qwen3_8b_thinking,Qwen3-8B (thinking),5.0,14,0.42857142857142855,14,0.915
+qwen3_8b_thinking,Qwen3-8B (thinking),5.5,14,0.7857142857142857,14,0.9364285714285714
+qwen3_8b_thinking,Qwen3-8B (thinking),6.0,14,0.9285714285714286,14,0.9357142857142857
+qwen3_8b_thinking,Qwen3-8B (thinking),6.5,14,0.7142857142857143,14,0.905
+qwen3_8b_thinking,Qwen3-8B (thinking),7.0,14,0.42857142857142855,14,0.8692857142857143
+qwen3_8b_thinking,Qwen3-8B (thinking),7.5,1,1.0,1,0.96
+qwen3_8b_thinking,Qwen3-8B (thinking),8.0,14,0.5714285714285714,14,0.8724999999999999
+qwen3_8b_thinking,Qwen3-8B (thinking),8.5,5,0.2,5,0.766
+qwen3_8b_thinking,Qwen3-8B (thinking),9.0,14,0.42857142857142855,14,0.8292857142857143
+qwen3_8b_thinking,Qwen3-8B (thinking),9.5,14,0.42857142857142855,14,0.7285714285714285
+qwen3_8b_thinking,Qwen3-8B (thinking),10.0,14,0.8571428571428571,14,0.9339285714285713

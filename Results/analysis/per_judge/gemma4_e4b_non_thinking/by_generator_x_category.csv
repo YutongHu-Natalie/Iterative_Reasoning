@@ -1,0 +1,57 @@
+judged_run,generator,category,n_pass,pass_rate,n_score,mean_score
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,Algebra,23,0.13043478260869565,23,0.46413043478260874
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,Calculus,24,0.125,24,0.5529166666666666
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,Applied Mathematics,16,0.3125,16,0.6684375
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,Geometry,18,0.2222222222222222,18,0.5561111111111111
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,Discrete Mathematics,24,0.08333333333333333,24,0.44458333333333333
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,Linear Algebra,12,0.0,12,0.6333333333333334
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,Number Theory,14,0.07142857142857142,14,0.5071428571428572
+deepseekmath_7b_instruct,DeepSeekMath-7B-Instruct,Other,1,0.0,1,0.15
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,Algebra,23,0.21739130434782608,23,0.5541304347826087
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,Calculus,24,0.16666666666666666,24,0.5875
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,Applied Mathematics,16,0.3125,16,0.645625
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,Geometry,18,0.3888888888888889,18,0.7638888888888888
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,Discrete Mathematics,24,0.20833333333333334,24,0.5258333333333334
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,Linear Algebra,12,0.08333333333333333,12,0.7308333333333333
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,Number Theory,14,0.14285714285714285,14,0.6235714285714286
+deepseekmath_7b_rl,DeepSeekMath-7B-RL,Other,1,0.0,1,0.65
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),Algebra,23,0.8695652173913043,23,0.9147826086956521
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),Calculus,24,0.9166666666666666,24,0.9014583333333333
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),Applied Mathematics,16,0.8125,16,0.9309375
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),Geometry,18,0.7777777777777778,18,0.9452777777777778
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),Discrete Mathematics,24,0.7916666666666666,24,0.9208333333333333
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),Linear Algebra,12,1.0,12,0.9433333333333334
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),Number Theory,14,0.8571428571428571,14,0.9142857142857143
+gemma4_e4b_non_thinking,Gemma4-E4B (non-thinking),Other,1,0.0,1,0.55
+gemma4_e4b_thinking,Gemma4-E4B (thinking),Algebra,23,0.043478260869565216,23,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),Calculus,24,0.0,24,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),Applied Mathematics,16,0.0,16,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),Geometry,18,0.0,18,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),Discrete Mathematics,24,0.0,24,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),Linear Algebra,12,0.0,12,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),Number Theory,14,0.0,14,0.0
+gemma4_e4b_thinking,Gemma4-E4B (thinking),Other,1,0.0,1,0.0
+qwen2.5_math_7b,Qwen2.5-Math-7B,Algebra,23,0.30434782608695654,23,0.722608695652174
+qwen2.5_math_7b,Qwen2.5-Math-7B,Calculus,24,0.4583333333333333,24,0.7220833333333333
+qwen2.5_math_7b,Qwen2.5-Math-7B,Applied Mathematics,16,0.5,16,0.7784375
+qwen2.5_math_7b,Qwen2.5-Math-7B,Geometry,18,0.5555555555555556,18,0.856388888888889
+qwen2.5_math_7b,Qwen2.5-Math-7B,Discrete Mathematics,24,0.08333333333333333,24,0.6941666666666667
+qwen2.5_math_7b,Qwen2.5-Math-7B,Linear Algebra,12,0.4166666666666667,12,0.8529166666666667
+qwen2.5_math_7b,Qwen2.5-Math-7B,Number Theory,14,0.2857142857142857,14,0.7639285714285714
+qwen2.5_math_7b,Qwen2.5-Math-7B,Other,1,0.0,1,0.35
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),Algebra,23,0.5652173913043478,23,0.8856521739130435
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),Calculus,24,0.5416666666666666,24,0.8289583333333334
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),Applied Mathematics,15,0.7333333333333333,16,0.94375
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),Geometry,18,0.5555555555555556,18,0.9305555555555556
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),Discrete Mathematics,24,0.7916666666666666,24,0.8983333333333333
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),Linear Algebra,12,0.6666666666666666,12,0.9266666666666666
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),Number Theory,14,0.8571428571428571,14,0.8828571428571428
+qwen3_8b_non_thinking,Qwen3-8B (non-thinking),Other,1,1.0,1,0.55
+qwen3_8b_thinking,Qwen3-8B (thinking),Algebra,23,0.6086956521739131,23,0.8276086956521739
+qwen3_8b_thinking,Qwen3-8B (thinking),Calculus,24,0.4583333333333333,24,0.8466666666666667
+qwen3_8b_thinking,Qwen3-8B (thinking),Applied Mathematics,16,0.625,16,0.92875
+qwen3_8b_thinking,Qwen3-8B (thinking),Geometry,18,0.7222222222222222,18,0.9188888888888889
+qwen3_8b_thinking,Qwen3-8B (thinking),Discrete Mathematics,24,0.625,24,0.9102083333333333
+qwen3_8b_thinking,Qwen3-8B (thinking),Linear Algebra,12,0.6666666666666666,12,0.9183333333333333
+qwen3_8b_thinking,Qwen3-8B (thinking),Number Theory,14,0.6428571428571429,14,0.8485714285714285
+qwen3_8b_thinking,Qwen3-8B (thinking),Other,1,0.0,1,0.25
