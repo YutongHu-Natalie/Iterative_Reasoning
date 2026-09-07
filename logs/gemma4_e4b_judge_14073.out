@@ -26,3 +26,5 @@ Tue Sep  1 19:53:38 2026
 |=========================================================================================|
 |  No running processes found                                                             |
 +-----------------------------------------------------------------------------------------+
+[Gemma4-E4B (thinking)] wrote 792 score records to /local/scratch/yhu383/Iterative_Reasoning/Results/eval_scores/gemma4_e4b_thinking.json and 792 pass records to /local/scratch/yhu383/Iterative_Reasoning/Results/eval_pass/gemma4_e4b_thinking.json in 2661.3 min
+Job finished at Thu Sep  3 16:15:13 EDT 2026
