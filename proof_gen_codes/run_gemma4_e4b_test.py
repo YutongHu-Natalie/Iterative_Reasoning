@@ -99,7 +99,8 @@ def generate_answer(question, processor, model, enable_thinking, max_new_tokens)
         response = processor.decode(outputs[0][input_len:], skip_special_tokens=False)
         parsed = processor.parse_response(response, prefix=inputs["input_ids"])
         thinking = parsed.get("thinking")
-        answer = (parsed.get("answer") or "").strip()
+        # parse_response's final-answer key is "content", not "answer".
+        answer = (parsed.get("content") or "").strip()
     else:
         # E4B does not emit channel tags when thinking is disabled, so
         # parse_response has nothing to split on -- decode directly instead.

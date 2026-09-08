@@ -48,7 +48,8 @@ def build_generate_fn(processor, model, enable_thinking):
             # find the thinking/channel delimiter tokens.
             response = processor.decode(outputs[0][input_len:], skip_special_tokens=False)
             parsed = processor.parse_response(response, prefix=inputs["input_ids"])
-            answer = (parsed.get("answer") or "").strip()
+            # parse_response's final-answer key is "content", not "answer".
+            answer = (parsed.get("content") or "").strip()
             if answer:
                 return answer
             # No distinct answer channel found -- most likely generation hit
