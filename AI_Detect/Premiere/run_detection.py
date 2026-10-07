@@ -94,14 +94,17 @@ def build_prompt(template, problem, solution):
 # ---------------------------------------------------------------- LLM judges
 
 def load_llm(cfg):
+    # Model paths are relative to the repo root (models/ sits next to it on the
+    # cluster), so the script works no matter which directory it is run from.
+    path = str((REPO_ROOT / cfg["path"]).resolve())
     if cfg["family"] == "qwen3":
         from transformers import AutoModelForCausalLM, AutoTokenizer
-        tokenizer = AutoTokenizer.from_pretrained(cfg["path"])
-        model = AutoModelForCausalLM.from_pretrained(cfg["path"], dtype="auto", device_map="auto")
+        tokenizer = AutoTokenizer.from_pretrained(path)
+        model = AutoModelForCausalLM.from_pretrained(path, dtype="auto", device_map="auto")
         return tokenizer, model
     from transformers import AutoModelForMultimodalLM, AutoProcessor
-    processor = AutoProcessor.from_pretrained(cfg["path"])
-    model = AutoModelForMultimodalLM.from_pretrained(cfg["path"], dtype="auto", device_map="auto")
+    processor = AutoProcessor.from_pretrained(path)
+    model = AutoModelForMultimodalLM.from_pretrained(path, dtype="auto", device_map="auto")
     return processor, model
 
 
