@@ -1,0 +1,1006 @@
+{
+  "model": "qwen3_8b_nothink",
+  "config": {
+    "family": "qwen3",
+    "model_path": "../models/Qwen3-8B",
+    "thinking": false,
+    "max_new_tokens": 1024,
+    "n_runs": 1,
+    "seed": 42,
+    "prompt_template": "You are an expert in competition mathematics and in the writing styles of both human mathematicians and large language models (LLMs).\n\nYou will be given a math olympiad problem and a proof-based solution to it. Your task is to decide whether the solution was written by an AI system (an LLM) or by a human.\n\nThe solution may be correct or incorrect; correctness alone does not determine authorship. Judge only who wrote it.\n\n## Problem\n{problem}\n\n## Solution\n{solution}\n\n## Output format\nRespond with ONLY a JSON object, no other text:\n{\"AI\": <1 if written by AI, 0 if written by a human>, \"certainty\": <integer from 0 to 100>}\n\n\"certainty\" is how confident you are in your own \"AI\" verdict:\n50 = pure guess, 100 = completely certain.\n"
+  },
+  "summary": {
+    "n": 40,
+    "n_parse_errors": 0,
+    "accuracy": 0.5,
+    "ai_recall": 1.0,
+    "human_recall": 0.0,
+    "pred_ai_rate": 1.0,
+    "auroc": 0.5,
+    "mean_certainty": 95.0,
+    "by_source": {
+      "MathArena": {
+        "n": 14,
+        "n_parse_errors": 0,
+        "accuracy": 0.5,
+        "ai_recall": 1.0,
+        "human_recall": 0.0,
+        "pred_ai_rate": 1.0,
+        "auroc": 0.5,
+        "mean_certainty": 95.0
+      },
+      "OPC": {
+        "n": 26,
+        "n_parse_errors": 0,
+        "accuracy": 0.5,
+        "ai_recall": 1.0,
+        "human_recall": 0.0,
+        "pred_ai_rate": 1.0,
+        "auroc": 0.5,
+        "mean_certainty": 95.0
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "matharena_usamo_2026_3__llm",
+      "problem_id": "matharena_usamo_2026_3",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Kimi K2.6 (Think)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "matharena_usamo_2026_3__human",
+      "problem_id": "matharena_usamo_2026_3",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "matharena_usamo_2026_5__llm",
+      "problem_id": "matharena_usamo_2026_5",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Kimi K2.6 (Think)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "matharena_usamo_2026_5__human",
+      "problem_id": "matharena_usamo_2026_5",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "matharena_usamo_2026_6__llm",
+      "problem_id": "matharena_usamo_2026_6",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Kimi K2.6 (Think)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "matharena_usamo_2026_6__human",
+      "problem_id": "matharena_usamo_2026_6",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "matharena_usamo_2025_1__llm",
+      "problem_id": "matharena_usamo_2025_1",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Claude-3.7-Sonnet (Think)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "matharena_usamo_2025_1__human",
+      "problem_id": "matharena_usamo_2025_1",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "matharena_usamo_2025_2__llm",
+      "problem_id": "matharena_usamo_2025_2",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Claude-3.7-Sonnet (Think)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "matharena_usamo_2025_2__human",
+      "problem_id": "matharena_usamo_2025_2",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "matharena_usamo_2025_4__llm",
+      "problem_id": "matharena_usamo_2025_4",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Claude-3.7-Sonnet (Think)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "matharena_usamo_2025_4__human",
+      "problem_id": "matharena_usamo_2025_4",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "matharena_usamo_2025_6__llm",
+      "problem_id": "matharena_usamo_2025_6",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Claude-3.7-Sonnet (Think)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "matharena_usamo_2025_6__human",
+      "problem_id": "matharena_usamo_2025_6",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2016_18__llm",
+      "problem_id": "opc_BMOSL_2016_18",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2016_18__human",
+      "problem_id": "opc_BMOSL_2016_18",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2018_15__llm",
+      "problem_id": "opc_BMOSL_2018_15",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2018_15__human",
+      "problem_id": "opc_BMOSL_2018_15",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2020_13__llm",
+      "problem_id": "opc_BMOSL_2020_13",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2020_13__human",
+      "problem_id": "opc_BMOSL_2020_13",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2018_16__llm",
+      "problem_id": "opc_BMOSL_2018_16",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2018_16__human",
+      "problem_id": "opc_BMOSL_2018_16",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2021_7__llm",
+      "problem_id": "opc_BMOSL_2021_7",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2021_7__human",
+      "problem_id": "opc_BMOSL_2021_7",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_USAMO_2013_4__llm",
+      "problem_id": "opc_USAMO_2013_4",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_USAMO_2013_4__human",
+      "problem_id": "opc_USAMO_2013_4",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_USAMO_2015_5__llm",
+      "problem_id": "opc_USAMO_2015_5",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_USAMO_2015_5__human",
+      "problem_id": "opc_USAMO_2015_5",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_IMOSL_2010_1__llm",
+      "problem_id": "opc_IMOSL_2010_1",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_IMOSL_2010_1__human",
+      "problem_id": "opc_IMOSL_2010_1",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2016_2__llm",
+      "problem_id": "opc_BMOSL_2016_2",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2016_2__human",
+      "problem_id": "opc_BMOSL_2016_2",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2017_23__llm",
+      "problem_id": "opc_BMOSL_2017_23",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2017_23__human",
+      "problem_id": "opc_BMOSL_2017_23",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2018_18__llm",
+      "problem_id": "opc_BMOSL_2018_18",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2018_18__human",
+      "problem_id": "opc_BMOSL_2018_18",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2017_17__llm",
+      "problem_id": "opc_BMOSL_2017_17",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2017_17__human",
+      "problem_id": "opc_BMOSL_2017_17",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2017_18__llm",
+      "problem_id": "opc_BMOSL_2017_18",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "opc_BMOSL_2017_18__human",
+      "problem_id": "opc_BMOSL_2017_18",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    }
+  ]
+}
