@@ -1,0 +1,33 @@
+generator,category,n_judges,pass_rate,mean_score
+Gemma4-E4B (non-thinking),Algebra,4,0.7826086956521738,0.8195652173913044
+Gemma4-E4B (non-thinking),Calculus,4,0.8944746376811593,0.86328125
+Gemma4-E4B (non-thinking),Applied Mathematics,4,0.8125,0.87125
+Gemma4-E4B (non-thinking),Geometry,4,0.736111111111111,0.86375
+Gemma4-E4B (non-thinking),Discrete Mathematics,4,0.8020833333333334,0.85125
+Gemma4-E4B (non-thinking),Linear Algebra,4,0.9583333333333333,0.9086458333333334
+Gemma4-E4B (non-thinking),Number Theory,4,0.875,0.8739285714285714
+Gemma4-E4B (non-thinking),Other,4,0.0,0.39
+Gemma4-E4B (thinking),Algebra,4,0.8779644268774704,0.8897554347826087
+Gemma4-E4B (thinking),Calculus,4,0.8541666666666667,0.858125
+Gemma4-E4B (thinking),Applied Mathematics,4,0.8125,0.9066458333333334
+Gemma4-E4B (thinking),Geometry,4,0.8111111111111111,0.8974346405228758
+Gemma4-E4B (thinking),Discrete Mathematics,4,0.9044384057971014,0.8955208333333333
+Gemma4-E4B (thinking),Linear Algebra,4,0.9128787878787878,0.9067045454545455
+Gemma4-E4B (thinking),Number Theory,4,0.8511904761904762,0.9015315934065934
+Gemma4-E4B (thinking),Other,4,0.75,0.845
+Qwen3-8B (non-thinking),Algebra,4,0.6956521739130435,0.8107608695652174
+Qwen3-8B (non-thinking),Calculus,4,0.59375,0.7672916666666667
+Qwen3-8B (non-thinking),Applied Mathematics,4,0.765625,0.88921875
+Qwen3-8B (non-thinking),Geometry,4,0.6805555555555556,0.8582638888888889
+Qwen3-8B (non-thinking),Discrete Mathematics,4,0.8541666666666666,0.8582291666666667
+Qwen3-8B (non-thinking),Linear Algebra,4,0.8541666666666666,0.9015624999999999
+Qwen3-8B (non-thinking),Number Theory,4,0.8186813186813187,0.8610714285714285
+Qwen3-8B (non-thinking),Other,4,1.0,0.5475
+Qwen3-8B (thinking),Algebra,4,0.8311594202898551,0.8584927536231883
+Qwen3-8B (thinking),Calculus,4,0.7044956140350878,0.8304550438596491
+Qwen3-8B (thinking),Applied Mathematics,4,0.8270833333333334,0.91890625
+Qwen3-8B (thinking),Geometry,4,0.7916666666666666,0.9016319444444444
+Qwen3-8B (thinking),Discrete Mathematics,4,0.7408088235294118,0.8694260176896846
+Qwen3-8B (thinking),Linear Algebra,4,0.8522727272727273,0.92875
+Qwen3-8B (thinking),Number Theory,4,0.7142857142857143,0.8153035714285715
+Qwen3-8B (thinking),Other,3,0.6666666666666666,0.5366666666666666

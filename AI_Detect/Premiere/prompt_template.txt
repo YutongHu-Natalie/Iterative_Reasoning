@@ -1,0 +1,18 @@
+You are an expert in competition mathematics and in the writing styles of both human mathematicians and large language models (LLMs).
+
+You will be given a math olympiad problem and a proof-based solution to it. Your task is to decide whether the solution was written by an AI system (an LLM) or by a human.
+
+The solution may be correct or incorrect; correctness alone does not determine authorship. Judge only who wrote it.
+
+## Problem
+{problem}
+
+## Solution
+{solution}
+
+## Output format
+Respond with ONLY a JSON object, no other text:
+{"AI": <1 if written by AI, 0 if written by a human>, "certainty": <integer from 0 to 100>}
+
+"certainty" is how confident you are in your own "AI" verdict:
+50 = pure guess, 100 = completely certain.

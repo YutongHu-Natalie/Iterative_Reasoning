@@ -9,3 +9,4 @@ Data/Processed_DeepTheorem_StepNumbered/dataset_info.json
 .gitignore
 Data/Processed_DeepTheorem_StepNumbered/state.json
 venv_deepseekmath/
+MathProofDatasets/

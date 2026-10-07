@@ -333,6 +333,7 @@ def write_cuts(df, out_dir):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--judges", default=None, help="Comma-separated judge slugs to include (default: auto-select by --min-coverage).")
+    parser.add_argument("--generators", default=None, help="Comma-separated generator (judged_run) slugs to restrict all tables to (default: every generator the selected judges have judged).")
     parser.add_argument("--min-coverage", type=float, default=0.5, help="Auto-select judges with at least this fraction of BOTH score and pass rows successfully parsed (not just present -- a row with parse_error contributes no usable data).")
     parser.add_argument("--list-judges", action="store_true", help="Print completeness for every discovered judge and exit.")
     parser.add_argument("--out-dir", default=None, help="If set, write the summary tables as CSVs here (organized into per_judge/<slug>/ and overall/ subfolders).")
@@ -364,6 +365,15 @@ def main():
     print(f"\nUsing judges: {[JUDGE_LABELS.get(s, s) for s in selected]}")
 
     frames = {s: load_judge_frame(s) for s in selected}
+
+    if args.generators:
+        gen_selected = [g.strip() for g in args.generators.split(",") if g.strip()]
+        unknown_gen = set(gen_selected) - set(GENERATOR_LABELS)
+        if unknown_gen:
+            raise SystemExit(f"Unknown generator slug(s): {unknown_gen}. Known: {sorted(GENERATOR_LABELS)}")
+        frames = {s: df[df["judged_run"].isin(gen_selected)].reset_index(drop=True) for s, df in frames.items()}
+        print(f"Restricting to generators: {[GENERATOR_LABELS.get(g, g) for g in gen_selected]}")
+
     combined = pd.concat(frames.values(), ignore_index=True)
 
     out_dir = Path(args.out_dir) if args.out_dir else None
