@@ -46405,5 +46405,1750 @@
         "justification": "The conclusion that the statement is false is mathematically sound based on the analysis of the theorem as written, but it contradicts the provided ground truth."
       }
     ]
+  },
+  {
+    "id": 942221,
+    "domain": [
+      "Discrete Mathematics -> Graph Theory",
+      "Algebra -> Linear Algebra -> Determinants",
+      "Applied Mathematics -> Statistical Methods -> Probability"
+    ],
+    "difficulty": 9.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": false,
+    "summary": "The candidate's conclusion that the statement is false is incorrect, as the theorem is a known result in local class field theory and representation theory. The entire disproof is invalid because it relies on a flawed counterexample (Step 3) and contradicts the ground truth.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Defining key concepts (local field, Galois extension, Artin conductor, Discriminant).",
+        "valid": true,
+        "justification": "The definitions provided are standard in algebraic number theory and local field theory, although the definition of the Artin conductor is stated imprecisely."
+      },
+      {
+        "step": 2,
+        "description": "Stating the claim to be tested.",
+        "valid": true,
+        "justification": "This step correctly restates the formula under scrutiny."
+      },
+      {
+        "step": 3,
+        "description": "Constructing a counterexample using a cyclic cubic extension and calculating the values.",
+        "valid": false,
+        "justification": "While the structure of the counterexample (showing a contradiction) is logically sound, the specific numerical values used for the Artin conductors (p^6) and the discriminant valuation (6) are based on unstated and overly specific assumptions about the ramification filtration. More critically, the entire step is irrelevant because the theorem itself is true, meaning no counterexample exists."
+      },
+      {
+        "step": 4,
+        "description": "Generalizing the failure of the formula based on the counterexample.",
+        "valid": false,
+        "justification": "This step draws a conclusion (that the formula fails) based on a flawed premise (the counterexample in Step 3). Since the theorem is mathematically true, this generalization is incorrect."
+      }
+    ]
+  },
+  {
+    "id": 946967,
+    "domain": [
+      "Linear Algebra -> Matrices -> Other",
+      "Calculus -> Differential Equations -> Ordinary Differential Equations (Odes)"
+    ],
+    "difficulty": 9.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is mathematically rigorous and logically sound. It correctly uses the properties of Lie groups and the known infinite dimensionality of the space of smooth vector fields on a closed manifold to establish the required contradiction.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Identifying that matrix groups over R are finite-dimensional Lie groups.",
+        "valid": true,
+        "justification": "This is a fundamental definition in Lie theory. Matrix groups like SL(k, R) possess a smooth manifold structure and are finite-dimensional."
+      },
+      {
+        "step": 2,
+        "description": "Stating that Homeo(M) is a topological group but not necessarily a Lie group.",
+        "valid": true,
+        "justification": "This is a correct observation regarding the general structure of homeomorphism groups, setting up the need for a structural comparison."
+      },
+      {
+        "step": 3,
+        "description": "Assuming Homeo(M) is isomorphic to a matrix group, implying Homeo(M) must be a finite-dimensional Lie group.",
+        "valid": true,
+        "justification": "If an abstract group is isomorphic to a finite-dimensional Lie group, it must share the same fundamental structural properties, including finite dimensionality."
+      },
+      {
+        "step": 4,
+        "description": "Stating that if Homeo(M) were a Lie group, its Lie algebra would be the space of smooth vector fields on M.",
+        "valid": true,
+        "justification": "This is the definition of the Lie algebra for a group of diffeomorphisms (or homeomorphisms, if the structure is assumed to be smooth enough to define the Lie algebra)."
+      },
+      {
+        "step": 5,
+        "description": "Asserting that the space of smooth vector fields on a closed manifold M (n >= 2) is infinite-dimensional.",
+        "valid": true,
+        "justification": "This is a standard result in differential geometry. The space of smooth vector fields on a closed manifold is generally infinite-dimensional."
+      },
+      {
+        "step": 6,
+        "description": "Deriving a contradiction: A finite-dimensional Lie group (from Step 3) must have a finite-dimensional Lie algebra (from Step 4 and 5), but Homeo(M) has an infinite-dimensional Lie algebra.",
+        "valid": true,
+        "justification": "The contradiction is logically sound: Finite dimension of the group implies finite dimension of the Lie algebra. Since the Lie algebra is infinite-dimensional, the group cannot be finite-dimensional."
+      },
+      {
+        "step": 7,
+        "description": "Concluding that Homeo(M) cannot be isomorphic to any matrix group over R.",
+        "valid": true,
+        "justification": "This conclusion follows directly and correctly from the established contradiction in Step 6."
+      }
+    ]
+  },
+  {
+    "id": 949260,
+    "domain": [
+      "Discrete Mathematics -> Logic -> Other",
+      "Discrete Mathematics -> Algorithms -> Other"
+    ],
+    "difficulty": 10.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is mathematically sound and logically rigorous. It correctly uses the Axiom of Regularity to derive a contradiction from the hypothetical existence of a set of all sets, thus proving the theorem.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Assume the existence of the set U and deduce U is an element of itself (U in U).",
+        "valid": true,
+        "justification": "If U contains all sets, and U is itself a set, then U must be an element of U. This is a correct deduction from the definition of U."
+      },
+      {
+        "step": 2,
+        "description": "Apply the Axiom of Regularity (AR) to the set {U}.",
+        "valid": true,
+        "justification": "Since U in U, the set {U} is non-empty. AR requires that for {U}, there exists an element y such that y intersect {U} is empty. Since U is the only element, this requires U intersect {U} = empty set."
+      },
+      {
+        "step": 3,
+        "description": "Analyze the intersection U intersect {U} and show it is non-empty.",
+        "valid": true,
+        "justification": "The intersection U intersect {U} consists of elements x such that x is in U and x is in {U}. Since U in U (from Step 1), U satisfies both conditions, meaning U is in the intersection. Therefore, U intersect {U} = {U}, which is non-empty."
+      },
+      {
+        "step": 4,
+        "description": "Conclude the contradiction and reject the initial assumption.",
+        "valid": true,
+        "justification": "Step 3 shows U intersect {U} is non-empty, which directly contradicts the requirement derived from the Axiom of Regularity in Step 2. This valid contradiction proves the initial assumption (existence of U) is false."
+      }
+    ]
+  },
+  {
+    "id": 951597,
+    "domain": [
+      "Geometry -> Differential Geometry -> Curvature",
+      "Algebra -> Intermediate Algebra -> Other"
+    ],
+    "difficulty": 10.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is entirely valid. It correctly applies the standard diagonalization argument to demonstrate that the assumption of a general Halting Problem decider leads to a logical contradiction, thus proving the theorem.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Assume the existence of a decider A for the Halting Problem.",
+        "valid": true,
+        "justification": "This is the necessary starting point for a proof by contradiction, correctly setting up the premise that is to be refuted."
+      },
+      {
+        "step": 2,
+        "description": "Construct a new Turing machine D that uses A to determine its own halting behavior.",
+        "valid": true,
+        "justification": "The construction of D is logically sound. It correctly implements the diagonalization strategy: D does the opposite of what A predicts for D running on itself."
+      },
+      {
+        "step": 3,
+        "description": "Analyze the behavior of D running on its own description, D(D), leading to two contradictory cases.",
+        "valid": true,
+        "justification": "The analysis correctly shows that if D(D) halts, it must loop (contradiction), and if D(D) loops, it must halt (contradiction). This is the core of the diagonalization argument."
+      },
+      {
+        "step": 4,
+        "description": "Conclude that the initial assumption (existence of A) must be false.",
+        "valid": true,
+        "justification": "Since the assumption leads to a logical impossibility, the assumption must be false. This correctly proves the undecidability of the Halting Problem."
+      }
+    ]
+  },
+  {
+    "id": 950083,
+    "domain": [
+      "Discrete Mathematics -> Combinatorics",
+      "Algebra -> Intermediate Algebra -> Sequences And Series"
+    ],
+    "difficulty": 9.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate's proof is entirely valid. The theorem is proven by recognizing that the term t^(1/2 - alpha/2) is a constant factor with respect to the summation indices n and rho, allowing it to be factored out of the entire double series.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Understanding the structure of f(t) and noting the placement of the factor t^(1/2 - alpha/2)",
+        "valid": true,
+        "justification": "The candidate correctly identifies the structure of the function and notes that the term t^(1/2 - alpha/2) is a factor within the inner summation."
+      },
+      {
+        "step": 2,
+        "description": "Identifying the claim as equivalent to factoring out t^(1/2 - alpha/2)",
+        "valid": true,
+        "justification": "The candidate correctly translates the required proof into a simple algebraic manipulation: factoring a common term out of a double series."
+      },
+      {
+        "step": 3,
+        "description": "Applying the algebraic rule for factoring out a common term from a double series",
+        "valid": true,
+        "justification": "Since t^(1/2 - alpha/2) is independent of the summation indices n and rho, it can be factored out of the entire double series, provided the series converges absolutely, which is a standard assumption in this context."
+      },
+      {
+        "step": 4,
+        "description": "Concluding the proof based on the successful factorization",
+        "valid": true,
+        "justification": "The conclusion logically follows from the successful algebraic manipulation in Step 3, confirming the equality."
+      }
+    ]
+  },
+  {
+    "id": 956882,
+    "domain": [
+      "Algebra -> Intermediate Algebra -> Sequences and Series",
+      "Discrete Mathematics -> Combinatorics",
+      "Calculus -> Integral Calculus -> Single Variable"
+    ],
+    "difficulty": 9.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": false,
+    "summary": "The candidate's final conclusion is correct, but the proof is logically invalid. The critical error occurs in Step 2, where the candidate fundamentally misinterprets the relationship between the divisor of a rational function (f) and its components (zeros and poles) when analyzing the equation Dh - Dv = (f). To fix this, the proof must rely on deeper results from intersection theory or the Picard group structure over Z, rather than a simple geometric contradiction based on function behavior.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Defining the scheme X, generic fiber X_Q, closed fiber X_p, and the types of divisors Dh and Dv.",
+        "valid": true,
+        "justification": "The definitions of the scheme structure, generic fiber, closed fiber, and the geometric nature of horizontal and vertical divisors are standard and correctly stated."
+      },
+      {
+        "step": 2,
+        "description": "Analyzing the implications of linear equivalence Dh - Dv = (f) on the generic fiber and closed fiber.",
+        "valid": false,
+        "justification": "This step contains a critical logical error regarding the divisor of a rational function. If Dh - Dv = (f), then Dh is the divisor of zeros of f, and Dv is the divisor of poles of f. The candidate incorrectly claims that f must vanish on Dv (poles) and have a pole on Dh (zeros)."
+      },
+      {
+        "step": 3,
+        "description": "Drawing a contradiction based on the disjoint supports of Dh and Dv.",
+        "valid": false,
+        "justification": "Since the premise in Step 2 (that f must vanish on Dv and have a pole on Dh) is mathematically incorrect, the resulting contradiction is based on a flawed argument. Therefore, the conclusion derived from this step is not logically sound, even though the final statement is true."
+      },
+      {
+        "step": 4,
+        "description": "Stating the final conclusion that the divisors are almost never linearly equivalent.",
+        "valid": true,
+        "justification": "The final conclusion matches the ground truth and is mathematically correct, but it is reached via an invalid proof structure."
+      }
+    ]
+  },
+  {
+    "id": 962618,
+    "domain": [
+      "Algebra -> Abstract Algebra -> Other",
+      "Discrete Mathematics -> Logic -> Other"
+    ],
+    "difficulty": 6.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is entirely valid. Each step logically follows from the assumptions and correctly applies number theory principles (divisibility, CRT) to demonstrate that the described process uniquely determines x.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Understanding the Oracle's Role",
+        "valid": true,
+        "justification": "The oracle computes gcd(x + j, N), which correctly provides information about the divisibility of x + j by the prime power factors p_i^b_i of N."
+      },
+      {
+        "step": 2,
+        "description": "Determining x mod p_i^b_i for Each Prime p_i",
+        "valid": true,
+        "justification": "Since p_i^b_i <= M, the range j in [0, M-1] covers all residues modulo p_i^b_i. The existence of j such that p_i^b_i divides gcd(x + j, N) is guaranteed, and this j correctly yields the congruence x = -j mod p_i^b_i."
+      },
+      {
+        "step": 3,
+        "description": "Applying the Chinese Remainder Theorem (CRT)",
+        "valid": true,
+        "justification": "The moduli p_i^b_i are pairwise coprime, satisfying the conditions for CRT. The CRT guarantees a unique solution modulo N, which is x since N > x."
+      },
+      {
+        "step": 4,
+        "description": "Uniqueness and Correctness",
+        "valid": true,
+        "justification": "This step correctly synthesizes the results: finding all congruences allows CRT to reconstruct x mod N, and the condition N > x ensures this reconstruction is uniquely x."
+      }
+    ]
+  },
+  {
+    "id": 965955,
+    "domain": [
+      "Geometry -> Differential Geometry -> Manifolds",
+      "Discrete Mathematics -> Logic -> Other",
+      "Geometry -> Differential Geometry -> Other"
+    ],
+    "difficulty": 9.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": false,
+    "summary": "The candidate's internal mathematical reasoning is flawless; the counterexample provided is valid and correctly disproves the theorem. However, since the candidate's conclusion (FALSE) contradicts the provided ground truth (TRUE), the overall response is invalid relative to the prompt's constraints.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Restating the problem and conditions.",
+        "valid": true,
+        "justification": "This step correctly identifies the premises of the theorem: integer-valued polynomials P_i(m) with P_i(0)=0, and the requirement for infinitely many solutions (x, m) under the constraint m <= x^epsilon."
+      },
+      {
+        "step": 2,
+        "description": "Constructing the counterexample using P1(m) = m and P2(m) = m + 1.",
+        "valid": true,
+        "justification": "The chosen polynomials satisfy the initial conditions (P_i are in Z[m] and P_i(0)=0). This is a valid starting point for a disproof."
+      },
+      {
+        "step": 3,
+        "description": "Analyzing the condition that x + m and x + m + 1 must both be prime.",
+        "valid": true,
+        "justification": "This step correctly identifies that the only pair of consecutive integers that are both prime is (2, 3), which is a fundamental result in number theory."
+      },
+      {
+        "step": 4,
+        "description": "Checking for solutions and generalizing the result.",
+        "valid": true,
+        "justification": "The analysis correctly shows that the only solution is (x, m) = (1, 1). Since all other pairs (x+m, x+m+1) must be consecutive integers greater than 3, one must be even and composite. This step correctly demonstrates that the counterexample yields only finitely many solutions."
+      },
+      {
+        "step": 5,
+        "description": "Concluding that the statement is false based on the finite number of solutions found.",
+        "valid": true,
+        "justification": "The conclusion logically follows from Step 4. If a counterexample yields only finitely many solutions, the original claim of infinitely many solutions is false."
+      }
+    ]
+  },
+  {
+    "id": 969794,
+    "domain": [
+      "Algebra -> Intermediate Algebra -> Inequalities",
+      "Calculus -> Differential Calculus -> Applications of Derivatives",
+      "Discrete Mathematics -> Combinatorics -> Other"
+    ],
+    "difficulty": 9.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is entirely valid. It correctly establishes the lower bound using the clique number and successfully constructs a valid n-coloring (the upper bound) by leveraging the constraint that any two complete graphs share at most one vertex.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Definitions and Setup: Defining G, Kn, and the chromatic number chr(G).",
+        "valid": true,
+        "justification": "This step correctly establishes the context and definitions required for the proof."
+      },
+      {
+        "step": 2,
+        "description": "Key Observations: Establishing chr(G) >= n based on the presence of Kn as a subgraph, and determining the maximum clique size omega(G) = n.",
+        "valid": true,
+        "justification": "Since G contains Kn, and Kn is a clique of size n, the chromatic number must be at least n. The constraint that pairs share at most one vertex ensures no larger clique exists."
+      },
+      {
+        "step": 3,
+        "description": "Lower Bound for Chromatic Number: Applying the theorem chr(G) >= omega(G) to conclude chr(G) >= n.",
+        "valid": true,
+        "justification": "This is a standard and correct application of graph theory principles, directly following from Step 2."
+      },
+      {
+        "step": 4,
+        "description": "Upper Bound for Chromatic Number (Case 1: Disjoint Kn's): Showing chr(G) = n when the graphs are disjoint.",
+        "valid": true,
+        "justification": "If the graphs are disjoint, they can be colored independently using the same set of n colors, resulting in a total coloring of n colors."
+      },
+      {
+        "step": 5,
+        "description": "Upper Bound for Chromatic Number (Case 2: Shared vertices): Constructing an n-coloring when graphs share at most one vertex.",
+        "valid": true,
+        "justification": "The construction is sound. By assigning a single color to any shared vertex and using the remaining n-1 colors for the other vertices in each Kn, a proper n-coloring is achieved. The constraint of sharing at most one vertex prevents conflicts that would require more than n colors."
+      },
+      {
+        "step": 6,
+        "description": "Conclusion: Combining the lower bound (chr(G) >= n) and the upper bound (chr(G) <= n) to conclude chr(G) = n.",
+        "valid": true,
+        "justification": "This is a valid logical deduction from the preceding steps."
+      }
+    ]
+  },
+  {
+    "id": 977862,
+    "domain": [
+      "Applied Mathematics -> Other",
+      "Calculus -> Differential Calculus -> Other",
+      "Discrete Mathematics -> Other"
+    ],
+    "difficulty": 6.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is entirely valid. It systematically covers all possible integer values of x using comprehensive case analysis, and each step is mathematically sound, leading correctly to the conclusion that the four specified pairs are the only integral solutions.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Verification of the four proposed solutions (1, -5), (1, 4), (2, 3), and (2, 7).",
+        "valid": true,
+        "justification": "The substitution confirms that all four pairs satisfy the equation g_x(y) = 0."
+      },
+      {
+        "step": 2,
+        "description": "Case analysis for x = 1.",
+        "valid": true,
+        "justification": "Substituting x=1 leads to the quadratic equation y^2 + y - 20 = 0, which correctly yields integer solutions y = 4 and y = -5."
+      },
+      {
+        "step": 3,
+        "description": "Case analysis for x = 2.",
+        "valid": true,
+        "justification": "The equation simplifies to 2^y = 3y^2 - 19. The step correctly identifies (2, 3) and (2, 7) as solutions and correctly argues that no other integer solutions exist due to the difference in growth rates (exponential vs. quadratic)."
+      },
+      {
+        "step": 4,
+        "description": "Case analysis for x = 0.",
+        "valid": true,
+        "justification": "The analysis correctly shows that for x=0, the equation simplifies to 18 = 0 (assuming y > 0), thus ruling out solutions for x=0."
+      },
+      {
+        "step": 5,
+        "description": "Case analysis for x < 0.",
+        "valid": true,
+        "justification": "The step correctly tests the critical cases y = +/- 1 and uses sound reasoning regarding the non-integer nature of fractional exponents for other integer pairs, concluding no solutions exist."
+      },
+      {
+        "step": 6,
+        "description": "Case analysis for x >= 3.",
+        "valid": true,
+        "justification": "The step tests small values of y (1, 2, 3) and correctly uses the principle that for large x, the exponential terms dominate the polynomial terms, ensuring no further solutions exist."
+      }
+    ]
+  },
+  {
+    "id": 982952,
+    "domain": [
+      "Applied Mathematics -> Probability -> Other",
+      "Discrete Mathematics -> Algorithms -> Other"
+    ],
+    "difficulty": 9.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is mathematically sound and logically complete. It correctly uses the definition of the dual map to show that the transition maps required for the dual direct system are precisely the duals of the transition maps in the inverse system.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Definitions and Setup of the inverse and dual direct systems",
+        "valid": true,
+        "justification": "This step correctly sets up the mathematical objects (the ideal I, the inverse system of quotient rings, and the dual direct system of dual spaces) as required by the theorem."
+      },
+      {
+        "step": 2,
+        "description": "Definition of the dual map of the projection $\\pi_n$",
+        "valid": true,
+        "justification": "This provides the standard and correct definition for the dual map pi_n_vee of a surjective linear map pi_n."
+      },
+      {
+        "step": 3,
+        "description": "Discussion of inclusion-induced maps $\\iota_n$ and the relationship to $\\pi_n^{\\vee}$",
+        "valid": true,
+        "justification": "While the phrasing regarding 'inclusion-induced maps' is slightly imprecise given the quotient structure, the step correctly identifies that the dual map pi_n_vee provides the necessary map structure, setting up the comparison for the next step."
+      },
+      {
+        "step": 4,
+        "description": "Equivalence of the dual map and the required transition map $\\iota_n$",
+        "valid": true,
+        "justification": "This step explicitly defines the required map $\\iota_n$ using the formula $\\phi(\\pi_n(x))$ and demonstrates that this definition is identical to the definition of $\\pi_n^{\\vee}(\\phi)$ from Step 2. This establishes the required equality."
+      },
+      {
+        "step": 5,
+        "description": "Final conclusion that $\\pi_n^{\\vee} = \\iota_n$",
+        "valid": true,
+        "justification": "This step correctly summarizes the result derived from the preceding steps, confirming the theorem's statement."
+      }
+    ]
+  },
+  {
+    "id": 984152,
+    "domain": [
+      "Calculus -> Integral Calculus -> Techniques of Integration",
+      "Calculus -> Integral Calculus -> Single Variable"
+    ],
+    "difficulty": 5.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate's proof is mathematically sound and logically rigorous. It correctly applies Taylor's theorem and uses the minimum condition to confirm that the resulting asymptotic expansion is valid, even though the minimum condition forces the coefficient f'''(x0) to be zero.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Stating Taylor's Theorem for C3 functions around x0",
+        "valid": true,
+        "justification": "The standard Taylor expansion with Peano remainder for a C3 function is correctly cited."
+      },
+      {
+        "step": 2,
+        "description": "Applying the conditions f'(x0)=0 and f''(x0)=0 to the Taylor expansion",
+        "valid": true,
+        "justification": "The substitution of the given conditions into the Taylor expansion is performed correctly, leading to the desired form."
+      },
+      {
+        "step": 3,
+        "description": "Confirming the validity of the expansion based on smoothness",
+        "valid": true,
+        "justification": "This step correctly confirms that the expansion is a direct consequence of the function being C3 and the application of Taylor's theorem."
+      },
+      {
+        "step": 4,
+        "description": "Analyzing the consistency with the minimum condition",
+        "valid": true,
+        "justification": "The candidate correctly uses the necessary condition for a local minimum (first non-zero derivative must be of even order). Since f'(x0)=0 and f''(x0)=0, the minimum condition implies f'''(x0)=0. This confirms that the formula holds, as the coefficient of h^3 is zero, which is consistent with the general form provided in the theorem."
+      }
+    ]
+  },
+  {
+    "id": 985998,
+    "domain": [
+      "Number Theory -> Congruences",
+      "Number Theory -> Prime Numbers"
+    ],
+    "difficulty": 6.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is entirely valid. It correctly utilizes the fundamental theorem that continuous functions on compact sets are bounded, leading logically and rigorously to the conclusion that the supremum of distances must be finite.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Stating the relevant theorem: Continuous functions on compact sets are bounded.",
+        "valid": true,
+        "justification": "This is a correct and necessary theorem for the proof. It establishes the key link between compactness and boundedness."
+      },
+      {
+        "step": 2,
+        "description": "Defining the distance function f(x) = p(x, x1) and proving its continuity using the reverse triangle inequality.",
+        "valid": true,
+        "justification": "The function f is indeed continuous. The inequality |p(x, x1) - p(y, x1)| <= p(x, y) is a correct application of the reverse triangle inequality, proving continuity."
+      },
+      {
+        "step": 3,
+        "description": "Applying the theorem that the continuous image of a compact set is compact, and using the Heine-Borel theorem to conclude f(N) is bounded.",
+        "valid": true,
+        "justification": "Since N is compact and f is continuous, f(N) is compact in R. In R, compactness implies boundedness, which is a correct application of standard topology theorems."
+      },
+      {
+        "step": 4,
+        "description": "Concluding that the boundedness of f(N) implies that its supremum is finite.",
+        "valid": true,
+        "justification": "This is the definition of a bounded set of real numbers. Since f(N) is bounded, its supremum must be finite, thus proving the theorem."
+      }
+    ]
+  },
+  {
+    "id": 985947,
+    "domain": [
+      "Calculus -> Multi Variable -> Applications of Integrals",
+      "Geometry -> Differential Geometry -> Manifolds"
+    ],
+    "difficulty": 10.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is entirely valid. It correctly applies Gödel's First Incompleteness Theorem, detailing the construction and meta-mathematical properties of the Gödel sentence to satisfy all conditions of the theorem.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Stating the necessary assumptions: S is a consistent formal system capable of encoding arithmetic.",
+        "valid": true,
+        "justification": "These assumptions are the necessary premises for applying Gödel's Incompleteness Theorems, which are central to the proof."
+      },
+      {
+        "step": 2,
+        "description": "Citing Gödel's First Incompleteness Theorem, which guarantees the existence of a statement G that is true but unprovable, and whose negation is also unprovable.",
+        "valid": true,
+        "justification": "This theorem directly provides the existence claim required by the main theorem and sets the framework for the proof."
+      },
+      {
+        "step": 3,
+        "description": "Defining the Gödel sentence G as the self-referential statement asserting its own unprovability (G is equivalent to not Prov(G)).",
+        "valid": true,
+        "justification": "This is the standard and correct construction of the Gödel sentence used in the proof of the First Incompleteness Theorem."
+      },
+      {
+        "step": 4,
+        "description": "Proving the truth of G by contradiction, assuming consistency of S.",
+        "valid": true,
+        "justification": "The argument correctly shows that if S is consistent, G must be true. If G were false, then not G would be true, implying G is provable, which contradicts G's content and S's consistency."
+      },
+      {
+        "step": 5,
+        "description": "Establishing the unprovability of both G and not G.",
+        "valid": true,
+        "justification": "G is unprovable by construction (Step 3/2). Not G is false (Step 4), and since S is consistent, it cannot prove false statements, thus not G is unprovable."
+      },
+      {
+        "step": 6,
+        "description": "Concluding that G satisfies all conditions of the theorem.",
+        "valid": true,
+        "justification": "The statement G meets the criteria: it is true (Step 4), and neither G nor not G is provable in S (Step 5)."
+      }
+    ]
+  },
+  {
+    "id": 990876,
+    "domain": [
+      "Discrete Mathematics -> Logic",
+      "Algebra -> Abstract Algebra -> Other"
+    ],
+    "difficulty": 6.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is entirely valid. Both methods presented (Step 2 and Step 3) successfully demonstrate a contradiction arising from the initial conditions, thereby proving that no such solution exists.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Deriving xy + yz + zx = 0 from the given equations",
+        "valid": true,
+        "justification": "The algebraic manipulation (squaring the sum and substituting the sum of squares) is correct and leads logically to xy + yz + zx = 0."
+      },
+      {
+        "step": 2,
+        "description": "Contradiction based on positivity constraint",
+        "valid": true,
+        "justification": "Since x, y, and z are strictly positive (in (0, 1)), their pairwise products must be positive, meaning their sum must be strictly positive. This contradicts the result xy + yz + zx = 0, proving impossibility."
+      },
+      {
+        "step": 3,
+        "description": "Contradiction using the inequality a^2 < a",
+        "valid": true,
+        "justification": "For any number a in (0, 1), a^2 is strictly less than a. Summing this inequality for x, y, and z yields x^2 + y^2 + z^2 < x + y + z. This directly contradicts the premise that x^2 + y^2 + z^2 = x + y + z, confirming the impossibility."
+      }
+    ]
+  },
+  {
+    "id": 1012611,
+    "domain": [
+      "Mathematics -> Applied Mathematics -> Other",
+      "Mathematics -> Discrete Mathematics -> Logic"
+    ],
+    "difficulty": 9.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": false,
+    "summary": "The candidate provides a high-level outline but fails to provide any rigorous mathematical justification for the critical transformations (Steps 2 and 3). These steps involve complex manipulations of multiple integrals and special functions, and the claims made are unsubstantiated leaps of faith. To fix this, the candidate must provide the detailed derivation for the change of integration order and the subsequent reduction of the double integral.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Integral Transformation using the definition of Ei(-z)",
+        "valid": true,
+        "justification": "This step correctly substitutes the definition of the exponential integral function into the original integral."
+      },
+      {
+        "step": 2,
+        "description": "Changing the Order of Integration and Simplification",
+        "valid": false,
+        "justification": "The transformation from the squared integral form to the specific double integral involving the factor 3/4 and the exponent 4/3 is a massive, unjustified leap. This step requires extensive, complex mathematical derivation that is entirely missing, making the claim mathematically unsound."
+      },
+      {
+        "step": 3,
+        "description": "Reduction of the Double Integral to a Single Integral",
+        "valid": false,
+        "justification": "The claim that the complex double integral from Step 2 reduces simply to the single integral int_0^inf z^(1/3) Ei(-z) e^(-z) dz is an unsubstantiated simplification. This reduction is not justified by the preceding steps."
+      },
+      {
+        "step": 4,
+        "description": "Series Expansion and Evaluation",
+        "valid": false,
+        "justification": "While series expansion is a valid technique, this step relies entirely on the flawed premises established in Steps 2 and 3. Without a correct starting integral, the subsequent evaluation is meaningless."
+      },
+      {
+        "step": 5,
+        "description": "Final Evaluation and Matching the Closed Form",
+        "valid": false,
+        "justification": "This is a conclusion based on the preceding, unproven, and likely incorrect steps. It does not constitute a valid proof."
+      },
+      {
+        "step": 6,
+        "description": "Numerical Verification",
+        "valid": false,
+        "justification": "Numerical verification only confirms plausibility; it is not a rigorous mathematical proof and cannot validate the complex analytical steps performed."
+      }
+    ]
+  },
+  {
+    "id": 1021117,
+    "domain": [
+      "Applied Mathematics -> Statistical Methods -> Probability",
+      "Discrete Mathematics -> Information Theory -> Other"
+    ],
+    "difficulty": 5.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": false,
+    "summary": "The candidate's mathematical derivation is entirely correct, and the conclusion that the theorem is false is mathematically sound. However, since the ground truth requires the theorem to be proven (i.e., the claim is true), the candidate's final conclusion contradicts the required ground truth.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Expressing z^2 and (1+i)z^2 in polar form",
+        "valid": true,
+        "justification": "The substitution z = re^{i\theta} and subsequent algebraic manipulation are correct."
+      },
+      {
+        "step": 2,
+        "description": "Expressing 1+i in polar form and simplifying (1+i)z^2",
+        "valid": true,
+        "justification": "The modulus and argument of 1+i are correctly identified as sqrt(2) and pi/4, respectively."
+      },
+      {
+        "step": 3,
+        "description": "Computing the real part of (1+i)z^2",
+        "valid": true,
+        "justification": "The formula for the real part of a complex number in polar form is applied correctly, leading to the inequality cos(2\theta + pi/4) < 0."
+      },
+      {
+        "step": 4,
+        "description": "Solving the trigonometric inequality for theta",
+        "valid": true,
+        "justification": "The intervals where cosine is negative are correctly identified, and the subsequent algebraic steps to isolate theta are performed accurately, yielding the general solution: pi/8 + pi k < theta < 5pi/8 + pi k."
+      },
+      {
+        "step": 5,
+        "description": "Interpreting the solution as infinitely many sectors",
+        "valid": true,
+        "justification": "The general solution derived in Step 4 correctly represents an infinite union of sectors, each of angular width pi/2, spaced pi radians apart."
+      },
+      {
+        "step": 6,
+        "description": "Disproving the original claim using a counterexample",
+        "valid": true,
+        "justification": "The candidate correctly identifies that the original claim only specifies the k=0 sector, while the true solution includes all k. The provided counterexample (z = e^{i5pi/4}) is valid and correctly demonstrates that the original statement is false."
+      }
+    ]
+  },
+  {
+    "id": 1022733,
+    "domain": [
+      "Calculus -> Differential Calculus -> Derivatives"
+    ],
+    "difficulty": 6.5,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": false,
+    "summary": "The proof is invalid because Step 4 contains a critical mathematical error: the rotation matrix provided does not correspond to the intrinsic Z-Y'-Z'' rotation sequence defined in Step 1. To fix this, the candidate must use the correct rotation matrix R = Rz(psi) Ry(theta) Rz(phi) and rigorously derive the angular velocity from the time derivative of this matrix.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Defining the Z-Y-Z Euler angle convention (intrinsic rotations).",
+        "valid": true,
+        "justification": "This step correctly defines the sequence of rotations (Z-Y'-Z'') which is necessary context for the theorem."
+      },
+      {
+        "step": 2,
+        "description": "Stating the definition of angular velocity in a rotating frame.",
+        "valid": true,
+        "justification": "This is the standard and correct kinematic definition relating time derivatives in a fixed frame (R0) and a rotating frame (R)."
+      },
+      {
+        "step": 3,
+        "description": "Decomposing the instantaneous angular velocity into contributions from each rotation rate.",
+        "valid": true,
+        "justification": "This step correctly applies the principle that the instantaneous angular velocity of a composite rotation is the vector sum of the angular velocities of the individual rotations, expressed in the fixed frame."
+      },
+      {
+        "step": 4,
+        "description": "Verifying the result using the rotation matrix and its time derivative.",
+        "valid": false,
+        "justification": "The rotation matrix R = Rz(phi) Ry(theta) Rz(psi) corresponds to an extrinsic Z-Y-Z sequence, which contradicts the intrinsic Z-Y'-Z'' sequence described in Step 1. This mathematical inconsistency invalidates the rigorous verification attempt."
+      },
+      {
+        "step": 5,
+        "description": "Stating the final expression for the angular velocity.",
+        "valid": true,
+        "justification": "This step correctly restates the theorem's conclusion, which is physically correct, but relies on the flawed verification in Step 4."
+      }
+    ]
+  },
+  {
+    "id": 1042713,
+    "domain": [
+      "Applied Mathematics -> Statistical Methods -> Other",
+      "Linear Algebra -> Matrices -> Other"
+    ],
+    "difficulty": 6.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate provides a logically sound and mathematically correct analysis. It correctly identifies the theorem as Stokes' Theorem, verifies the necessary conditions, and accurately describes the rigorous proof strategy involving parametrization and reduction to Green's Theorem.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Recognize the Theorem as Stokes' Theorem",
+        "valid": true,
+        "justification": "The statement provided is mathematically identical to Stokes' Theorem, which relates the circulation of a vector field around a closed curve to the flux of its curl through the surface bounded by the curve."
+      },
+      {
+        "step": 2,
+        "description": "Verify the Conditions for the Theorem",
+        "valid": true,
+        "justification": "The problem statement explicitly provides all necessary conditions: S is a smooth oriented surface, F is a smooth vector field, and the orientation is consistent, confirming that Stokes' Theorem applies."
+      },
+      {
+        "step": 3,
+        "description": "Parametrize the Surface and Boundary",
+        "valid": true,
+        "justification": "This step correctly translates the surface integral and the line integral into integrals over the parameter domain D, using the standard definitions for surface and line integrals in terms of parametrization."
+      },
+      {
+        "step": 4,
+        "description": "Apply Stokes' Theorem in Parametrized Coordinates (Proof Strategy)",
+        "valid": true,
+        "justification": "The description accurately outlines the standard rigorous proof technique for Stokes' Theorem: decomposing the surface into flat patches, applying Green's Theorem (the 2D version) to each patch, and showing that the internal boundary terms cancel out, leaving only the integral over the overall boundary of S."
+      },
+      {
+        "step": 5,
+        "description": "Conclude the Proof",
+        "valid": true,
+        "justification": "The conclusion correctly states that the equality holds based on the established principles of vector calculus and the definition of the curl, which is the essence of Stokes' Theorem."
+      }
+    ]
+  },
+  {
+    "id": 1046375,
+    "domain": [
+      "Geometry -> Differential Geometry -> Curvature",
+      "Geometry -> Differential Geometry -> Manifolds",
+      "Calculus -> Differential Equations -> Partial Differential Equations (PDEs)"
+    ],
+    "difficulty": 9.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is entirely valid. It correctly uses the standard structure of the tangent space of a flag manifold and leverages the properties of orthogonal complements in inner product spaces to establish the required subspace relationship.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Identifying the tangent space of the flag manifold as a direct sum of Hom spaces: T(F) is isomorphic to Sum(Hom(Ei, E(i+1)/Ei)).",
+        "valid": true,
+        "justification": "This is a standard and correct result from the theory of flag manifolds, derived from the structure of iterated Grassmannians."
+      },
+      {
+        "step": 2,
+        "description": "Showing that the quotient space V/Ei is isomorphic to the orthogonal complement Ei_perp.",
+        "valid": true,
+        "justification": "This is a fundamental property of inner product spaces. The orthogonal projection defines the required vector space isomorphism V/Ei -> Ei_perp."
+      },
+      {
+        "step": 3,
+        "description": "Relating the Hom spaces: Hom(Ei, V/Ei) is isomorphic to Hom(Ei, Ei_perp).",
+        "valid": true,
+        "justification": "Since the target spaces V/Ei and Ei_perp are isomorphic, the Hom spaces between Ei and these targets are also isomorphic."
+      },
+      {
+        "step": 4,
+        "description": "Embedding the tangent space components into the target direct sum.",
+        "valid": true,
+        "justification": "Since E(i+1)/Ei is a subspace of V/Ei, the corresponding Hom space Hom(Ei, E(i+1)/Ei) is a subspace of Hom(Ei, V/Ei). By Step 3, this means it is a subspace of Hom(Ei, Ei_perp). The direct sum property then holds."
+      }
+    ]
+  },
+  {
+    "id": 1049004,
+    "domain": [
+      "Geometry -> Differential Geometry -> Manifolds",
+      "Discrete Mathematics -> Other"
+    ],
+    "difficulty": 6.0,
+    "truth_value": true,
+    "source": "mathstackexchange",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is entirely valid. It correctly establishes the chain of implications: Lipschitz continuity implies absolute continuity, and absolute continuity implies differentiability almost everywhere, thus proving the theorem.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Proving that Lipschitz continuity implies absolute continuity.",
+        "valid": true,
+        "justification": "The proof correctly uses the Lipschitz condition |f(x) - f(y)| <= K|x - y| to show that the definition of absolute continuity is satisfied by choosing delta = epsilon / K. This implication is mathematically sound."
+      },
+      {
+        "step": 2,
+        "description": "Stating and applying the theorem that absolute continuity implies differentiability almost everywhere.",
+        "valid": true,
+        "justification": "This step correctly cites a fundamental theorem of Lebesgue integration theory. Since the function is absolutely continuous on every finite interval, it is differentiable almost everywhere on that interval. Extending this to R via countable union is also correct."
+      },
+      {
+        "step": 3,
+        "description": "Concluding that Lipschitz continuity implies differentiability almost everywhere.",
+        "valid": true,
+        "justification": "This step is a correct logical synthesis of the results from Step 1 (Lipschitz implies AC) and Step 2 (AC implies differentiability a.e.)."
+      }
+    ]
+  },
+  {
+    "id": 1053679,
+    "domain": [
+      "Calculus -> Integral Calculus -> Techniques of Integration",
+      "Algebra -> Intermediate Algebra -> Other"
+    ],
+    "difficulty": 7.0,
+    "truth_value": true,
+    "source": "olympiads",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": false,
+    "summary": "The candidate successfully proves that f(x) = x is a solution, but the crucial Step 4, which is required to prove uniqueness, is incomplete. The argument relies on an assertion that the functional equation forces linearity rather than providing a rigorous derivation to complete the proof.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Evaluating the equation at x = 0 to show f(0) = 0.",
+        "valid": true,
+        "justification": "The substitution leads to f(f(0)) = f(0) * y. Since the LHS is constant and the RHS varies with y, f(0) must be 0. This is logically sound."
+      },
+      {
+        "step": 2,
+        "description": "Evaluating the equation at y = 0 to show f(f(x)) = x.",
+        "valid": true,
+        "justification": "Using f(0) = 0, the substitution yields f(f(x)) = x. This correctly establishes that f is an involution and thus bijective."
+      },
+      {
+        "step": 3,
+        "description": "Testing the linear form f(x) = kx and finding k = 1.",
+        "valid": true,
+        "justification": "The substitution and comparison of coefficients correctly lead to the requirement k^2 = k and k^2 = 1, forcing k = 1. This confirms that f(x) = x is a solution."
+      },
+      {
+        "step": 4,
+        "description": "Attempting to prove uniqueness using substitutions and deriving f(1+a) = 2a.",
+        "valid": false,
+        "justification": "While the initial substitutions (e.g., setting y=a) are correct and lead to useful intermediate equations, the step fails to provide a rigorous continuation of the proof. It concludes by asserting that the functional equation 'forces f to behave linearly' without providing the necessary mathematical derivation to establish uniqueness."
+      }
+    ]
+  },
+  {
+    "id": 1053314,
+    "domain": [
+      "Algebra -> Intermediate Algebra -> Polynomial Operations",
+      "Geometry -> Plane Geometry -> Circles",
+      "Algebra -> Intermediate Algebra -> Inequalities"
+    ],
+    "difficulty": 7.0,
+    "truth_value": true,
+    "source": "olympiads",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is valid. It successfully uses a density argument to establish the necessary condition 1 <= sum(1/a^i). By showing that a >= 2 leads to a contradiction, the proof correctly establishes that a must be less than 2, satisfying the theorem's conclusion 0 < a < 2.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Stating the problem conditions and goal.",
+        "valid": true,
+        "justification": "This step correctly identifies the premises and the conclusion required by the theorem."
+      },
+      {
+        "step": 2,
+        "description": "Deriving the inequality 1 <= sum(1/a^i) using a density/counting argument.",
+        "valid": true,
+        "justification": "The counting argument (M <= sum(floor(M/a^i)) + n) correctly leads to the necessary condition 1 <= sum(1/a^i) as M approaches infinity."
+      },
+      {
+        "step": 3,
+        "description": "Analyzing the sum using geometric series and deriving a necessary condition a <= 2.",
+        "valid": true,
+        "justification": "Assuming a > 1, the geometric series sum is correctly applied. The derivation that 1/(a-1) >= 1 implies a <= 2 is mathematically sound."
+      },
+      {
+        "step": 4,
+        "description": "Showing that a >= 2 leads to a contradiction.",
+        "valid": true,
+        "justification": "If a >= 2, the finite sum sum(1/a^i) is strictly less than 1 for any finite n, contradicting the requirement derived in Step 2. This successfully proves a < 2."
+      },
+      {
+        "step": 5,
+        "description": "Discussing the possibility of construction for a < 2.",
+        "valid": true,
+        "justification": "While the reasoning about 'arbitrarily large n' is slightly imprecise regarding the fixed nature of n, this step does not introduce a mathematical error and does not invalidate the core proof established by contradiction in Step 4."
+      }
+    ]
+  },
+  {
+    "id": 1058210,
+    "domain": [
+      "Algebra -> Abstract Algebra -> Ring Theory",
+      "Algebra -> Intermediate Algebra -> Polynomial Operations"
+    ],
+    "difficulty": 5.5,
+    "truth_value": true,
+    "source": "olympiads",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is mathematically rigorous and logically sound. Every step, from solving the trigonometric equation to applying the relationship derived from cos x = cos y, is correct and leads directly to the stated solution set.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Solving Equation (1) by factoring and analyzing cases based on sin x = 0 or the quadratic factor.",
+        "valid": true,
+        "justification": "The algebraic manipulation and factorization are correct. The subsequent analysis of the cubic equation for t = sin x correctly identifies the only valid solution t = -sqrt(2)/2, while correctly discarding the extraneous root k = 3/4."
+      },
+      {
+        "step": 2,
+        "description": "Determining all solutions for x from Equation (1).",
+        "valid": true,
+        "justification": "The solutions derived are x = pi k (from sin x = 0), x = 5pi/4 + 2pi k, and x = 7pi/4 + 2pi k (which is equivalent to -pi/4 + 2pi k). These cover all possibilities for Equation (1)."
+      },
+      {
+        "step": 3,
+        "description": "Using Equation (2) (cos x = cos y) to relate x and y for the case x = pi k.",
+        "valid": true,
+        "justification": "The relationship y = +/- x + 2pi n is correctly applied. The resulting subcases (x = 2pi k and x = pi + 2pi k) correctly yield the first two proposed solution types."
+      },
+      {
+        "step": 4,
+        "description": "Using Equation (2) to relate x and y for the case x = -pi/4 + 2pi k.",
+        "valid": true,
+        "justification": "Since cos x = sqrt(2)/2, y must satisfy cos y = sqrt(2)/2. The resulting forms y = +/- pi/4 + 2pi n correctly match the third proposed solution type."
+      },
+      {
+        "step": 5,
+        "description": "Using Equation (2) to relate x and y for the case x = 5pi/4 + 2pi k.",
+        "valid": true,
+        "justification": "Since cos x = -sqrt(2)/2, y must satisfy cos y = -sqrt(2)/2. The resulting forms y = +/- 3pi/4 + 2pi n correctly match the fourth proposed solution type."
+      },
+      {
+        "step": 6,
+        "description": "Verifying completeness and concluding the proof.",
+        "valid": true,
+        "justification": "Since all solutions to Equation (1) were analyzed and mapped correctly to the proposed solution set via Equation (2), the proof is complete and sound."
+      }
+    ]
+  },
+  {
+    "id": 1059981,
+    "domain": [
+      "Discrete Mathematics -> Logic -> Other",
+      "Algebra -> Abstract Algebra -> Other"
+    ],
+    "difficulty": 7.0,
+    "truth_value": true,
+    "source": "olympiads",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate provides a rigorous and mathematically sound proof. It correctly establishes that the symmetry condition forces the points onto a circle, and subsequently, the high degree of symmetry required implies the set must form a regular polygon, provided the set is finite.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Establishing that all points in S lie on a circle.",
+        "valid": true,
+        "justification": "The argument correctly uses the property that if a set of points is symmetric with respect to multiple perpendicular bisectors, and these bisectors intersect, they must share a common center, meaning all points are equidistant from that center."
+      },
+      {
+        "step": 2,
+        "description": "Deducing that the symmetry implies the set must be a regular polygon.",
+        "valid": true,
+        "justification": "This step correctly identifies that the condition (invariance under all perpendicular bisector reflections) imposes the highest possible symmetry on a finite set of points on a circle, which is characteristic of the vertices of a regular polygon (dihedral symmetry)."
+      },
+      {
+        "step": 3,
+        "description": "Addressing the necessity of assuming S is a finite set.",
+        "valid": true,
+        "justification": "The candidate correctly notes that the conclusion (S is the set of vertices of a regular n-gon) requires S to be finite, and correctly dismisses the infinite case (like the entire circle) as not meeting the conclusion."
+      }
+    ]
+  },
+  {
+    "id": 1063219,
+    "domain": [
+      "Discrete Mathematics -> Logic -> Other",
+      "Geometry -> Plane Geometry -> Polygons -> Other",
+      "Discrete Mathematics -> Algorithms -> Other"
+    ],
+    "difficulty": 7.0,
+    "truth_value": true,
+    "source": "olympiads",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is entirely valid. It correctly uses polynomial degree analysis, substitution techniques, and algebraic verification to uniquely determine that the function must be of the form f(x) = x^3 + cx.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Determining the degree of the polynomial function f based on the degrees of the LHS and RHS of the functional equation.",
+        "valid": true,
+        "justification": "The RHS is a polynomial of degree 4. If f is a polynomial of degree n, the LHS is of degree n+1. Equating degrees correctly yields n=3."
+      },
+      {
+        "step": 2,
+        "description": "Assuming the general form of a cubic polynomial f(x) = ax^3 + bx^2 + cx + d.",
+        "valid": true,
+        "justification": "This step logically follows from the conclusion of Step 1."
+      },
+      {
+        "step": 3,
+        "description": "Using specific substitutions (x=y, y=0, y=-x) to determine the constant term d.",
+        "valid": true,
+        "justification": "The substitution x=y correctly leads to -2x f(0) = 0, implying f(0) = 0, thus d=0. The other substitutions are consistent but uninformative."
+      },
+      {
+        "step": 4,
+        "description": "Substituting the reduced cubic form f(x) = ax^3 + bx^2 + cx into the functional equation and equating coefficients.",
+        "valid": true,
+        "justification": "The detailed algebraic expansion of the LHS is correct, resulting in 4a xy(x^2 - y^2) + 2b y(x^2 - y^2). Equating this to the RHS, 4xy(x^2 - y^2), correctly leads to the system of equations 4a - 4 = 0 and 2b = 0, yielding a=1 and b=0."
+      },
+      {
+        "step": 5,
+        "description": "Concluding the form of f(x) based on the determined coefficients a=1 and b=0.",
+        "valid": true,
+        "justification": "With a=1, b=0, and d=0, the function must be f(x) = x^3 + cx, which matches the required form."
+      },
+      {
+        "step": 6,
+        "description": "Verifying that the derived solution f(x) = x^3 + cx satisfies the original functional equation.",
+        "valid": true,
+        "justification": "The substitution confirms that the LHS simplifies exactly to 4xy(x^2 - y^2), matching the RHS. This confirms the solution is correct."
+      }
+    ]
+  },
+  {
+    "id": 1064115,
+    "domain": [
+      "Geometry -> Solid Geometry -> 3D Shapes",
+      "Algebra -> Intermediate Algebra -> Other"
+    ],
+    "difficulty": 7.0,
+    "truth_value": true,
+    "source": "olympiads",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": false,
+    "summary": "The proof is logically invalid because Step 5, the crucial inductive step, asserts the existence of a contradiction without providing the necessary mathematical derivation or detailed exploration to support its claim. To fix this, the candidate must rigorously demonstrate that any choice of f(n) other than n violates the divisibility condition for some specific pair (m, n).",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Verifying that the identity function f(n) = n satisfies the condition.",
+        "valid": true,
+        "justification": "The substitution f(n)=n leads to m^2 + n dividing (m^2 + n)^2, which is mathematically correct."
+      },
+      {
+        "step": 2,
+        "description": "Stating the goal of proving that f(n) = n is the only solution.",
+        "valid": true,
+        "justification": "This is a valid statement of the objective of the proof."
+      },
+      {
+        "step": 3,
+        "description": "Fixing m=1 and determining f(1) by analyzing the divisibility condition for n=1.",
+        "valid": true,
+        "justification": "The derivation a^2 + a | 4 correctly restricts f(1) to be 1."
+      },
+      {
+        "step": 4,
+        "description": "Generalizing the constraint on f(n) using m=1 and f(1)=1.",
+        "valid": true,
+        "justification": "The condition f(n) + 1 | (n + 1)^2 is a necessary and correct consequence of the theorem statement."
+      },
+      {
+        "step": 5,
+        "description": "Inductive step attempting to prove f(n) = n by contradiction.",
+        "valid": false,
+        "justification": "The step relies on an assertion ('as shown in the detailed exploration') that a contradiction exists when f(n) != n, but fails to provide the necessary mathematical derivation or specific counterexamples to support this claim. Therefore, the step is logically incomplete."
+      },
+      {
+        "step": 6,
+        "description": "Concluding that f(n) = n is the only solution based on the induction.",
+        "valid": false,
+        "justification": "The conclusion is mathematically correct (the theorem is true), but it is based on the flawed and unproven assertion made in Step 5. A conclusion based on an invalid premise is logically unsound."
+      }
+    ]
+  },
+  {
+    "id": 1064912,
+    "domain": [
+      "Algebra -> Abstract Algebra -> Group Theory",
+      "Number Theory -> Factorization",
+      "Number Theory -> Congruences"
+    ],
+    "difficulty": 7.0,
+    "truth_value": true,
+    "source": "olympiads",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is logically sound and mathematically correct. All steps lead correctly to the conclusion that the only function satisfying the conditions is the zero function, matching the ground truth.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Checking the functional equation for x=y=z=0 using f(0)=0.",
+        "valid": true,
+        "justification": "The substitution leads to 0=0, confirming consistency with the given condition f(0)=0."
+      },
+      {
+        "step": 2,
+        "description": "Showing that f is an odd function using x=0, y=a, z=-a.",
+        "valid": true,
+        "justification": "The functional equation simplifies to f(a) + f(-a) = 0, proving f(-a) = -f(a)."
+      },
+      {
+        "step": 3,
+        "description": "Deriving a recursive formula for f(2x) using x=y, z=-2x.",
+        "valid": true,
+        "justification": "The derivation f(2x) = 2f(x) / (1 - f(x)^2) is algebraically correct and follows from the functional equation and the odd property."
+      },
+      {
+        "step": 4,
+        "description": "Assuming f(a) = c != 0 and deriving the polynomial equation 3c^4 - 10c^2 + 3 = 0.",
+        "valid": true,
+        "justification": "While the complex intermediate calculations for f(3a) and f(4a) are omitted, the resulting polynomial equation is the correct consequence of applying the functional equation for x=a, y=3a, z=-4a, assuming the prior steps are correct."
+      },
+      {
+        "step": 5,
+        "description": "Solving the quartic equation for c^2 and showing that the solutions are irrational.",
+        "valid": true,
+        "justification": "The quadratic equation in u=c^2, 3u^2 - 10u + 3 = 0, is solved correctly, yielding c^2 = 3 or c^2 = 1/3, which implies c is irrational."
+      },
+      {
+        "step": 6,
+        "description": "Concluding that f(x) must be the zero function based on the contradiction.",
+        "valid": true,
+        "justification": "Since f(a) must be rational (Condition iii) but the assumption f(a) != 0 leads to an irrational value, the assumption must be false, forcing f(a)=0 for all a."
+      }
+    ]
+  },
+  {
+    "id": 1066303,
+    "domain": [
+      "Algebra -> Abstract Algebra -> Number Theory",
+      "Algebra -> Intermediate Algebra -> Polynomial Operations",
+      "Discrete Mathematics -> Logic -> Algorithms"
+    ],
+    "difficulty": 7.0,
+    "truth_value": true,
+    "source": "aops_forum",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": false,
+    "summary": "Although the candidate successfully constructed a mathematically sound counterexample, leading to the conclusion that the theorem is false, this conclusion contradicts the provided ground truth which states the theorem is TRUE. Therefore, the overall response is invalid because the final conclusion is incorrect.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Setting up the coordinates for the acute triangle ABC and calculating the incenter I.",
+        "valid": true,
+        "justification": "The coordinates chosen (A=(0,0), B=(2,0), C=(1,2)) form an acute isosceles triangle, and the calculation of the incenter I=(1, (sqrt(5) - 1) / 2) is mathematically correct."
+      },
+      {
+        "step": 2,
+        "description": "Finding the coordinates of points Y and Z (intersections of CI and BI with MN).",
+        "valid": true,
+        "justification": "The equations for lines CI, MN, and BI are correctly derived, and the resulting coordinates for Y=(1, 0) and Z=(1 - sqrt(5)/5, 2*sqrt(5)/5) are calculated accurately."
+      },
+      {
+        "step": 3,
+        "description": "Choosing a point X on AC and stating the numerical calculation of incircle touch points K, P, L, Q.",
+        "valid": true,
+        "justification": "The choice X=(0.5, 1) is valid as it lies on AC. The method cited for finding touch points is correct, and the step is logically sound, assuming the subsequent numerical values are accurate."
+      },
+      {
+        "step": 4,
+        "description": "Calculating the intersection point of lines KP and LQ.",
+        "valid": true,
+        "justification": "This step involves standard linear algebra based on the numerical inputs from Step 3. The calculation of the intersection point (x approx 0.806, y approx 0.724) is logically sound."
+      },
+      {
+        "step": 5,
+        "description": "Checking if the intersection point lies on the line segment YZ.",
+        "valid": true,
+        "justification": "The parametrization of YZ is correct. The comparison shows that the calculated intersection point (0.806, 0.724) does not lie on the line YZ, correctly demonstrating that the chosen counterexample fails the theorem's condition."
+      }
+    ]
+  },
+  {
+    "id": 1069644,
+    "domain": [
+      "Geometry -> Plane Geometry -> Polygons",
+      "Discrete Mathematics -> Combinatorics",
+      "Algebra -> Intermediate Algebra -> Equations And Inequalities"
+    ],
+    "difficulty": 7.0,
+    "truth_value": true,
+    "source": "olympiads",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is entirely valid. It successfully uses substitution and the property of injectivity derived from the functional equation to uniquely determine the form of the function f(x) = x + c, and then verifies this solution.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Setting x = 0 to derive the relation f(c + y) = f(f(y))",
+        "valid": true,
+        "justification": "This is a correct algebraic substitution into the functional equation, leading to a valid intermediate relation where c = f(0)."
+      },
+      {
+        "step": 2,
+        "description": "Assuming f(a) = f(b) and deriving injectivity of f",
+        "valid": true,
+        "justification": "The derivation correctly leads to the difference equation f(u) - f(u - d) = 2d. The subsequent analysis correctly shows that this difference equation implies a linear form f(u) = 2u + k, which contradicts the original functional equation. Therefore, the initial assumption f(a) = f(b) must imply a = b, proving injectivity."
+      },
+      {
+        "step": 3,
+        "description": "Using injectivity and the relation from Step 1 to determine the form of f",
+        "valid": true,
+        "justification": "Since f(c + y) = f(f(y)) and f is injective, it must be that c + y = f(y). This correctly yields the required form f(y) = y + c."
+      },
+      {
+        "step": 4,
+        "description": "Verifying the solution f(x) = x + c in the original functional equation",
+        "valid": true,
+        "justification": "The substitution confirms that f(x) = x + c satisfies the functional equation for all x and y, completing the proof."
+      }
+    ]
+  },
+  {
+    "id": 1069939,
+    "domain": [
+      "Discrete Mathematics -> Graph Theory",
+      "Discrete Mathematics -> Combinatorics"
+    ],
+    "difficulty": 7.0,
+    "truth_value": true,
+    "source": "olympiads",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is entirely valid. It successfully uses geometric formulas to derive a Diophantine equation, proves the uniqueness of its integer solution, and verifies that this unique solution corresponds exactly to the 3-4-5 triangle, thus proving the theorem.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Deriving the relationship (s-a)(s-b)(s-c) = s using the inradius and Heron's formula.",
+        "valid": true,
+        "justification": "The derivation correctly uses the formula r = A/s, sets r=1, and equates the resulting expressions for A, leading correctly to the required Diophantine equation."
+      },
+      {
+        "step": 2,
+        "description": "Introducing substitutions x, y, z and setting up the system x + y + z = xyz.",
+        "valid": true,
+        "justification": "The substitutions x = s-a, y = s-b, z = s-c are correct, and the resulting system of equations (x+y+z = s and xyz = s) correctly simplifies to x + y + z = xyz."
+      },
+      {
+        "step": 3,
+        "description": "Finding all positive integer solutions to x + y + z = xyz under the constraint x <= y <= z.",
+        "valid": true,
+        "justification": "The analysis of cases x=1, x=2, and x>=3 is mathematically rigorous. It correctly identifies (1, 2, 3) as the unique solution and proves that no other solutions exist."
+      },
+      {
+        "step": 4,
+        "description": "Determining the side lengths a, b, c from the unique solution (1, 2, 3).",
+        "valid": true,
+        "justification": "Using s = x+y+z = 6, the side lengths are correctly calculated as a = 5, b = 4, and c = 3."
+      },
+      {
+        "step": 5,
+        "description": "Verifying that the triangle (5, 4, 3) satisfies the initial conditions (r=1).",
+        "valid": true,
+        "justification": "The calculation of the area A=6 and the inradius r = A/s = 6/6 = 1 is correct, confirming the triangle meets all criteria."
+      },
+      {
+        "step": 6,
+        "description": "Concluding that the solution (5, 4, 3) is unique.",
+        "valid": true,
+        "justification": "Since Step 3 proved that (1, 2, 3) is the only possible integer solution for (x, y, z), the uniqueness of the resulting triangle (5, 4, 3) is logically established."
+      }
+    ]
+  },
+  {
+    "id": 1071024,
+    "domain": [
+      "Number Theory -> Congruences",
+      "Algebra -> Intermediate Algebra -> Other"
+    ],
+    "difficulty": 6.5,
+    "truth_value": true,
+    "source": "aops_forum",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is mathematically sound and logically complete. It successfully proves both the necessary condition (parity preservation) and the sufficient condition (that the reachable set is the ideal (1+i)Z[i]), thus fully characterizing the set T.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Identifying the set of possible step vectors S and checking the parity of the sum of coordinates (x+y) for each vector.",
+        "valid": true,
+        "justification": "The candidate correctly identifies the four possible step vectors (associates of 1+i) and correctly verifies that for every vector a+bi in S, the sum a+b is even."
+      },
+      {
+        "step": 2,
+        "description": "Proving the necessary condition: Parity preservation (T is a subset of points where x+y is even).",
+        "valid": true,
+        "justification": "Starting from z=0 (where x+y=0, even), and since every step vector has an even sum of coordinates, adding any step vector preserves the even parity of the sum of coordinates. This correctly establishes T subset of {z | x+y is even}."
+      },
+      {
+        "step": 3,
+        "description": "Proving the sufficient condition: Showing that all points where x+y is even are reachable (Ideal theory argument).",
+        "valid": true,
+        "justification": "The candidate correctly identifies that the step vectors are all associates of 1+i. Therefore, the set of reachable points T is the lattice generated by these vectors, which is exactly the ideal (1+i)Z[i]. The candidate correctly proves that the ideal (1+i)Z[i] consists precisely of Gaussian integers z=x+yi such that x+y is even. This establishes the reverse inclusion."
+      },
+      {
+        "step": 4,
+        "description": "Final conclusion synthesizing necessary and sufficient conditions.",
+        "valid": true,
+        "justification": "The conclusion correctly combines the results of Step 2 (necessary condition) and Step 3 (sufficient condition) to prove the equality T = {z | x+y is even}."
+      }
+    ]
+  },
+  {
+    "id": 1073462,
+    "domain": [
+      "Number Theory -> Prime Numbers",
+      "Number Theory -> Congruences",
+      "Algebra -> Intermediate Algebra -> Other"
+    ],
+    "difficulty": 5.0,
+    "truth_value": true,
+    "source": "olympiads",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is entirely valid. It systematically uses algebraic substitution and inequality analysis to demonstrate that the only possible solutions must satisfy x^2 + y^2 = 1, and then verifies that these solutions are precisely the four points listed in the theorem.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Understanding the system and defining the goal.",
+        "valid": true,
+        "justification": "This is a correct setup and restatement of the problem."
+      },
+      {
+        "step": 2,
+        "description": "Simplifying the second equation using perfect squares and defining auxiliary variables A and B.",
+        "valid": true,
+        "justification": "The algebraic manipulation (16x^4 - 8x^2y^2 + y^4 = (4x^2 - y^2)^2) and the subsequent definition of A and B are mathematically correct."
+      },
+      {
+        "step": 3,
+        "description": "Expressing the inequality constraint (x^2 + y^2 <= 1) in terms of A and B, and solving for A.",
+        "valid": true,
+        "justification": "The derivation of x^2 and y^2 in terms of A and B is correct. The substitution into the inequality leads correctly to (A - 3)^2 <= 0, which rigorously implies A = 3."
+      },
+      {
+        "step": 4,
+        "description": "Calculating x^2 and y^2 using the derived value A=3.",
+        "valid": true,
+        "justification": "Substituting A=3 into the expressions for B, x^2, and y^2 yields x^2 = 4/5 and y^2 = 1/5, which correctly identifies the four candidate points."
+      },
+      {
+        "step": 5,
+        "description": "Verifying that the candidate points satisfy the inequality x^2 + y^2 <= 1.",
+        "valid": true,
+        "justification": "The calculation x^2 + y^2 = 4/5 + 1/5 = 1 is correct, confirming the points lie on the boundary of the unit disk."
+      },
+      {
+        "step": 6,
+        "description": "Proving that no solutions exist where x^2 + y^2 < 1.",
+        "valid": true,
+        "justification": "This step correctly uses the result from Step 3: any solution satisfying the second equation and the inequality must have A=3, which forces x^2 + y^2 = 1. This logically excludes solutions where x^2 + y^2 < 1."
+      }
+    ]
+  },
+  {
+    "id": 1081192,
+    "domain": [
+      "Calculus -> Differential Calculus -> Applications of Derivatives",
+      "Algebra -> Intermediate Algebra -> Inequalities"
+    ],
+    "difficulty": 7.0,
+    "truth_value": true,
+    "source": "olympiads",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": true,
+    "summary": "The candidate proof is entirely valid. It successfully uses the functional equation to establish bijectivity and multiplicativity, and then uses the limit condition to uniquely determine the function as f(x) = 1/x, matching the ground truth.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Using substitutions (x=1, y=1) in the functional equation to show f(f(y)) = y and f(1) = 1.",
+        "valid": true,
+        "justification": "The derivation f(x c) = f(x) implies f must be constant unless c=1, which is a correct application of the domain (0, infinity). This correctly establishes f is an involution."
+      },
+      {
+        "step": 2,
+        "description": "Substituting y = f(y) into the original equation to prove f is multiplicative.",
+        "valid": true,
+        "justification": "The substitution f(x f(f(y))) = f(y) f(x) correctly simplifies to f(xy) = f(y) f(x) using the result f(f(y)) = y from Step 1."
+      },
+      {
+        "step": 3,
+        "description": "Transforming the multiplicative property into a Cauchy functional equation and using the limit condition to restrict the solution to f(x) = x^k with k=-1.",
+        "valid": true,
+        "justification": "The limit condition f(x) -> 0 as x -> infinity provides the necessary regularity (monotonicity) to ensure the solution to the Cauchy equation is of the form x^k. The condition f(f(x)) = x then correctly forces k^2 = 1, and the limit condition selects k = -1."
+      },
+      {
+        "step": 4,
+        "description": "Verifying that f(x) = 1/x satisfies the limit condition.",
+        "valid": true,
+        "justification": "The limit calculation is straightforward and correct. Although the verification of the original functional equation is not explicitly shown, the derivation uniquely leads to this function, which is known to satisfy the equation."
+      }
+    ]
+  },
+  {
+    "id": 1078443,
+    "domain": [
+      "Number Theory -> Prime Numbers",
+      "Algebra -> Abstract Algebra -> Other"
+    ],
+    "difficulty": 7.0,
+    "truth_value": true,
+    "source": "aops_forum",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": false,
+    "summary": "The candidate correctly identifies the solution (2, 2, 4) and shows it works for k=7. However, the proof is invalid because it relies on unproven assertions (Step 5) and heuristic arguments (Step 6) to claim that this solution is unique across all possible values of k and (p, q, r). A rigorous proof requires a formal demonstration that no other combination satisfies the equation.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Understanding the Setup and Constraints",
+        "valid": true,
+        "justification": "This step correctly restates the theorem and all given constraints."
+      },
+      {
+        "step": 2,
+        "description": "Simplifying the Equation using Geometric Series Sum S(m)",
+        "valid": true,
+        "justification": "The definition S(m) = (k^m - 1)/(k - 1) is correct, and the algebraic substitution is valid."
+      },
+      {
+        "step": 3,
+        "description": "Case Analysis: Assuming p = q = 2 and deriving the key equation for r = 4",
+        "valid": true,
+        "justification": "The algebraic manipulation leading to the key equation ab(k + 1) = c(k^2 + 1) is mathematically sound."
+      },
+      {
+        "step": 4,
+        "description": "Analyzing the Key Equation and finding a solution for k = 7",
+        "valid": true,
+        "justification": "The calculation for k=7 is correct, demonstrating that (p, q, r) = (2, 2, 4) is a possible solution when k=7."
+      },
+      {
+        "step": 5,
+        "description": "Claiming that no solution exists for other values of k",
+        "valid": false,
+        "justification": "This step makes a strong assertion ('similar analysis shows that k^2 + 1 does not divide ab(k + 1) for any a, b') without providing a rigorous proof or general argument covering all k. This assertion is unproven."
+      },
+      {
+        "step": 6,
+        "description": "Proving Uniqueness by bounding r (r >= 5)",
+        "valid": false,
+        "justification": "This step relies on a heuristic argument about exponential growth ('the right-hand side becomes much larger than the left-hand side') rather than a formal proof of uniqueness for all possible parameters (p, q, r). The argument is not rigorous."
+      },
+      {
+        "step": 7,
+        "description": "Conclusion",
+        "valid": false,
+        "justification": "The conclusion is based on the preceding unproven assertions (Steps 5 and 6). Since the proof lacks rigorous demonstration that (2, 2, 4) is the *only* solution across all possible k and (p, q, r), the overall proof is invalid."
+      }
+    ]
+  },
+  {
+    "id": 1088055,
+    "domain": [
+      "Algebra -> Intermediate Algebra -> Equations And Inequalities",
+      "Geometry -> Precalculus -> Trigonometric Functions"
+    ],
+    "difficulty": 6.5,
+    "truth_value": true,
+    "source": "olympiads",
+    "judged_run": "qwen3_8b_thinking",
+    "judged_model": "Qwen3-8B",
+    "judged_thinking_mode": true,
+    "judge_model": "Gemma4-E4B (thinking)",
+    "parse_error": false,
+    "valid": false,
+    "summary": "The proof is invalid because Step 3 makes an unjustified leap. It assumes that the tangential property of the quadrilateral is sufficient to guarantee that the incircles formed by the second diagonal (BD) will also touch. To fix this, the proof must establish a direct geometric link between the tangency condition on AC and the required tangency condition on BD, rather than relying solely on the quadrilateral being tangential.",
+    "steps": [
+      {
+        "step": 1,
+        "description": "Defining the condition for tangency of two incircles sharing a common side.",
+        "valid": true,
+        "justification": "This correctly states the geometric condition for two circles to be externally tangent: the distance between their centers equals the sum of their radii."
+      },
+      {
+        "step": 2,
+        "description": "Claiming that the tangency of incircles of triangles formed by diagonal AC implies the quadrilateral is tangential.",
+        "valid": true,
+        "justification": "This relies on a known, albeit advanced, theorem in geometry: the tangency of the incircles of the two triangles formed by a diagonal implies the quadrilateral is tangential (has an incircle tangent to all four sides)."
+      },
+      {
+        "step": 3,
+        "description": "Asserting that the tangential property of the quadrilateral guarantees the tangency of the incircles formed by the other diagonal BD.",
+        "valid": false,
+        "justification": "This step contains a critical logical gap. While the quadrilateral being tangential is a necessary condition derived from the premise, it is not sufficient to guarantee that the incircles formed by the *other* diagonal (BD) will also touch. The relationship between the tangency condition for different diagonals is not simply guaranteed by the quadrilateral being tangential."
+      },
+      {
+        "step": 4,
+        "description": "Concluding that the statement is true based on the previous steps.",
+        "valid": false,
+        "justification": "The conclusion is based on the flawed assumption made in Step 3. Since Step 3 is invalid, the final conclusion cannot be logically derived from the preceding reasoning."
+      }
+    ]
   }
 ]
