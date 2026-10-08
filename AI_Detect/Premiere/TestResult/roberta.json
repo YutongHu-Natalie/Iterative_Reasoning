@@ -1,0 +1,688 @@
+{
+  "model": "roberta",
+  "config": {
+    "hf_id": "coai/roberta-ai-detector-v2",
+    "ai_index": 1,
+    "id2label": {
+      "0": "human",
+      "1": "ai"
+    },
+    "max_len": 512,
+    "chunking": "mean of chunk logits",
+    "preprocess": null
+  },
+  "summary": {
+    "n": 40,
+    "n_parse_errors": 0,
+    "accuracy": 0.625,
+    "ai_recall": 0.3,
+    "human_recall": 0.95,
+    "pred_ai_rate": 0.175,
+    "auroc": 0.7575,
+    "mean_certainty": 94.11651866714237,
+    "by_source": {
+      "MathArena": {
+        "n": 14,
+        "n_parse_errors": 0,
+        "accuracy": 0.5714285714285714,
+        "ai_recall": 0.14285714285714285,
+        "human_recall": 1.0,
+        "pred_ai_rate": 0.07142857142857142,
+        "auroc": 0.5306122448979592,
+        "mean_certainty": 98.44063028368899
+      },
+      "OPC": {
+        "n": 26,
+        "n_parse_errors": 0,
+        "accuracy": 0.6538461538461539,
+        "ai_recall": 0.38461538461538464,
+        "human_recall": 0.9230769230769231,
+        "pred_ai_rate": 0.23076923076923078,
+        "auroc": 0.863905325443787,
+        "mean_certainty": 91.78815087361727
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "matharena_usamo_2026_3__llm",
+      "problem_id": "matharena_usamo_2026_3",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Kimi K2.6 (Think)",
+      "logits": [
+        2.103980779647827,
+        -1.8291505575180054
+      ],
+      "n_chunks": 5,
+      "pred_AI": 0,
+      "certainty": 98.07938393205404,
+      "p_ai": 0.019206160679459572,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2026_3__human",
+      "problem_id": "matharena_usamo_2026_3",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.5544240474700928,
+        -3.1854779720306396
+      ],
+      "n_chunks": 4,
+      "pred_AI": 0,
+      "certainty": 99.88186343107373,
+      "p_ai": 0.0011813656892627478,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2026_5__llm",
+      "problem_id": "matharena_usamo_2026_5",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Kimi K2.6 (Think)",
+      "logits": [
+        3.7314159870147705,
+        -3.381317138671875
+      ],
+      "n_chunks": 5,
+      "pred_AI": 0,
+      "certainty": 99.91859975853004,
+      "p_ai": 0.0008140024146996439,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2026_5__human",
+      "problem_id": "matharena_usamo_2026_5",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.1655025482177734,
+        -2.7473816871643066
+      ],
+      "n_chunks": 2,
+      "pred_AI": 0,
+      "certainty": 99.73029184620827,
+      "p_ai": 0.0026970815379172564,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2026_6__llm",
+      "problem_id": "matharena_usamo_2026_6",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Kimi K2.6 (Think)",
+      "logits": [
+        -0.693895697593689,
+        0.9026777744293213
+      ],
+      "n_chunks": 7,
+      "pred_AI": 1,
+      "certainty": 83.15389156341553,
+      "p_ai": 0.8315389156341553,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2026_6__human",
+      "problem_id": "matharena_usamo_2026_6",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.6739089488983154,
+        -3.364455223083496
+      ],
+      "n_chunks": 3,
+      "pred_AI": 0,
+      "certainty": 99.912320880685,
+      "p_ai": 0.0008767911931499839,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_1__llm",
+      "problem_id": "matharena_usamo_2025_1",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Claude-3.7-Sonnet (Think)",
+      "logits": [
+        3.4332900047302246,
+        -3.1106650829315186
+      ],
+      "n_chunks": 3,
+      "pred_AI": 0,
+      "certainty": 99.85632800962776,
+      "p_ai": 0.0014367199037224054,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_1__human",
+      "problem_id": "matharena_usamo_2025_1",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.0582053661346436,
+        -2.6192288398742676
+      ],
+      "n_chunks": 1,
+      "pred_AI": 0,
+      "certainty": 99.65893435291946,
+      "p_ai": 0.0034106564708054066,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_2__llm",
+      "problem_id": "matharena_usamo_2025_2",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Claude-3.7-Sonnet (Think)",
+      "logits": [
+        2.866478443145752,
+        -2.3997642993927
+      ],
+      "n_chunks": 3,
+      "pred_AI": 0,
+      "certainty": 99.48635478504002,
+      "p_ai": 0.005136452149599791,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_2__human",
+      "problem_id": "matharena_usamo_2025_2",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        2.5241267681121826,
+        -1.9855097532272339
+      ],
+      "n_chunks": 2,
+      "pred_AI": 0,
+      "certainty": 98.91172759234905,
+      "p_ai": 0.010882724076509476,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_4__llm",
+      "problem_id": "matharena_usamo_2025_4",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Claude-3.7-Sonnet (Think)",
+      "logits": [
+        3.760690212249756,
+        -3.463791847229004
+      ],
+      "n_chunks": 2,
+      "pred_AI": 0,
+      "certainty": 99.92720005684532,
+      "p_ai": 0.0007279994315467775,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_4__human",
+      "problem_id": "matharena_usamo_2025_4",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.232273817062378,
+        -2.8701701164245605
+      ],
+      "n_chunks": 1,
+      "pred_AI": 0,
+      "certainty": 99.77676013950258,
+      "p_ai": 0.0022323986049741507,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_6__llm",
+      "problem_id": "matharena_usamo_2025_6",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Claude-3.7-Sonnet (Think)",
+      "logits": [
+        3.790803909301758,
+        -3.4954757690429688
+      ],
+      "n_chunks": 3,
+      "pred_AI": 0,
+      "certainty": 99.93155974661931,
+      "p_ai": 0.0006844025338068604,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_6__human",
+      "problem_id": "matharena_usamo_2025_6",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.8860526084899902,
+        -3.593979597091675
+      ],
+      "n_chunks": 2,
+      "pred_AI": 0,
+      "certainty": 99.94360787677579,
+      "p_ai": 0.0005639212322421372,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2016_18__llm",
+      "problem_id": "opc_BMOSL_2016_18",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        -3.4591102600097656,
+        3.605334520339966
+      ],
+      "n_chunks": 5,
+      "pred_AI": 1,
+      "certainty": 99.91457462310791,
+      "p_ai": 0.9991457462310791,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2016_18__human",
+      "problem_id": "opc_BMOSL_2016_18",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        0.1470247507095337,
+        0.2390371561050415
+      ],
+      "n_chunks": 2,
+      "pred_AI": 1,
+      "certainty": 52.298688888549805,
+      "p_ai": 0.522986888885498,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2018_15__llm",
+      "problem_id": "opc_BMOSL_2018_15",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        0.230385422706604,
+        0.040071845054626465
+      ],
+      "n_chunks": 4,
+      "pred_AI": 0,
+      "certainty": 54.743534326553345,
+      "p_ai": 0.45256465673446655,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2018_15__human",
+      "problem_id": "opc_BMOSL_2018_15",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        2.8781588077545166,
+        -2.4590578079223633
+      ],
+      "n_chunks": 2,
+      "pred_AI": 0,
+      "certainty": 99.5213779155165,
+      "p_ai": 0.004786220844835043,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2020_13__llm",
+      "problem_id": "opc_BMOSL_2020_13",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        1.8985657691955566,
+        -1.6524922847747803
+      ],
+      "n_chunks": 6,
+      "pred_AI": 0,
+      "certainty": 97.21061307936907,
+      "p_ai": 0.02789386920630932,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2020_13__human",
+      "problem_id": "opc_BMOSL_2020_13",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.713259220123291,
+        -3.4122636318206787
+      ],
+      "n_chunks": 2,
+      "pred_AI": 0,
+      "certainty": 99.91963338688947,
+      "p_ai": 0.000803666131105274,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2018_16__llm",
+      "problem_id": "opc_BMOSL_2018_16",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        -1.532698392868042,
+        1.728600025177002
+      ],
+      "n_chunks": 3,
+      "pred_AI": 1,
+      "certainty": 96.30770087242126,
+      "p_ai": 0.9630770087242126,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2018_16__human",
+      "problem_id": "opc_BMOSL_2018_16",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.422320604324341,
+        -3.0924508571624756
+      ],
+      "n_chunks": 1,
+      "pred_AI": 0,
+      "certainty": 99.8520796885714,
+      "p_ai": 0.001479203114286065,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2021_7__llm",
+      "problem_id": "opc_BMOSL_2021_7",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        -0.40560221672058105,
+        0.5855907201766968
+      ],
+      "n_chunks": 2,
+      "pred_AI": 1,
+      "certainty": 72.93235063552856,
+      "p_ai": 0.7293235063552856,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2021_7__human",
+      "problem_id": "opc_BMOSL_2021_7",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.866541624069214,
+        -3.568556308746338
+      ],
+      "n_chunks": 1,
+      "pred_AI": 0,
+      "certainty": 99.94101768243127,
+      "p_ai": 0.0005898231756873429,
+      "parse_error": false
+    },
+    {
+      "id": "opc_USAMO_2013_4__llm",
+      "problem_id": "opc_USAMO_2013_4",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        2.3456082344055176,
+        -2.065204620361328
+      ],
+      "n_chunks": 6,
+      "pred_AI": 0,
+      "certainty": 98.80004357546568,
+      "p_ai": 0.011999564245343208,
+      "parse_error": false
+    },
+    {
+      "id": "opc_USAMO_2013_4__human",
+      "problem_id": "opc_USAMO_2013_4",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        0.945081353187561,
+        -0.5015572309494019
+      ],
+      "n_chunks": 2,
+      "pred_AI": 0,
+      "certainty": 80.94805777072906,
+      "p_ai": 0.19051942229270935,
+      "parse_error": false
+    },
+    {
+      "id": "opc_USAMO_2015_5__llm",
+      "problem_id": "opc_USAMO_2015_5",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        1.7670135498046875,
+        -1.5107014179229736
+      ],
+      "n_chunks": 4,
+      "pred_AI": 0,
+      "certainty": 96.36563435196877,
+      "p_ai": 0.03634365648031235,
+      "parse_error": false
+    },
+    {
+      "id": "opc_USAMO_2015_5__human",
+      "problem_id": "opc_USAMO_2015_5",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.2189013957977295,
+        -2.812983512878418
+      ],
+      "n_chunks": 1,
+      "pred_AI": 0,
+      "certainty": 99.76047873497009,
+      "p_ai": 0.0023952126502990723,
+      "parse_error": false
+    },
+    {
+      "id": "opc_IMOSL_2010_1__llm",
+      "problem_id": "opc_IMOSL_2010_1",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        0.12271755933761597,
+        0.07839149236679077
+      ],
+      "n_chunks": 4,
+      "pred_AI": 0,
+      "certainty": 51.107966899871826,
+      "p_ai": 0.48892033100128174,
+      "parse_error": false
+    },
+    {
+      "id": "opc_IMOSL_2010_1__human",
+      "problem_id": "opc_IMOSL_2010_1",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        2.0578560829162598,
+        -1.460031509399414
+      ],
+      "n_chunks": 1,
+      "pred_AI": 0,
+      "certainty": 97.11924623697996,
+      "p_ai": 0.028807537630200386,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2016_2__llm",
+      "problem_id": "opc_BMOSL_2016_2",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        1.9923251867294312,
+        -1.7208492755889893
+      ],
+      "n_chunks": 5,
+      "pred_AI": 0,
+      "certainty": 97.61812295764685,
+      "p_ai": 0.023818770423531532,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2016_2__human",
+      "problem_id": "opc_BMOSL_2016_2",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        2.4872238636016846,
+        -1.851570725440979
+      ],
+      "n_chunks": 1,
+      "pred_AI": 0,
+      "certainty": 98.7115915864706,
+      "p_ai": 0.01288408413529396,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2017_23__llm",
+      "problem_id": "opc_BMOSL_2017_23",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        2.906737804412842,
+        -2.5982370376586914
+      ],
+      "n_chunks": 4,
+      "pred_AI": 0,
+      "certainty": 99.59499784745276,
+      "p_ai": 0.004050021525472403,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2017_23__human",
+      "problem_id": "opc_BMOSL_2017_23",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.635972499847412,
+        -3.338688850402832
+      ],
+      "n_chunks": 3,
+      "pred_AI": 0,
+      "certainty": 99.90655909059569,
+      "p_ai": 0.000934409094043076,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2018_18__llm",
+      "problem_id": "opc_BMOSL_2018_18",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        1.9145399332046509,
+        -1.677024245262146
+      ],
+      "n_chunks": 5,
+      "pred_AI": 0,
+      "certainty": 97.31837324798107,
+      "p_ai": 0.026816267520189285,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2018_18__human",
+      "problem_id": "opc_BMOSL_2018_18",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.1455118656158447,
+        -2.7306270599365234
+      ],
+      "n_chunks": 2,
+      "pred_AI": 0,
+      "certainty": 99.72022515721619,
+      "p_ai": 0.002797748427838087,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2017_17__llm",
+      "problem_id": "opc_BMOSL_2017_17",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        -4.0994462966918945,
+        4.239842414855957
+      ],
+      "n_chunks": 3,
+      "pred_AI": 1,
+      "certainty": 99.9761164188385,
+      "p_ai": 0.999761164188385,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2017_17__human",
+      "problem_id": "opc_BMOSL_2017_17",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        2.9479713439941406,
+        -2.4641547203063965
+      ],
+      "n_chunks": 2,
+      "pred_AI": 0,
+      "certainty": 99.55576788634062,
+      "p_ai": 0.004442321136593819,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2017_18__llm",
+      "problem_id": "opc_BMOSL_2017_18",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        -1.6865493059158325,
+        1.947678804397583
+      ],
+      "n_chunks": 4,
+      "pred_AI": 1,
+      "certainty": 97.427499294281,
+      "p_ai": 0.9742749929428101,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2017_18__human",
+      "problem_id": "opc_BMOSL_2017_18",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.7244014739990234,
+        -3.4015841484069824
+      ],
+      "n_chunks": 3,
+      "pred_AI": 0,
+      "certainty": 99.91967055830173,
+      "p_ai": 0.0008032944169826806,
+      "parse_error": false
+    }
+  ]
+}

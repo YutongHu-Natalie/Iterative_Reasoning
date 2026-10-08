@@ -1,0 +1,729 @@
+{
+  "model": "mage",
+  "config": {
+    "hf_id": "yaful/MAGE",
+    "ai_index": 0,
+    "id2label": {
+      "0": "0",
+      "1": "1"
+    },
+    "max_len": 4096,
+    "chunking": "mean of chunk logits",
+    "preprocess": "mage_official",
+    "decision_rule": "AI iff -logit[0] < -3.08583984375 (official MAGE threshold)"
+  },
+  "summary": {
+    "n": 40,
+    "n_parse_errors": 0,
+    "accuracy": 0.625,
+    "ai_recall": 0.65,
+    "human_recall": 0.6,
+    "pred_ai_rate": 0.525,
+    "auroc": 0.6575,
+    "mean_certainty": 87.4979547793373,
+    "by_source": {
+      "MathArena": {
+        "n": 14,
+        "n_parse_errors": 0,
+        "accuracy": 0.8571428571428571,
+        "ai_recall": 0.8571428571428571,
+        "human_recall": 0.8571428571428571,
+        "pred_ai_rate": 0.5,
+        "auroc": 0.9591836734693877,
+        "mean_certainty": 99.81930095371874
+      },
+      "OPC": {
+        "n": 26,
+        "n_parse_errors": 0,
+        "accuracy": 0.5,
+        "ai_recall": 0.5384615384615384,
+        "human_recall": 0.46153846153846156,
+        "pred_ai_rate": 0.5384615384615384,
+        "auroc": 0.4437869822485207,
+        "mean_certainty": 80.86338376236269
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "matharena_usamo_2026_3__llm",
+      "problem_id": "matharena_usamo_2026_3",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Kimi K2.6 (Think)",
+      "logits": [
+        3.3152616024017334,
+        -3.184509754180908
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.84984397888184,
+      "p_ai": 0.9984984397888184,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2026_3__human",
+      "problem_id": "matharena_usamo_2026_3",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        -2.9460949897766113,
+        3.102647542953491
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 0,
+      "pred_AI": 0,
+      "certainty": 99.76447310764343,
+      "p_ai": 0.0023552689235657454,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2026_5__llm",
+      "problem_id": "matharena_usamo_2026_5",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Kimi K2.6 (Think)",
+      "logits": [
+        -2.1013524532318115,
+        2.2804136276245117
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 0,
+      "pred_AI": 0,
+      "certainty": 98.76511469483376,
+      "p_ai": 0.012348853051662445,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2026_5__human",
+      "problem_id": "matharena_usamo_2026_5",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        -3.956265926361084,
+        3.970174789428711
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 0,
+      "pred_AI": 0,
+      "certainty": 99.96390610467643,
+      "p_ai": 0.00036093895323574543,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2026_6__llm",
+      "problem_id": "matharena_usamo_2026_6",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Kimi K2.6 (Think)",
+      "logits": [
+        3.9172704219818115,
+        -3.809220552444458
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.9559223651886,
+      "p_ai": 0.999559223651886,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2026_6__human",
+      "problem_id": "matharena_usamo_2026_6",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        -2.4896128177642822,
+        2.6696953773498535
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 0,
+      "pred_AI": 0,
+      "certainty": 99.42871523089707,
+      "p_ai": 0.00571284769102931,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_1__llm",
+      "problem_id": "matharena_usamo_2025_1",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Claude-3.7-Sonnet (Think)",
+      "logits": [
+        5.478204250335693,
+        -5.4254865646362305
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.99816417694092,
+      "p_ai": 0.9999816417694092,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_1__human",
+      "problem_id": "matharena_usamo_2025_1",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        -3.369612216949463,
+        3.4441981315612793
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 0,
+      "pred_AI": 0,
+      "certainty": 99.89027060801163,
+      "p_ai": 0.0010972939198836684,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_2__llm",
+      "problem_id": "matharena_usamo_2025_2",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Claude-3.7-Sonnet (Think)",
+      "logits": [
+        4.862811088562012,
+        -4.779106140136719
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.99350309371948,
+      "p_ai": 0.9999350309371948,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_2__human",
+      "problem_id": "matharena_usamo_2025_2",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.511258125305176,
+        -3.398780584335327
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.90033507347107,
+      "p_ai": 0.9990033507347107,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_4__llm",
+      "problem_id": "matharena_usamo_2025_4",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Claude-3.7-Sonnet (Think)",
+      "logits": [
+        4.215054035186768,
+        -4.1301445960998535
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.976247549057,
+      "p_ai": 0.9997624754905701,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_4__human",
+      "problem_id": "matharena_usamo_2025_4",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        -5.110958576202393,
+        5.037203788757324
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 0,
+      "pred_AI": 0,
+      "certainty": 99.99608535945299,
+      "p_ai": 3.914640547009185e-05,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_6__llm",
+      "problem_id": "matharena_usamo_2025_6",
+      "source": "MathArena",
+      "is_ai": 1,
+      "author": "Claude-3.7-Sonnet (Think)",
+      "logits": [
+        5.657992362976074,
+        -5.606349468231201
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.99871253967285,
+      "p_ai": 0.9999871253967285,
+      "parse_error": false
+    },
+    {
+      "id": "matharena_usamo_2025_6__human",
+      "problem_id": "matharena_usamo_2025_6",
+      "source": "MathArena",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        -4.567832946777344,
+        4.539792060852051
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 0,
+      "pred_AI": 0,
+      "certainty": 99.98891946961521,
+      "p_ai": 0.0001108053038478829,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2016_18__llm",
+      "problem_id": "opc_BMOSL_2016_18",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        3.668940544128418,
+        -3.5333666801452637
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.92557168006897,
+      "p_ai": 0.9992557168006897,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2016_18__human",
+      "problem_id": "opc_BMOSL_2016_18",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        -4.666501998901367,
+        4.6202921867370605
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 0,
+      "pred_AI": 0,
+      "certainty": 99.99073690487421,
+      "p_ai": 9.263095125788823e-05,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2018_15__llm",
+      "problem_id": "opc_BMOSL_2018_15",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        -3.1294960975646973,
+        3.22656512260437
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 0,
+      "pred_AI": 0,
+      "certainty": 99.82668169541284,
+      "p_ai": 0.0017331830458715558,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2018_15__human",
+      "problem_id": "opc_BMOSL_2018_15",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        2.933478355407715,
+        -2.79093861579895
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 0,
+      "certainty": 0.32546520233154297,
+      "p_ai": 0.9967453479766846,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2020_13__llm",
+      "problem_id": "opc_BMOSL_2020_13",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        -1.8336374759674072,
+        2.0175716876983643
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 0,
+      "pred_AI": 0,
+      "certainty": 97.91883118450642,
+      "p_ai": 0.020811688154935837,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2020_13__human",
+      "problem_id": "opc_BMOSL_2020_13",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.5661427974700928,
+        -3.435786724090576
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.90906715393066,
+      "p_ai": 0.9990906715393066,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2018_16__llm",
+      "problem_id": "opc_BMOSL_2018_16",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        4.708604335784912,
+        -4.624797821044922
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.99115467071533,
+      "p_ai": 0.9999115467071533,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2018_16__human",
+      "problem_id": "opc_BMOSL_2018_16",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.599073648452759,
+        -3.472156524658203
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.91514682769775,
+      "p_ai": 0.9991514682769775,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2021_7__llm",
+      "problem_id": "opc_BMOSL_2021_7",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        5.449794292449951,
+        -5.381436347961426
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.99802112579346,
+      "p_ai": 0.9999802112579346,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2021_7__human",
+      "problem_id": "opc_BMOSL_2021_7",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        -3.4903342723846436,
+        3.5809648036956787
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 0,
+      "pred_AI": 0,
+      "certainty": 99.91515911533497,
+      "p_ai": 0.0008484088466502726,
+      "parse_error": false
+    },
+    {
+      "id": "opc_USAMO_2013_4__llm",
+      "problem_id": "opc_USAMO_2013_4",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        3.628643751144409,
+        -3.520498752593994
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.92150068283081,
+      "p_ai": 0.9992150068283081,
+      "parse_error": false
+    },
+    {
+      "id": "opc_USAMO_2013_4__human",
+      "problem_id": "opc_USAMO_2013_4",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.510820150375366,
+        -3.3791463375091553
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.8983085155487,
+      "p_ai": 0.9989830851554871,
+      "parse_error": false
+    },
+    {
+      "id": "opc_USAMO_2015_5__llm",
+      "problem_id": "opc_USAMO_2015_5",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        3.4339942932128906,
+        -3.2961843013763428
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.88070726394653,
+      "p_ai": 0.9988070726394653,
+      "parse_error": false
+    },
+    {
+      "id": "opc_USAMO_2015_5__human",
+      "problem_id": "opc_USAMO_2015_5",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        3.907301425933838,
+        -3.7822484970092773
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.95427131652832,
+      "p_ai": 0.9995427131652832,
+      "parse_error": false
+    },
+    {
+      "id": "opc_IMOSL_2010_1__llm",
+      "problem_id": "opc_IMOSL_2010_1",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        2.3246424198150635,
+        -2.164259672164917
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 0,
+      "certainty": 1.1108219623565674,
+      "p_ai": 0.9888917803764343,
+      "parse_error": false
+    },
+    {
+      "id": "opc_IMOSL_2010_1__human",
+      "problem_id": "opc_IMOSL_2010_1",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        5.3451948165893555,
+        -5.267094135284424
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.99754428863525,
+      "p_ai": 0.9999754428863525,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2016_2__llm",
+      "problem_id": "opc_BMOSL_2016_2",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        3.2221198081970215,
+        -3.0838704109191895
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.81780052185059,
+      "p_ai": 0.9981780052185059,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2016_2__human",
+      "problem_id": "opc_BMOSL_2016_2",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        1.949889063835144,
+        -1.7556192874908447
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 0,
+      "certainty": 2.3997724056243896,
+      "p_ai": 0.9760022759437561,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2017_23__llm",
+      "problem_id": "opc_BMOSL_2017_23",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        -2.277146816253662,
+        2.413055896759033
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 0,
+      "pred_AI": 0,
+      "certainty": 99.08987693488598,
+      "p_ai": 0.009101230651140213,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2017_23__human",
+      "problem_id": "opc_BMOSL_2017_23",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        5.536733627319336,
+        -5.472809314727783
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.99834299087524,
+      "p_ai": 0.9999834299087524,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2018_18__llm",
+      "problem_id": "opc_BMOSL_2018_18",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        3.360105514526367,
+        -3.2254035472869873
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.86217021942139,
+      "p_ai": 0.9986217021942139,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2018_18__human",
+      "problem_id": "opc_BMOSL_2018_18",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        -1.925321340560913,
+        2.1566355228424072
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 0,
+      "pred_AI": 0,
+      "certainty": 98.34056086838245,
+      "p_ai": 0.01659439131617546,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2017_17__llm",
+      "problem_id": "opc_BMOSL_2017_17",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        1.827996015548706,
+        -1.648339867591858
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 0,
+      "certainty": 2.999311685562134,
+      "p_ai": 0.9700068831443787,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2017_17__human",
+      "problem_id": "opc_BMOSL_2017_17",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        4.587254524230957,
+        -4.507466793060303
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 1,
+      "certainty": 99.98877048492432,
+      "p_ai": 0.9998877048492432,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2017_18__llm",
+      "problem_id": "opc_BMOSL_2017_18",
+      "source": "OPC",
+      "is_ai": 1,
+      "author": "openai/o4-mini--high (Random Judge)",
+      "logits": [
+        -3.7714169025421143,
+        3.799295425415039
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 0,
+      "pred_AI": 0,
+      "certainty": 99.94849400827661,
+      "p_ai": 0.0005150599172338843,
+      "parse_error": false
+    },
+    {
+      "id": "opc_BMOSL_2017_18__human",
+      "problem_id": "opc_BMOSL_2017_18",
+      "source": "OPC",
+      "is_ai": 0,
+      "author": "human",
+      "logits": [
+        2.1714026927948,
+        -1.9971511363983154
+      ],
+      "n_chunks": 1,
+      "pred_AI_argmax": 1,
+      "pred_AI": 0,
+      "certainty": 1.523888111114502,
+      "p_ai": 0.984761118888855,
+      "parse_error": false
+    }
+  ]
+}
