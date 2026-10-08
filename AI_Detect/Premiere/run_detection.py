@@ -285,13 +285,33 @@ def classifier_logits(text, tokenizer, model, max_len, device):
     return logits.mean(dim=0).cpu(), n_chunks
 
 
+def load_classifier_config(hf_id):
+    """Load config.json with id2label/label2id coerced to {int: str} / {str: int}.
+
+    Older checkpoints (e.g. MAGE, saved with transformers 4.31) store integer
+    label names like {"0": 0, "1": 1}, which transformers 5.x's strict config
+    validation rejects outright.
+    """
+    from huggingface_hub import hf_hub_download
+    from transformers import AutoConfig
+
+    with open(hf_hub_download(hf_id, "config.json"), encoding="utf-8") as f:
+        config_dict = json.load(f)
+    if config_dict.get("id2label"):
+        id2label = {int(k): str(v) for k, v in config_dict["id2label"].items()}
+        config_dict["id2label"] = id2label
+        config_dict["label2id"] = {v: k for k, v in id2label.items()}
+    return AutoConfig.for_model(**config_dict)
+
+
 def run_classifier(key, items, args):
     from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
     cfg = CLASSIFIER_MODELS[key]
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    tokenizer = AutoTokenizer.from_pretrained(cfg["hf_id"])
-    model = AutoModelForSequenceClassification.from_pretrained(cfg["hf_id"]).to(device).eval()
+    config = load_classifier_config(cfg["hf_id"])
+    tokenizer = AutoTokenizer.from_pretrained(cfg["hf_id"], config=config)
+    model = AutoModelForSequenceClassification.from_pretrained(cfg["hf_id"], config=config).to(device).eval()
     ai_index = cfg["ai_index"] if cfg["ai_index"] is not None else _resolve_ai_index(model.config)
 
     preprocess = None
