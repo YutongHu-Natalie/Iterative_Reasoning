@@ -1,0 +1,5476 @@
+{
+  "model": "qwen3_8b_nothink",
+  "complete": false,
+  "item_set": {
+    "data": "full",
+    "sample": null,
+    "paired_only": false,
+    "limit": null,
+    "n_items": 2434,
+    "ids_sha1": "7bad8eae1360ea31a030140f516f4cce127bf27d"
+  },
+  "config": null,
+  "summary": {
+    "n": 200,
+    "n_parse_errors": 0,
+    "accuracy": 0.565,
+    "ai_recall": 1.0,
+    "human_recall": 0.0,
+    "pred_ai_rate": 1.0,
+    "auroc": 0.5486725663716814,
+    "mean_certainty": 95.275,
+    "by_source": {
+      "MathArena": {
+        "n": 79,
+        "n_parse_errors": 0,
+        "accuracy": 0.8734177215189873,
+        "ai_recall": 1.0,
+        "human_recall": 0.0,
+        "pred_ai_rate": 1.0,
+        "auroc": 0.5797101449275363,
+        "mean_certainty": 95.69620253164557
+      },
+      "OPC": {
+        "n": 121,
+        "n_parse_errors": 0,
+        "accuracy": 0.36363636363636365,
+        "ai_recall": 1.0,
+        "human_recall": 0.0,
+        "pred_ai_rate": 1.0,
+        "auroc": 0.5,
+        "mean_certainty": 95.0
+      }
+    },
+    "by_category": {
+      "Algebra": {
+        "n": 45,
+        "n_parse_errors": 0,
+        "accuracy": 0.5111111111111111,
+        "ai_recall": 1.0,
+        "human_recall": 0.0,
+        "pred_ai_rate": 1.0,
+        "auroc": 0.5217391304347826,
+        "mean_certainty": 95.11111111111111
+      },
+      "Analysis": {
+        "n": 14,
+        "n_parse_errors": 0,
+        "accuracy": 1.0,
+        "ai_recall": 1.0,
+        "human_recall": null,
+        "pred_ai_rate": 1.0,
+        "auroc": null,
+        "mean_certainty": 95.35714285714286
+      },
+      "Combinatorics": {
+        "n": 16,
+        "n_parse_errors": 0,
+        "accuracy": 0.5625,
+        "ai_recall": 1.0,
+        "human_recall": 0.0,
+        "pred_ai_rate": 1.0,
+        "auroc": 0.5,
+        "mean_certainty": 95.0
+      },
+      "Geometry": {
+        "n": 74,
+        "n_parse_errors": 0,
+        "accuracy": 0.3918918918918919,
+        "ai_recall": 1.0,
+        "human_recall": 0.0,
+        "pred_ai_rate": 1.0,
+        "auroc": 0.5172413793103449,
+        "mean_certainty": 95.06756756756756
+      },
+      "Number Theory": {
+        "n": 51,
+        "n_parse_errors": 0,
+        "accuracy": 0.7450980392156863,
+        "ai_recall": 1.0,
+        "human_recall": 0.0,
+        "pred_ai_rate": 1.0,
+        "auroc": 0.6052631578947368,
+        "mean_certainty": 95.7843137254902
+      }
+    },
+    "by_generator": {
+      "Claude-Opus-4.6 (High)": {
+        "n": 88,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 1.0,
+        "n_ai": 1
+      },
+      "DeepSeek-R1-0528": {
+        "n": 91,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 4
+      },
+      "DeepSeek-v3.2-Speciale": {
+        "n": 90,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 3
+      },
+      "DeepSeek-v3.2-Speciale Agent": {
+        "n": 92,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.6,
+        "n_ai": 5
+      },
+      "DeepSeek-v4-Pro (Max)": {
+        "n": 90,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.8333333333333334,
+        "n_ai": 3
+      },
+      "GLM 5": {
+        "n": 89,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 2
+      },
+      "GPT-5-Pro": {
+        "n": 97,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.6,
+        "n_ai": 10
+      },
+      "GPT-5.1 (high)": {
+        "n": 89,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 2
+      },
+      "GPT-5.4 (xhigh)": {
+        "n": 91,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.625,
+        "n_ai": 4
+      },
+      "GPT-5.5 (xhigh)": {
+        "n": 91,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 4
+      },
+      "Gemini 2.5 Pro": {
+        "n": 93,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5833333333333334,
+        "n_ai": 6
+      },
+      "Gemini 2.5 Pro (agent)": {
+        "n": 93,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 6
+      },
+      "Gemini 2.5 Pro (best-of-32)": {
+        "n": 91,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 4
+      },
+      "Gemini 3 Pro (preview)": {
+        "n": 91,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 4
+      },
+      "Gemini 3.1 Pro Preview": {
+        "n": 89,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 2
+      },
+      "Gemini Deep Think 3 (12/25)": {
+        "n": 92,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 5
+      },
+      "Gemini IMO Deep Think": {
+        "n": 91,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 4
+      },
+      "Grok 3 (Think)": {
+        "n": 88,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 1
+      },
+      "Grok 3 Mini (high)": {
+        "n": 90,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 3
+      },
+      "Kimi K2.6 (Think)": {
+        "n": 88,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 1.0,
+        "n_ai": 1
+      },
+      "Qwen3-235B-A22B": {
+        "n": 90,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 3
+      },
+      "Qwen3.5-397b-a17b": {
+        "n": 88,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 1.0,
+        "n_ai": 1
+      },
+      "Step 3.5 Flash": {
+        "n": 88,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 1.0,
+        "n_ai": 1
+      },
+      "o3": {
+        "n": 97,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 10
+      },
+      "o4-mini (high)": {
+        "n": 111,
+        "n_parse_errors": 0,
+        "ai_recall": 1.0,
+        "auroc": 0.5,
+        "n_ai": 24
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "MathArena:usamo_2025_1|human|human|0",
+      "problem_id": "MathArena:usamo_2025_1",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2025_2|human|human|0",
+      "problem_id": "MathArena:usamo_2025_2",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2025_3|human|human|0",
+      "problem_id": "MathArena:usamo_2025_3",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2025_4|human|human|0",
+      "problem_id": "MathArena:usamo_2025_4",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2025_5|human|human|0",
+      "problem_id": "MathArena:usamo_2025_5",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2025_6|human|human|0",
+      "problem_id": "MathArena:usamo_2025_6",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Combinatorics",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2025_1|llm|DeepSeek-R1-0528|0",
+      "problem_id": "MathArena:usamo_2025_1",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "DeepSeek-R1-0528",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2025_1|llm|Gemini 2.5 Pro|0",
+      "problem_id": "MathArena:usamo_2025_1",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro",
+      "pred_AI": 1,
+      "certainty": 100.0,
+      "p_ai": 1.0,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 100.0,
+          "p_ai": 1.0,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 100}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2025_1|llm|o4-mini (high)|0",
+      "problem_id": "MathArena:usamo_2025_1",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2025_1|llm|Grok 3 (Think)|0",
+      "problem_id": "MathArena:usamo_2025_1",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Grok 3 (Think)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2025_4|llm|DeepSeek-R1-0528|0",
+      "problem_id": "MathArena:usamo_2025_4",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "DeepSeek-R1-0528",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2025_4|llm|Gemini 2.5 Pro|0",
+      "problem_id": "MathArena:usamo_2025_4",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2025_4|llm|o4-mini (high)|0",
+      "problem_id": "MathArena:usamo_2025_4",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_3|human|human|0",
+      "problem_id": "MathArena:usamo_2026_3",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_4|human|human|0",
+      "problem_id": "MathArena:usamo_2026_4",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_5|human|human|0",
+      "problem_id": "MathArena:usamo_2026_5",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_6|human|human|0",
+      "problem_id": "MathArena:usamo_2026_6",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_3|llm|GPT-5.5 (xhigh)|0",
+      "problem_id": "MathArena:usamo_2026_3",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "GPT-5.5 (xhigh)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_3|llm|GPT-5.4 (xhigh)|0",
+      "problem_id": "MathArena:usamo_2026_3",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "GPT-5.4 (xhigh)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_3|llm|DeepSeek-v4-Pro (Max)|0",
+      "problem_id": "MathArena:usamo_2026_3",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "DeepSeek-v4-Pro (Max)",
+      "pred_AI": 1,
+      "certainty": 100.0,
+      "p_ai": 1.0,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 100.0,
+          "p_ai": 1.0,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 100}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_4|llm|Kimi K2.6 (Think)|0",
+      "problem_id": "MathArena:usamo_2026_4",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Kimi K2.6 (Think)",
+      "pred_AI": 1,
+      "certainty": 100.0,
+      "p_ai": 1.0,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 100.0,
+          "p_ai": 1.0,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 100}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_4|llm|DeepSeek-v4-Pro (Max)|0",
+      "problem_id": "MathArena:usamo_2026_4",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "DeepSeek-v4-Pro (Max)",
+      "pred_AI": 1,
+      "certainty": 100.0,
+      "p_ai": 1.0,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 100.0,
+          "p_ai": 1.0,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 100}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_4|llm|Gemini 3.1 Pro Preview|0",
+      "problem_id": "MathArena:usamo_2026_4",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Gemini 3.1 Pro Preview",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_4|llm|GPT-5.5 (xhigh)|0",
+      "problem_id": "MathArena:usamo_2026_4",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "GPT-5.5 (xhigh)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_4|llm|GPT-5.4 (xhigh)|0",
+      "problem_id": "MathArena:usamo_2026_4",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "GPT-5.4 (xhigh)",
+      "pred_AI": 1,
+      "certainty": 100.0,
+      "p_ai": 1.0,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 100.0,
+          "p_ai": 1.0,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 100}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_4|llm|GLM 5|0",
+      "problem_id": "MathArena:usamo_2026_4",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "GLM 5",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_4|llm|Qwen3.5-397b-a17b|0",
+      "problem_id": "MathArena:usamo_2026_4",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Qwen3.5-397b-a17b",
+      "pred_AI": 1,
+      "certainty": 100.0,
+      "p_ai": 1.0,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 100.0,
+          "p_ai": 1.0,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 100}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_4|llm|Step 3.5 Flash|0",
+      "problem_id": "MathArena:usamo_2026_4",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Step 3.5 Flash",
+      "pred_AI": 1,
+      "certainty": 100.0,
+      "p_ai": 1.0,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 100.0,
+          "p_ai": 1.0,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 100}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_4|llm|Claude-Opus-4.6 (High)|0",
+      "problem_id": "MathArena:usamo_2026_4",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Claude-Opus-4.6 (High)",
+      "pred_AI": 1,
+      "certainty": 100.0,
+      "p_ai": 1.0,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 100.0,
+          "p_ai": 1.0,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 100}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_5|llm|DeepSeek-v4-Pro (Max)|0",
+      "problem_id": "MathArena:usamo_2026_5",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "DeepSeek-v4-Pro (Max)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_5|llm|Gemini 3.1 Pro Preview|0",
+      "problem_id": "MathArena:usamo_2026_5",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "Gemini 3.1 Pro Preview",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_5|llm|GPT-5.5 (xhigh)|0",
+      "problem_id": "MathArena:usamo_2026_5",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "GPT-5.5 (xhigh)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_5|llm|GPT-5.4 (xhigh)|0",
+      "problem_id": "MathArena:usamo_2026_5",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "GPT-5.4 (xhigh)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_5|llm|GLM 5|0",
+      "problem_id": "MathArena:usamo_2026_5",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "GLM 5",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_6|llm|GPT-5.5 (xhigh)|0",
+      "problem_id": "MathArena:usamo_2026_6",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "GPT-5.5 (xhigh)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:usamo_2026_6|llm|GPT-5.4 (xhigh)|0",
+      "problem_id": "MathArena:usamo_2026_6",
+      "source": "MathArena",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "GPT-5.4 (xhigh)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:imc_2025_1|llm|Gemini 2.5 Pro (best-of-32)|0",
+      "problem_id": "MathArena:imc_2025_1",
+      "source": "MathArena",
+      "competition": "IMC",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro (best-of-32)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:imc_2025_1|llm|Gemini 2.5 Pro (agent)|0",
+      "problem_id": "MathArena:imc_2025_1",
+      "source": "MathArena",
+      "competition": "IMC",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro (agent)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:imc_2025_1|llm|Gemini IMO Deep Think|0",
+      "problem_id": "MathArena:imc_2025_1",
+      "source": "MathArena",
+      "competition": "IMC",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "Gemini IMO Deep Think",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:imc_2025_2|llm|Gemini 2.5 Pro (best-of-32)|0",
+      "problem_id": "MathArena:imc_2025_2",
+      "source": "MathArena",
+      "competition": "IMC",
+      "category": "Analysis",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro (best-of-32)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:imc_2025_2|llm|Gemini 2.5 Pro (agent)|0",
+      "problem_id": "MathArena:imc_2025_2",
+      "source": "MathArena",
+      "competition": "IMC",
+      "category": "Analysis",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro (agent)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:imc_2025_2|llm|Gemini IMO Deep Think|0",
+      "problem_id": "MathArena:imc_2025_2",
+      "source": "MathArena",
+      "competition": "IMC",
+      "category": "Analysis",
+      "is_ai": 1,
+      "author": "Gemini IMO Deep Think",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:imc_2025_6|llm|Gemini 2.5 Pro (best-of-32)|0",
+      "problem_id": "MathArena:imc_2025_6",
+      "source": "MathArena",
+      "competition": "IMC",
+      "category": "Analysis",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro (best-of-32)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:imc_2025_6|llm|Gemini 2.5 Pro (agent)|0",
+      "problem_id": "MathArena:imc_2025_6",
+      "source": "MathArena",
+      "competition": "IMC",
+      "category": "Analysis",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro (agent)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:imc_2025_6|llm|Gemini IMO Deep Think|0",
+      "problem_id": "MathArena:imc_2025_6",
+      "source": "MathArena",
+      "competition": "IMC",
+      "category": "Analysis",
+      "is_ai": 1,
+      "author": "Gemini IMO Deep Think",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:imc_2025_8|llm|Gemini 2.5 Pro (best-of-32)|0",
+      "problem_id": "MathArena:imc_2025_8",
+      "source": "MathArena",
+      "competition": "IMC",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro (best-of-32)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:imc_2025_8|llm|Gemini 2.5 Pro (agent)|0",
+      "problem_id": "MathArena:imc_2025_8",
+      "source": "MathArena",
+      "competition": "IMC",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro (agent)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:imc_2025_8|llm|Gemini IMO Deep Think|0",
+      "problem_id": "MathArena:imc_2025_8",
+      "source": "MathArena",
+      "competition": "IMC",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "Gemini IMO Deep Think",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:imc_2025_9|llm|Gemini 2.5 Pro (agent)|0",
+      "problem_id": "MathArena:imc_2025_9",
+      "source": "MathArena",
+      "competition": "IMC",
+      "category": "Combinatorics",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro (agent)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:imc_2025_10|llm|Gemini 2.5 Pro (agent)|0",
+      "problem_id": "MathArena:imc_2025_10",
+      "source": "MathArena",
+      "competition": "IMC",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro (agent)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:miklos_2025_1|llm|GPT-5-Pro|0",
+      "problem_id": "MathArena:miklos_2025_1",
+      "source": "MathArena",
+      "competition": "Miklos",
+      "category": "Combinatorics",
+      "is_ai": 1,
+      "author": "GPT-5-Pro",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:miklos_2025_3|llm|GPT-5-Pro|0",
+      "problem_id": "MathArena:miklos_2025_3",
+      "source": "MathArena",
+      "competition": "Miklos",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "GPT-5-Pro",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:miklos_2025_7|llm|GPT-5-Pro|0",
+      "problem_id": "MathArena:miklos_2025_7",
+      "source": "MathArena",
+      "competition": "Miklos",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "GPT-5-Pro",
+      "pred_AI": 1,
+      "certainty": 100.0,
+      "p_ai": 1.0,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 100.0,
+          "p_ai": 1.0,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 100}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:miklos_2025_8|llm|GPT-5-Pro|0",
+      "problem_id": "MathArena:miklos_2025_8",
+      "source": "MathArena",
+      "competition": "Miklos",
+      "category": "Analysis",
+      "is_ai": 1,
+      "author": "GPT-5-Pro",
+      "pred_AI": 1,
+      "certainty": 100.0,
+      "p_ai": 1.0,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 100.0,
+          "p_ai": 1.0,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 100}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:miklos_2025_10|llm|GPT-5-Pro|0",
+      "problem_id": "MathArena:miklos_2025_10",
+      "source": "MathArena",
+      "competition": "Miklos",
+      "category": "Analysis",
+      "is_ai": 1,
+      "author": "GPT-5-Pro",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_1|llm|DeepSeek-v3.2-Speciale|0",
+      "problem_id": "MathArena:putnam_2025_1",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "DeepSeek-v3.2-Speciale",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_1|llm|DeepSeek-v3.2-Speciale Agent|0",
+      "problem_id": "MathArena:putnam_2025_1",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "DeepSeek-v3.2-Speciale Agent",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_1|llm|Gemini 3 Pro (preview)|0",
+      "problem_id": "MathArena:putnam_2025_1",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Gemini 3 Pro (preview)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_1|llm|Gemini Deep Think 3 (12/25)|0",
+      "problem_id": "MathArena:putnam_2025_1",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Gemini Deep Think 3 (12/25)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_1|llm|GPT-5-Pro|0",
+      "problem_id": "MathArena:putnam_2025_1",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "GPT-5-Pro",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_1|llm|GPT-5.1 (high)|0",
+      "problem_id": "MathArena:putnam_2025_1",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "GPT-5.1 (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_6|llm|Gemini Deep Think 3 (12/25)|0",
+      "problem_id": "MathArena:putnam_2025_6",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Gemini Deep Think 3 (12/25)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_6|llm|GPT-5-Pro|0",
+      "problem_id": "MathArena:putnam_2025_6",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "GPT-5-Pro",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_7|llm|DeepSeek-v3.2-Speciale Agent|0",
+      "problem_id": "MathArena:putnam_2025_7",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "DeepSeek-v3.2-Speciale Agent",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_7|llm|Gemini 3 Pro (preview)|0",
+      "problem_id": "MathArena:putnam_2025_7",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "Gemini 3 Pro (preview)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_7|llm|Gemini Deep Think 3 (12/25)|0",
+      "problem_id": "MathArena:putnam_2025_7",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "Gemini Deep Think 3 (12/25)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_8|llm|DeepSeek-v3.2-Speciale|0",
+      "problem_id": "MathArena:putnam_2025_8",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Analysis",
+      "is_ai": 1,
+      "author": "DeepSeek-v3.2-Speciale",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_8|llm|DeepSeek-v3.2-Speciale Agent|0",
+      "problem_id": "MathArena:putnam_2025_8",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Analysis",
+      "is_ai": 1,
+      "author": "DeepSeek-v3.2-Speciale Agent",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_8|llm|Gemini 3 Pro (preview)|0",
+      "problem_id": "MathArena:putnam_2025_8",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Analysis",
+      "is_ai": 1,
+      "author": "Gemini 3 Pro (preview)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_8|llm|Gemini Deep Think 3 (12/25)|0",
+      "problem_id": "MathArena:putnam_2025_8",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Analysis",
+      "is_ai": 1,
+      "author": "Gemini Deep Think 3 (12/25)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_8|llm|GPT-5-Pro|0",
+      "problem_id": "MathArena:putnam_2025_8",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Analysis",
+      "is_ai": 1,
+      "author": "GPT-5-Pro",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_8|llm|GPT-5.1 (high)|0",
+      "problem_id": "MathArena:putnam_2025_8",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Analysis",
+      "is_ai": 1,
+      "author": "GPT-5.1 (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_10|llm|DeepSeek-v3.2-Speciale|0",
+      "problem_id": "MathArena:putnam_2025_10",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Combinatorics",
+      "is_ai": 1,
+      "author": "DeepSeek-v3.2-Speciale",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_10|llm|DeepSeek-v3.2-Speciale Agent|0",
+      "problem_id": "MathArena:putnam_2025_10",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Combinatorics",
+      "is_ai": 1,
+      "author": "DeepSeek-v3.2-Speciale Agent",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_10|llm|GPT-5-Pro|0",
+      "problem_id": "MathArena:putnam_2025_10",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Combinatorics",
+      "is_ai": 1,
+      "author": "GPT-5-Pro",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_11|llm|DeepSeek-v3.2-Speciale Agent|0",
+      "problem_id": "MathArena:putnam_2025_11",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "DeepSeek-v3.2-Speciale Agent",
+      "pred_AI": 1,
+      "certainty": 100.0,
+      "p_ai": 1.0,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 100.0,
+          "p_ai": 1.0,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 100}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_11|llm|Gemini 3 Pro (preview)|0",
+      "problem_id": "MathArena:putnam_2025_11",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Gemini 3 Pro (preview)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_11|llm|Gemini Deep Think 3 (12/25)|0",
+      "problem_id": "MathArena:putnam_2025_11",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Gemini Deep Think 3 (12/25)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "MathArena:putnam_2025_11|llm|GPT-5-Pro|0",
+      "problem_id": "MathArena:putnam_2025_11",
+      "source": "MathArena",
+      "competition": "Putnam",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "GPT-5-Pro",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_15|human|human|0",
+      "problem_id": "OPC:BMOSL_2018_15",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2006_28|human|human|0",
+      "problem_id": "OPC:IMOSL_2006_28",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2006_28|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:IMOSL_2006_28",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2020_13|human|human|0",
+      "problem_id": "OPC:BMOSL_2020_13",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2020_13|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:BMOSL_2020_13",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2015_5|human|human|0",
+      "problem_id": "OPC:USAMO_2015_5",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2016_2|human|human|0",
+      "problem_id": "OPC:BMOSL_2016_2",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_23|human|human|0",
+      "problem_id": "OPC:BMOSL_2017_23",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_17|human|human|0",
+      "problem_id": "OPC:BMOSL_2017_17",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_18|human|human|0",
+      "problem_id": "OPC:BMOSL_2017_18",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2020_5|human|human|0",
+      "problem_id": "OPC:BMOSL_2020_5",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Combinatorics",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2020_5|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:BMOSL_2020_5",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Combinatorics",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2021_1|human|human|0",
+      "problem_id": "OPC:BMOSL_2021_1",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2009_6|human|human|0",
+      "problem_id": "OPC:USAMO_2009_6",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2000_5|human|human|0",
+      "problem_id": "OPC:USAMO_2000_5",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2000_5|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:USAMO_2000_5",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2004_1|human|human|0",
+      "problem_id": "OPC:USAMO_2004_1",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2018_25|human|human|0",
+      "problem_id": "OPC:IMOSL_2018_25",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Number Theory",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2012_16|human|human|0",
+      "problem_id": "OPC:IMOSL_2012_16",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2008_14|human|human|0",
+      "problem_id": "OPC:IMOSL_2008_14",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2021_5|human|human|0",
+      "problem_id": "OPC:IMOSL_2021_5",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2021_5|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:IMOSL_2021_5",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2003_4|human|human|0",
+      "problem_id": "OPC:IMOSL_2003_4",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_9|human|human|0",
+      "problem_id": "OPC:BMOSL_2019_9",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_5|human|human|0",
+      "problem_id": "OPC:BMOSL_2017_5",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_5|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:BMOSL_2017_5",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2011_4|human|human|0",
+      "problem_id": "OPC:USAMO_2011_4",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2011_4|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:USAMO_2011_4",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2023_6|human|human|0",
+      "problem_id": "OPC:USAMO_2023_6",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2013_4|human|human|0",
+      "problem_id": "OPC:IMOSL_2013_4",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2013_4|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:IMOSL_2013_4",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2022_24|human|human|0",
+      "problem_id": "OPC:IMOSL_2022_24",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_1997_5|human|human|0",
+      "problem_id": "OPC:USAMO_1997_5",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_1997_5|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:USAMO_1997_5",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2016_5|human|human|0",
+      "problem_id": "OPC:USAMO_2016_5",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_22|human|human|0",
+      "problem_id": "OPC:BMOSL_2017_22",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2016_3|human|human|0",
+      "problem_id": "OPC:USAMO_2016_3",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2011_6|human|human|0",
+      "problem_id": "OPC:USAMO_2011_6",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Combinatorics",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2011_6|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:USAMO_2011_6",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Combinatorics",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2018_4|human|human|0",
+      "problem_id": "OPC:USAMO_2018_4",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2018_4|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:USAMO_2018_4",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2021_20|human|human|0",
+      "problem_id": "OPC:BMOSL_2021_20",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2003_5|human|human|0",
+      "problem_id": "OPC:USAMO_2003_5",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2003_5|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:USAMO_2003_5",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2005_6|human|human|0",
+      "problem_id": "OPC:USAMO_2005_6",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2005_2|human|human|0",
+      "problem_id": "OPC:USAMO_2005_2",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2008_5|human|human|0",
+      "problem_id": "OPC:USAMO_2008_5",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2008_5|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:USAMO_2008_5",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2003_2|human|human|0",
+      "problem_id": "OPC:USAMO_2003_2",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2003_2|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:USAMO_2003_2",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_1989_26|human|human|0",
+      "problem_id": "OPC:IMOSL_1989_26",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2019_6|human|human|0",
+      "problem_id": "OPC:IMOSL_2019_6",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_1994_15|human|human|0",
+      "problem_id": "OPC:IMOSL_1994_15",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2017_4|human|human|0",
+      "problem_id": "OPC:IMOSL_2017_4",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2001_18|human|human|0",
+      "problem_id": "OPC:IMOSL_2001_18",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2001_18|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:IMOSL_2001_18",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2018_8|human|human|0",
+      "problem_id": "OPC:IMOSL_2018_8",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Combinatorics",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_4|human|human|0",
+      "problem_id": "OPC:BMOSL_2019_4",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_4|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:BMOSL_2019_4",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_20|human|human|0",
+      "problem_id": "OPC:BMOSL_2018_20",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Number Theory",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_11|human|human|0",
+      "problem_id": "OPC:BMOSL_2018_11",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_11|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:BMOSL_2018_11",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2010_1|human|human|0",
+      "problem_id": "OPC:USAMO_2010_1",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:USAMO_2000_1|human|human|0",
+      "problem_id": "OPC:USAMO_2000_1",
+      "source": "OPC",
+      "competition": "USAMO",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2022_19|human|human|0",
+      "problem_id": "OPC:IMOSL_2022_19",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2015_18|human|human|0",
+      "problem_id": "OPC:IMOSL_2015_18",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2023_13|human|human|0",
+      "problem_id": "OPC:IMOSL_2023_13",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Combinatorics",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2003_24|human|human|0",
+      "problem_id": "OPC:IMOSL_2003_24",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Combinatorics",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2003_24|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:IMOSL_2003_24",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Combinatorics",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2011_11|human|human|0",
+      "problem_id": "OPC:IMOSL_2011_11",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2006_17|human|human|0",
+      "problem_id": "OPC:IMOSL_2006_17",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:IMOSL_2020_21|human|human|0",
+      "problem_id": "OPC:IMOSL_2020_21",
+      "source": "OPC",
+      "competition": "IMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2016_14|human|human|0",
+      "problem_id": "OPC:BMOSL_2016_14",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2016_6|human|human|0",
+      "problem_id": "OPC:BMOSL_2016_6",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_1|human|human|0",
+      "problem_id": "OPC:BMOSL_2017_1",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_1|llm|openai/o3|0",
+      "problem_id": "OPC:BMOSL_2017_1",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o3",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_11|human|human|0",
+      "problem_id": "OPC:BMOSL_2017_11",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Number Theory",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_11|llm|qwen/qwen3_235b_a22b|0",
+      "problem_id": "OPC:BMOSL_2017_11",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Qwen3-235B-A22B",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_11|llm|gemini/gemini-pro-2.5|0",
+      "problem_id": "OPC:BMOSL_2017_11",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_11|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:BMOSL_2017_11",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_11|llm|openai/o3|0",
+      "problem_id": "OPC:BMOSL_2017_11",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "o3",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_12|human|human|0",
+      "problem_id": "OPC:BMOSL_2017_12",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_12|llm|deepseek/r1_0528|0",
+      "problem_id": "OPC:BMOSL_2017_12",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "DeepSeek-R1-0528",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_12|llm|gemini/gemini-pro-2.5|0",
+      "problem_id": "OPC:BMOSL_2017_12",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_12|llm|openai/o3|0",
+      "problem_id": "OPC:BMOSL_2017_12",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "o3",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_13|human|human|0",
+      "problem_id": "OPC:BMOSL_2017_13",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_14|human|human|0",
+      "problem_id": "OPC:BMOSL_2017_14",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_15|human|human|0",
+      "problem_id": "OPC:BMOSL_2017_15",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_16|human|human|0",
+      "problem_id": "OPC:BMOSL_2017_16",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_2|human|human|0",
+      "problem_id": "OPC:BMOSL_2017_2",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_2|llm|xai/grok-3-mini-high|0",
+      "problem_id": "OPC:BMOSL_2017_2",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "Grok 3 Mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_2|llm|openai/o3|0",
+      "problem_id": "OPC:BMOSL_2017_2",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o3",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2017_2|llm|gemini/gemini-pro-2.5|0",
+      "problem_id": "OPC:BMOSL_2017_2",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_1|human|human|0",
+      "problem_id": "OPC:BMOSL_2018_1",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_1|llm|openai/o3|0",
+      "problem_id": "OPC:BMOSL_2018_1",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o3",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_10|human|human|0",
+      "problem_id": "OPC:BMOSL_2018_10",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_13|human|human|0",
+      "problem_id": "OPC:BMOSL_2018_13",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_20|llm|openai/o3|0",
+      "problem_id": "OPC:BMOSL_2018_20",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "o3",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_20|llm|qwen/qwen3_235b_a22b|0",
+      "problem_id": "OPC:BMOSL_2018_20",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Number Theory",
+      "is_ai": 1,
+      "author": "Qwen3-235B-A22B",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_3|human|human|0",
+      "problem_id": "OPC:BMOSL_2018_3",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_3|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:BMOSL_2018_3",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_3|llm|openai/o3|0",
+      "problem_id": "OPC:BMOSL_2018_3",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o3",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_5|human|human|0",
+      "problem_id": "OPC:BMOSL_2018_5",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_5|llm|openai/o3|0",
+      "problem_id": "OPC:BMOSL_2018_5",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o3",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_5|llm|xai/grok-3-mini-high|0",
+      "problem_id": "OPC:BMOSL_2018_5",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "Grok 3 Mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_9|human|human|0",
+      "problem_id": "OPC:BMOSL_2018_9",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Combinatorics",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2018_9|llm|xai/grok-3-mini-high|0",
+      "problem_id": "OPC:BMOSL_2018_9",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Combinatorics",
+      "is_ai": 1,
+      "author": "Grok 3 Mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_10|human|human|0",
+      "problem_id": "OPC:BMOSL_2019_10",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_12|human|human|0",
+      "problem_id": "OPC:BMOSL_2019_12",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_13|human|human|0",
+      "problem_id": "OPC:BMOSL_2019_13",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_3|human|human|0",
+      "problem_id": "OPC:BMOSL_2019_3",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_3|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:BMOSL_2019_3",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_3|llm|openai/o3|0",
+      "problem_id": "OPC:BMOSL_2019_3",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 1,
+      "author": "o3",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_5|human|human|0",
+      "problem_id": "OPC:BMOSL_2019_5",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Algebra",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_6|human|human|0",
+      "problem_id": "OPC:BMOSL_2019_6",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_6|llm|qwen/qwen3_235b_a22b|0",
+      "problem_id": "OPC:BMOSL_2019_6",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "Qwen3-235B-A22B",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_6|llm|gemini/gemini-pro-2.5|0",
+      "problem_id": "OPC:BMOSL_2019_6",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "Gemini 2.5 Pro",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_6|llm|deepseek/r1_0528|0",
+      "problem_id": "OPC:BMOSL_2019_6",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "DeepSeek-R1-0528",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_6|llm|openai/o4-mini--high|0",
+      "problem_id": "OPC:BMOSL_2019_6",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "o4-mini (high)",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_6|llm|openai/o3|0",
+      "problem_id": "OPC:BMOSL_2019_6",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 1,
+      "author": "o3",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    },
+    {
+      "id": "OPC:BMOSL_2019_8|human|human|0",
+      "problem_id": "OPC:BMOSL_2019_8",
+      "source": "OPC",
+      "competition": "BMOSL",
+      "category": "Geometry",
+      "is_ai": 0,
+      "author": "human",
+      "pred_AI": 1,
+      "certainty": 95.0,
+      "p_ai": 0.95,
+      "parse_error": false,
+      "runs": [
+        {
+          "run": 0,
+          "pred_AI": 1,
+          "certainty": 95.0,
+          "p_ai": 0.95,
+          "parse_error": false,
+          "parse_msg": null,
+          "hit_max_tokens": false,
+          "raw_response": "{\"AI\": 1, \"certainty\": 95}",
+          "thinking": null
+        }
+      ]
+    }
+  ]
+}
