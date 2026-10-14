@@ -134,15 +134,15 @@
   },
   "n_borderline_dedup_pairs": 106,
   "category_source_by_problem": {
-    "pending_llm": 378,
-    "source": 678
+    "llm": 352,
+    "source": 678,
+    "llm_tiebreak": 26
   },
   "category_by_problem": {
-    "null": 378,
-    "Algebra": 152,
-    "Number Theory": 113,
-    "Geometry": 241,
-    "Combinatorics": 149,
-    "Analysis": 23
+    "Number Theory": 172,
+    "Algebra": 247,
+    "Geometry": 398,
+    "Combinatorics": 202,
+    "Analysis": 37
   }
 }
