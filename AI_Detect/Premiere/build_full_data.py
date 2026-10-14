@@ -23,6 +23,12 @@ Rules:
     Data/full_data_dedup_review.json for manual checking.
   * Giveaway boilerplate is stripped from both sides (see clean_solution);
     every record lists the cleaning steps that fired.
+  * Categories use one scheme: Algebra / Combinatorics / Geometry / Number
+    Theory / Analysis. Source labels are mapped (CATEGORY_MAP); a problem with
+    no label borrows one from a duplicate copy in a later source; the rest,
+    plus ambiguous or multi-label cases, are filled from
+    Data/category_llm_labels.json (written by label_categories.py) and are
+    marked category_source="pending_llm" until that file exists.
 
 Outputs (Data/):
   full_data.json               one record per solution
@@ -66,6 +72,23 @@ GENERATOR_ALIASES = {
 DUP_AUTO = 0.70
 DUP_BORDER = 0.35
 MIN_SOLUTION_CHARS = 80
+
+CATEGORIES = ("Algebra", "Combinatorics", "Geometry", "Number Theory", "Analysis")
+# Source label -> standard category. HARP labels are MATH-dataset subjects;
+# OPC Putnam labels are PutnamBench tags.
+CATEGORY_MAP = {
+    "algebra": "Algebra", "linear algebra": "Algebra", "abstract algebra": "Algebra",
+    "geometry": "Geometry",
+    "number theory": "Number Theory",
+    "combinatorics": "Combinatorics", "counting and probability": "Combinatorics",
+    "analysis": "Analysis",
+}
+# Labels that don't determine one category: the LLM picks among these options.
+CATEGORY_AMBIGUOUS = {
+    "precalculus": ("Algebra", "Geometry"),   # trig / complex numbers / vectors
+    "set theory": CATEGORIES,
+}
+CATEGORY_LLM_LABELS = HERE / "Data" / "category_llm_labels.json"
 
 REFUSAL = re.compile(
     r"(unable to (solve|find|prove)|i('m| am) sorry|could not (find|solve|prove)|"
@@ -385,6 +408,10 @@ class Builder:
             return puid, True
         if key and key not in self.registry.by_key:
             self.registry.by_key[key] = puid
+        # Borrow a category from this duplicate copy if the canonical copy has none.
+        if kind != "borderline" and meta.get("category") and not self.problem_meta[puid].get("category"):
+            self.problem_meta[puid]["category"] = meta["category"]
+            self.problem_meta[puid]["category_from"] = dataset
         return (None, False) if new_only else (puid, False)
 
     def add_solution(self, puid, dataset, author, raw_solution, generator=None, source_meta=None):
@@ -556,6 +583,45 @@ class Builder:
             for i, s in enumerate(sols, 1):
                 self.add_solution(puid, "OlympiadBench", "human", s, source_meta={"solution_number": i})
 
+    def assign_categories(self):
+        """Map raw labels onto CATEGORIES; fill the rest from the LLM label file."""
+        llm_labels = load_json(CATEGORY_LLM_LABELS) if CATEGORY_LLM_LABELS.exists() else {}
+        resolved = {}
+        for puid, meta in self.problem_meta.items():
+            raw = meta.get("category")
+            tags, options = [], []
+            for label in (raw.split("; ") if raw else []):
+                if label in CATEGORY_MAP:
+                    tags.append(CATEGORY_MAP[label])
+                options += CATEGORY_AMBIGUOUS.get(label, ())
+            tags = list(dict.fromkeys(tags))
+            if len(tags) == 1 and not options:
+                category, source = tags[0], "source"
+            else:
+                allowed = list(dict.fromkeys(tags + list(options))) or list(CATEGORIES)
+                label = llm_labels.get(puid, {}).get("category")
+                if label in allowed:
+                    category, source = label, ("llm" if not tags else "llm_tiebreak")
+                else:
+                    category, source = None, "pending_llm"
+                meta["category_allowed"] = allowed
+            resolved[puid] = {
+                "category": category,
+                "category_tags": tags or ([category] if category else []),
+                "category_raw": raw,
+                "category_source": source,
+                "category_raw_from": meta.get("category_from", meta["dataset"]) if raw else None,
+            }
+        for r in self.records:
+            r.update(resolved[r["problem_uid"]])
+        self.category_pending = {
+            puid: {"problem": m["problem"], "competition": m.get("competition"),
+                   "category_raw": m.get("category"), "allowed": m["category_allowed"]}
+            for puid, m in self.problem_meta.items()
+            if resolved[puid]["category_source"] == "pending_llm"
+            and any(r["problem_uid"] == puid for r in self.records)
+        }
+
     def drop_exact_duplicates(self):
         seen, kept = set(), []
         for r in self.records:
@@ -577,8 +643,11 @@ def main():
     b.harp()
     b.olympiadbench()
     b.drop_exact_duplicates()
+    b.assign_categories()
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    with open(OUT_DIR / "category_pending.json", "w", encoding="utf-8") as f:
+        json.dump(b.category_pending, f, indent=2, ensure_ascii=False)
     with open(OUT_DIR / "full_data.json", "w", encoding="utf-8") as f:
         json.dump(b.records, f, indent=2, ensure_ascii=False)
     with open(OUT_DIR / "full_data_dedup_review.json", "w", encoding="utf-8") as f:
@@ -596,6 +665,10 @@ def main():
         "cleaning_steps": dict(Counter((r["author"], s) for r in b.records for s in r["cleaning"]).most_common()),
         "steps_per_source": {k: dict(v) for k, v in b.log.items()},
         "n_borderline_dedup_pairs": len(b.registry.review),
+        "category_source_by_problem": dict(Counter(
+            {r["problem_uid"]: r["category_source"] for r in b.records}.values())),
+        "category_by_problem": dict(Counter(
+            {r["problem_uid"]: r["category"] for r in b.records}.values())),
     }
     summary["cleaning_steps"] = {f"{a}:{s}": n for (a, s), n in summary["cleaning_steps"].items()}
     with open(OUT_DIR / "full_data_build_log.json", "w", encoding="utf-8") as f:

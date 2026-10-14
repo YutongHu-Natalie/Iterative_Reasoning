@@ -437,6 +437,9 @@ def summarize(results):
     summary["by_source"] = {s: stats([r for r in results if r["source"] == s])
                             for s in sorted({r["source"] for r in results})}
 
+    summary["by_category"] = {c: stats([r for r in results if r.get("category") == c])
+                              for c in sorted({r.get("category") or "unlabeled" for r in results} - {"unlabeled"})}
+
     # Per generator: how detectable that model's proofs are. AUROC compares
     # them against ALL human proofs, so generators share the same negatives.
     human = [r for r in results if r["is_ai"] == 0]
