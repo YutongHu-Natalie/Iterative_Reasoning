@@ -1,28 +1,43 @@
-"""Premiere AI-text-detection test on paired LLM / human olympiad proofs.
+"""AI-text detection on LLM-generated vs human-written olympiad proofs.
 
-Every record in Data/premiere_data.json yields two items -- its LLM solution
-(is_ai=1) and its human reference solution (is_ai=0) -- and each item is
-scored independently by every model chosen with --models:
+Two datasets (--data):
+  premiere  Data/premiere_data.json: 20 problems, each one LLM + one human
+            solution (40 items).
+  full      Data/full_data.json (built by build_full_data.py): ~2.4k proofs
+            from MathArena, OPC, ProofBench, HARP and OlympiadBench, one
+            record per solution. Use --sample N for a balanced, dataset-
+            stratified subset of N LLM + N human proofs, and --paired-only to
+            restrict to problems that have both an LLM and a human solution.
+
+Each item is scored independently by every model chosen with --models:
 
   LLM judges (prompted with prompt_template.txt, problem + solution):
     qwen3_8b_think, qwen3_8b_nothink, gemma4_e4b_think, gemma4_e4b_nothink
   Supervised detectors (solution text only):
     mage, modernbert, roberta
 
-Writes one file per model to TestResult/<model_key>.json containing the
-run config, a summary (accuracy / AUROC / per-class recall) and per-item
-results. Every item gets pred_AI (0/1), certainty (0-100, confidence in
-pred_AI) and p_ai (0-1, probability the text is AI) so LLM judges and
-classifiers can be compared on the same footing.
+Writes one file per model to <out-dir>/<model_key>.json (default
+TestResult/ for premiere, TestResult/full/ for full) containing the run
+config, a summary (accuracy / AUROC / per-class recall, broken down by
+dataset and by generator model) and per-item results. Every item gets
+pred_AI (0/1), certainty (0-100, confidence in pred_AI) and p_ai (0-1,
+probability the text is AI) so LLM judges and classifiers can be compared on
+the same footing.
+
+Results are saved every --save-every items; rerunning the same command
+resumes, skipping items already scored (refused if the item set changed).
 
 Usage:
   python AI_Detect/Premiere/run_detection.py --models qwen3_8b_think mage
   python AI_Detect/Premiere/run_detection.py --models all --limit 2   # smoke test
+  python AI_Detect/Premiere/run_detection.py --data full --models mage modernbert roberta
+  python AI_Detect/Premiere/run_detection.py --data full --sample 200 --models qwen3_8b_think
 """
 import argparse
 import gc
+import hashlib
 import json
-import os
+import random
 import sys
 import time
 from pathlib import Path
@@ -35,9 +50,13 @@ REPO_ROOT = HERE.parent.parent
 sys.path.insert(0, str(REPO_ROOT / "proof_eval_codes"))
 from eval_utils import atomic_write_json, extract_json  # noqa: E402
 
-DATA_PATH = HERE / "Data" / "premiere_data.json"
+DATA_PATHS = {
+    "premiere": HERE / "Data" / "premiere_data.json",
+    "full": HERE / "Data" / "full_data.json",
+}
 PROMPT_PATH = HERE / "prompt_template.txt"
-OUT_DIR = HERE / "TestResult"
+OUT_DIRS = {"premiere": HERE / "TestResult", "full": HERE / "TestResult" / "full"}
+ITEM_META = ("id", "problem_id", "source", "competition", "category", "is_ai", "author")
 
 LLM_MODELS = {
     "qwen3_8b_think": dict(family="qwen3", path="../models/Qwen3-8B", thinking=True),
@@ -71,19 +90,60 @@ GEMMA4_GEN_KWARGS = dict(temperature=1.0, top_p=0.95, top_k=64)
 
 # ---------------------------------------------------------------- data
 
-def load_items(limit=None):
-    with open(DATA_PATH, encoding="utf-8") as f:
+def load_items(data, limit=None, sample=None, paired_only=False, seed=42):
+    """Return a list of items: {id, problem_id, source, competition, category,
+    is_ai, author, problem, solution}. `author` is the generator model or 'human'."""
+    with open(DATA_PATHS[data], encoding="utf-8") as f:
         records = json.load(f)
+
+    if data == "premiere":
+        if limit:
+            records = records[:limit]
+        items = []
+        for r in records:
+            base = {"problem_id": r["id"], "source": r["source"], "competition": None,
+                    "category": None, "problem": r["problem"]}
+            items.append({**base, "id": f"{r['id']}__llm", "is_ai": 1,
+                          "author": r["llm_model"], "solution": r["llm_solution"]})
+            items.append({**base, "id": f"{r['id']}__human", "is_ai": 0,
+                          "author": "human", "solution": r["human_solution"]})
+        return items
+
+    items = [{
+        "id": r["uid"], "problem_id": r["problem_uid"], "source": r["dataset"],
+        "competition": r.get("competition"), "category": r.get("category"),
+        "is_ai": r["is_ai"], "author": r["generator_model"] or "human",
+        "problem": r["problem"], "solution": r["solution"],
+    } for r in records]
+    if paired_only:
+        has = {(i["problem_id"], i["is_ai"]) for i in items}
+        items = [i for i in items if (i["problem_id"], 1) in has and (i["problem_id"], 0) in has]
+    if sample:
+        items = balanced_sample(items, sample, seed)
     if limit:
-        records = records[:limit]
-    items = []
-    for r in records:
-        base = {"problem_id": r["id"], "source": r["source"], "problem": r["problem"]}
-        items.append({**base, "id": f"{r['id']}__llm", "is_ai": 1,
-                      "author": r["llm_model"], "solution": r["llm_solution"]})
-        items.append({**base, "id": f"{r['id']}__human", "is_ai": 0,
-                      "author": "human", "solution": r["human_solution"]})
+        items = items[:limit]
     return items
+
+
+def balanced_sample(items, n_per_class, seed):
+    """n_per_class LLM + n_per_class human items, each class allocated across
+    datasets in proportion to its size there (largest-remainder rounding)."""
+    rng = random.Random(seed)
+    picked = []
+    for is_ai in (1, 0):
+        pool = sorted((i for i in items if i["is_ai"] == is_ai), key=lambda i: i["id"])
+        n = min(n_per_class, len(pool))
+        by_source = {}
+        for i in pool:
+            by_source.setdefault(i["source"], []).append(i)
+        quotas = {s: n * len(v) / len(pool) for s, v in by_source.items()}
+        alloc = {s: int(q) for s, q in quotas.items()}
+        for s in sorted(quotas, key=lambda s: quotas[s] - alloc[s], reverse=True)[:n - sum(alloc.values())]:
+            alloc[s] += 1
+        for s, group in sorted(by_source.items()):
+            picked += rng.sample(group, alloc[s])
+    rng.shuffle(picked)
+    return picked
 
 
 def build_prompt(template, problem, solution):
@@ -214,14 +274,13 @@ def parse_verdict(answer):
     return {"pred_AI": pred, "certainty": cert, "p_ai": p_ai, "parse_error": False, "parse_msg": None}
 
 
-def run_llm(key, items, args):
+def run_llm(key, items, args, emit):
     cfg = LLM_MODELS[key]
     template = PROMPT_PATH.read_text(encoding="utf-8")
     max_new_tokens = args.max_new_tokens or (8192 if cfg["thinking"] else 1024)
     tok_or_proc, model = load_llm(cfg)
     generate = generate_qwen3 if cfg["family"] == "qwen3" else generate_gemma4
 
-    results = []
     for item in tqdm(items, desc=key):
         prompt = build_prompt(template, item["problem"], item["solution"])
         runs = []
@@ -234,13 +293,13 @@ def run_llm(key, items, args):
                 "raw_response": answer,
                 "thinking": thinking,
             })
-        results.append({**_item_meta(item), **_aggregate_runs(runs), "runs": runs})
+        emit({**_item_meta(item), **_aggregate_runs(runs), "runs": runs})
 
     config = {"family": cfg["family"], "model_path": cfg["path"], "thinking": cfg["thinking"],
               "max_new_tokens": max_new_tokens, "n_runs": args.n_runs, "seed": args.seed,
               "prompt_template": template}
     del model, tok_or_proc
-    return config, results
+    return config
 
 
 def _aggregate_runs(runs):
@@ -304,7 +363,7 @@ def load_classifier_config(hf_id):
     return AutoConfig.for_model(**config_dict)
 
 
-def run_classifier(key, items, args):
+def run_classifier(key, items, args, emit):
     from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
     cfg = CLASSIFIER_MODELS[key]
@@ -318,7 +377,6 @@ def run_classifier(key, items, args):
     if key == "mage" and not args.mage_raw:
         from mage_preprocess import preprocess  # needs `pip install clean-text`
 
-    results = []
     for item in tqdm(items, desc=key):
         text = preprocess(item["solution"]) if preprocess else item["solution"]
         logits, n_chunks = classifier_logits(text, tokenizer, model, cfg["max_len"], device)
@@ -331,7 +389,7 @@ def run_classifier(key, items, args):
             pred = int(-logits[0].item() < MAGE_THRESHOLD)
         record.update({"pred_AI": pred, "certainty": 100 * (p_ai if pred else 1 - p_ai),
                        "p_ai": p_ai, "parse_error": False})
-        results.append(record)
+        emit(record)
 
     config = {"hf_id": cfg["hf_id"], "ai_index": ai_index, "id2label": model.config.id2label,
               "max_len": cfg["max_len"], "chunking": "mean of chunk logits",
@@ -339,13 +397,13 @@ def run_classifier(key, items, args):
     if key == "mage":
         config["decision_rule"] = f"AI iff -logit[0] < {MAGE_THRESHOLD} (official MAGE threshold)"
     del model, tokenizer
-    return config, results
+    return config
 
 
 # ---------------------------------------------------------------- summary
 
 def _item_meta(item):
-    return {k: item[k] for k in ("id", "problem_id", "source", "is_ai", "author")}
+    return {k: item.get(k) for k in ITEM_META}
 
 
 def auroc(labels, scores):
@@ -378,6 +436,18 @@ def summarize(results):
     summary = stats(results)
     summary["by_source"] = {s: stats([r for r in results if r["source"] == s])
                             for s in sorted({r["source"] for r in results})}
+
+    # Per generator: how detectable that model's proofs are. AUROC compares
+    # them against ALL human proofs, so generators share the same negatives.
+    human = [r for r in results if r["is_ai"] == 0]
+    summary["by_generator"] = {
+        g: stats([r for r in results if r["is_ai"] == 1 and r["author"] == g] + human)
+        for g in sorted({r["author"] for r in results if r["is_ai"] == 1})
+    }
+    for g, st in summary["by_generator"].items():
+        st["n_ai"] = sum(1 for r in results if r["is_ai"] == 1 and r["author"] == g)
+        for k in ("accuracy", "human_recall", "pred_ai_rate", "mean_certainty"):
+            st.pop(k)  # mixed with the shared human pool, these would mislead
     return summary
 
 
@@ -386,7 +456,13 @@ def summarize(results):
 def parse_args():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--models", nargs="+", required=True, choices=ALL_MODELS + ["all"])
-    parser.add_argument("--limit", type=int, default=None, help="Use only the first N problems (2N items).")
+    parser.add_argument("--data", choices=list(DATA_PATHS), default="premiere")
+    parser.add_argument("--sample", type=int, default=None,
+                        help="full only: balanced sample of N LLM + N human proofs, stratified by dataset.")
+    parser.add_argument("--paired-only", action="store_true",
+                        help="full only: keep problems that have both an LLM and a human solution.")
+    parser.add_argument("--limit", type=int, default=None,
+                        help="Smoke test. premiere: first N problems (2N items); full: first N items.")
     parser.add_argument("--n-runs", type=int, default=1,
                         help="Samples per item for LLM judges (majority vote). Ignored by classifiers.")
     parser.add_argument("--max-new-tokens", type=int, default=None,
@@ -395,7 +471,9 @@ def parse_args():
     parser.add_argument("--mage-raw", action="store_true",
                         help="Feed MAGE the raw solution instead of its official preprocessing "
                              "(which strips LaTeX symbols like $ \\ ^ _).")
-    parser.add_argument("--out-dir", default=str(OUT_DIR))
+    parser.add_argument("--out-dir", default=None, help="Defaults to TestResult/ (premiere) or TestResult/full/.")
+    parser.add_argument("--save-every", type=int, default=20)
+    parser.add_argument("--no-resume", action="store_true", help="Ignore an existing result file and start over.")
     return parser.parse_args()
 
 
@@ -404,18 +482,47 @@ def main():
     from transformers import set_seed
 
     keys = ALL_MODELS if "all" in args.models else list(dict.fromkeys(args.models))
-    items = load_items(args.limit)
-    out_dir = Path(args.out_dir)
-    print(f"{len(items)} items, models: {keys}")
+    items = load_items(args.data, args.limit, args.sample, args.paired_only, args.seed)
+    item_set = {"data": args.data, "sample": args.sample, "paired_only": args.paired_only,
+                "limit": args.limit, "n_items": len(items),
+                "ids_sha1": hashlib.sha1("\n".join(sorted(i["id"] for i in items)).encode()).hexdigest()}
+    out_dir = Path(args.out_dir or OUT_DIRS[args.data])
+    print(f"{len(items)} items ({sum(i['is_ai'] for i in items)} LLM), models: {keys}")
 
     for key in keys:
         set_seed(args.seed)
         start = time.time()
-        runner = run_llm if key in LLM_MODELS else run_classifier
-        config, results = runner(key, items, args)
-        summary = summarize(results)
         out_path = out_dir / f"{key}.json"
-        atomic_write_json(out_path, {"model": key, "config": config, "summary": summary, "results": results})
+
+        results = []
+        if out_path.exists() and not args.no_resume:
+            saved = json.load(open(out_path, encoding="utf-8"))
+            if saved.get("item_set", {}).get("ids_sha1") != item_set["ids_sha1"]:
+                sys.exit(f"{out_path} was produced for a different item set; "
+                         "use --out-dir for a new run or --no-resume to overwrite.")
+            results = saved["results"]
+        done = {r["id"] for r in results}
+        todo = [i for i in items if i["id"] not in done]
+        if not todo:
+            print(f"[{key}] already complete -> {out_path}")
+            continue
+        if done:
+            print(f"[{key}] resuming: {len(done)} done, {len(todo)} to go")
+
+        def save(config, complete):
+            atomic_write_json(out_path, {
+                "model": key, "complete": complete, "item_set": item_set, "config": config,
+                "summary": summarize(results) if results else None, "results": results})
+
+        def emit(record):
+            results.append(record)
+            if len(results) % args.save_every == 0:
+                save(None, complete=False)
+
+        runner = run_llm if key in LLM_MODELS else run_classifier
+        config = runner(key, todo, args, emit)
+        save(config, complete=True)
+        summary = summarize(results)
         print(f"[{key}] acc={summary['accuracy']} auroc={summary['auroc']} "
               f"parse_errors={summary['n_parse_errors']} -> {out_path} ({(time.time() - start) / 60:.1f} min)")
 

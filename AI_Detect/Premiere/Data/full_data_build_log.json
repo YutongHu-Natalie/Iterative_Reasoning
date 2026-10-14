@@ -1,0 +1,136 @@
+{
+  "totals": {
+    "human": 1316,
+    "llm": 1118
+  },
+  "by_dataset": {
+    "HARP": {
+      "human": 266
+    },
+    "MathArena": {
+      "human": 10,
+      "llm": 69
+    },
+    "OPC": {
+      "human": 476,
+      "llm": 1011
+    },
+    "OlympiadBench": {
+      "human": 516
+    },
+    "ProofBench": {
+      "human": 48,
+      "llm": 38
+    }
+  },
+  "by_generator": {
+    "o3": 251,
+    "Gemini 2.5 Pro": 246,
+    "o4-mini (high)": 234,
+    "Qwen3-235B-A22B": 157,
+    "Grok 3 Mini (high)": 117,
+    "DeepSeek-R1-0528": 50,
+    "GPT-5-Pro": 10,
+    "Gemini 2.5 Pro (agent)": 6,
+    "DeepSeek-v3.2-Speciale Agent": 5,
+    "Gemini Deep Think 3 (12/25)": 5,
+    "GPT-5.5 (xhigh)": 4,
+    "GPT-5.4 (xhigh)": 4,
+    "Gemini 2.5 Pro (best-of-32)": 4,
+    "Gemini IMO Deep Think": 4,
+    "Gemini 3 Pro (preview)": 4,
+    "DeepSeek-v4-Pro (Max)": 3,
+    "DeepSeek-v3.2-Speciale": 3,
+    "Gemini 3.1 Pro Preview": 2,
+    "GLM 5": 2,
+    "GPT-5.1 (high)": 2,
+    "Grok 3 (Think)": 1,
+    "Kimi K2.6 (Think)": 1,
+    "Qwen3.5-397b-a17b": 1,
+    "Step 3.5 Flash": 1,
+    "Claude-Opus-4.6 (High)": 1
+  },
+  "n_problems": 1056,
+  "n_problems_with_both": 311,
+  "cleaning_steps": {
+    "llm:qed_marker": 620,
+    "llm:heading": 258,
+    "human:heading": 250,
+    "llm:llm_meta_sentence": 232,
+    "human:image_placeholder": 212,
+    "llm:trailing_box": 191,
+    "llm:unbox": 174,
+    "llm:to_x_lead": 146,
+    "human:qed_marker": 103,
+    "llm:llm_intro": 76,
+    "llm:final_answer_section": 70,
+    "human:html_tags": 69,
+    "llm:llm_meta_tail": 48,
+    "human:problem_statement": 43,
+    "human:asy_figure": 31,
+    "human:compendium_number": 24,
+    "llm:boilerplate_box": 21,
+    "llm:task_restatement": 17,
+    "llm:llm_self_description": 15,
+    "human:mojibake": 13,
+    "human:section_heading": 10,
+    "human:unbox": 8,
+    "llm:final_answer_heading": 6,
+    "human:latex_figure": 4,
+    "llm:agent_summary": 3,
+    "llm:trailing_rule": 2,
+    "llm:section_heading": 1,
+    "llm:final_answer_line": 1,
+    "human:aops_note": 1,
+    "human:aops_signature": 1
+  },
+  "steps_per_source": {
+    "MathArena": {
+      "problem_match_new": 29,
+      "kept_human": 10,
+      "drop_llm_not_full_marks": 331,
+      "kept_llm": 69,
+      "drop_llm_repeat_problem_model": 50,
+      "drop_not_proof_problem": 15
+    },
+    "OPC": {
+      "drop_not_proof_problem": 442,
+      "problem_match_new": 524,
+      "kept_human": 476,
+      "drop_llm_not_all_judges_correct": 1640,
+      "kept_llm": 1011,
+      "drop_llm_repeat_problem_model": 72,
+      "problem_match_borderline_kept": 10,
+      "drop_exact_duplicate_text": 1
+    },
+    "ProofBench": {
+      "drop_not_proof_problem": 87,
+      "problem_match_new": 37,
+      "kept_human": 48,
+      "drop_llm_not_full_marks": 380,
+      "kept_llm": 38,
+      "problem_match_borderline_kept": 11,
+      "problem_match_auto": 6,
+      "problem_match_key": 10,
+      "drop_llm_repeat_problem_model": 31
+    },
+    "HARP": {
+      "problem_match_new": 142,
+      "kept_human": 266,
+      "problem_match_borderline": 23,
+      "drop_problem_seen_before": 75,
+      "drop_too_short_after_cleaning": 1,
+      "problem_match_key": 49,
+      "problem_match_auto": 3
+    },
+    "OlympiadBench": {
+      "drop_not_proof_problem": 30,
+      "problem_match_new": 311,
+      "kept_human": 516,
+      "problem_match_borderline": 62,
+      "drop_problem_seen_before": 162,
+      "problem_match_auto": 100
+    }
+  },
+  "n_borderline_dedup_pairs": 106
+}

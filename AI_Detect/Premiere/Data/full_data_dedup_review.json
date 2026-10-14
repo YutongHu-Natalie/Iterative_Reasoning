@@ -1,0 +1,1486 @@
+[
+  {
+    "similarity": 0.671,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2142",
+      "problem": "Prove that there exist infinitely many positive integers $n$ such that $n^{2}+1$ has a prime divisor greater than $2 n+\\sqrt{2 n}$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:EGMO_2014_3",
+      "problem": "We denote the number of positive divisors of a positive integer \\( m \\) by \\( d(m) \\) and the number of distinct prime divisors of \\( m \\) by \\( \\omega(m) \\). Let \\( k \\) be a positive integer. Prove that there exist infinitely many positive integers \\( n \\) such that \\( \\omega(n) = k \\) and \\( d(n) \\) does not divide \\( d\\left(a^{2} + b^{2}\\right) \\) for any positive integers \\( a, b \\) satisfying \\( a + b = n \\)."
+    }
+  },
+  {
+    "similarity": 0.659,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_1999_2",
+      "problem": "Let $ABCD$ be a cyclic quadrilateral. Prove that \\[|AB - CD| + |AD - BC| \\geq 2|AC - BD|.\\]"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BalticWay_2016_20",
+      "problem": "Let \\(ABCD\\) be a cyclic quadrilateral with \\(AB\\) and \\(CD\\) not parallel. Let \\(M\\) be the midpoint of \\(CD\\). Let \\(P\\) be a point inside \\(ABCD\\) such that \\(PA = PB = CM\\). Prove that \\(AB\\), \\(CD\\), and the perpendicular bisector of \\(MP\\) are concurrent."
+    }
+  },
+  {
+    "similarity": 0.63,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2110",
+      "problem": "Let $f$ be a non-constant function from the set of positive integers into the set of positive integers, such that $a-b$ divides $f(a)-f(b)$ for all distinct positive integers $a, b$. Prove that there exist infinitely many primes $p$ such that $p$ divides $f(c)$ for some positive integer $c$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:izho_2018_3",
+      "problem": "Prove that there exist infinitely many pairs \\((m, n)\\) of positive integers such that \\(m+n\\) divides \\((m!)^{n}+(n!)^{m}+1\\)."
+    }
+  },
+  {
+    "similarity": 0.597,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_2003_1",
+      "problem": "Prove that for every positive integer $n$ there exists an $n$-digit number divisible by $5^n$ all of whose digits are odd."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2006_24",
+      "problem": "Prove that, for every positive integer \\( n \\), there exists an integer \\( m \\) such that \\( 2^{m} + m \\) is divisible by \\( n \\)."
+    }
+  },
+  {
+    "similarity": 0.596,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1621",
+      "problem": "Let $x$ and $y$ be positive real numbers such that $x+y^{2016} \\geq 1$. Prove that $x^{2016}+y>$ $1-1 / 100$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2007_26",
+      "problem": "Let \\( n \\) be a positive integer, and let \\( x \\) and \\( y \\) be positive real numbers such that \\( x^{n}+y^{n}=1 \\). Prove that\n\n\\[\n\\left(\\sum_{k=1}^{n} \\frac{1+x^{2 k}}{1+x^{4 k}}\\right)\\left(\\sum_{k=1}^{n} \\frac{1+y^{2 k}}{1+y^{4 k}}\\right)<\\frac{1}{(1-x)(1-y)}\n\\]"
+    }
+  },
+  {
+    "similarity": 0.596,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2217",
+      "problem": "Let $n$ be a positive integer.\nProve that there exists a set $S$ of $6 n$ pairwise different positive integers, such that the least common multiple of any two elements of $S$ is no larger than $32 n^{2}$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:EGMO_2013_3",
+      "problem": "Let \\( n \\) be a positive integer.\n\n(a) Prove that there exists a set \\( S \\) of \\( 6n \\) positive integers such that the least common multiple of any two is at most \\( 32n^2 \\).\n\n(b) Show that every set \\( T \\) of \\( 6n \\) positive integers contains two elements with least common multiple exceeding \\( 9n^2 \\)."
+    }
+  },
+  {
+    "similarity": 0.569,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2181",
+      "problem": "Let $n \\geq 2$ be an integer. An $n$-tuple $\\left(a_{1}, a_{2}, \\ldots, a_{n}\\right)$ of positive integers is expensive if there exists a positive integer $k$ such that\n\n$$\n\\left(a_{1}+a_{2}\\right)\\left(a_{2}+a_{3}\\right) \\cdots\\left(a_{n-1}+a_{n}\\right)\\left(a_{n}+a_{1}\\right)=2^{2 k-1} .\n$$\nProve that for every positive integer $m$ there exists an integer $n \\geq 2$ such that $m$ belongs to an expensive $n$-tuple.\n\nThere are exactly $n$ factors in the product on the left hand side."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2006_24",
+      "problem": "Prove that, for every positive integer \\( n \\), there exists an integer \\( m \\) such that \\( 2^{m} + m \\) is divisible by \\( n \\)."
+    }
+  },
+  {
+    "similarity": 0.564,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAJMO_2012_3",
+      "problem": "Let $a$, $b$, $c$ be positive real numbers. Prove that \\[\\frac{a^3 + 3b^3}{5a + b} + \\frac{b^3 + 3c^3}{5b + c} + \\frac{c^3 + 3a^3}{5c + a} \\ge \\frac{2}{3} (a^2 + b^2 + c^2).\\]"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BMOSL_2016_1",
+      "problem": "Let \\( a, b, c \\) be positive real numbers. Prove that\n\n\\[\n\\sqrt{a^{3} b+a^{3} c}+\\sqrt{b^{3} c+b^{3} a}+\\sqrt{c^{3} a+c^{3} b} \\geq \\frac{4}{3}(a b+b c+c a)\n\\]"
+    }
+  },
+  {
+    "similarity": 0.559,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2077",
+      "problem": "Prove that there exist infinitely many positive integers $n$ such that the largest prime divisor of $n^{4}+n^{2}+1$ is equal to the largest prime divisor of $(n+1)^{4}+(n+1)^{2}+1$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:EGMO_2014_3",
+      "problem": "We denote the number of positive divisors of a positive integer \\( m \\) by \\( d(m) \\) and the number of distinct prime divisors of \\( m \\) by \\( \\omega(m) \\). Let \\( k \\) be a positive integer. Prove that there exist infinitely many positive integers \\( n \\) such that \\( \\omega(n) = k \\) and \\( d(n) \\) does not divide \\( d\\left(a^{2} + b^{2}\\right) \\) for any positive integers \\( a, b \\) satisfying \\( a + b = n \\)."
+    }
+  },
+  {
+    "similarity": 0.554,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_2018_1",
+      "problem": "Let $a,b,c$ be positive real numbers such that $a+b+c=4\\sqrt[3]{abc}$. Prove that \\[2(ab+bc+ca)+4\\min(a^2,b^2,c^2)\\ge a^2+b^2+c^2.\\]"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2009_4",
+      "problem": "Let \\(a, b, c\\) be positive real numbers such that \\(ab + bc + ca \\leq 3abc\\). Prove that\n\n\\[\n\\sqrt{\\frac{a^2 + b^2}{a+b}} + \\sqrt{\\frac{b^2 + c^2}{b+c}} + \\sqrt{\\frac{c^2 + a^2}{c+a}} + 3 \\leq \\sqrt{2}(\\sqrt{a+b} + \\sqrt{b+c} + \\sqrt{c+a}).\n\\]"
+    }
+  },
+  {
+    "similarity": 0.554,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2416",
+      "problem": "For every real number $x$, define $\\lfloor x\\rfloor$ to be equal to the greatest integer less than or equal to $x$. (We call this the \"floor\" of $x$.) For example, $\\lfloor 4.2\\rfloor=4,\\lfloor 5.7\\rfloor=5$, $\\lfloor-3.4\\rfloor=-4,\\lfloor 0.4\\rfloor=0$, and $\\lfloor 2\\rfloor=2$.\nFor each integer $n \\geq 1$, define $f(n)$ to be equal to an infinite sum:\n\n$$\nf(n)=\\left\\lfloor\\frac{n}{1^{2}+1}\\right\\rfloor+\\left\\lfloor\\frac{2 n}{2^{2}+1}\\right\\rfloor+\\left\\lfloor\\frac{3 n}{3^{2}+1}\\right\\rfloor+\\left\\lfloor\\frac{4 n}{4^{2}+1}\\right\\rfloor+\\left\\lfloor\\frac{5 n}{5^{2}+1}\\right\\rfloor+\\cdots\n$$\n\n(The sum contains the terms $\\left\\lfloor\\frac{k n}{k^{2}+1}\\right\\rfloor$ for all positive integers $k$, and no other terms.)\n\nSuppose $f(t+1)-f(t)=2$ for some odd positive integer $t$. Prove that $t$ is a prime number."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:irish_2002_9",
+      "problem": "For each real number \\( x \\), define \\(\\lfloor x\\rfloor\\) to be the greatest integer less than or equal to \\( x \\).\n\nLet \\(\\alpha=2+\\sqrt{3}\\). Prove that\n\n\\[\n\\alpha^{n}-\\left\\lfloor\\alpha^{n}\\right\\rfloor=1-\\alpha^{-n}, \\text{ for } n=0,1,2, \\ldots\n\\]"
+    }
+  },
+  {
+    "similarity": 0.534,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1959",
+      "problem": "Let $a$ and $b$ be positive integers such that $a ! b !$ is a multiple of $a !+b !$. Prove that $3 a \\geqslant 2 b+2$."
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:usamo_2026_6",
+      "problem": "Let $a$ and $b$ be positive integers such that $\\varphi(ab+1)$ divides $a^2 + b^2 + 1$. Prove that $a$ and $b$ are Fibonacci numbers.\n"
+    }
+  },
+  {
+    "similarity": 0.533,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_2011_1",
+      "problem": "Let $a$, $b$, $c$ be positive real numbers such that $a^2 + b^2 + c^2 + (a + b + c)^2 \\le 4$. Prove that \\[\\frac{ab + 1}{(a + b)^2} + \\frac{bc + 1}{(b + c)^2} + \\frac{ca + 1}{(c + a)^2} \\ge 3.\\]"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BMOSL_2019_5",
+      "problem": "Let \\(a, b, c\\) be positive real numbers, such that \\((ab)^{2}+(bc)^{2}+(ca)^{2}=3\\). Prove that\n\n\\[\n\\left(a^{2}-a+1\\right)\\left(b^{2}-b+1\\right)\\left(c^{2}-c+1\\right) \\geq 1.\n\\]"
+    }
+  },
+  {
+    "similarity": 0.528,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1841",
+      "problem": "\nProve that for every positive integer $n$, there exists a fraction $\\frac{a}{b}$ where $a$ and $b$ are integers satisfying $0<b \\leqslant \\sqrt{n}+1$ and $\\sqrt{n} \\leqslant \\frac{a}{b} \\leqslant \\sqrt{n+1}$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2006_24",
+      "problem": "Prove that, for every positive integer \\( n \\), there exists an integer \\( m \\) such that \\( 2^{m} + m \\) is divisible by \\( n \\)."
+    }
+  },
+  {
+    "similarity": 0.52,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2218",
+      "problem": "Let $n$ be a positive integer.\nProve that every set $T$ of $6 n$ pairwise different positive integers contains two elements the least common multiple of which is larger than $9 n^{2}$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:EGMO_2013_3",
+      "problem": "Let \\( n \\) be a positive integer.\n\n(a) Prove that there exists a set \\( S \\) of \\( 6n \\) positive integers such that the least common multiple of any two is at most \\( 32n^2 \\).\n\n(b) Show that every set \\( T \\) of \\( 6n \\) positive integers contains two elements with least common multiple exceeding \\( 9n^2 \\)."
+    }
+  },
+  {
+    "similarity": 0.512,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "ProofBench",
+      "ref": "EGMO-2025-P2",
+      "problem": "An infinite increasing sequence a_{1}<a_{2}<a_{3}<\\cdots of positive integers is called central if for every positive integer n, the arithmetic mean of the first a_{n} terms of the sequence is equal to a_{n}. Show that there exists an infinite sequence b_{1}, b_{2}, b_{3}, \\ldots of positive integers such that for every central sequence a_{1}, a_{2}, a_{3}, \\ldots, there are infinitely many positive integers n with a_{n}=b_{n}."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BMOSL_2018_3",
+      "problem": "Show that for every positive integer \\( n \\) we have:\n\n\\[\n\\sum_{k=0}^{n}\\left(\\frac{2n+1-k}{k+1}\\right)^{k} \\leq 2^{n}\n\\]"
+    }
+  },
+  {
+    "similarity": 0.5,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "ProofBench",
+      "ref": "APMO-2024-3",
+      "problem": "Let \\(n\\) be a positive integer and \\(a_{1}, a_{2}, \\ldots, a_{n}\\) be positive real numbers. Prove that\n\\[\n\\sum_{i=1}^{n} \\frac{1}{2^{i}}\\left(\\frac{2}{1+a_{i}}\\right)^{2^{i}} \\geq \\frac{2}{1+a_{1} a_{2} \\ldots a_{n}}-\\frac{1}{2^{n}}\n\\]"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:irish_2014_9",
+      "problem": "Let \\( n \\) be a positive integer and \\( a_{1}, \\ldots, a_{n} \\) be positive real numbers. Let \\( g(x) \\) denote the product\n\n\\[\n\\left(x+a_{1}\\right) \\cdots\\left(x+a_{n}\\right)\n\\]\n\nLet \\( a_{0} \\) be a real number and let\n\n\\[\nf(x)=\\left(x-a_{0}\\right) g(x)=x^{n+1}+b_{1} x^{n}+b_{2} x^{n-1}+\\ldots+b_{n} x+b_{n+1}\n\\]\n\nProve that all the coefficients \\( b_{1}, b_{2}, \\ldots, b_{n+1} \\) of the polynomial \\( f(x) \\) are negative if and only if\n\n\\[\na_{0}>a_{1}+a_{2}+\\ldots+a_{n}\n\\]"
+    }
+  },
+  {
+    "similarity": 0.5,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_2016_2",
+      "problem": "Prove that for any positive integer $k,$ \\[\\left(k^2\\right)!\\cdot\\prod_{j=0}^{k-1}\\frac{j!}{\\left(j+k\\right)!}\\] is an integer."
+    },
+    "existing": {
+      "dataset": "ProofBench",
+      "puid": "ProofBench:EGMO-2024-3",
+      "problem": "We call a positive integer \\(n\\) peculiar if, for any positive divisor \\(d\\) of \\(n\\), the integer \\(d(d+1)\\) divides \\(n(n+1)\\). Prove that for any four different peculiar positive integers \\(A, B, C\\) and \\(D\\), the following holds: \\[ \\operatorname{gcd}(A, B, C, D)=1 \\] Here \\(\\operatorname{gcd}(A, B, C, D)\\) is the largest positive integer that divides all of \\(A, B, C\\) and \\(D\\)."
+    }
+  },
+  {
+    "similarity": 0.5,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2083",
+      "problem": "Let $a, b, c$ be positive real numbers such that $\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}=a+b+c$. Prove that\n\n$$\n\\frac{1}{(2 a+b+c)^{2}}+\\frac{1}{(2 b+c+a)^{2}}+\\frac{1}{(2 c+a+b)^{2}} \\leq \\frac{3}{16} .\n$$"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BMOSL_2019_5",
+      "problem": "Let \\(a, b, c\\) be positive real numbers, such that \\((ab)^{2}+(bc)^{2}+(ca)^{2}=3\\). Prove that\n\n\\[\n\\left(a^{2}-a+1\\right)\\left(b^{2}-b+1\\right)\\left(c^{2}-c+1\\right) \\geq 1.\n\\]"
+    }
+  },
+  {
+    "similarity": 0.494,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "ProofBench",
+      "ref": "USAMO-2023-1",
+      "problem": "In an acute triangle \\(A B C\\), let \\(M\\) be the midpoint of \\(\\overline{B C}\\). Let \\(P\\) be the foot of the perpendicular from \\(C\\) to \\(A M\\). Suppose that the circumcircle of triangle \\(A B P\\) intersects line \\(B C\\) at two distinct points \\(B\\) and \\(Q\\). Let \\(N\\) be the midpoint of \\(\\overline{A Q}\\). Prove that \\(N B=N C\\)."
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:usamo_2025_4",
+      "problem": "Let $H$ be the orthocenter of acute triangle $ABC$, let $F$ be the foot of the altitude from $C$ to $AB$, and let $P$ be the reflection of $H$ across $BC$. Suppose that the circumcircle of triangle $AFP$ intersects line $BC$ at two distinct points $X$ and $Y$. Prove that $C$ is the midpoint of $XY$."
+    }
+  },
+  {
+    "similarity": 0.494,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1769",
+      "problem": "Let $P$ be a polynomial of degree $n>1$ with integer coefficients and let $k$ be any positive integer. Consider the polynomial $Q(x)=P(P(\\ldots P(P(x)) \\ldots))$, with $k$ pairs of parentheses. Prove that $Q$ has no more than $n$ integer fixed points, i.e. integers satisfying the equation $Q(x)=x$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMC_2015_10",
+      "problem": "Let \\( n \\) be a positive integer, and let \\( p(x) \\) be a polynomial of degree \\( n \\) with integer coefficients. Prove that\n\\[\n\\max_{0 \\leq x \\leq 1} |p(x)| > \\frac{1}{e^{n}}\n\\]"
+    }
+  },
+  {
+    "similarity": 0.493,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAJMO_2014_4",
+      "problem": "Let $b\\geq 2$ be an integer, and let $s_b(n)$ denote the sum of the digits of $n$ when it is written in base $b$. Show that there are infinitely many positive integers that cannot be represented in the form $n+s_b(n)$, where $n$ is a positive integer."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:bmo2_2007_2",
+      "problem": "2. Show that there are infinitely many pairs of positive integers $(m, n)$ such that\n\n$$\n\\frac{m+1}{n}+\\frac{n+1}{m}\n$$\nis a positive integer."
+    }
+  },
+  {
+    "similarity": 0.493,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1683",
+      "problem": "For a prime $p$ and a positive integer $n$, denote by $\\nu_{p}(n)$ the exponent of $p$ in the prime factorization of $n$ !. Given a positive integer $d$ and a finite set $\\left\\{p_{1}, \\ldots, p_{k}\\right\\}$ of primes. Show that there are infinitely many positive integers $n$ such that $d \\mid \\nu_{p_{i}}(n)$ for all $1 \\leq i \\leq k$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:bmo2_2007_2",
+      "problem": "2. Show that there are infinitely many pairs of positive integers $(m, n)$ such that\n\n$$\n\\frac{m+1}{n}+\\frac{n+1}{m}\n$$\nis a positive integer."
+    }
+  },
+  {
+    "similarity": 0.493,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2121",
+      "problem": "Let $a, b, c, d$ be positive real numbers such that\n\n$$\na b c d=1 \\quad \\text { and } \\quad a+b+c+d>\\frac{a}{b}+\\frac{b}{c}+\\frac{c}{d}+\\frac{d}{a}\n$$\n\nProve that\n\n$$\na+b+c+d<\\frac{b}{a}+\\frac{c}{b}+\\frac{d}{c}+\\frac{a}{d}\n$$"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BalticWay_2018_3",
+      "problem": "Let \\(a, b, c, d\\) be positive real numbers such that \\(a b c d = 1\\). Prove the inequality\n\n\\[\n\\frac{1}{\\sqrt{a+2b+3c+10}} + \\frac{1}{\\sqrt{b+2c+3d+10}} + \\frac{1}{\\sqrt{c+2d+3a+10}} + \\frac{1}{\\sqrt{d+2a+3b+10}} \\leq 1.\n\\]"
+    }
+  },
+  {
+    "similarity": 0.488,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1688",
+      "problem": "Prove that for every positive integer $n$, the set $\\{2,3,4, \\ldots, 3 n+1\\}$ can be partitioned into $n$ triples in such a way that the numbers from each triple are the lengths of the sides of some obtuse triangle."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BMOSL_2018_3",
+      "problem": "Show that for every positive integer \\( n \\) we have:\n\n\\[\n\\sum_{k=0}^{n}\\left(\\frac{2n+1-k}{k+1}\\right)^{k} \\leq 2^{n}\n\\]"
+    }
+  },
+  {
+    "similarity": 0.488,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1711",
+      "problem": "Let $P(x)$ and $Q(x)$ be two polynomials with integer coefficients such that no nonconstant polynomial with rational coefficients divides both $P(x)$ and $Q(x)$. Suppose that for every positive integer $n$ the integers $P(n)$ and $Q(n)$ are positive, and $2^{Q(n)}-1$ divides $3^{P(n)}-1$. Prove that $Q(x)$ is a constant polynomial."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BMOSL_2018_3",
+      "problem": "Show that for every positive integer \\( n \\) we have:\n\n\\[\n\\sum_{k=0}^{n}\\left(\\frac{2n+1-k}{k+1}\\right)^{k} \\leq 2^{n}\n\\]"
+    }
+  },
+  {
+    "similarity": 0.487,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2195",
+      "problem": "Consider the set\n\n$$\nA=\\left\\{1+\\frac{1}{k}: k=1,2,3, \\ldots\\right\\}\n$$\nProve that every integer $x \\geq 2$ can be written as the product of one or more elements of $A$, which are not necessarily different."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:EGMO_2018_2",
+      "problem": "Consider the set\n\n$$\nA=\\left\\{1+\\frac{1}{k}: k=1,2,3, \\ldots\\right\\}\n$$\n\nFor every integer \\(x \\geq 2\\), let \\(f(x)\\) denote the minimum integer such that \\(x\\) can be written as the product of \\(f(x)\\) elements of \\(A\\) (not necessarily distinct). Prove that there are infinitely many pairs of integers \\(x \\geq 2\\) and \\(y \\geq 2\\) for which\n\n$$\nf(x y)<f(x)+f(y).\n$$"
+    }
+  },
+  {
+    "similarity": 0.484,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1837",
+      "problem": "Let $a, b$ and $c$ be positive real numbers such that $\\min \\{a b, b c, c a\\} \\geqslant 1$. Prove that\n\n$$\n\\sqrt[3]{\\left(a^{2}+1\\right)\\left(b^{2}+1\\right)\\left(c^{2}+1\\right)} \\leqslant\\left(\\frac{a+b+c}{3}\\right)^{2}+1\\tag{1}\n$$"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2009_4",
+      "problem": "Let \\(a, b, c\\) be positive real numbers such that \\(ab + bc + ca \\leq 3abc\\). Prove that\n\n\\[\n\\sqrt{\\frac{a^2 + b^2}{a+b}} + \\sqrt{\\frac{b^2 + c^2}{b+c}} + \\sqrt{\\frac{c^2 + a^2}{c+a}} + 3 \\leq \\sqrt{2}(\\sqrt{a+b} + \\sqrt{b+c} + \\sqrt{c+a}).\n\\]"
+    }
+  },
+  {
+    "similarity": 0.479,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAJMO_2017_2",
+      "problem": "Consider the equation \\[\\left(3x^3 + xy^2 \\right) \\left(x^2y + 3y^3 \\right) = (x-y)^7.\\] (a) Prove that there are infinitely many pairs $(x,y)$ of positive integers satisfying the equation. (b) Describe all pairs $(x,y)$ of positive integers satisfying the equation."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:bmo2_2007_2",
+      "problem": "2. Show that there are infinitely many pairs of positive integers $(m, n)$ such that\n\n$$\n\\frac{m+1}{n}+\\frac{n+1}{m}\n$$\nis a positive integer."
+    }
+  },
+  {
+    "similarity": 0.478,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_1982_4",
+      "problem": "Prove that there exists a positive integer $k$ such that $k\\cdot2^n+1$ is composite for every integer $n$."
+    },
+    "existing": {
+      "dataset": "ProofBench",
+      "puid": "ProofBench:EGMO-2022-3",
+      "problem": "An infinite sequence of positive integers \\(a_{1}, a_{2}, \\ldots\\) is called good if (1) \\(a_{1}\\) is a perfect square, and (2) for any integer \\(n \\geq 2, a_{n}\\) is the smallest positive integer such that \\[ n a_{1}+(n-1) a_{2}+\\ldots+2 a_{n-1}+a_{n} \\] is a perfect square. Prove that for any good sequence \\(a_{1}, a_{2}, \\ldots\\), there exists a positive integer \\(k\\) such that \\(a_{n}=a_{k}\\) for all integers \\(n \\geq k\\)."
+    }
+  },
+  {
+    "similarity": 0.477,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1625",
+      "problem": "Given a positive integer $n=\\prod_{i=1}^{s} p_{i}^{\\alpha_{i}}$, we write $\\Omega(n)$ for the total number $\\sum_{i=1}^{s} \\alpha_{i}$ of prime factors of $n$, counted with multiplicity. Let $\\lambda(n)=(-1)^{\\Omega(n)}$ (so, for example, $\\left.\\lambda(12)=\\lambda\\left(2^{2} \\cdot 3^{1}\\right)=(-1)^{2+1}=-1\\right)$.\nProve that there are infinitely many positive integers $n$ such that $\\lambda(n)=\\lambda(n+1)=+1$"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BalticWay_2020_19",
+      "problem": "Denote by \\(d(n)\\) the number of positive divisors of a positive integer \\(n\\). Prove that there are infinitely many positive integers \\(n\\) such that \\(\\lfloor\\sqrt{3} \\cdot d(n)\\rfloor\\) divides \\(n\\)."
+    }
+  },
+  {
+    "similarity": 0.477,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1626",
+      "problem": "Given a positive integer $n=\\prod_{i=1}^{s} p_{i}^{\\alpha_{i}}$, we write $\\Omega(n)$ for the total number $\\sum_{i=1}^{s} \\alpha_{i}$ of prime factors of $n$, counted with multiplicity. Let $\\lambda(n)=(-1)^{\\Omega(n)}$ (so, for example, $\\left.\\lambda(12)=\\lambda\\left(2^{2} \\cdot 3^{1}\\right)=(-1)^{2+1}=-1\\right)$.\nProve that there are infinitely many positive integers $n$ such that $\\lambda(n)=\\lambda(n+1)=-1$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BalticWay_2020_19",
+      "problem": "Denote by \\(d(n)\\) the number of positive divisors of a positive integer \\(n\\). Prove that there are infinitely many positive integers \\(n\\) such that \\(\\lfloor\\sqrt{3} \\cdot d(n)\\rfloor\\) divides \\(n\\)."
+    }
+  },
+  {
+    "similarity": 0.466,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_1999_4",
+      "problem": "Let $a_{1}, a_{2}, \\dots, a_{n}$ ($n > 3$) be real numbers such that \\[a_{1} + a_{2} + \\cdots + a_{n} \\geq n \\qquad \\mbox{and} \\qquad a_{1}^{2} + a_{2}^{2} + \\cdots + a_{n}^{2} \\geq n^{2}.\\] Prove that $\\max(a_{1}, a_{2}, \\dots, a_{n}) \\geq 2$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:USAMO_2009_4",
+      "problem": "For \\( n \\geq 2 \\), let \\( a_{1}, a_{2}, \\ldots, a_{n} \\) be positive real numbers such that\n\n\\[\n\\left(a_{1}+a_{2}+\\cdots+a_{n}\\right)\\left(\\frac{1}{a_{1}}+\\frac{1}{a_{2}}+\\cdots+\\frac{1}{a_{n}}\\right) \\leq\\left(n+\\frac{1}{2}\\right)^{2} .\n\\]\n\nProve that \\(\\max \\left(a_{1}, \\ldots, a_{n}\\right) \\leq 4 \\min \\left(a_{1}, \\ldots, a_{n}\\right)\\)."
+    }
+  },
+  {
+    "similarity": 0.466,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_2015_6",
+      "problem": "Consider $0<\\lambda<1$, and let $A$ be a multiset of positive integers. Let $A_n=\\{a\\in A: a\\leq n\\}$. Assume that for every $n\\in\\mathbb{N}$, the set $A_n$ contains at most $n\\lambda$numbers. Show that there are infinitely many $n\\in\\mathbb{N}$ for which the sum of the elements in $A_n$ is at most $\\frac{n(n+1)}{2}\\lambda$. (A multiset is a set-like collection of elements in which order is ignored, but repetition of elements is allowed and multiplicity of elements is significant. For example, multisets $\\{1, 2, 3\\}$ and $\\{2, 1, 3\\}$ are equivalent, but $\\{1, 1, 2, 3\\}$ and $\\{1, 2, 3\\}$ differ.)"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:bmo2_2007_2",
+      "problem": "2. Show that there are infinitely many pairs of positive integers $(m, n)$ such that\n\n$$\n\\frac{m+1}{n}+\\frac{n+1}{m}\n$$\nis a positive integer."
+    }
+  },
+  {
+    "similarity": 0.465,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "ProofBench",
+      "ref": "APMO-2024-4",
+      "problem": "Prove that for every positive integer \\(t\\) there is a unique permutation \\(a_{0}, a_{1}, \\ldots, a_{t-1}\\) of \\(0,1, \\ldots, t-\\) 1 such that, for every \\(0 \\leq i \\leq t-1\\), the binomial coefficient \\(\\binom{t+i}{2 a_{i}}\\) is odd and \\(2 a_{i} \\neq t+i\\)."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BMOSL_2018_3",
+      "problem": "Show that for every positive integer \\( n \\) we have:\n\n\\[\n\\sum_{k=0}^{n}\\left(\\frac{2n+1-k}{k+1}\\right)^{k} \\leq 2^{n}\n\\]"
+    }
+  },
+  {
+    "similarity": 0.462,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1842",
+      "problem": "\nProve that there are infinitely many positive integers $n$ such that there is no fraction $\\frac{a}{b}$ where $a$ and $b$ are integers satisfying $0<b \\leqslant \\sqrt{n}$ and $\\sqrt{n} \\leqslant \\frac{a}{b} \\leqslant \\sqrt{n+1}$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BalticWay_2017_9",
+      "problem": "A positive integer \\( n \\) is Danish if a regular hexagon can be partitioned into \\( n \\) congruent polygons. Prove that there are infinitely many positive integers \\( n \\) such that both \\( n \\) and \\( 2^{n}+n \\) are Danish."
+    }
+  },
+  {
+    "similarity": 0.459,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "OPC",
+      "ref": "IMC_2015_10",
+      "problem": "Let \\( n \\) be a positive integer, and let \\( p(x) \\) be a polynomial of degree \\( n \\) with integer coefficients. Prove that\n\\[\n\\max_{0 \\leq x \\leq 1} |p(x)| > \\frac{1}{e^{n}}\n\\]"
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:usamo_2025_2",
+      "problem": "Let $n$ and $k$ be positive integers with $k<n$. Let $P(x)$ be a polynomial of degree $n$ with real coefficients, nonzero constant term, and no repeated roots. Suppose that for any real numbers $a_0,\\,a_1,\\,\\ldots,\\,a_k$ such that the polynomial $a_kx^k+\\cdots+a_1x+a_0$ divides $P(x)$, the product $a_0a_1\\cdots a_k$ is zero. Prove that $P(x)$ has a nonreal root."
+    }
+  },
+  {
+    "similarity": 0.448,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "ProofBench",
+      "ref": "USAMO-2025-Q1",
+      "problem": "Fix positive integers $k$ and $d$.\nProve that for all sufficiently large odd positive integers $n$,\nthe digits of the base-$2n$ representation of $n^k$ are all greater than $d$."
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:usamo_2025_1",
+      "problem": "Let $k$ and $d$ be positive integers. Prove that there exists a positive integer $N$ such that for every odd integer $n>N$, the digits in the base-$2n$ representation of $n^k$ are all greater than $d$."
+    }
+  },
+  {
+    "similarity": 0.438,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1781",
+      "problem": "Let $S$ be an infinite set of positive integers, such that there exist four pairwise distinct $a, b, c, d \\in S$ with $\\operatorname{gcd}(a, b) \\neq \\operatorname{gcd}(c, d)$. Prove that there exist three pairwise distinct $x, y, z \\in S$ such that $\\operatorname{gcd}(x, y)=\\operatorname{gcd}(y, z) \\neq \\operatorname{gcd}(z, x)$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:izho_2018_3",
+      "problem": "Prove that there exist infinitely many pairs \\((m, n)\\) of positive integers such that \\(m+n\\) divides \\((m!)^{n}+(n!)^{m}+1\\)."
+    }
+  },
+  {
+    "similarity": 0.438,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1802",
+      "problem": "Prove that there are only finitely many quadruples $(a, b, c, n)$ of positive integers such that\n\n$$\nn !=a^{n-1}+b^{n-1}+c^{n-1} .\n$$"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:izho_2018_3",
+      "problem": "Prove that there exist infinitely many pairs \\((m, n)\\) of positive integers such that \\(m+n\\) divides \\((m!)^{n}+(n!)^{m}+1\\)."
+    }
+  },
+  {
+    "similarity": 0.438,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1935",
+      "problem": "Prove that there is a constant $c>0$ and infinitely many positive integers $n$ with the following property: there are infinitely many positive integers that cannot be expressed as the sum of fewer than $c n \\log (n)$ pairwise coprime $n^{\\text {th }}$ powers."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:USAMO_2014_6",
+      "problem": "Prove that there is a constant \\(c>0\\) with the following property: If \\(a, b, n\\) are positive integers such that \\(\\operatorname{gcd}(a+i, b+j)>1\\) for all \\(i, j \\in\\{0,1, \\ldots, n\\}\\), then\n\n\\[\n\\min \\{a, b\\}>(c n)^{n / 2}\n\\]"
+    }
+  },
+  {
+    "similarity": 0.435,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1640",
+      "problem": "Let $a, b, c, d$ be positive integers such that $a d \\neq b c$ and $\\operatorname{gcd}(a, b, c, d)=1$. Prove that, as $n$ runs through the positive integers, the values $\\operatorname{gcd}(a n+b, c n+d)$ may achieve form the set of all positive divisors of some integer."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:putnam_1982_a5",
+      "problem": "Let $a, b, c, d$ be positive integers satisfying $a + c \\leq 1982$ and $\\frac{a}{b} + \\frac{c}{d} < 1$. Prove that $1 - \\frac{a}{b} - \\frac{c}{d} > \\frac{1}{1983^3}$."
+    }
+  },
+  {
+    "similarity": 0.429,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "OPC",
+      "ref": "bmo1_2015_4",
+      "problem": "4. Let $x$ be a real number such that $t=x+x^{-1}$ is an integer greater than 2. Prove that $t_{n}=x^{n}+x^{-n}$ is an integer for all positive integers $n$. Determine the values of $n$ for which $t$ divides $t_{n}$."
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:usamo_2025_5",
+      "problem": "Determine, with proof, all positive integers $k$ such that$$\\frac{1}{n+1} \\sum_{i=0}^n \\binom{n}{i}^k$$is an integer for all positive integers $n.$"
+    }
+  },
+  {
+    "similarity": 0.426,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "OPC",
+      "ref": "USAMO_2013_5",
+      "problem": "Let \\( m \\) and \\( n \\) be positive integers. Prove that there exists a positive integer \\( c \\) such that \\( cm \\) and \\( cn \\) have the same nonzero decimal digits."
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:usamo_2025_1",
+      "problem": "Let $k$ and $d$ be positive integers. Prove that there exists a positive integer $N$ such that for every odd integer $n>N$, the digits in the base-$2n$ representation of $n^k$ are all greater than $d$."
+    }
+  },
+  {
+    "similarity": 0.426,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2114",
+      "problem": "Let $a$ and $b$ be distinct integers greater than 1 . Prove that there exists a positive integer $n$ such that $\\left(a^{n}-1\\right)\\left(b^{n}-1\\right)$ is not a perfect square."
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:usamo_2025_1",
+      "problem": "Let $k$ and $d$ be positive integers. Prove that there exists a positive integer $N$ such that for every odd integer $n>N$, the digits in the base-$2n$ representation of $n^k$ are all greater than $d$."
+    }
+  },
+  {
+    "similarity": 0.425,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_2002_5",
+      "problem": "Let $a, b$ be integers greater than 2. Prove that there exists a positive integer $k$ and a finite sequence $n_1, n_2, \\ldots, n_k$ of positive integers such that $n_1 = a$, $n_k = b$, and $n_in_{i+1}$ is divisible by $n_i + n_{i+1}$ for each $i$ ($1 \\le i \\le k$)."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:izho_2018_3",
+      "problem": "Prove that there exist infinitely many pairs \\((m, n)\\) of positive integers such that \\(m+n\\) divides \\((m!)^{n}+(n!)^{m}+1\\)."
+    }
+  },
+  {
+    "similarity": 0.425,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1744",
+      "problem": "The sequence $c_{0}, c_{1}, \\ldots, c_{n}, \\ldots$ is defined by $c_{0}=1, c_{1}=0$ and $c_{n+2}=c_{n+1}+c_{n}$ for $n \\geq 0$. Consider the set $S$ of ordered pairs $(x, y)$ for which there is a finite set $J$ of positive integers such that $x=\\sum_{j \\in J} c_{j}, y=\\sum_{j \\in J} c_{j-1}$. Prove that there exist real numbers $\\alpha, \\beta$ and $m, M$ with the following property: An ordered pair of nonnegative integers $(x, y)$ satisfies the inequality\n\n$$\nm<\\alpha x+\\beta y<M\n$$\n\nif and only if $(x, y) \\in S$.\n\nN. B. A sum over the elements of the empty set is assumed to be 0 ."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:izho_2018_3",
+      "problem": "Prove that there exist infinitely many pairs \\((m, n)\\) of positive integers such that \\(m+n\\) divides \\((m!)^{n}+(n!)^{m}+1\\)."
+    }
+  },
+  {
+    "similarity": 0.425,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2055",
+      "problem": "Let $f:\\{1,2,3, \\ldots\\} \\rightarrow\\{2,3, \\ldots\\}$ be a function such that $f(m+n) \\mid f(m)+f(n)$ for all pairs $m, n$ of positive integers. Prove that there exists a positive integer $c>1$ which divides all values of $f$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:izho_2018_3",
+      "problem": "Prove that there exist infinitely many pairs \\((m, n)\\) of positive integers such that \\(m+n\\) divides \\((m!)^{n}+(n!)^{m}+1\\)."
+    }
+  },
+  {
+    "similarity": 0.422,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1937",
+      "problem": "Suppose that a sequence $a_{1}, a_{2}, \\ldots$ of positive real numbers satisfies\n\n$$\na_{k+1} \\geqslant \\frac{k a_{k}}{a_{k}^{2}+(k-1)}\n\\tag{1}\n$$\n\nfor every positive integer $k$. Prove that $a_{1}+a_{2}+\\cdots+a_{n} \\geqslant n$ for every $n \\geqslant 2$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:putnam_1965_a2",
+      "problem": "Prove that $$\\sum_{r=0}^{\\lfloor\\frac{n-1}{2}\\rfloor} \\left(\\frac{n - 2r}{n} {n \\choose r}\\right)^2 = \\frac{1}{n} {{2n - 2} \\choose {n - 1}}$$ for every positive integer $n$."
+    }
+  },
+  {
+    "similarity": 0.421,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "ProofBench",
+      "ref": "APMO-2025-5",
+      "problem": "Consider an infinite sequence \\(a_{1}, a_{2}, \\ldots\\) of positive integers such that\n\\[\n100!\\left(a_{m}+a_{m+1}+\\cdots+a_{n}\\right) \\quad \\text { is a multiple of } \\quad a_{n-m+1} a_{n+m}\n\\]\nfor all positive integers \\(m, n\\) such that \\(m \\leq n\\).\nProve that the sequence is either bounded or linear.\nObservation: A sequence of positive integers is bounded if there exists a constant \\(N\\) such that \\(a_{n}<N\\) for all \\(n \\in \\mathbb{Z}_{>0}\\). A sequence is linear if \\(a_{n}=n \\cdot a_{1}\\) for all \\(n \\in \\mathbb{Z}_{>0}\\)."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2014_1",
+      "problem": "Let \\( z_{0} < z_{1} < z_{2} < \\cdots \\) be an infinite sequence of positive integers. Prove that there exists a unique integer \\( n \\geq 1 \\) such that\n\n\\[\nz_{n} < \\frac{z_{0} + z_{1} + \\cdots + z_{n}}{n} \\leq z_{n+1}.\n\\]"
+    }
+  },
+  {
+    "similarity": 0.419,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1682",
+      "problem": "Let $k$ be a positive integer. Prove that the number $\\left(4 k^{2}-1\\right)^{2}$ has a positive divisor of the form $8 k n-1$ if and only if $k$ is even."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:EGMO_2014_3",
+      "problem": "We denote the number of positive divisors of a positive integer \\( m \\) by \\( d(m) \\) and the number of distinct prime divisors of \\( m \\) by \\( \\omega(m) \\). Let \\( k \\) be a positive integer. Prove that there exist infinitely many positive integers \\( n \\) such that \\( \\omega(n) = k \\) and \\( d(n) \\) does not divide \\( d\\left(a^{2} + b^{2}\\right) \\) for any positive integers \\( a, b \\) satisfying \\( a + b = n \\)."
+    }
+  },
+  {
+    "similarity": 0.418,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAJMO_2016_2",
+      "problem": "Prove that there exists a positive integer $n < 10^6$ such that $5^n$ has six consecutive zeros in its decimal representation."
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:usamo_2025_1",
+      "problem": "Let $k$ and $d$ be positive integers. Prove that there exists a positive integer $N$ such that for every odd integer $n>N$, the digits in the base-$2n$ representation of $n^k$ are all greater than $d$."
+    }
+  },
+  {
+    "similarity": 0.413,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "ProofBench",
+      "ref": "APMO-2025-3",
+      "problem": "Let \\(P(x)\\) be a non-constant polynomial with integer coefficients such that \\(P(0) \\neq 0\\). Let \\(a_{1}, a_{2}, a_{3}, \\ldots\\) be an infinite sequence of integers such that \\(P(i-j)\\) divides \\(a_{i}-a_{j}\\) for all distinct positive integers \\(i, j\\). Prove that the sequence \\(a_{1}, a_{2}, a_{3}, \\ldots\\) must be constant, that is, \\(a_{n}\\) equals a constant \\(c\\) for all \\(n\\) positive integer."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:putnam_2007_b1",
+      "problem": "Let $f$ be a nonconstant polynomial with positive integer coefficients. Prove that if $n$ is a positive integer, then $f(n)$ divides $f(f(n) + 1)$ if and only if $n = 1$"
+    }
+  },
+  {
+    "similarity": 0.408,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_1974_2",
+      "problem": "Prove that if $a$, $b$, and $c$ are positive real numbers, then $a^ab^bc^c\\ge (abc)^{(a+b+c)/3}$"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:putnam_1988_b4",
+      "problem": "Prove that if $\\sum_{n=1}^\\infty a_n$ is a convergent series of positive real numbers, then so is $\\sum_{n=1}^\\infty (a_n)^{n/(n+1)}$."
+    }
+  },
+  {
+    "similarity": 0.404,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2112",
+      "problem": "Let $P(x)$ be a non-constant polynomial with integer coefficients. Prove that there is no function $T$ from the set of integers into the set of integers such that the number of integers $x$ with $T^{n}(x)=x$ is equal to $P(n)$ for every $n \\geq 1$, where $T^{n}$ denotes the $n$-fold application of $T$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:putnam_2007_b1",
+      "problem": "Let $f$ be a nonconstant polynomial with positive integer coefficients. Prove that if $n$ is a positive integer, then $f(n)$ divides $f(f(n) + 1)$ if and only if $n = 1$"
+    }
+  },
+  {
+    "similarity": 0.401,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2201",
+      "problem": "\nProve that for every real number $t$ such that $0<t<\\frac{1}{2}$ there exists a positive integer $n$ with the following property: for every set $S$ of $n$ positive integers there exist two different elements $x$ and $y$ of $S$, and a non-negative integer $m$ (i.e. $m \\geq 0$ ), such that\n\n$$\n|x-m y| \\leq t y .\n$$"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:EGMO_2018_6",
+      "problem": "Fix a real number \\(0 < t < \\frac{1}{2}\\).\n\n(a) Prove that there exists a positive integer \\(n\\) such that for every set \\(S\\) of \\(n\\) positive integers, the following holds: there exist distinct \\(x, y \\in S\\) and nonnegative integer \\(m \\geq 0\\) such that \\(|x - my| \\leq ty\\).\n\n(b) Determine whether there exists an infinite set \\(S\\) of positive integers such that the following holds: for any distinct \\(x, y \\in S\\) and positive integer \\(m > 0\\), we have \\(|x - my| > ty\\)."
+    }
+  },
+  {
+    "similarity": 0.4,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "OPC",
+      "ref": "putnam_1965_a2",
+      "problem": "Prove that $$\\sum_{r=0}^{\\lfloor\\frac{n-1}{2}\\rfloor} \\left(\\frac{n - 2r}{n} {n \\choose r}\\right)^2 = \\frac{1}{n} {{2n - 2} \\choose {n - 1}}$$ for every positive integer $n$."
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:putnam_2025_1",
+      "problem": "Let $m_0$ and $n_0$ be distinct positive integers. For every positive integer $k$, define $m_k$ and $n_k$ to be the relatively prime positive integers such that\n\\[\n\\frac{m_k}{n_k} = \\frac{2m_{k-1} + 1}{2n_{k-1} + 1}.\n\\]\nProve that $2m_k+1$ and $2n_k+1$ are relatively prime for all but finitely many positive integers $k$."
+    }
+  },
+  {
+    "similarity": 0.4,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "ProofBench",
+      "ref": "EGMO-2022-3",
+      "problem": "An infinite sequence of positive integers \\(a_{1}, a_{2}, \\ldots\\) is called good if (1) \\(a_{1}\\) is a perfect square, and (2) for any integer \\(n \\geq 2, a_{n}\\) is the smallest positive integer such that \\[ n a_{1}+(n-1) a_{2}+\\ldots+2 a_{n-1}+a_{n} \\] is a perfect square. Prove that for any good sequence \\(a_{1}, a_{2}, \\ldots\\), there exists a positive integer \\(k\\) such that \\(a_{n}=a_{k}\\) for all integers \\(n \\geq k\\)."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2014_1",
+      "problem": "Let \\( z_{0} < z_{1} < z_{2} < \\cdots \\) be an infinite sequence of positive integers. Prove that there exists a unique integer \\( n \\geq 1 \\) such that\n\n\\[\nz_{n} < \\frac{z_{0} + z_{1} + \\cdots + z_{n}}{n} \\leq z_{n+1}.\n\\]"
+    }
+  },
+  {
+    "similarity": 0.4,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2066",
+      "problem": "Let $r$ be a positive integer, and let $a_{0}, a_{1}, \\ldots$ be an infinite sequence of real numbers. Assume that for all nonnegative integers $m$ and $s$ there exists a positive integer $n \\in[m+1, m+r]$ such that\n\n$$\na_{m}+a_{m+1}+\\cdots+a_{m+s}=a_{n}+a_{n+1}+\\cdots+a_{n+s}\n$$\n\nProve that the sequence is periodic, i. e. there exists some $p \\geqslant 1$ such that $a_{n+p}=a_{n}$ for all $n \\geqslant 0$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2014_1",
+      "problem": "Let \\( z_{0} < z_{1} < z_{2} < \\cdots \\) be an infinite sequence of positive integers. Prove that there exists a unique integer \\( n \\geq 1 \\) such that\n\n\\[\nz_{n} < \\frac{z_{0} + z_{1} + \\cdots + z_{n}}{n} \\leq z_{n+1}.\n\\]"
+    }
+  },
+  {
+    "similarity": 0.397,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_2017_1",
+      "problem": "Prove that there are infinitely many distinct pairs $(a,b)$ of relatively prime positive integers $a>1$ and $b>1$ such that $a^b+b^a$ is divisible by $a+b$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:bmo2_2007_2",
+      "problem": "2. Show that there are infinitely many pairs of positive integers $(m, n)$ such that\n\n$$\n\\frac{m+1}{n}+\\frac{n+1}{m}\n$$\nis a positive integer."
+    }
+  },
+  {
+    "similarity": 0.397,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1878",
+      "problem": "Let $n$ and $k$ be positive integers. Prove that for $a_{1}, \\ldots, a_{n} \\in\\left[1,2^{k}\\right]$ one has\n\n$$\n\\sum_{i=1}^{n} \\frac{a_{i}}{\\sqrt{a_{1}^{2}+\\ldots+a_{i}^{2}}} \\leqslant 4 \\sqrt{k n}\n$$"
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:usamo_2025_2",
+      "problem": "Let $n$ and $k$ be positive integers with $k<n$. Let $P(x)$ be a polynomial of degree $n$ with real coefficients, nonzero constant term, and no repeated roots. Suppose that for any real numbers $a_0,\\,a_1,\\,\\ldots,\\,a_k$ such that the polynomial $a_kx^k+\\cdots+a_1x+a_0$ divides $P(x)$, the product $a_0a_1\\cdots a_k$ is zero. Prove that $P(x)$ has a nonreal root."
+    }
+  },
+  {
+    "similarity": 0.396,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2704",
+      "problem": "In ARMLopolis, every house number is a positive integer, and City Hall's address is 0. However, due to the curved nature of the cowpaths that eventually became the streets of ARMLopolis, the distance $d(n)$ between house $n$ and City Hall is not simply the value of $n$. Instead, if $n=3^{k} n^{\\prime}$, where $k \\geq 0$ is an integer and $n^{\\prime}$ is an integer not divisible by 3 , then $d(n)=3^{-k}$. For example, $d(18)=1 / 9$ and $d(17)=1$. Notice that even though no houses have negative numbers, $d(n)$ is well-defined for negative values of $n$. For example, $d(-33)=1 / 3$ because $-33=3^{1} \\cdot-11$. By definition, $d(0)=0$. Following the dictum \"location, location, location,\" this Power Question will refer to \"houses\" and \"house numbers\" interchangeably.\n\nCuriously, the arrangement of the houses is such that the distance from house $n$ to house $m$, written $d(m, n)$, is simply $d(m-n)$. For example, $d(3,4)=d(-1)=1$ because $-1=3^{0} \\cdot-1$. In particular, if $m=n$, then $d(m, n)=0$.\n\n\nThe neighborhood of a house $n$, written $\\mathcal{N}(n)$, is the set of all houses that are the same distance from City Hall as $n$. In symbols, $\\mathcal{N}(n)=\\{m \\mid d(m)=d(n)\\}$. Geometrically, it may be helpful to think of $\\mathcal{N}(n)$ as a circle centered at City Hall with radius $d(n)$.\n\nLater, ARMLopolis finally decides on a drastic expansion plan: now house numbers will be rational numbers. To define $d(p / q)$, with $p$ and $q$ integers such that $p q \\neq 0$, write $p / q=3^{k} p^{\\prime} / q^{\\prime}$, where neither $p^{\\prime}$ nor $q^{\\prime}$ is divisible by 3 and $k$ is an integer (not necessarily positive); then $d(p / q)=3^{-k}$.\nA longtime resident of IMOpia moves to ARMLopolis and hopes to keep his same address. When asked, he says \"My old address was $e$, that is, the sum $\\frac{1}{0 !}+\\frac{1}{1 !}+\\frac{1}{2 !}+\\ldots$ I'd really like to keep that address, because the addresses of my friends here are all partial sums of this series: Alice's house is $\\frac{1}{0 !}$, Bob's house is $\\frac{1}{0 !}+\\frac{1}{1 !}$, Carol's house is $\\frac{1}{0 !}+\\frac{1}{1 !}+\\frac{1}{2 !}$, and so on. Just let me know what I have to do in order to be near my friends!\" After some head-scratching, the ARMLopolitan planning council announces that this request cannot be satisfied: there is no number, rational or otherwise, that corresponds to the (infinite) sum, or that is arbitrarily close to the houses in this sequence. Prove that the council is correct (and not just bureaucratic)."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2022_33",
+      "problem": "Prove that \\(5^{n}-3^{n}\\) is not divisible by \\(2^{n}+65\\) for any positive integer \\(n\\)."
+    }
+  },
+  {
+    "similarity": 0.395,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "OPC",
+      "ref": "BMOSL_2018_3",
+      "problem": "Show that for every positive integer \\( n \\) we have:\n\n\\[\n\\sum_{k=0}^{n}\\left(\\frac{2n+1-k}{k+1}\\right)^{k} \\leq 2^{n}\n\\]"
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:imc_2025_9",
+      "problem": "Let $n$ be a positive integer. Consider the following random process which produces a sequence of $n$ distinct positive integers $X_{1}, X_{2}, \\ldots, X_{n}$.\nFirst, $X_{1}$ is chosen randomly with $\\mathbb{P}\\left(X_{1}=i\\right)=2^{-i}$ for every positive integer $i$. For $1 \\leq j \\leq n-1$, having chosen $X_{1}, \\ldots, X_{j}$, arrange the remaining positive integers in increasing order as $n_{1}<n_{2}<$ $\\cdots$, and choose $X_{j+1}$ randomly with $\\mathbb{P}\\left(X_{j+1}=n_{i}\\right)=2^{-i}$ for every positive integer $i$.\nLet $Y_{n}=\\max \\left\\{X_{1}, \\ldots, X_{n}\\right\\}$. Show that\n\n$$\n\\mathbb{E}\\left[Y_{n}\\right]=\\sum_{i=1}^{n} \\frac{2^{i}}{2^{i}-1}\n$$\nwhere $\\mathbb{E}\\left[Y_{n}\\right]$ is the expected value of $Y_{n}$."
+    }
+  },
+  {
+    "similarity": 0.395,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1907",
+      "problem": "Let $n \\geqslant 2$ be a positive integer and $a_{1}, a_{2}, \\ldots, a_{n}$ be real numbers such that\n\n$$\na_{1}+a_{2}+\\cdots+a_{n}=0 .\n$$\n\nDefine the set $A$ by\n\n$$\nA=\\left\\{(i, j)|1 \\leqslant i<j \\leqslant n,| a_{i}-a_{j} \\mid \\geqslant 1\\right\\} .\n$$\n\nProve that, if $A$ is not empty, then\n\n$$\n\\sum_{(i, j) \\in A} a_{i} a_{j}<0\n$$"
+    },
+    "existing": {
+      "dataset": "ProofBench",
+      "puid": "ProofBench:APMO-2024-3",
+      "problem": "Let \\(n\\) be a positive integer and \\(a_{1}, a_{2}, \\ldots, a_{n}\\) be positive real numbers. Prove that\n\\[\n\\sum_{i=1}^{n} \\frac{1}{2^{i}}\\left(\\frac{2}{1+a_{i}}\\right)^{2^{i}} \\geq \\frac{2}{1+a_{1} a_{2} \\ldots a_{n}}-\\frac{1}{2^{n}}\n\\]"
+    }
+  },
+  {
+    "similarity": 0.395,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2073",
+      "problem": "Let $A B C D E F$ be a convex hexagon with $A B=D E, B C=E F, C D=F A$, and $\\angle A-\\angle D=\\angle C-\\angle F=\\angle E-\\angle B$. Prove that the diagonals $A D, B E$, and $C F$ are concurrent."
+    },
+    "existing": {
+      "dataset": "HARP",
+      "puid": "HARP:USAMO_2021_6",
+      "problem": "Let $ABCDEF$ be a convex hexagon satisfying $\\overline{AB} \\parallel \\overline{DE}$, $\\overline{BC} \\parallel \\overline{EF}$, $\\overline{CD} \\parallel \\overline{FA}$, and\\[AB \\cdot DE = BC \\cdot EF = CD \\cdot FA.\\]Let $X$, $Y$, and $Z$ be the midpoints of $\\overline{AD}$, $\\overline{BE}$, and $\\overline{CF}$. Prove that the circumcenter of $\\triangle ACE$, the circumcenter of $\\triangle BDF$, and the orthocenter of $\\triangle XYZ$ are collinear."
+    }
+  },
+  {
+    "similarity": 0.395,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2078",
+      "problem": "Prove that there exists an infinite sequence of nonzero digits $a_{1}, a_{2}, a_{3}, \\ldots$ and a positive integer $N$ such that for every integer $k>N$, the number $\\overline{a_{k} a_{k-1} \\ldots a_{1}}$ is a perfect square."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:EGMO_2018_6",
+      "problem": "Fix a real number \\(0 < t < \\frac{1}{2}\\).\n\n(a) Prove that there exists a positive integer \\(n\\) such that for every set \\(S\\) of \\(n\\) positive integers, the following holds: there exist distinct \\(x, y \\in S\\) and nonnegative integer \\(m \\geq 0\\) such that \\(|x - my| \\leq ty\\).\n\n(b) Determine whether there exists an infinite set \\(S\\) of positive integers such that the following holds: for any distinct \\(x, y \\in S\\) and positive integer \\(m > 0\\), we have \\(|x - my| > ty\\)."
+    }
+  },
+  {
+    "similarity": 0.391,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1636",
+      "problem": "A finite list of rational numbers is written on a blackboard. In an operation, we choose any two numbers $a, b$, erase them, and write down one of the numbers\n\n\n\n$$\n\na+b, a-b, b-a, a \\times b, a / b(\\text { if } b \\neq 0), b / a(\\text { if } a \\neq 0)\n\n$$\n\n\n\nProve that, for every integer $n>100$, there are only finitely many integers $k \\geq 0$, such that, starting from the list\n\n\n\n$$\n\nk+1, k+2, \\ldots, k+n\n\n$$\n\n\n\nit is possible to obtain, after $n-1$ operations, the value $n$ !."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:putnam_1962_b5",
+      "problem": "Prove that for every integer $n$ greater than 1: \\[ \\frac{3n+1}{2n+2} < \\left( \\frac{1}{n} \\right)^n + \\left(\\frac{2}{n} \\right)^n + \\cdots + \\left(\\frac{n}{n} \\right)^n < 2. \\]"
+    }
+  },
+  {
+    "similarity": 0.387,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1927",
+      "problem": "The incircle $\\omega$ of acute-angled scalene triangle $A B C$ has centre $I$ and meets sides $B C$, $C A$, and $A B$ at $D, E$, and $F$, respectively. The line through $D$ perpendicular to $E F$ meets $\\omega$ again at $R$. Line $A R$ meets $\\omega$ again at $P$. The circumcircles of triangles $P C E$ and $P B F$ meet again at $Q \\neq P$. Prove that lines $D I$ and $P Q$ meet on the external bisector of angle $B A C$.\n\n$\\angle(a, b)$ denotes the directed angle between lines $a$ and $b$, measured modulo $\\pi$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:RMM_Extralist_2020_9",
+      "problem": "In triangle \\(ABC\\) with circumcircle \\(\\Gamma\\), the incircle \\(\\omega\\) touches sides \\(BC, CA\\), and \\(AB\\) at \\(D, E\\), and \\(F\\), respectively. The line through \\(D\\) perpendicular to \\(EF\\) meets \\(\\omega\\) at \\(K \\neq D\\). Line \\(AK\\) meets \\(\\Gamma\\) at \\(L \\neq A\\). Rays \\(KI\\) and \\(IL\\) meet the circumcircle of triangle \\(BIC\\) at \\(Q \\neq I\\) and \\(P \\neq I\\), respectively. The circumcircles of triangles \\(KFB\\) and \\(KEC\\) meet \\(EF\\) at \\(R \\neq F\\) and \\(S \\neq E\\), respectively. Prove that \\(PQRS\\) is cyclic."
+    }
+  },
+  {
+    "similarity": 0.386,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_1997_1",
+      "problem": "Let $p_1,p_2,p_3,...$ be the prime numbers listed in increasing order, and let $x_0$ be a real number between $0$ and $1$. For positive integer $k$, define $x_{k}=\\begin{cases}0&\\text{ if }x_{k-1}=0\\\\ \\left\\{\\frac{p_{k}}{x_{k-1}}\\right\\}&\\text{ if }x_{k-1}\\ne0\\end{cases}$ where $\\{x\\}$ denotes the fractional part of $x$. (The fractional part of $x$ is given by $x-\\lfloor{x}\\rfloor$ where $\\lfloor{x}\\rfloor$ is the greatest integer less than or equal to $x$.) Find, with proof, all $x_0$ satisfying $0<x_0<1$ for which the sequence $x_0,x_1,x_2,...$ eventually becomes $0$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:irish_2002_9",
+      "problem": "For each real number \\( x \\), define \\(\\lfloor x\\rfloor\\) to be the greatest integer less than or equal to \\( x \\).\n\nLet \\(\\alpha=2+\\sqrt{3}\\). Prove that\n\n\\[\n\\alpha^{n}-\\left\\lfloor\\alpha^{n}\\right\\rfloor=1-\\alpha^{-n}, \\text{ for } n=0,1,2, \\ldots\n\\]"
+    }
+  },
+  {
+    "similarity": 0.386,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2262",
+      "problem": "Let $\\lfloor x\\rfloor$ denote the greatest integer less than or equal to $x$. For example, $\\lfloor 3.1\\rfloor=3$ and $\\lfloor-1.4\\rfloor=-2$.\n\nSuppose that $f(n)=2 n-\\left\\lfloor\\frac{1+\\sqrt{8 n-7}}{2}\\right\\rfloor$ and $g(n)=2 n+\\left\\lfloor\\frac{1+\\sqrt{8 n-7}}{2}\\right\\rfloor$ for each positive integer $n$.\nSuppose that $A=\\{f(1), f(2), f(3), \\ldots\\}$ and $B=\\{g(1), g(2), g(3), \\ldots\\}$; that is, $A$ is the range of $f$ and $B$ is the range of $g$. Prove that every positive integer $m$ is an element of exactly one of $A$ or $B$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:irish_2002_9",
+      "problem": "For each real number \\( x \\), define \\(\\lfloor x\\rfloor\\) to be the greatest integer less than or equal to \\( x \\).\n\nLet \\(\\alpha=2+\\sqrt{3}\\). Prove that\n\n\\[\n\\alpha^{n}-\\left\\lfloor\\alpha^{n}\\right\\rfloor=1-\\alpha^{-n}, \\text{ for } n=0,1,2, \\ldots\n\\]"
+    }
+  },
+  {
+    "similarity": 0.375,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2149",
+      "problem": "We say that a function $f: \\mathbb{R}^{k} \\rightarrow \\mathbb{R}$ is a metapolynomial if, for some positive integers $m$ and $n$, it can be represented in the form\n\n$$\nf\\left(x_{1}, \\ldots, x_{k}\\right)=\\max _{i=1, \\ldots, m} \\min _{j=1, \\ldots, n} P_{i, j}\\left(x_{1}, \\ldots, x_{k}\\right)\n$$\n\nwhere $P_{i, j}$ are multivariate polynomials. Prove that the product of two metapolynomials is also a metapolynomial."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:putnam_1977_b1",
+      "problem": "Find $\\prod_{n=2}^{\\infty} \\frac{(n^3 - 1)}{(n^3 + 1)}$. Prove that the product equals $\\frac{2}{3}$."
+    }
+  },
+  {
+    "similarity": 0.375,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2690",
+      "problem": "In ARMLopolis, every house number is a positive integer, and City Hall's address is 0. However, due to the curved nature of the cowpaths that eventually became the streets of ARMLopolis, the distance $d(n)$ between house $n$ and City Hall is not simply the value of $n$. Instead, if $n=3^{k} n^{\\prime}$, where $k \\geq 0$ is an integer and $n^{\\prime}$ is an integer not divisible by 3 , then $d(n)=3^{-k}$. For example, $d(18)=1 / 9$ and $d(17)=1$. Notice that even though no houses have negative numbers, $d(n)$ is well-defined for negative values of $n$. For example, $d(-33)=1 / 3$ because $-33=3^{1} \\cdot-11$. By definition, $d(0)=0$. Following the dictum \"location, location, location,\" this Power Question will refer to \"houses\" and \"house numbers\" interchangeably.\n\nCuriously, the arrangement of the houses is such that the distance from house $n$ to house $m$, written $d(m, n)$, is simply $d(m-n)$. For example, $d(3,4)=d(-1)=1$ because $-1=3^{0} \\cdot-1$. In particular, if $m=n$, then $d(m, n)=0$.\n\nA visitor to ARMLopolis is surprised by the ARMLopolitan distance formula, and starts to wonder about ARMLopolitan geometry. An ARMLopolitan triangle is a triangle, all of whose vertices are ARMLopolitan houses.\nProve that, for all $a$ and $b, d(a, b) \\leq \\max \\{d(a), d(b)\\}$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2022_33",
+      "problem": "Prove that \\(5^{n}-3^{n}\\) is not divisible by \\(2^{n}+65\\) for any positive integer \\(n\\)."
+    }
+  },
+  {
+    "similarity": 0.375,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2691",
+      "problem": "In ARMLopolis, every house number is a positive integer, and City Hall's address is 0. However, due to the curved nature of the cowpaths that eventually became the streets of ARMLopolis, the distance $d(n)$ between house $n$ and City Hall is not simply the value of $n$. Instead, if $n=3^{k} n^{\\prime}$, where $k \\geq 0$ is an integer and $n^{\\prime}$ is an integer not divisible by 3 , then $d(n)=3^{-k}$. For example, $d(18)=1 / 9$ and $d(17)=1$. Notice that even though no houses have negative numbers, $d(n)$ is well-defined for negative values of $n$. For example, $d(-33)=1 / 3$ because $-33=3^{1} \\cdot-11$. By definition, $d(0)=0$. Following the dictum \"location, location, location,\" this Power Question will refer to \"houses\" and \"house numbers\" interchangeably.\n\nCuriously, the arrangement of the houses is such that the distance from house $n$ to house $m$, written $d(m, n)$, is simply $d(m-n)$. For example, $d(3,4)=d(-1)=1$ because $-1=3^{0} \\cdot-1$. In particular, if $m=n$, then $d(m, n)=0$.\n\nA visitor to ARMLopolis is surprised by the ARMLopolitan distance formula, and starts to wonder about ARMLopolitan geometry. An ARMLopolitan triangle is a triangle, all of whose vertices are ARMLopolitan houses.\nProve that, for all $a, b$, and $c, d(a, c) \\leq \\max \\{d(a, b), d(b, c)\\}$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2022_33",
+      "problem": "Prove that \\(5^{n}-3^{n}\\) is not divisible by \\(2^{n}+65\\) for any positive integer \\(n\\)."
+    }
+  },
+  {
+    "similarity": 0.375,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2692",
+      "problem": "In ARMLopolis, every house number is a positive integer, and City Hall's address is 0. However, due to the curved nature of the cowpaths that eventually became the streets of ARMLopolis, the distance $d(n)$ between house $n$ and City Hall is not simply the value of $n$. Instead, if $n=3^{k} n^{\\prime}$, where $k \\geq 0$ is an integer and $n^{\\prime}$ is an integer not divisible by 3 , then $d(n)=3^{-k}$. For example, $d(18)=1 / 9$ and $d(17)=1$. Notice that even though no houses have negative numbers, $d(n)$ is well-defined for negative values of $n$. For example, $d(-33)=1 / 3$ because $-33=3^{1} \\cdot-11$. By definition, $d(0)=0$. Following the dictum \"location, location, location,\" this Power Question will refer to \"houses\" and \"house numbers\" interchangeably.\n\nCuriously, the arrangement of the houses is such that the distance from house $n$ to house $m$, written $d(m, n)$, is simply $d(m-n)$. For example, $d(3,4)=d(-1)=1$ because $-1=3^{0} \\cdot-1$. In particular, if $m=n$, then $d(m, n)=0$.\n\nA visitor to ARMLopolis is surprised by the ARMLopolitan distance formula, and starts to wonder about ARMLopolitan geometry. An ARMLopolitan triangle is a triangle, all of whose vertices are ARMLopolitan houses.\nProve that, for all $a, b$, and $c, d(a, c) \\leq d(a, b)+d(b, c)$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2022_33",
+      "problem": "Prove that \\(5^{n}-3^{n}\\) is not divisible by \\(2^{n}+65\\) for any positive integer \\(n\\)."
+    }
+  },
+  {
+    "similarity": 0.375,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2694",
+      "problem": "In ARMLopolis, every house number is a positive integer, and City Hall's address is 0. However, due to the curved nature of the cowpaths that eventually became the streets of ARMLopolis, the distance $d(n)$ between house $n$ and City Hall is not simply the value of $n$. Instead, if $n=3^{k} n^{\\prime}$, where $k \\geq 0$ is an integer and $n^{\\prime}$ is an integer not divisible by 3 , then $d(n)=3^{-k}$. For example, $d(18)=1 / 9$ and $d(17)=1$. Notice that even though no houses have negative numbers, $d(n)$ is well-defined for negative values of $n$. For example, $d(-33)=1 / 3$ because $-33=3^{1} \\cdot-11$. By definition, $d(0)=0$. Following the dictum \"location, location, location,\" this Power Question will refer to \"houses\" and \"house numbers\" interchangeably.\n\nCuriously, the arrangement of the houses is such that the distance from house $n$ to house $m$, written $d(m, n)$, is simply $d(m-n)$. For example, $d(3,4)=d(-1)=1$ because $-1=3^{0} \\cdot-1$. In particular, if $m=n$, then $d(m, n)=0$.\n\n\nThe neighborhood of a house $n$, written $\\mathcal{N}(n)$, is the set of all houses that are the same distance from City Hall as $n$. In symbols, $\\mathcal{N}(n)=\\{m \\mid d(m)=d(n)\\}$. Geometrically, it may be helpful to think of $\\mathcal{N}(n)$ as a circle centered at City Hall with radius $d(n)$.\n\n\nUnfortunately for new development, ARMLopolis is full: every nonnegative integer corresponds to (exactly one) house (or City Hall, in the case of 0). However, eighteen families arrive and are looking to move in. After much debate, the connotations of using negative house numbers are deemed unacceptable, and the city decides on an alternative plan. On July 17, Shewad Movers arrive and relocate every family from house $n$ to house $n+18$, for all positive $n$ (so that City Hall does not move). For example, the family in house number 17 moves to house number 35.\nProve that the distance between houses with consecutive numbers does not change after the move."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2022_33",
+      "problem": "Prove that \\(5^{n}-3^{n}\\) is not divisible by \\(2^{n}+65\\) for any positive integer \\(n\\)."
+    }
+  },
+  {
+    "similarity": 0.375,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2698",
+      "problem": "In ARMLopolis, every house number is a positive integer, and City Hall's address is 0. However, due to the curved nature of the cowpaths that eventually became the streets of ARMLopolis, the distance $d(n)$ between house $n$ and City Hall is not simply the value of $n$. Instead, if $n=3^{k} n^{\\prime}$, where $k \\geq 0$ is an integer and $n^{\\prime}$ is an integer not divisible by 3 , then $d(n)=3^{-k}$. For example, $d(18)=1 / 9$ and $d(17)=1$. Notice that even though no houses have negative numbers, $d(n)$ is well-defined for negative values of $n$. For example, $d(-33)=1 / 3$ because $-33=3^{1} \\cdot-11$. By definition, $d(0)=0$. Following the dictum \"location, location, location,\" this Power Question will refer to \"houses\" and \"house numbers\" interchangeably.\n\nCuriously, the arrangement of the houses is such that the distance from house $n$ to house $m$, written $d(m, n)$, is simply $d(m-n)$. For example, $d(3,4)=d(-1)=1$ because $-1=3^{0} \\cdot-1$. In particular, if $m=n$, then $d(m, n)=0$.\n\n\nThe neighborhood of a house $n$, written $\\mathcal{N}(n)$, is the set of all houses that are the same distance from City Hall as $n$. In symbols, $\\mathcal{N}(n)=\\{m \\mid d(m)=d(n)\\}$. Geometrically, it may be helpful to think of $\\mathcal{N}(n)$ as a circle centered at City Hall with radius $d(n)$.\n\n\nUnfortunately for new development, ARMLopolis is full: every nonnegative integer corresponds to (exactly one) house (or City Hall, in the case of 0). However, eighteen families arrive and are looking to move in. After much debate, the connotations of using negative house numbers are deemed unacceptable, and the city decides on an alternative plan. On July 17, Shewad Movers arrive and relocate every family from house $n$ to house $n+18$, for all positive $n$ (so that City Hall does not move). For example, the family in house number 17 moves to house number 35.\nOne day, Paul (house 23) and Sally (house 32), longtime residents of $\\mathcal{N}(1)$, are discussing the \" 2 side\" of the neighborhood, that is, the set of houses $\\{n \\mid n=3 k+2, k \\in \\mathbb{Z}\\}$. Paul says \"I feel like I'm at the center of the \" 2 side\": when I looked out my window, I realized that the \"2 side\" consists of exactly those houses whose distance from me is at most $1 / 3 . \"$ Prove that Paul is correct."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2022_33",
+      "problem": "Prove that \\(5^{n}-3^{n}\\) is not divisible by \\(2^{n}+65\\) for any positive integer \\(n\\)."
+    }
+  },
+  {
+    "similarity": 0.375,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2699",
+      "problem": "In ARMLopolis, every house number is a positive integer, and City Hall's address is 0. However, due to the curved nature of the cowpaths that eventually became the streets of ARMLopolis, the distance $d(n)$ between house $n$ and City Hall is not simply the value of $n$. Instead, if $n=3^{k} n^{\\prime}$, where $k \\geq 0$ is an integer and $n^{\\prime}$ is an integer not divisible by 3 , then $d(n)=3^{-k}$. For example, $d(18)=1 / 9$ and $d(17)=1$. Notice that even though no houses have negative numbers, $d(n)$ is well-defined for negative values of $n$. For example, $d(-33)=1 / 3$ because $-33=3^{1} \\cdot-11$. By definition, $d(0)=0$. Following the dictum \"location, location, location,\" this Power Question will refer to \"houses\" and \"house numbers\" interchangeably.\n\nCuriously, the arrangement of the houses is such that the distance from house $n$ to house $m$, written $d(m, n)$, is simply $d(m-n)$. For example, $d(3,4)=d(-1)=1$ because $-1=3^{0} \\cdot-1$. In particular, if $m=n$, then $d(m, n)=0$.\n\n\nThe neighborhood of a house $n$, written $\\mathcal{N}(n)$, is the set of all houses that are the same distance from City Hall as $n$. In symbols, $\\mathcal{N}(n)=\\{m \\mid d(m)=d(n)\\}$. Geometrically, it may be helpful to think of $\\mathcal{N}(n)$ as a circle centered at City Hall with radius $d(n)$.\n\n\nUnfortunately for new development, ARMLopolis is full: every nonnegative integer corresponds to (exactly one) house (or City Hall, in the case of 0). However, eighteen families arrive and are looking to move in. After much debate, the connotations of using negative house numbers are deemed unacceptable, and the city decides on an alternative plan. On July 17, Shewad Movers arrive and relocate every family from house $n$ to house $n+18$, for all positive $n$ (so that City Hall does not move). For example, the family in house number 17 moves to house number 35.\nSally (house 32). Prove that $\\{n \\mid n=3 k+2, k \\in \\mathbb{Z}\\}$ consists exactly of those houses whose distance from Sally's house is at most $1 / 3$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2022_33",
+      "problem": "Prove that \\(5^{n}-3^{n}\\) is not divisible by \\(2^{n}+65\\) for any positive integer \\(n\\)."
+    }
+  },
+  {
+    "similarity": 0.375,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2700",
+      "problem": "In ARMLopolis, every house number is a positive integer, and City Hall's address is 0. However, due to the curved nature of the cowpaths that eventually became the streets of ARMLopolis, the distance $d(n)$ between house $n$ and City Hall is not simply the value of $n$. Instead, if $n=3^{k} n^{\\prime}$, where $k \\geq 0$ is an integer and $n^{\\prime}$ is an integer not divisible by 3 , then $d(n)=3^{-k}$. For example, $d(18)=1 / 9$ and $d(17)=1$. Notice that even though no houses have negative numbers, $d(n)$ is well-defined for negative values of $n$. For example, $d(-33)=1 / 3$ because $-33=3^{1} \\cdot-11$. By definition, $d(0)=0$. Following the dictum \"location, location, location,\" this Power Question will refer to \"houses\" and \"house numbers\" interchangeably.\n\nCuriously, the arrangement of the houses is such that the distance from house $n$ to house $m$, written $d(m, n)$, is simply $d(m-n)$. For example, $d(3,4)=d(-1)=1$ because $-1=3^{0} \\cdot-1$. In particular, if $m=n$, then $d(m, n)=0$.\n\n\nThe neighborhood of a house $n$, written $\\mathcal{N}(n)$, is the set of all houses that are the same distance from City Hall as $n$. In symbols, $\\mathcal{N}(n)=\\{m \\mid d(m)=d(n)\\}$. Geometrically, it may be helpful to think of $\\mathcal{N}(n)$ as a circle centered at City Hall with radius $d(n)$.\n\n\nUnfortunately for new development, ARMLopolis is full: every nonnegative integer corresponds to (exactly one) house (or City Hall, in the case of 0). However, eighteen families arrive and are looking to move in. After much debate, the connotations of using negative house numbers are deemed unacceptable, and the city decides on an alternative plan. On July 17, Shewad Movers arrive and relocate every family from house $n$ to house $n+18$, for all positive $n$ (so that City Hall does not move). For example, the family in house number 17 moves to house number 35.\nFor any $x$, let $\\mathcal{D}_{r}(x)=\\{y \\mid d(x, y) \\leq r\\}$, that is, $\\mathcal{D}_{r}(x)$ is the disk of radius $r$. Prove that if $d(x, z)=r$, then $\\mathcal{D}_{r}(x)=\\mathcal{D}_{r}(z) . \\quad[2 \\mathrm{pts}]$"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2022_33",
+      "problem": "Prove that \\(5^{n}-3^{n}\\) is not divisible by \\(2^{n}+65\\) for any positive integer \\(n\\)."
+    }
+  },
+  {
+    "similarity": 0.373,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_1985_4",
+      "problem": "There are $n$ people at a party. Prove that there are two people such that, of the remaining $n-2$ people, there are at least $\\lfloor n/2\\rfloor -1$ of them, each of whom knows both or else knows neither of the two. Assume that \"know\" is a symmetrical relation; $\\lfloor x\\rfloor$ denotes the greatest integer less than or equal to $x$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:irish_2002_9",
+      "problem": "For each real number \\( x \\), define \\(\\lfloor x\\rfloor\\) to be the greatest integer less than or equal to \\( x \\).\n\nLet \\(\\alpha=2+\\sqrt{3}\\). Prove that\n\n\\[\n\\alpha^{n}-\\left\\lfloor\\alpha^{n}\\right\\rfloor=1-\\alpha^{-n}, \\text{ for } n=0,1,2, \\ldots\n\\]"
+    }
+  },
+  {
+    "similarity": 0.372,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1666",
+      "problem": "In the Cartesian coordinate plane define the strip $S_{n}=\\{(x, y) \\mid n \\leq x<n+1\\}$ for every integer $n$. Assume that each strip $S_{n}$ is colored either red or blue, and let $a$ and $b$ be two distinct positive integers. Prove that there exists a rectangle with side lengths $a$ and $b$ such that its vertices have the same color."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:USAMO_2013_5",
+      "problem": "Let \\( m \\) and \\( n \\) be positive integers. Prove that there exists a positive integer \\( c \\) such that \\( cm \\) and \\( cn \\) have the same nonzero decimal digits."
+    }
+  },
+  {
+    "similarity": 0.372,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1987",
+      "problem": "Let $A B C$ be a triangle with circumcircle $\\Omega$ and incentre $I$. Let the line passing through $I$ and perpendicular to $C I$ intersect the segment $B C$ and the $\\operatorname{arc} B C$ (not containing $A$ ) of $\\Omega$ at points $U$ and $V$, respectively. Let the line passing through $U$ and parallel to $A I$ intersect $A V$ at $X$, and let the line passing through $V$ and parallel to $A I$ intersect $A B$ at $Y$. Let $W$ and $Z$ be the midpoints of $A X$ and $B C$, respectively. Prove that if the points $I, X$, and $Y$ are collinear, then the points $I, W$, and $Z$ are also collinear."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:irish_2001_2",
+      "problem": "Let \\( \\triangle ABC \\) be a triangle with sides \\( BC, CA, AB \\) of lengths \\( a, b, c \\), respectively. Let \\( D, E \\) be the midpoints of the sides \\( AC, AB \\), respectively. Prove that \\( BD \\) is perpendicular to \\( CE \\) if, and only if,\n\\[\nb^{2} + c^{2} = 5a^{2}\n\\]"
+    }
+  },
+  {
+    "similarity": 0.371,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "ProofBench",
+      "ref": "USAMO-2024-4",
+      "problem": "Let \\(m\\) and \\(n\\) be positive integers. A circular necklace contains \\(m n\\) beads, each either red or blue. It turned out that no matter how the necklace was cut into \\(m\\) blocks of \\(n\\) consecutive beads, each block had a distinct number of red beads. Determine, with proof, all possible values of the ordered pair \\((m, n)\\)."
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:usamo_2025_5",
+      "problem": "Determine, with proof, all positive integers $k$ such that$$\\frac{1}{n+1} \\sum_{i=0}^n \\binom{n}{i}^k$$is an integer for all positive integers $n.$"
+    }
+  },
+  {
+    "similarity": 0.37,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_1981_5",
+      "problem": "Show that for any positive real $x$, $[nx]\\ge \\sum_{1}^{n}\\left(\\frac{[kx]}{k}\\right)$"
+    },
+    "existing": {
+      "dataset": "ProofBench",
+      "puid": "ProofBench:EGMO-2024-3",
+      "problem": "We call a positive integer \\(n\\) peculiar if, for any positive divisor \\(d\\) of \\(n\\), the integer \\(d(d+1)\\) divides \\(n(n+1)\\). Prove that for any four different peculiar positive integers \\(A, B, C\\) and \\(D\\), the following holds: \\[ \\operatorname{gcd}(A, B, C, D)=1 \\] Here \\(\\operatorname{gcd}(A, B, C, D)\\) is the largest positive integer that divides all of \\(A, B, C\\) and \\(D\\)."
+    }
+  },
+  {
+    "similarity": 0.368,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1947",
+      "problem": "Consider an infinite sequence $a_{1}, a_{2}, \\ldots$ of positive integers with $a_{i} \\leqslant 2015$ for all $i \\geqslant 1$. Suppose that for any two distinct indices $i$ and $j$ we have $i+a_{i} \\neq j+a_{j}$.\n\nProve that there exist two positive integers $b$ and $N$ such that\n\n$$\n\\left|\\sum_{i=m+1}^{n}\\left(a_{i}-b\\right)\\right| \\leqslant 1007^{2}\n$$\n\nwhenever $n>m \\geqslant N$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2014_1",
+      "problem": "Let \\( z_{0} < z_{1} < z_{2} < \\cdots \\) be an infinite sequence of positive integers. Prove that there exists a unique integer \\( n \\geq 1 \\) such that\n\n\\[\nz_{n} < \\frac{z_{0} + z_{1} + \\cdots + z_{n}}{n} \\leq z_{n+1}.\n\\]"
+    }
+  },
+  {
+    "similarity": 0.367,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAJMO_2011_1",
+      "problem": "Find, with proof, all positive integers $n$ for which $2^n + 12^n + 2011^n$ is a perfect square."
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:usamo_2025_5",
+      "problem": "Determine, with proof, all positive integers $k$ such that$$\\frac{1}{n+1} \\sum_{i=0}^n \\binom{n}{i}^k$$is an integer for all positive integers $n.$"
+    }
+  },
+  {
+    "similarity": 0.366,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "OPC",
+      "ref": "putnam_2016_b2",
+      "problem": "Define a positive integer $n$ to be \\emph{squarish} if either $n$ is itself a perfect square or the distance from $n$ to the nearest perfect square is a perfect square. For example, $2016$ is squarish, because the nearest perfect square to $2016$ is $45^2 = 2025$ and $2025 - 2016 = 9$ is a perfect square. (Of the positive integers between $1$ and $10$, only $6$ and $7$ are not squarish.)\n\nFor a positive integer $N$, let $S(N)$ be the number of squarish integers between $1$ and $N$,\ninclusive. Find positive constants $\\alpha$ and $\\beta$ such that\n\\[\n\\lim_{N \\to \\infty} \\frac{S(N)}{N^\\alpha} = \\beta,\n\\]\nor show that no such constants exist. Prove that the limit exists for $\\alpha = \\frac{3}{4}$ and equals $\\beta = \\frac{4}{3}$."
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:imc_2025_10",
+      "problem": "For any positive integer $N$, let $S_{N}$ be the number of pairs of integers $1 \\leq a, b \\leq N$ such that the number $\\left(a^{2}+a\\right)\\left(b^{2}+b\\right)$ is a perfect square. Prove that the limit\n\n$$\n\\lim _{N \\rightarrow \\infty} \\frac{S_{N}}{N}\n$$\nexists and find its value."
+    }
+  },
+  {
+    "similarity": 0.366,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2137",
+      "problem": "Let $n$ be a positive integer and let $p$ be a prime number. Prove that if $a, b, c$ are integers (not necessarily positive) satisfying the equations\n\n$$\na^{n}+p b=b^{n}+p c=c^{n}+p a,\n$$\n\nthen $a=b=c$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BMOSL_2021_9",
+      "problem": "Let \\(a, b\\) and \\(c\\) be positive integers satisfying the equation \\((a, b)+[a, b]=2021^{c}\\). If \\(|a-b|\\) is a prime number, prove that the number \\((a+b)^{2}+4\\) is composite."
+    }
+  },
+  {
+    "similarity": 0.365,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1690",
+      "problem": "Let $a, b$, and $c$ be positive real numbers satisfying $\\min (a+b, b+c, c+a)>\\sqrt{2}$ and $a^{2}+b^{2}+c^{2}=3$. Prove that\n\n$$\n\\frac{a}{(b+c-a)^{2}}+\\frac{b}{(c+a-b)^{2}}+\\frac{c}{(a+b-c)^{2}} \\geq \\frac{3}{(a b c)^{2}}\n\\tag{1}\n$$\n\nThroughout both solutions, we denote the sums of the form $f(a, b, c)+f(b, c, a)+f(c, a, b)$ by $\\sum f(a, b, c)$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BMOSL_2018_1",
+      "problem": "Let \\(a, b, c\\) be positive real numbers such that \\(abc = \\frac{2}{3}\\). Prove that\n\n\\[\n\\frac{ab}{a+b} + \\frac{bc}{b+c} + \\frac{ca}{c+a} \\geq \\frac{a+b+c}{a^3+b^3+c^3}\n\\]"
+    }
+  },
+  {
+    "similarity": 0.365,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1875",
+      "problem": "Let $a, b, c, d$ be four real numbers such that $a \\geqslant b \\geqslant c \\geqslant d>0$ and $a+b+c+d=1$. Prove that\n\n$$\n(a+2 b+3 c+4 d) a^{a} b^{b} c^{c} d^{d}<1\n$$"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:irish_2022_6",
+      "problem": "Suppose \\(a, b, c\\) are real numbers such that \\(a+b+c=1\\). Prove that\n\n\\[\na^{3}+b^{3}+c^{3}+3(1-a)(1-b)(1-c)=1\n\\]"
+    }
+  },
+  {
+    "similarity": 0.362,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_2007_5",
+      "problem": "Prove that for every nonnegative integer $n$, the number $7^{7^n}+1$ is the product of at least $2n+3$ (not necessarily distinct) primes."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:JMO_2010_4",
+      "problem": "A triangle is called a parabolic triangle if its vertices lie on a parabola \\(y=x^{2}\\). Prove that for every nonnegative integer \\(n\\), there is an odd number \\(m\\) and a parabolic triangle with vertices at three distinct points with integer coordinates with area \\((2^{n} m)^{2}\\)."
+    }
+  },
+  {
+    "similarity": 0.361,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2086",
+      "problem": "Let $f$ be any function that maps the set of real numbers into the set of real numbers. Prove that there exist real numbers $x$ and $y$ such that\n\n$$\nf(x-f(y))>y f(x)+x .\n$$"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMC_2001_11",
+      "problem": "Let \\(\\mathbb{R}\\) be the set of real numbers. Prove that there is no function \\(f: \\mathbb{R} \\rightarrow \\mathbb{R}\\) with \\(f(0)>0\\), and such that\n\\[\nf(x+y) \\geq f(x)+y f(f(x)) \\quad \\text{for all } x, y \\in \\mathbb{R}.\n\\]"
+    }
+  },
+  {
+    "similarity": 0.361,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2589",
+      "problem": "In an infinite array with two rows, the numbers in the top row are denoted $\\ldots, A_{-2}, A_{-1}, A_{0}, A_{1}, A_{2}, \\ldots$ and the numbers in the bottom row are denoted $\\ldots, B_{-2}, B_{-1}, B_{0}, B_{1}, B_{2}, \\ldots$ For each integer $k$, the entry $A_{k}$ is directly above the entry $B_{k}$ in the array, as shown:\n\n| $\\ldots$ | $A_{-2}$ | $A_{-1}$ | $A_{0}$ | $A_{1}$ | $A_{2}$ | $\\ldots$ |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| $\\ldots$ | $B_{-2}$ | $B_{-1}$ | $B_{0}$ | $B_{1}$ | $B_{2}$ | $\\ldots$ |\n\nFor each integer $k, A_{k}$ is the average of the entry to its left, the entry to its right, and the entry below it; similarly, each entry $B_{k}$ is the average of the entry to its left, the entry to its right, and the entry above it.\nIn another such array, we define $S_{k}=A_{k}+B_{k}$ for each integer $k$.\n\nProve that $S_{k+1}=2 S_{k}-S_{k-1}$ for each integer $k$."
+    },
+    "existing": {
+      "dataset": "HARP",
+      "puid": "HARP:USAMO_1996_1",
+      "problem": "Prove that the average of the numbers $n\\sin n^{\\circ}\\; (n = 2,4,6,\\ldots,180)$ is $\\cot 1^\\circ$."
+    }
+  },
+  {
+    "similarity": 0.36,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "OPC",
+      "ref": "USAMO_2015_5",
+      "problem": "Let \\(a, b, c, d, e\\) be distinct positive integers such that \\(a^{4}+b^{4}=c^{4}+d^{4}=e^{5}\\). Show that \\(a c+b d\\) is a composite number."
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:putnam_2025_1",
+      "problem": "Let $m_0$ and $n_0$ be distinct positive integers. For every positive integer $k$, define $m_k$ and $n_k$ to be the relatively prime positive integers such that\n\\[\n\\frac{m_k}{n_k} = \\frac{2m_{k-1} + 1}{2n_{k-1} + 1}.\n\\]\nProve that $2m_k+1$ and $2n_k+1$ are relatively prime for all but finitely many positive integers $k$."
+    }
+  },
+  {
+    "similarity": 0.36,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1860",
+      "problem": "Let $A B C D$ be a convex quadrilateral with $\\angle A B C=\\angle A D C<90^{\\circ}$. The internal angle bisectors of $\\angle A B C$ and $\\angle A D C$ meet $A C$ at $E$ and $F$ respectively, and meet each other at point $P$. Let $M$ be the midpoint of $A C$ and let $\\omega$ be the circumcircle of triangle $B P D$. Segments $B M$ and $D M$ intersect $\\omega$ again at $X$ and $Y$ respectively. Denote by $Q$ the intersection point of lines $X E$ and $Y F$. Prove that $P Q \\perp A C$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BalticWay_2001_8",
+      "problem": "Let \\(ABCD\\) be a convex quadrilateral, and let \\(N\\) be the midpoint of \\(BC\\). Suppose further that \\(\\angle AND = 135^\\circ\\). Prove that\n\n\\[\n|AB| + |CD| + \\frac{1}{\\sqrt{2}} \\cdot |BC| \\geq |AD|\n\\]"
+    }
+  },
+  {
+    "similarity": 0.359,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "OPC",
+      "ref": "EGMO_2018_6",
+      "problem": "Fix a real number \\(0 < t < \\frac{1}{2}\\).\n\n(a) Prove that there exists a positive integer \\(n\\) such that for every set \\(S\\) of \\(n\\) positive integers, the following holds: there exist distinct \\(x, y \\in S\\) and nonnegative integer \\(m \\geq 0\\) such that \\(|x - my| \\leq ty\\).\n\n(b) Determine whether there exists an infinite set \\(S\\) of positive integers such that the following holds: for any distinct \\(x, y \\in S\\) and positive integer \\(m > 0\\), we have \\(|x - my| > ty\\)."
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:usamo_2025_1",
+      "problem": "Let $k$ and $d$ be positive integers. Prove that there exists a positive integer $N$ such that for every odd integer $n>N$, the digits in the base-$2n$ representation of $n^k$ are all greater than $d$."
+    }
+  },
+  {
+    "similarity": 0.358,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "ProofBench",
+      "ref": "IMO-2024-3",
+      "problem": "Let \\(N\\) be a positive integer and let \\(a_{1}, a_{2}, \\ldots\\) be an infinite sequence of positive integers. Suppose that, for each \\(n>N, a_{n}\\) is equal to the number of times \\(a_{n-1}\\) appears in the list \\(a_{1}, a_{2}, \\ldots, a_{n-1}\\).\n\nProve that at least one of the sequences \\(a_{1}, a_{3}, a_{5}, \\ldots\\) and \\(a_{2}, a_{4}, a_{6}, \\ldots\\) is eventually periodic.\n(Australia)"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2014_1",
+      "problem": "Let \\( z_{0} < z_{1} < z_{2} < \\cdots \\) be an infinite sequence of positive integers. Prove that there exists a unique integer \\( n \\geq 1 \\) such that\n\n\\[\nz_{n} < \\frac{z_{0} + z_{1} + \\cdots + z_{n}}{n} \\leq z_{n+1}.\n\\]"
+    }
+  },
+  {
+    "similarity": 0.356,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "OPC",
+      "ref": "izho_2018_3",
+      "problem": "Prove that there exist infinitely many pairs \\((m, n)\\) of positive integers such that \\(m+n\\) divides \\((m!)^{n}+(n!)^{m}+1\\)."
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:putnam_2025_1",
+      "problem": "Let $m_0$ and $n_0$ be distinct positive integers. For every positive integer $k$, define $m_k$ and $n_k$ to be the relatively prime positive integers such that\n\\[\n\\frac{m_k}{n_k} = \\frac{2m_{k-1} + 1}{2n_{k-1} + 1}.\n\\]\nProve that $2m_k+1$ and $2n_k+1$ are relatively prime for all but finitely many positive integers $k$."
+    }
+  },
+  {
+    "similarity": 0.356,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1611",
+      "problem": "\nProve that every positive integer $n$ can be written uniquely in the form\n\n\n\n$$\n\nn=\\sum_{j=1}^{2 k+1}(-1)^{j-1} 2^{m_{j}}\n\n$$\n\n\n\nwhere $k \\geq 0$ and $0 \\leq m_{1}<m_{2}<\\cdots<m_{2 k+1}$ are integers.\n\n\n\nThis number $k$ is called the weight of $n$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:putnam_1965_a2",
+      "problem": "Prove that $$\\sum_{r=0}^{\\lfloor\\frac{n-1}{2}\\rfloor} \\left(\\frac{n - 2r}{n} {n \\choose r}\\right)^2 = \\frac{1}{n} {{2n - 2} \\choose {n - 1}}$$ for every positive integer $n$."
+    }
+  },
+  {
+    "similarity": 0.354,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "OPC",
+      "ref": "IMOSL_2022_33",
+      "problem": "Prove that \\(5^{n}-3^{n}\\) is not divisible by \\(2^{n}+65\\) for any positive integer \\(n\\)."
+    },
+    "existing": {
+      "dataset": "MathArena",
+      "puid": "MathArena:imc_2025_10",
+      "problem": "For any positive integer $N$, let $S_{N}$ be the number of pairs of integers $1 \\leq a, b \\leq N$ such that the number $\\left(a^{2}+a\\right)\\left(b^{2}+b\\right)$ is a perfect square. Prove that the limit\n\n$$\n\\lim _{N \\rightarrow \\infty} \\frac{S_{N}}{N}\n$$\nexists and find its value."
+    }
+  },
+  {
+    "similarity": 0.354,
+    "treated_as_duplicate": false,
+    "new": {
+      "dataset": "ProofBench",
+      "ref": "EGMO-2024-3",
+      "problem": "We call a positive integer \\(n\\) peculiar if, for any positive divisor \\(d\\) of \\(n\\), the integer \\(d(d+1)\\) divides \\(n(n+1)\\). Prove that for any four different peculiar positive integers \\(A, B, C\\) and \\(D\\), the following holds: \\[ \\operatorname{gcd}(A, B, C, D)=1 \\] Here \\(\\operatorname{gcd}(A, B, C, D)\\) is the largest positive integer that divides all of \\(A, B, C\\) and \\(D\\)."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2022_33",
+      "problem": "Prove that \\(5^{n}-3^{n}\\) is not divisible by \\(2^{n}+65\\) for any positive integer \\(n\\)."
+    }
+  },
+  {
+    "similarity": 0.354,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_1981_3",
+      "problem": "Show that for any triangle, $\\frac{3\\sqrt{3}}{2}\\ge \\sin(3A) + \\sin(3B) + \\sin (3C) \\ge -2$. When does the equality hold?"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BMOSL_2019_3",
+      "problem": "Let \\( a, b, c \\) be real numbers such that \\( 0 \\leq a \\leq b \\leq c \\). Prove that if\n\n\\[\na+b+c=ab+bc+ca>0,\n\\]\n\nthen \\(\\sqrt{bc}(a+1) \\geq 2\\). When does the equality hold?"
+    }
+  },
+  {
+    "similarity": 0.354,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAMO_1998_3",
+      "problem": "Let $a_0,\\cdots a_n$ be real numbers in the interval $\\left(0,\\frac {\\pi}{2}\\right)$ such that \\[\\tan{\\left(a_0 - \\frac {\\pi}{4}\\right)} + \\tan{\\left(a_1 - \\frac {\\pi}{4}\\right)} + \\cdots + \\tan{\\left(a_n - \\frac {\\pi}{4}\\right)}\\ge n - 1\\] Prove that $\\tan{\\left(a_0\\right)}\\tan{\\left(a_1\\right)}\\cdots \\tan{\\left(a_n\\right)}\\ge n^{n + 1}$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:putnam_2001_b5",
+      "problem": "Let $a$ and $b$ be real numbers in the interval $(0,1/2)$, and let $g$ be a continuous real-valued function such that $g(g(x))=ag(x)+bx$ for all real $x$. Prove that $g(x)=cx$ for some constant $c$."
+    }
+  },
+  {
+    "similarity": 0.354,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "1884",
+      "problem": "Let $p$ be an odd prime, and put $N=\\frac{1}{4}\\left(p^{3}-p\\right)-1$. The numbers $1,2, \\ldots, N$ are painted arbitrarily in two colors, red and blue. For any positive integer $n \\leqslant N$, denote by $r(n)$ the fraction of integers in $\\{1,2, \\ldots, n\\}$ that are red.\n\nProve that there exists a positive integer $a \\in\\{1,2, \\ldots, p-1\\}$ such that $r(n) \\neq a / p$ for all $n=1,2, \\ldots, N$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2022_33",
+      "problem": "Prove that \\(5^{n}-3^{n}\\) is not divisible by \\(2^{n}+65\\) for any positive integer \\(n\\)."
+    }
+  },
+  {
+    "similarity": 0.354,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2026",
+      "problem": "Let $Q$ be a set of prime numbers, not necessarily finite. For a positive integer $n$ consider its prime factorisation; define $p(n)$ to be the sum of all the exponents and $q(n)$ to be the sum of the exponents corresponding only to primes in $Q$. A positive integer $n$ is called special if $p(n)+p(n+1)$ and $q(n)+q(n+1)$ are both even integers. Prove that there is a constant $c>0$ independent of the set $Q$ such that for any positive integer $N>100$, the number of special integers in $[1, N]$ is at least $c N$.\n\n(For example, if $Q=\\{3,7\\}$, then $p(42)=3, q(42)=2, p(63)=3, q(63)=3, p(2022)=3$, $q(2022)=1$.)"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:IMOSL_2022_33",
+      "problem": "Prove that \\(5^{n}-3^{n}\\) is not divisible by \\(2^{n}+65\\) for any positive integer \\(n\\)."
+    }
+  },
+  {
+    "similarity": 0.352,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "OlympiadBench",
+      "ref": "2136",
+      "problem": "Let $A B C D$ be a convex quadrilateral with $A B \\neq B C$. Denote by $\\omega_{1}$ and $\\omega_{2}$ the incircles of triangles $A B C$ and $A D C$. Suppose that there exists a circle $\\omega$ inscribed in angle $A B C$, tangent to the extensions of line segments $A D$ and $C D$. Prove that the common external tangents of $\\omega_{1}$ and $\\omega_{2}$ intersect on $\\omega$."
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BalticWay_2016_17",
+      "problem": "Let \\(ABCD\\) be a convex quadrilateral with \\(AB = AD\\). Let \\(T\\) be a point on the diagonal \\(AC\\) such that \\(\\angle ABT + \\angle ADT = \\angle BCD\\). Prove that \\(AT + AC \\geq AB + AD\\)."
+    }
+  },
+  {
+    "similarity": 0.35,
+    "treated_as_duplicate": true,
+    "new": {
+      "dataset": "HARP",
+      "ref": "USAJMO_2014_1",
+      "problem": "Let $a$, $b$, $c$ be real numbers greater than or equal to $1$. Prove that \\[\\min{\\left (\\frac{10a^2-5a+1}{b^2-5b+10},\\frac{10b^2-5b+1}{c^2-5c+10},\\frac{10c^2-5c+1}{a^2-5a+10}\\right )}\\leq abc\\]"
+    },
+    "existing": {
+      "dataset": "OPC",
+      "puid": "OPC:BalticWay_2012_2",
+      "problem": "Let \\(a, b, c\\) be real numbers. Prove that\n\n\\[\nab + bc + ca + \\max \\{|a-b|, |b-c|, |c-a|\\} \\leq 1 + \\frac{1}{3}(a+b+c)^2\n\\]"
+    }
+  }
+]

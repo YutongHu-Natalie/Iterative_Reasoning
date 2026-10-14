@@ -24,6 +24,13 @@ source ./venv/bin/activate
 # Pick any subset: qwen3_8b_think qwen3_8b_nothink gemma4_e4b_think
 # gemma4_e4b_nothink mage modernbert roberta  (or: all)
 # Add --limit 2 for a quick smoke test, --n-runs 3 for majority voting.
+# Full dataset (Data/full_data.json, results in TestResult/full/; reruns resume):
+#   classifiers on everything:
+#     python ./AI_Detect/Premiere/run_detection.py --data full --models mage modernbert roberta
+#   slow LLM judges on a balanced sample (200 LLM + 200 human):
+#     python ./AI_Detect/Premiere/run_detection.py --data full --sample 200 --models qwen3_8b_think
+#   only problems with both an LLM and a human proof (controls for source):
+#     python ./AI_Detect/Premiere/run_detection.py --data full --paired-only --out-dir ./AI_Detect/Premiere/TestResult/full_paired --models mage
 python ./AI_Detect/Premiere/run_detection.py \
     --models qwen3_8b_think qwen3_8b_nothink gemma4_e4b_think gemma4_e4b_nothink mage modernbert roberta
 
