@@ -1,0 +1,5543 @@
+{
+  "MathArena:usamo_2025_1": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "MathArena:usamo_2025_2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "MathArena:usamo_2025_3": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "MathArena:usamo_2025_4": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "MathArena:usamo_2025_5": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "MathArena:usamo_2025_6": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "MathArena:usamo_2026_3": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "MathArena:usamo_2026_4": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "MathArena:usamo_2026_5": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "MathArena:usamo_2026_6": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "MathArena:imc_2025_1": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "MathArena:imc_2025_2": {
+    "category": "Analysis",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Analysis\"}"
+    ]
+  },
+  "MathArena:imc_2025_6": {
+    "category": "Analysis",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Analysis\"}"
+    ]
+  },
+  "MathArena:imc_2025_8": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "MathArena:imc_2025_9": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "MathArena:imc_2025_10": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "MathArena:miklos_2025_1": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "MathArena:miklos_2025_3": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "MathArena:miklos_2025_7": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "MathArena:miklos_2025_8": {
+    "category": "Analysis",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Analysis\"}"
+    ]
+  },
+  "MathArena:miklos_2025_10": {
+    "category": "Analysis",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Analysis\"}"
+    ]
+  },
+  "MathArena:putnam_2025_1": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "MathArena:putnam_2025_6": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "MathArena:putnam_2025_7": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "MathArena:putnam_2025_8": {
+    "category": "Analysis",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Analysis\"}"
+    ]
+  },
+  "MathArena:putnam_2025_10": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "MathArena:putnam_2025_11": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:BMOSL_2018_15": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2020_13": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2016_2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BMOSL_2017_23": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2017_17": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2017_18": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2020_5": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:BMOSL_2021_1": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:IMOSL_2003_4": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2019_9": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2017_5": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BMOSL_2017_22": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2021_20": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:USAMO_2003_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:IMOSL_1989_26": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:IMOSL_1994_15": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:IMOSL_2001_18": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BMOSL_2019_4": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BMOSL_2018_20": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:BMOSL_2018_11": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:IMOSL_2003_24": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:BMOSL_2016_14": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2016_6": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BMOSL_2017_1": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BMOSL_2017_11": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:BMOSL_2017_12": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2017_13": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2017_14": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2017_15": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2017_16": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2017_2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BMOSL_2018_1": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BMOSL_2018_10": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2018_13": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2018_3": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BMOSL_2018_5": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BMOSL_2018_9": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:BMOSL_2019_10": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2019_12": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2019_13": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2019_3": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BMOSL_2019_5": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BMOSL_2019_6": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2019_8": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2020_10": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2020_11": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2020_2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BMOSL_2020_8": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:BMOSL_2021_18": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2021_21": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2021_9": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:BalticWay_2001_17": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:BalticWay_2001_5": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:BalticWay_2001_8": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2002_17": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:BalticWay_2002_2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BalticWay_2003_5": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BalticWay_2004_17": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2004_3": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BalticWay_2005_5": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BalticWay_2005_9": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:BalticWay_2006_12": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2006_15": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2006_2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BalticWay_2007_13": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2007_16": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:BalticWay_2007_20": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:BalticWay_2008_18": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2010_11": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2010_14": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2010_18": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:BalticWay_2010_8": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:BalticWay_2011_15": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2012_2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BalticWay_2012_7": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:BalticWay_2013_12": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2014_20": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:BalticWay_2016_17": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2016_20": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2017_14": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2017_20": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:BalticWay_2017_9": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2018_11": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2018_2": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:BalticWay_2018_3": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BalticWay_2018_8": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:BalticWay_2020_1": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BalticWay_2020_14": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BalticWay_2020_19": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:BalticWay_2020_3": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:EGMO_2012_1": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:EGMO_2012_6": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:EGMO_2012_7": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:EGMO_2012_8": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:EGMO_2013_3": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:EGMO_2014_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:EGMO_2014_3": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:EGMO_2015_6": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:EGMO_2017_5": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:EGMO_2018_6": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:IMC_2000_8": {
+    "category": "Analysis",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Analysis\"}"
+    ]
+  },
+  "OPC:IMC_2001_11": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:IMC_2001_12": {
+    "category": "Analysis",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Analysis\"}"
+    ]
+  },
+  "OPC:IMC_2003_11": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:IMC_2004_8": {
+    "category": "Analysis",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Analysis\"}"
+    ]
+  },
+  "OPC:IMC_2005_6": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:IMC_2007_1": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:IMC_2011_1": {
+    "category": "Analysis",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Analysis\"}"
+    ]
+  },
+  "OPC:IMC_2011_7": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:IMC_2012_1": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:IMC_2012_7": {
+    "category": "Analysis",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Analysis\"}"
+    ]
+  },
+  "OPC:IMC_2015_10": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:IMC_2019_4": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:IMC_2019_8": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:IMC_2020_4": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:IMC_2023_2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:IMC_2024_10": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:IMC_2024_5": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:IMOSL_1980_11": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:IMOSL_2000_14": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:IMOSL_2000_6": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:IMOSL_2000_9": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:IMOSL_2001_1": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:IMOSL_2001_27": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:IMOSL_2001_8": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:IMOSL_2003_13": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:IMOSL_2003_27": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:IMOSL_2004_13": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:JMO_2010_3": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:JMO_2010_4": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:JMO_2014_5": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:JMO_2017_6": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:JMO_2022_6": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:JMO_2023_5": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:JMO_2024_6": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2016_2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2016_3": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2016_7": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2017_5": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2017_6": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2018_6": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2018_7": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2019_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2019_3": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2019_4": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2019_5": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2020_1": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2020_11": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2020_9": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2021_11": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2021_4": {
+    "category": "Analysis",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Analysis\"}"
+    ]
+  },
+  "OPC:RMM_Extralist_2023_6": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:USAMO_2002_6": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:USAMO_2008_6": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:USAMO_2011_3": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:USAMO_2024_5": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bmo1_2004_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bmo1_2005_5": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:bmo1_2007_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bmo2_2002_1": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bmo2_2004_3": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:bmo2_2005_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bmo2_2007_2": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:bmo2_2011_1": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bmo2_2012_3": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:bmo2_2016_3": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bmo2_2018_1": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bmo2_2022_4": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bmo2_2023_4": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bulgarian-EMT_2010_11_3": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:bulgarian-EMT_2017_8_2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:bulgarian-EMT_2018_12_1": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:bulgarian-PMS_2000_10_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bulgarian-PMS_2005_10_3": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bulgarian-PMS_2005_8_3": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:bulgarian-PMS_2012_10_3": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:bulgarian-PMS_2013_8_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bulgarian-PMS_2014_12_3": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:bulgarian-PMS_2022_11_4": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:bulgarian-ZMS_2001_10_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bulgarian-ZMS_2008_10_1": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:bulgarian-ZMS_2011_12_3": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bulgarian-ZMS_2013_12_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bulgarian-ZMS_2016_12_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bulgarian-ZMS_2016_9_4": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:bulgarian-ZMS_2018_11_4": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:bulgarian-ZMS_2020_11_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bulgarian-ZMS_2023_10_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:irish_2000_7": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:irish_2001_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:irish_2002_9": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:irish_2003_4": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:irish_2003_7": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:irish_2004_1": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:irish_2004_7": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:irish_2005_1": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:irish_2005_5": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:irish_2007_10": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:irish_2008_10": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:irish_2008_5": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:irish_2008_8": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:irish_2009_10": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:irish_2009_5": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:irish_2009_6": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:irish_2011_5": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:irish_2012_3": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:irish_2013_2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:irish_2013_8": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:irish_2014_9": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:irish_2015_7": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:irish_2016_10": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:irish_2017_1": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:irish_2017_7": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:irish_2018_1": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:irish_2019_2": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:irish_2019_8": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:irish_2021_10": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:irish_2021_9": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:irish_2022_6": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:irish_2023_7": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:irish_2024_9": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:izho_2011_1": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:izho_2011_5": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:izho_2012_3": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:izho_2013_4": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:izho_2013_6": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:izho_2015_6": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:izho_2016_3": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:izho_2016_5": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:izho_2017_4": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:izho_2017_6": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:izho_2018_1": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:izho_2018_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:izho_2018_3": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:izho_2018_6": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:izho_2019_1": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:izho_2019_3": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:izho_2020_1": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:izho_2021_1": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:izho_2022_4": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:izho_2023_1": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:izho_2023_5": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:izho_2024_2": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:putnam_2006_a2": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:swiss_final_2005_1": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:swiss_final_2008_7": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:swiss_selection_2022_6": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:BMOSL_2016_13": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2016_1": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:IMOSL_2004_24": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:IMOSL_2003_6": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2016_12": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2021_10": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:BMOSL_2019_14": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:USAMO_2022_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2021_3": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:BMOSL_2018_6": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BMOSL_2017_21": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:BMOSL_2021_17": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:putnam_1963_b6": {
+    "category": "Geometry",
+    "allowed": [
+      "Geometry",
+      "Algebra"
+    ],
+    "category_raw": "geometry; linear algebra",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:putnam_1962_b1": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics"
+    ],
+    "category_raw": "algebra; combinatorics",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:putnam_1965_b3": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "algebra; geometry",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:putnam_1964_a2": {
+    "category": "Analysis",
+    "allowed": [
+      "Analysis",
+      "Algebra"
+    ],
+    "category_raw": "analysis; algebra",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Analysis\"}"
+    ]
+  },
+  "OPC:putnam_1967_a2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Analysis"
+    ],
+    "category_raw": "linear algebra; analysis",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:putnam_1977_b1": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Analysis"
+    ],
+    "category_raw": "algebra; analysis",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:putnam_1963_a2": {
+    "category": "Algebra",
+    "allowed": [
+      "Number Theory",
+      "Algebra"
+    ],
+    "category_raw": "number theory; algebra",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:putnam_2020_a1": {
+    "category": "Number Theory",
+    "allowed": [
+      "Number Theory",
+      "Algebra"
+    ],
+    "category_raw": "number theory; algebra",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:putnam_1979_a4": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Geometry",
+      "Combinatorics"
+    ],
+    "category_raw": "geometry; combinatorics",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:putnam_1980_b6": {
+    "category": "Algebra",
+    "allowed": [
+      "Number Theory",
+      "Algebra"
+    ],
+    "category_raw": "number theory; algebra",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:putnam_2012_a1": {
+    "category": "Geometry",
+    "allowed": [
+      "Geometry",
+      "Algebra"
+    ],
+    "category_raw": "geometry; algebra",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:putnam_1975_b5": {
+    "category": "Algebra",
+    "allowed": [
+      "Analysis",
+      "Algebra"
+    ],
+    "category_raw": "analysis; algebra",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:putnam_1978_a6": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Geometry",
+      "Combinatorics"
+    ],
+    "category_raw": "geometry; combinatorics",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:putnam_1962_b2": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": "set theory",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:putnam_1962_a5": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics"
+    ],
+    "category_raw": "algebra; combinatorics",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:putnam_1973_b3": {
+    "category": "Algebra",
+    "allowed": [
+      "Number Theory",
+      "Algebra"
+    ],
+    "category_raw": "number theory; algebra",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:putnam_1984_b5": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Analysis"
+    ],
+    "category_raw": "algebra; analysis",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:putnam_1981_a1": {
+    "category": "Number Theory",
+    "allowed": [
+      "Analysis",
+      "Number Theory"
+    ],
+    "category_raw": "analysis; number theory",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:putnam_1965_b4": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Analysis"
+    ],
+    "category_raw": "algebra; analysis",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:putnam_1971_a1": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Geometry",
+      "Combinatorics"
+    ],
+    "category_raw": "geometry; combinatorics",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:putnam_1975_a1": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Number Theory"
+    ],
+    "category_raw": "algebra; number theory",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:putnam_1980_b5": {
+    "category": "Analysis",
+    "allowed": [
+      "Analysis",
+      "Algebra"
+    ],
+    "category_raw": "analysis; algebra",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Analysis\"}"
+    ]
+  },
+  "OPC:putnam_1974_b6": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": "set theory",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:putnam_1986_b3": {
+    "category": "Algebra",
+    "allowed": [
+      "Number Theory",
+      "Algebra"
+    ],
+    "category_raw": "number theory; algebra",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:putnam_1977_a4": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Analysis"
+    ],
+    "category_raw": "algebra; analysis",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:putnam_1979_b5": {
+    "category": "Geometry",
+    "allowed": [
+      "Geometry",
+      "Analysis"
+    ],
+    "category_raw": "geometry; analysis",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:putnam_2007_b6": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Combinatorics",
+      "Analysis"
+    ],
+    "category_raw": "combinatorics; analysis",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:putnam_1988_b6": {
+    "category": "Algebra",
+    "allowed": [
+      "Number Theory",
+      "Algebra"
+    ],
+    "category_raw": "number theory; algebra",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:irish_2016_4": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:putnam_2017_a5": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:USAMO_2018_3": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:bmo1_2016_5": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bmo2_2010_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:IMOSL_2002_4": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:BMOSL_2016_9": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "OPC:irish_2014_5": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:bmo1_2015_4": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "OPC:bulgarian-EMT_2022_10_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "OPC:bmo1_2024_1": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "OPC:putnam_2013_a1": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "ProofBench:TST-2023-Q2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:APMO-2022-2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:APMO-2023-1": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:APMO-2023-3": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:APMO-2023-5": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:APMO-2024-1": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:APMO-2024-3": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "ProofBench:APMO-2024-4": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "ProofBench:APMO-2024-5": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:APMO-2025-3": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "ProofBench:APMO-2025-4": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "ProofBench:APMO-2025-5": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "ProofBench:EGMO-2024-2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:EGMO-2024-3": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "ProofBench:EGMO-2025-P2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "ProofBench:EGMO-2025-P3": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:EGMO-2025-P4": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:IMO-2023-4": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "ProofBench:IMO-2023-2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:IMO-2023-6": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:IMO-2024-5": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "ProofBench:IMO-2024-3": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "ProofBench:IMO-2024-4": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:PUTNAM-2022-B1": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "ProofBench:PUTNAM-2023-A4": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "ProofBench:TST-2023-5": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "ProofBench:TST-2023-6": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "ProofBench:TST-2025-2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "ProofBench:TST-2025-3": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:TST-2025-4": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:TST-2025-5": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "ProofBench:TST-2025-6": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "ProofBench:USAMO-2024-4": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "ProofBench:IMO-2025-Q2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:PUTNAM-2024-Q9": {
+    "category": "Analysis",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Analysis\"}"
+    ]
+  },
+  "ProofBench:PUTNAM-2024-Q11": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "ProofBench:TST-2024-Q2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "ProofBench:TST-2024-Q3": {
+    "category": "Combinatorics",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Combinatorics\"}"
+    ]
+  },
+  "ProofBench:USAMO-2025-Q1": {
+    "category": "Number Theory",
+    "allowed": [
+      "Algebra",
+      "Combinatorics",
+      "Geometry",
+      "Number Theory",
+      "Analysis"
+    ],
+    "category_raw": null,
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Number Theory\"}"
+    ]
+  },
+  "HARP:USAMO_1975_2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "HARP:USAMO_1975_4": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "HARP:USAMO_1980_3": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "HARP:USAMO_1982_3": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "HARP:USAMO_1989_3": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "HARP:USAMO_1992_2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "HARP:USAMO_1995_2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "HARP:USAMO_1996_1": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "HARP:USAMO_1996_5": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "HARP:USAMO_2002_2": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "HARP:USAMO_2013_2": {
+    "category": "Algebra",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Algebra\"}"
+    ]
+  },
+  "HARP:USAJMO_2013_5": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  },
+  "HARP:USAJMO_2023_6": {
+    "category": "Geometry",
+    "allowed": [
+      "Algebra",
+      "Geometry"
+    ],
+    "category_raw": "precalculus",
+    "model": "qwen3_8b_nothink",
+    "raw_responses": [
+      "{\"category\": \"Geometry\"}"
+    ]
+  }
+}
