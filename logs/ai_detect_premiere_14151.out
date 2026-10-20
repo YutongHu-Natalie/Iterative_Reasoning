@@ -1,0 +1,28 @@
+Job started at Mon Oct 19 19:33:01 EDT 2026
+Running on host: tebuna
+Job ID: 14151
+SLURM allocated GPUs: 0
+Mon Oct 19 19:33:01 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               Off |   00000000:B5:00.0 Off |                  Off |
+| 30%   29C    P8             25W /  300W |       4MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+2434 items (1118 LLM), models: ['qwen3_8b_nothink']
+[qwen3_8b_nothink] resuming: 200 done, 2234 to go
+[qwen3_8b_nothink] acc=0.45932621199671325 auroc=0.5251595880616168 parse_errors=0 -> /local/scratch/yhu383/Iterative_Reasoning/AI_Detect/Premiere/TestResult/full/qwen3_8b_nothink.json (30.6 min)
+Job finished at Mon Oct 19 20:03:38 EDT 2026
