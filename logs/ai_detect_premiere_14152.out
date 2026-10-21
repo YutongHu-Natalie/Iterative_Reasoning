@@ -1,0 +1,28 @@
+Job started at Tue Oct 20 13:36:29 EDT 2026
+Running on host: tebuna
+Job ID: 14152
+SLURM allocated GPUs: 0
+Tue Oct 20 13:36:29 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               Off |   00000000:1B:00.0 Off |                  Off |
+| 30%   32C    P8             27W /  300W |       2MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+2434 items (1118 LLM), models: ['qwen3_8b_think']
+[qwen3_8b_think] resuming: 860 done, 1574 to go
+[qwen3_8b_think] acc=0.4660633484162896 auroc=0.5281899594940916 parse_errors=3 -> /local/scratch/yhu383/Iterative_Reasoning/AI_Detect/Premiere/TestResult/full/qwen3_8b_think.json (1331.1 min)
+Job finished at Wed Oct 21 11:47:37 EDT 2026
