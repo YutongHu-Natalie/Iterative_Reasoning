@@ -1,0 +1,27 @@
+Job started at Wed Oct 21 12:48:05 EDT 2026
+Running on host: tebuna
+Job ID: 14154
+SLURM allocated GPUs: 0
+Wed Oct 21 12:48:05 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 565.57.01              Driver Version: 565.57.01      CUDA Version: 12.7     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               Off |   00000000:B5:00.0 Off |                  Off |
+| 30%   42C    P8             25W /  300W |       4MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+2434 items (1118 LLM), models: ['gemma4_e4b_nothink']
+[gemma4_e4b_nothink] acc=0.5316351684470009 auroc=0.7638422932831641 parse_errors=0 -> /local/scratch/yhu383/Iterative_Reasoning/AI_Detect/Premiere/TestResult/full/gemma4_e4b_nothink.json (92.6 min)
+Job finished at Wed Oct 21 14:20:47 EDT 2026

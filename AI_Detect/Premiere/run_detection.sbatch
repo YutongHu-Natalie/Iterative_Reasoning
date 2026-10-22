@@ -31,7 +31,7 @@ source ./venv/bin/activate
 #     python ./AI_Detect/Premiere/run_detection.py --data full --sample 200 --models qwen3_8b_think
 #   only problems with both an LLM and a human proof (controls for source):
 #     python ./AI_Detect/Premiere/run_detection.py --data full --paired-only --out-dir ./AI_Detect/Premiere/TestResult/full_paired --models mage
-python ./AI_Detect/Premiere/run_detection.py --data full --models qwen3_8b_think 
+python ./AI_Detect/Premiere/run_detection.py --data full --models gemma4_e4b_nothink 
 #gemma4_e4b_think gemma4_e4b_nothink 
 
 echo "Job finished at $(date)"
