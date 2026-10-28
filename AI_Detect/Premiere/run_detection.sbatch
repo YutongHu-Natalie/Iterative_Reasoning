@@ -3,7 +3,7 @@
 #SBATCH --output=./logs/ai_detect_premiere_%j.out
 #SBATCH --error=./logs/ai_detect_premiere_%j.err
 #SBATCH --gres=gpu:1
-#SBATCH --time=24:00:00
+#SBATCH --time=34:00:00
 #SBATCH --mem=30G
 #SBATCH --cpus-per-task=8
 
@@ -31,7 +31,7 @@ source ./venv/bin/activate
 #     python ./AI_Detect/Premiere/run_detection.py --data full --sample 200 --models qwen3_8b_think
 #   only problems with both an LLM and a human proof (controls for source):
 #     python ./AI_Detect/Premiere/run_detection.py --data full --paired-only --out-dir ./AI_Detect/Premiere/TestResult/full_paired --models mage
-python ./AI_Detect/Premiere/run_detection.py --data full --models gemma4_e4b_nothink 
+python ./AI_Detect/Premiere/run_detection.py --data full --models gemma4_e4b_think 
 #gemma4_e4b_think gemma4_e4b_nothink 
 
 echo "Job finished at $(date)"
