@@ -1,0 +1,1838 @@
+[
+ {
+  "uid": "OPC:BalticWay_2002_17|human|human|0",
+  "problem_uid": "OPC:BalticWay_2002_17",
+  "dataset": "OPC",
+  "competition": "BalticWay",
+  "year": 2002,
+  "category": "Number Theory",
+  "problem": "Show that the sequence\n$$\n\\binom{2002}{2002},\\binom{2003}{2002},\\binom{2004}{2002}, \\ldots\n$$\nconsidered modulo 2002, is periodic.",
+  "solution": "Define\n\n$$\nx_{n}^{k}=\\binom{n}{k}\n$$\nand note that\n$$\nx_{n+1}^{k}-x_{n}^{k}=\\binom{n+1}{k}-\\binom{n}{k}=\\binom{n}{k-1}=x_{n}^{k-1} .\n$$\n\nLet $m$ be any positive integer. We will prove by induction on $k$ that the sequence $\\left\\{x_{n}^{k}\\right\\}_{n=k}^{\\infty}$ is periodic modulo $m$. For $k=1$ it is obvious that $x_{n}^{k}=n$ is periodic modulo $m$ with period $m$. Therefore it will suffice to show that the following is true: the sequence $\\left\\{x_{n}\\right\\}$ is periodic modulo $m$ if its difference sequence, $d_{n}=x_{n+1}-x_{n}$, is periodic modulo $m$.\nFurthermore, if $t$ then the period of $\\left\\{x_{n}\\right\\}$ is equal to $h t$ where $h$ is the smallest positive integer such that $h\\left(x_{t}-x_{0}\\right) \\equiv 0$ modulo $m$.\nIndeed, let $t$ be the period of $\\left\\{d_{n}\\right\\}$ and $h$ be the smallest positive integer such that $h\\left(x_{t}-x_{0}\\right) \\equiv 0$ modulo $m$. Then\n\n$$\n\\begin{aligned}\nx_{n+h t} & =x_{0}+\\sum_{j=0}^{n+h t-1} d_{j}=x_{0}+\\sum_{j=0}^{n-1} d_{j}+h\\left(\\sum_{j=0}^{t-1} d_{j}\\right)= \\\\\n& =x_{n}+h\\left(x_{t}-x_{0}\\right) \\equiv x_{n}(\\bmod m)\n\\end{aligned}\n$$\n\nfor all $n$, so the sequence $\\left\\{x_{n}\\right\\}$ is in fact periodic modulo $m$ (with a period dividing $h t$ ).",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.9383,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9998,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9919,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.75,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9766,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:EGMO_2012_1|human|human|0",
+  "problem_uid": "OPC:EGMO_2012_1",
+  "dataset": "OPC",
+  "competition": "EGMO",
+  "year": 2012,
+  "category": "Geometry",
+  "problem": "Let \\( ABC \\) be a triangle with circumcenter \\( O \\). The points \\( D, E, F \\) lie in the interiors of the sides \\( BC, CA, AB \\) respectively, such that \\(\\overline{DE} \\perp \\overline{CO}\\) and \\(\\overline{DF} \\perp \\overline{BO}\\). Let \\( K \\) be the circumcenter of triangle \\( AFE \\). Prove that the lines \\(\\overline{DK}\\) and \\(\\overline{BC}\\) are perpendicular.",
+  "solution": "First, note $\\measuredangle E D F=180^{\\circ}-\\measuredangle B O C=180^{\\circ}-2 A$, so $\\measuredangle F D E=2 A$.\n\nObserve that $\\measuredangle F K E=2 A$ as well; hence $K F D E$ is cyclic. Hence\n\n$$\n\\begin{aligned}\n\\measuredangle K D B & =\\measuredangle K D F+\\measuredangle F D B \\\\\n& =\\measuredangle K E F+\\left(90^{\\circ}-\\measuredangle D B O\\right) \\\\\n& =\\left(90^{\\circ}-A\\right)+\\left(90^{\\circ}-\\left(90^{\\circ}-A\\right)\\right) \\\\\n& =90^{\\circ} .\n\\end{aligned}\n$$\n\nand the proof ends here.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.9179,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9989,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9902,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.7,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9859,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:IMC_2007_1|human|human|0",
+  "problem_uid": "OPC:IMC_2007_1",
+  "dataset": "OPC",
+  "competition": "IMC",
+  "year": 2007,
+  "category": "Number Theory",
+  "problem": "Let \\( f \\) be a polynomial of degree \\( 2 \\) with integer coefficients. Suppose that \\( f(k) \\) is divisible by \\( 5 \\) for every integer \\( k \\). Prove that all coefficients of \\( f \\) are divisible by \\( 5 \\).",
+  "solution": "Let $f(x)=a x^{2}+b x+c$. Substituting $x=0, x=1$ and $x=-1$, we obtain that $5 \\mid f(0)=c$, $5 \\mid f(1)=(a+b+c)$ and $5 \\mid f(-1)=(a-b+c)$. Then $5 \\mid f(1)+f(-1)-2 f(0)=2 a$ and $5 \\mid f(1)-f(-1)=2 b$. Therefore $5$ divides $2 a, 2 b$ and $c$ and the statement follows.\nSolution 2. Consider $f(x)$ as a polynomial over the $5$-element field (i.e. modulo 5). The polynomial has $5$ roots while its degree is at most $2$. Therefore $f \\equiv 0(\\bmod 5)$ and all of its coefficients are divisible by $5$.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.9333,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9976,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.989,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.8,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9967,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:izho_2022_4|human|human|0",
+  "problem_uid": "OPC:izho_2022_4",
+  "dataset": "OPC",
+  "competition": "izho",
+  "year": 2022,
+  "category": "Algebra",
+  "problem": "A quadratic trinomial \\( p(x) \\) with real coefficients is given. Prove that there is a positive integer \\( n \\) such that the equation \\( p(x) = \\frac{1}{n} \\) has no rational roots.",
+  "solution": "Assume that a quadratic trinomial \\( p(x) = a x^{2} + b x + c \\) takes all values of the form \\( \\frac{1}{n} \\) at rational points. It is easy to see that the coefficients \\( a, b, c \\) are rational. Indeed, if \\( p(r_{i}) = \\frac{1}{n_{i}} \\) for \\( i = 1, 2, 3 \\), where \\( r_{i} \\) are rational, then the numbers \\( a(r_{1} + r_{2}) + b = \\frac{p(r_{2}) - p(r_{1})}{r_{2} - r_{1}} \\) and \\( a(r_{2} + r_{3}) + b = \\frac{p(r_{3}) - p(r_{2})}{r_{3} - r_{2}} \\) are also rational, and so is their difference \\( a(r_{1} - r_{3}) \\). It follows immediately that \\( a \\), and therefore \\( b \\) and \\( c \\), are rational.\n\nIf \\( a, b, c \\) are represented as irreducible fractions, there is a prime \\( q \\) that does not divide their denominators and numerators. When a rational \\( r \\) is written as an irreducible fraction \\( \\frac{m}{n} \\) and \\( q^{k} \\), \\( k > 0 \\), is the maximum power of \\( q \\) dividing \\( n \\), the denominator of the irreducible fraction equal to \\( p(r) = a r^{2} + b r + c = \\frac{a m^{2} + b m n + c n^{2}}{n^{2}} \\) is divisible by \\( q^{2k} \\) and not by \\( q^{2k + 1} \\). Therefore, \\( p(r) \\) cannot be equal to \\( \\frac{1}{q^{s}} \\) for any odd \\( s \\). Since \\( q \\) does not divide the denominators of \\( a, b, c \\), for \\( n \\) not divisible by \\( q \\), the equation \\( p\\left(\\frac{m}{n}\\right) = \\frac{1}{q^{s}} \\) is also impossible. Thus \\( n = q^{s} \\) satisfies the condition for any odd \\( s \\).",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.8854,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9996,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9907,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.5572,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:putnam_1965_b1|human|human|0",
+  "problem_uid": "OPC:putnam_1965_b1",
+  "dataset": "OPC",
+  "competition": "putnam",
+  "year": 1965,
+  "category": "Analysis",
+  "problem": "Find $$\\lim_{n \\to \\infty} \\int_{0}^{1} \\int_{0}^{1} \\cdots \\int_{0}^{1} \\cos^2\\left(\\frac{\\pi}{2n}(x_1 + x_2 + \\cdots + x_n)\\right) dx_1 dx_2 \\cdots dx_n.$$ Show that the limit is $\\frac{1}{2}$.",
+  "solution": "B-1. The change of variables $x_{k} \\rightarrow 1-x_{k}$ yields\n\n$$\n\\begin{aligned}\n\\int_{0}^{1} \\int_{0}^{1} \\cdots \\int_{0}^{1} \\cos ^{2} & \\left\\{\\frac{\\pi}{2 n}\\left(x_{1}+x_{2}+\\cdots+x_{n}\\right)\\right\\} d x_{1} d x_{2} \\cdots d x_{n} \\\\\n& =\\int_{0}^{1} \\int_{0}^{1} \\cdots \\int_{0}^{1} \\sin ^{2}\\left\\{\\frac{\\pi}{2 n}\\left(x_{1}+x_{2}+\\cdots+x_{n}\\right)\\right\\} d x_{1} d x_{2} \\cdots d x_{n}\n\\end{aligned}\n$$\n\nEach of these expressions, being equal to half their sum, must equal $\\frac{1}{2}$. The limit is also $\\frac{1}{2}$.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.9249,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9994,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9935,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.75,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9814,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "HARP:USAJMO_2010_1|human|human|3",
+  "problem_uid": "HARP:USAJMO_2010_1",
+  "dataset": "HARP",
+  "competition": "USAJMO",
+  "year": 2010,
+  "category": "Number Theory",
+  "problem": "A permutation of the set of positive integers $[n] = \\{1, 2, \\ldots, n\\}$ is a sequence $(a_1, a_2, \\ldots, a_n)$ such that each element of $[n]$ appears precisely one time as a term of the sequence. For example, $(3, 5, 1, 2, 4)$ is a permutation of $[5]$. Let $P(n)$ be the number of permutations of $[n]$ for which $ka_k$ is a perfect square for all $1\\leq k\\leq n$. Find with proof the smallest $n$ such that $P(n)$ is a multiple of $2010$.",
+  "solution": "It's well known that there exists $f(n)$ and $g(n)$ such that $n = f(n) \\cdot g(n)$, no square divides $f(n)$ other than 1, and $g(n)$ is a perfect square.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.9871,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.98,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9999,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.987,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 1.0,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 1.0,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9931,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "HARP:USAJMO_2018_3|human|human|1",
+  "problem_uid": "HARP:USAJMO_2018_3",
+  "dataset": "HARP",
+  "competition": "USAJMO",
+  "year": 2018,
+  "category": "Geometry",
+  "problem": "($*$) Let $ABCD$ be a quadrilateral inscribed in circle $\\omega$ with $\\overline{AC} \\perp \\overline{BD}$. Let $E$ and $F$ be the reflections of $D$ over lines $BA$ and $BC$, respectively, and let $P$ be the intersection of lines $BD$ and $EF$. Suppose that the circumcircle of $\\triangle EPD$ meets $\\omega$ at $D$ and $Q$, and the circumcircle of $\\triangle FPD$ meets $\\omega$ at $D$ and $R$. Show that $EQ = FR$. [asy] unitsize(3cm); real labelscalefactor = 1.5; /* changes label-to-point distance */ pen dps = linewidth(0.7) + fontsize(10); defaultpen(dps); /* default pen style */ pen dotstyle = black; /* point style */ pen wrwrwr = rgb(0.3803921568627451,0.3803921568627451,0.3803921568627451); pen rvwvcq = rgb(0.08235294117647059,0.396078431372549,0.7529411764705882); draw((0.5922362871684147,0.8057643453026269)--(0.8660254037844386,-0.5)--(0.06064145095757084,-0.9981596137020172)--(-0.9987724554622847,0.04953364724950819)--cycle, linewidth(2) + rvwvcq); /* draw figures */ draw(circle((0,0), 1), linewidth(2) + wrwrwr); draw((0.8660254037844386,-0.5)--(-0.9987724554622847,0.04953364724950819), linewidth(2) + wrwrwr); draw((0.5922362871684147,0.8057643453026269)--(0.8660254037844386,-0.5), linewidth(2) + rvwvcq); draw((0.8660254037844386,-0.5)--(0.06064145095757084,-0.9981596137020172), linewidth(2) + rvwvcq); draw((0.06064145095757084,-0.9981596137020172)--(-0.9987724554622847,0.04953364724950819), linewidth(2) + rvwvcq); draw((-0.9987724554622847,0.04953364724950819)--(0.5922362871684147,0.8057643453026269), linewidth(2) + rvwvcq); draw((0.5922362871684147,0.8057643453026269)--(0.06064145095757084,-0.9981596137020172), linewidth(2) + wrwrwr); draw((0.5249726058304045,-2.4139334560841545)--(2.3530139989292476,0.7523271151020314), linewidth(2) + wrwrwr); draw((-0.9987724554622847,0.04953364724950819)--(1.5189031419104242,-0.6923952683993904), linewidth(2) + wrwrwr); draw((-0.9987724554622847,0.04953364724950819)--(0.5249726058304045,-2.4139334560841545), linewidth(2) + wrwrwr); draw((-0.9987724554622847,0.04953364724950819)--(2.3530139989292476,0.7523271151020314), linewidth(2) + wrwrwr); draw((0.8660254037844386,-0.5)--(2.3530139989292476,0.7523271151020314), linewidth(2) + wrwrwr); draw((0.8660254037844386,-0.5)--(0.5249726058304045,-2.4139334560841545), linewidth(2) + wrwrwr); draw(circle((0.5922362871684147,0.8057643453026269), 1.7615883990890795), linewidth(2) + linetype(\"4 4\") + wrwrwr); draw(circle((0.06064145095757076,-0.9981596137020177), 1.4899728165839203), linewidth(2) + linetype(\"4 4\") + wrwrwr); draw((0.5249726058304045,-2.4139334560841545)--(0.9854301844182564,0.17008042696736536), linewidth(2) + wrwrwr); draw((2.3530139989292476,0.7523271151020314)--(0.3454211217688861,-0.9384477868458769), linewidth(2) + wrwrwr); /* dots and labels */ dot((0,0),dotstyle); label(\"$O$\", (0.03388760411534265,0.08889671794036069), NE * 0.5); dot((0.8660254037844386,-0.5),dotstyle); label(\"$B$\", (0.9043736119372844,-0.4159851665963708), S * 3.5 * labelscalefactor); dot((-0.9987724554622847,0.04953364724950819),dotstyle); label(\"$D$\", (-0.9671713048798903,0.13242101833145825), W * 3.5 * labelscalefactor); dot((0.5922362871684147,0.8057643453026269),dotstyle); label(\"$A$\", (0.625818089434263,0.8897438451365556), NE * labelscalefactor); dot((0.06064145095757084,-0.9981596137020172),linewidth(4pt) + dotstyle); label(\"$C$\", (0.09482162466287856,-0.9295719112113219), S * 3); dot((2.3530139989292476,0.7523271151020314),dotstyle); label(\"$E$\", (2.3841998252345853,0.8375146846672384), NE * labelscalefactor); dot((0.5249726058304045,-2.4139334560841545),dotstyle); label(\"$F$\", (0.5561792088085077,-2.3310543838046627), S * 3.5 * labelscalefactor); dot((1.5189031419104242,-0.6923952683993904),linewidth(4pt) + dotstyle); label(\"$P$\", (1.5572381178037407,-0.6249018084736391), SE * 3); dot((0.3454211217688861,-0.9384477868458769),linewidth(4pt) + dotstyle); label(\"$Q$\", (0.38208200724411934,-0.8686378906637853), S * 3); dot((0.9854301844182564,0.17008042696736536),linewidth(4pt) + dotstyle); label(\"$R$\", (1.0175367929541368,0.23687933927009236), NE * labelscalefactor); [/asy]",
+  "solution": "We begin with the following claims.\nClaim. $B$ is the circumcenter of $\\triangle DEF$.\nProof. By reflection $BD=BE=BF$.\nClaim. $A$ is the circumcenter of $\\triangle EPD$.\nProof. First, we have",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.9179,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 1.0,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9777,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.7,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9978,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:1608|human|human|0",
+  "problem_uid": "OlympiadBench:1608",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Geometry",
+  "problem": "Let $A B C$ be a triangle, let $D$ be the touchpoint of the side $B C$ and the incircle of the triangle $A B C$, and let $J_{b}$ and $J_{c}$ be the incentres of the triangles $A B D$ and $A C D$, respectively. Prove that the circumcentre of the triangle $A J_{b} J_{c}$ lies on the bisectrix of the angle $B A C$.",
+  "solution": "Let the incircle of the triangle $A B C$ meet $C A$ and $A B$ at points $E$ and $F$, respectively. Let the incircles of the triangles $A B D$ and $A C D$ meet $A D$ at points $X$ and $Y$, respectively. Then $2 D X=D A+D B-A B=D A+D B-B F-A F=D A-A F$; similarly, $2 D Y=D A-A E=2 D X$. Hence the points $X$ and $Y$ coincide, so $J_{b} J_{c} \\perp A D$.\n\nNow let $O$ be the circumcentre of the triangle $A J_{b} J_{c}$. Then $\\angle J_{b} A O=\\pi / 2-\\angle A O J_{b} / 2=$ $\\pi / 2-\\angle A J_{c} J_{b}=\\angle X A J_{c}=\\frac{1}{2} \\angle D A C$. Therefore, $\\angle B A O=\\angle B A J_{b}+\\angle J_{b} A O=\\frac{1}{2} \\angle B A D+$ $\\frac{1}{2} \\angle D A C=\\frac{1}{2} \\angle B A C$, and the conclusion follows.\n\nFig. 1",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.8611,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9994,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9913,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.7,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.587,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:1698|human|human|0",
+  "problem_uid": "OlympiadBench:1698",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Geometry",
+  "problem": "Let $A B C$ be an acute triangle. Let $\\omega$ be a circle whose center $L$ lies on the side $B C$. Suppose that $\\omega$ is tangent to $A B$ at $B^{\\prime}$ and to $A C$ at $C^{\\prime}$. Suppose also that the circumcenter $O$ of the triangle $A B C$ lies on the shorter arc $B^{\\prime} C^{\\prime}$ of $\\omega$. Prove that the circumcircle of $A B C$ and $\\omega$ meet at two points.",
+  "solution": "The point $B^{\\prime}$, being the perpendicular foot of $L$, is an interior point of side $A B$. Analogously, $C^{\\prime}$ lies in the interior of $A C$. The point $O$ is located inside the triangle $A B^{\\prime} C^{\\prime}$, hence $\\angle C O B<\\angle C^{\\prime} O B^{\\prime}$.\n\nLet $\\alpha=\\angle C A B$. The angles $\\angle C A B$ and $\\angle C^{\\prime} O B^{\\prime}$ are inscribed into the two circles with centers $O$ and $L$, respectively, so $\\angle C O B=2 \\angle C A B=2 \\alpha$ and $2 \\angle C^{\\prime} O B^{\\prime}=360^{\\circ}-\\angle C^{\\prime} L B^{\\prime}$. From the kite $A B^{\\prime} L C^{\\prime}$ we have $\\angle C^{\\prime} L B^{\\prime}=180^{\\circ}-\\angle C^{\\prime} A B^{\\prime}=180^{\\circ}-\\alpha$. Combining these, we get\n\n$$\n2 \\alpha=\\angle C O B<\\angle C^{\\prime} O B^{\\prime}=\\frac{360^{\\circ}-\\angle C^{\\prime} L B^{\\prime}}{2}=\\frac{360^{\\circ}-\\left(180^{\\circ}-\\alpha\\right)}{2}=90^{\\circ}+\\frac{\\alpha}{2}\n$$\n\nso\n\n$$\n\\alpha<60^{\\circ}\n$$\n\nLet $O^{\\prime}$ be the reflection of $O$ in the line $B C$. In the quadrilateral $A B O^{\\prime} C$ we have\n\n$$\n\\angle C O^{\\prime} B+\\angle C A B=\\angle C O B+\\angle C A B=2 \\alpha+\\alpha<180^{\\circ},\n$$\n\nso the point $O^{\\prime}$ is outside the circle $A B C$. Hence, $O$ and $O^{\\prime}$ are two points of $\\omega$ such that one of them lies inside the circumcircle, while the other one is located outside. Therefore, the two circles intersect.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.8494,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9999,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9893,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.6,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.6069,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:1702|human|human|0",
+  "problem_uid": "OlympiadBench:1702",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Geometry",
+  "problem": "Let $A B C$ be a triangle with incenter $I$ and circumcircle $\\omega$. Let $D$ and $E$ be the second intersection points of $\\omega$ with the lines $A I$ and $B I$, respectively. The chord $D E$ meets $A C$ at a point $F$, and $B C$ at a point $G$. Let $P$ be the intersection point of the line through $F$ parallel to $A D$ and the line through $G$ parallel to $B E$. Suppose that the tangents to $\\omega$ at $A$ and at $B$ meet at a point $K$. Prove that the three lines $A E, B D$, and $K P$ are either parallel or concurrent.",
+  "solution": "Since\n\n$$\n\\angle I A F=\\angle D A C=\\angle B A D=\\angle B E D=\\angle I E F\n$$\n\nthe quadrilateral $A I F E$ is cyclic. Denote its circumcircle by $\\omega_{1}$. Similarly, the quadrilateral $B D G I$ is cyclic; denote its circumcircle by $\\omega_{2}$.\n\nThe line $A E$ is the radical axis of $\\omega$ and $\\omega_{1}$, and the line $B D$ is the radical axis of $\\omega$ and $\\omega_{2}$. Let $t$ be the radical axis of $\\omega_{1}$ and $\\omega_{2}$. These three lines meet at the radical center of the three circles, or they are parallel to each other. We will show that $t$ is in fact the line $P K$.\n\nLet $L$ be the second intersection point of $\\omega_{1}$ and $\\omega_{2}$, so $t=I L$. (If the two circles are tangent to each other then $L=I$ and $t$ is the common tangent.)\n\nLet the line $t$ meet the circumcircles of the triangles $A B L$ and $F G L$ at $K^{\\prime} \\neq L$ and $P^{\\prime} \\neq L$, respectively. Using oriented angles we have\n\n$$\n\\angle\\left(A B, B K^{\\prime}\\right)=\\angle\\left(A L, L K^{\\prime}\\right)=\\angle(A L, L I)=\\angle(A E, E I)=\\angle(A E, E B)=\\angle(A B, B K),\n$$\n\nso $B K^{\\prime} \\| B K$. Similarly we have $A K^{\\prime} \\| A K$, and therefore $K^{\\prime}=K$. Next, we have\n\n$$\n\\angle\\left(P^{\\prime} F, F G\\right)=\\angle\\left(P^{\\prime} L, L G\\right)=\\angle(I L, L G)=\\angle(I D, D G)=\\angle(A D, D E)=\\angle(P F, F G),\n$$\n\nhence $P^{\\prime} F \\| P F$ and similarly $P^{\\prime} G \\| P G$. Therefore $P^{\\prime}=P$. This means that $t$ passes through $K$ and $P$, which finishes the proof.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.9503,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9979,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9891,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.965,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:1743|human|human|0",
+  "problem_uid": "OlympiadBench:1743",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Algebra",
+  "problem": "The sequence of real numbers $a_{0}, a_{1}, a_{2}, \\ldots$ is defined recursively by\n\n$$\na_{0}=-1, \\quad \\sum_{k=0}^{n} \\frac{a_{n-k}}{k+1}=0 \\quad \\text { for } \\quad n \\geq 1\n$$\n\nShow that $a_{n}>0$ for $n \\geq 1$.",
+  "solution": "The proof goes by induction. For $n=1$ the formula yields $a_{1}=1 / 2$. Take $n \\geq 1$, assume $a_{1}, \\ldots, a_{n}>0$ and write the recurrence formula for $n$ and $n+1$, respectively as\n\n$$\n\\sum_{k=0}^{n} \\frac{a_{k}}{n-k+1}=0 \\quad \\text { and } \\quad \\sum_{k=0}^{n+1} \\frac{a_{k}}{n-k+2}=0\n$$\n\nSubtraction yields\n\n$$\n\\begin{aligned}\n0=(n+2) \\sum_{k=0}^{n+1} \\frac{a_{k}}{n-k+2}-(n+1) \\sum_{k=0}^{n} \\frac{a_{k}}{n-k+1} \\\\\n=(n+2) a_{n+1}+\\sum_{k=0}^{n}\\left(\\frac{n+2}{n-k+2}-\\frac{n+1}{n-k+1}\\right) a_{k} .\n\\end{aligned}\n$$\n\nThe coefficient of $a_{0}$ vanishes, so\n\n$$\na_{n+1}=\\frac{1}{n+2} \\sum_{k=1}^{n}\\left(\\frac{n+1}{n-k+1}-\\frac{n+2}{n-k+2}\\right) a_{k}=\\frac{1}{n+2} \\sum_{k=1}^{n} \\frac{k}{(n-k+1)(n-k+2)} a_{k} .\n$$\n\nThe coefficients of $a_{1}, \\ldots, a_{n}$ are all positive. Therefore, $a_{1}, \\ldots, a_{n}>0$ implies $a_{n+1}>0$.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.8756,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.999,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9911,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.75,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.6894,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:1868|human|human|1",
+  "problem_uid": "OlympiadBench:1868",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Number Theory",
+  "problem": "Let $a$ be a positive integer which is not a square number. Denote by $A$ the set of all positive integers $k$ such that\n\n$$\nk=\\frac{x^{2}-a}{x^{2}-y^{2}}\n\\tag{1}\n$$\n\nfor some integers $x$ and $y$ with $x>\\sqrt{a}$. Denote by $B$ the set of all positive integers $k$ such that (1) is satisfied for some integers $x$ and $y$ with $0 \\leqslant x<\\sqrt{a}$. Prove that $A=B$.",
+  "solution": "The relation (1) is equivalent to\n\n$$\nk y^{2}-(k-1) x^{2}=a .\n\\tag{2}\n$$\n\nMotivated by Pell's Equation, we prove the following, which is essentially the same as the Claim in",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.9335,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9997,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9867,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9978,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:1999|human|human|0",
+  "problem_uid": "OlympiadBench:1999",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Algebra",
+  "problem": "Let $n \\geqslant 3$ be an integer, and let $x_{1}, x_{2}, \\ldots, x_{n}$ be real numbers in the interval $[0,1]$. Let $s=x_{1}+x_{2}+\\ldots+x_{n}$, and assume that $s \\geqslant 3$. Prove that there exist integers $i$ and $j$ with $1 \\leqslant i<j \\leqslant n$ such that\n\n$$\n2^{j-i} x_{i} x_{j}>2^{s-3}\n$$",
+  "solution": "Let $1 \\leqslant a<b \\leqslant n$ be such that $2^{b-a} x_{a} x_{b}$ is maximal. This choice of $a$ and $b$ implies that $x_{a+t} \\leqslant 2^{t} x_{a}$ for all $1-a \\leqslant t \\leqslant b-a-1$, and similarly $x_{b-t} \\leqslant 2^{t} x_{b}$ for all $b-n \\leqslant t \\leqslant b-a+1$. Now, suppose that $x_{a} \\in\\left(\\frac{1}{2^{u+1}}, \\frac{1}{2^{u}}\\right]$ and $x_{b} \\in\\left(\\frac{1}{2^{v+1}}, \\frac{1}{2^{v}}\\right]$, and write $x_{a}=2^{-\\alpha}, x_{b}=2^{-\\beta}$. Then\n\n$$\n\\sum_{i=1}^{a+u-1} x_{i} \\leqslant 2^{u} x_{a}\\left(\\frac{1}{2}+\\frac{1}{4}+\\ldots+\\frac{1}{2^{a+u-1}}\\right)<2^{u} x_{a} \\leqslant 1\n$$\n\nand similarly,\n\n$$\n\\sum_{i=b-v+1}^{n} x_{i} \\leqslant 2^{v} x_{b}\\left(\\frac{1}{2}+\\frac{1}{4}+\\ldots+\\frac{1}{2^{n-b+v}}\\right)<2^{v} x_{b} \\leqslant 1\n$$\n\nIn other words, the sum of the $x_{i}$ 's for $i$ outside of the interval $[a+u, b-v]$ is strictly less than 2. Since the total sum is at least 3 , and each term is at most 1 , it follows that this interval must have at least two integers. i.e., $a+u<b-v$. Thus, by bounding the sum of the $x_{i}$ for $i \\in[1, a+u] \\cup[b-v, n]$ like above, and trivially bounding each $x_{i} \\in(a+u, b-v)$ by 1 , we obtain\n\n$$\ns<2^{u+1} x_{a}+2^{v+1} x_{b}+((b-v)-(a+u)-1)=b-a+\\left(2^{u+1-\\alpha}+2^{v+1-\\beta}-(u+v+1)\\right)\n$$\n\nNow recall $\\alpha \\in(u, u+1]$ and $\\beta \\in(v, v+1]$, so applying Bernoulli's inequality yields $\\left.2^{u+1-\\alpha}+2^{v+1-\\beta}-u-v-1 \\leqslant(1+(u+1-\\alpha))\\right)+(1+(v+1-\\beta))-u-v-1=3-\\alpha-\\beta$.\n\nIt follows that $s-3<b-a-\\alpha-\\beta$, and so\n\n$$\n2^{s-3}<2^{b-a-\\alpha-\\beta}=2^{b-a} x_{a} x_{b} .\n$$",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.9114,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9999,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.992,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.75,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.8881,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:2291|human|human|0",
+  "problem_uid": "OlympiadBench:2291",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Number Theory",
+  "problem": "Prove that the integer $\\frac{(1 !)(2 !)(3 !) \\cdots(398 !)(399 !)(400 !)}{200 !}$ is a perfect square. (In this fraction, the numerator is the product of the factorials of the integers from 1 to 400 , inclusive.)",
+  "solution": "Let $N=\\frac{(1 !)(2 !)(3 !) \\cdots(398 !)(399 !)(400 !)}{200 !}$.\n\nFor each integer $k$ from 1 to 200 , inclusive, we rewrite $(2 k)$ ! as $2 k \\cdot(2 k-1)$ !.\n\nTherefore, $(2 k-1) !(2 k) !=(2 k-1) ! \\cdot 2 k \\cdot(2 k-1) !=2 k((2 k-1) !)^{2}$.\n\n(In particular, $(1 !)(2 !)=2(1 !)^{2},(3 !)(4 !)=4(3 !)^{2}$, and so on.)\n\nThus,\n\n$$\nN=\\frac{2(1 !)^{2} \\cdot 4(3 !)^{2} \\cdots \\cdot 398(397 !)^{2} \\cdot 400(399 !)^{2}}{200 !}\n$$\n\nRe-arranging the numerator of the expression, we obtain\n\n$$\nN=\\frac{(1 !)^{2}(3 !)^{2} \\cdots(397 !)^{2}(399 !)^{2} \\cdot(2 \\cdot 4 \\cdot \\cdots 398 \\cdot 400)}{200 !}\n$$\n\nWe can now re-write $2 \\cdot 4 \\cdot \\cdots 398 \\cdot 400$ as $(2 \\cdot 1) \\cdot(2 \\cdot 2) \\cdots(2 \\cdot 199) \\cdot(2 \\cdot 200)$.\n\nSince there are 200 sets of parentheses, we obtain\n\n$$\nN=\\frac{(1 !)^{2}(3 !)^{2} \\cdots(397 !)^{2}(399 !)^{2} \\cdot 2^{200} \\cdot(1 \\cdot 2 \\cdots \\cdots 199 \\cdot 200)}{200 !}\n$$\n\nSince $1 \\cdot 2 \\cdot \\cdots \\cdot 199 \\cdot 200=200$ !, we can conclude that\n\n$$\nN=2^{200}(1 !)^{2}(3 !)^{2} \\cdots(397 !)^{2}(399 !)^{2}\n$$\n\nTherefore,\n\n$$\n\\sqrt{N}=2^{100}(1 !)(3 !) \\cdots(397 !)(399 !)\n$$\n\nwhich is a product of integers and thus an integer itself.\n\nSince $\\sqrt{N}$ is an integer, $N$ is a perfect square, as required.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.9161,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9999,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9919,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.75,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9208,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:2433|human|human|0",
+  "problem_uid": "OlympiadBench:2433",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Number Theory",
+  "problem": "Consider a set $S$ that contains $m \\geq 4$ elements, each of which is a positive integer and no two of which are equal. We call $S$ boring if it contains four distinct integers $a, b, c, d$ such that $a+b=c+d$. We call $S$ exciting if it is not boring. For example, $\\{2,4,6,8,10\\}$ is boring since $4+8=2+10$. Also, $\\{1,5,10,25,50\\}$ is exciting.\nProve that, if $S$ is an exciting set of $m \\geq 4$ positive integers, then $S$ contains an integer greater than or equal to $\\frac{m^{2}-m}{4}$.",
+  "solution": "Suppose that $S$ is an exciting set that contains exactly $m$ elements.\n\nThere are $\\left(\\begin{array}{c}m \\\\ 2\\end{array}\\right)=\\frac{m(m-1)}{2}$ pairs of elements of $S$.\n\nSince $S$ is exciting, the sums of these pairs of elements are all distinct positive integers.\n\nThis means that the largest of these sums is greater than or equal to $\\frac{m(m-1)}{2}$.\n\nWhen two numbers add to $\\frac{m(m-1)}{2}$ or greater, then at least one of them must be at least as large as $\\frac{1}{2} \\cdot \\frac{m(m-1)}{2}=\\frac{m^{2}-m}{4}$.\n\nTherefore, there is an element of $S$ that is greater than or equal to $\\frac{m^{2}-m}{4}$.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.9305,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 1.0,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9911,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.8727,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:2688|human|human|0",
+  "problem_uid": "OlympiadBench:2688",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Geometry",
+  "problem": "In ARMLopolis, every house number is a positive integer, and City Hall's address is 0. However, due to the curved nature of the cowpaths that eventually became the streets of ARMLopolis, the distance $d(n)$ between house $n$ and City Hall is not simply the value of $n$. Instead, if $n=3^{k} n^{\\prime}$, where $k \\geq 0$ is an integer and $n^{\\prime}$ is an integer not divisible by 3 , then $d(n)=3^{-k}$. For example, $d(18)=1 / 9$ and $d(17)=1$. Notice that even though no houses have negative numbers, $d(n)$ is well-defined for negative values of $n$. For example, $d(-33)=1 / 3$ because $-33=3^{1} \\cdot-11$. By definition, $d(0)=0$. Following the dictum \"location, location, location,\" this Power Question will refer to \"houses\" and \"house numbers\" interchangeably.\n\nCuriously, the arrangement of the houses is such that the distance from house $n$ to house $m$, written $d(m, n)$, is simply $d(m-n)$. For example, $d(3,4)=d(-1)=1$ because $-1=3^{0} \\cdot-1$. In particular, if $m=n$, then $d(m, n)=0$.\n\nA visitor to ARMLopolis is surprised by the ARMLopolitan distance formula, and starts to wonder about ARMLopolitan geometry. An ARMLopolitan triangle is a triangle, all of whose vertices are ARMLopolitan houses.\nShow that $d(17,51) \\leq d(17,34)+d(34,51)$ and that $d(17,95) \\leq d(17,68)+d(68,95) . \\quad[1 \\mathrm{pt}]$",
+  "solution": "Because $d(17,34)=d(17)=1, d(34,51)=d(17)=1$, and $d(17,51)=d(34)=1$, it follows that $d(17,51) \\leq d(17,34)+d(34,51)$. Because $d(17,68)=d(51)=1 / 3$, $d(68,95)=d(27)=1 / 27$, and $d(17,95)=d(78)=1 / 3$, it follows that $d(17,95) \\leq$ $d(17,68)+d(68,95)$.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.9319,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9977,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9913,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9344,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:2750|human|human|0",
+  "problem_uid": "OlympiadBench:2750",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Algebra",
+  "problem": "In a sequence of $n$ consecutive positive integers, where $n>1$, an element of the sequence is said to be cromulent if it is relatively prime to all other numbers in the sequence. Every element of a sequence with $n=2$ is cromulent because any two consecutive integers are relatively prime to each other.\nShow that every sequence of three consecutive positive integers contains a cromulent element.",
+  "solution": "Consider the sequence $a-1, a, a+1$. Note that $a$ is relatively prime to $a-1$ and $a+1$ because any common divisor must divide their difference, and the differences are both 1 . Thus $a$ is a cromulent element of the sequence.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "error_rate": 1.0,
+  "mean_p_ai": 0.902,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9993,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.8695,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.7,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9953,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "MathArena:usamo_2026_6|llm|GPT-5.4 (xhigh)|0",
+  "problem_uid": "MathArena:usamo_2026_6",
+  "dataset": "MathArena",
+  "competition": "USAMO",
+  "year": 2026,
+  "category": "Number Theory",
+  "problem": "Let $a$ and $b$ be positive integers such that $\\varphi(ab+1)$ divides $a^2 + b^2 + 1$. Prove that $a$ and $b$ are Fibonacci numbers.\n",
+  "solution": "Let \\(F_1=F_2=1,\\;F_{n+2}=F_{n+1}+F_n\\) be the Fibonacci sequence.\n\nWe will prove the statement in two cases. First we need a standard lemma.\n\n---\n\n### Lemma\nIf \\(x,y\\in \\mathbb Z_{>0}\\) satisfy\n\\[\nx\\mid y^2+1,\\qquad y\\mid x^2+1,\n\\]\nthen \\(x\\) and \\(y\\) are Fibonacci numbers.\n\n#### Proof\nSet\n\\[\nk:=\\frac{x^2+y^2+1}{xy}\\in \\mathbb Z_{>0}.\n\\]\nBy symmetry, assume \\(x\\le y\\).\n\nIf \\(x=y\\), then \\(x\\mid x^2+1\\), so \\(x\\mid 1\\), hence \\(x=y=1\\), which is Fibonacci.\n\nNow assume \\(x<y\\). Define\n\\[\nz:=\\frac{x^2+1}{y}\\in \\mathbb Z_{>0}.\n\\]\nSince \\(y\\ge x+1\\),\n\\[\nz=\\frac{x^2+1}{y}\\le \\frac{x^2+1}{x+1}\\le x,\n\\]\nso \\(z+x<x+y\\).\n\nAlso\n\\[\nkx=\\frac{x^2+y^2+1}{y}=y+\\frac{x^2+1}{y}=y+z.\n\\]\nHence\n\\[\nx^2+z^2+1=x^2+z(kx-y)+1=kxz.\n\\]\nSo \\((z,x)\\) is another positive integer solution of\n\\[\nu^2+v^2+1=kuv,\n\\]\nwith smaller sum.\n\nRepeating this descent, we eventually reach a solution with equal components; as noted above, that must be \\((1,1)\\). Therefore for that terminal solution,\n\\[\nk=\\frac{1^2+1^2+1}{1\\cdot 1}=3.\n\\]\nSo every solution of the divisibility conditions satisfies\n\\[\nx^2+y^2+1=3xy. \\tag{1}\n\\]\n\nNow apply the same descent to (1): if \\(x<y\\), then\n\\[\nz=\\frac{x^2+1}{y}=3x-y,\n\\]\nand \\((z,x)\\) is again a positive solution of (1) with smaller sum. Thus every solution is obtained by reversing this descent from \\((1,1)\\). So all solutions occur among consecutive terms of the sequence\n\\[\nr_0=r_1=1,\\qquad r_{n+2}=3r_{n+1}-r_n.\n\\]\nThis sequence begins\n\\[\n1,1,2,5,13,34,\\dots\n\\]\nand for \\(n\\ge 1\\) one checks inductively that\n\\[\nr_n=F_{2n-1},\n\\]\nbecause the odd-indexed Fibonacci numbers satisfy the same recurrence:\n\\[\nF_{2m+3}=3F_{2m+1}-F_{2m-1}.\n\\]\nHence every \\(r_n\\) is a Fibonacci number, so \\(x\\) and \\(y\\) are Fibonacci numbers. ∎\n\n---\n\n## Main proof\n\nLet\n\\[\nN:=ab+1,\\qquad S:=a^2+b^2+1.\n\\]\nWe are given\n\\[\n\\varphi(N)\\mid S.\n\\]\n\nBecause the condition is symmetric in \\(a,b\\), we may swap them whenever convenient.\n\n---\n\n### Case 1: \\(N\\) is prime\n\nThen\n\\[\n\\varphi(N)=N-1=ab.\n\\]\nSo\n\\[\nab\\mid a^2+b^2+1.\n\\]\nReducing modulo \\(a\\) and modulo \\(b\\), we get\n\\[\na\\mid b^2+1,\\qquad b\\mid a^2+1.\n\\]\nBy the lemma, \\(a\\) and \\(b\\) are Fibonacci numbers.\n\n---\n\n### Case 2: \\(N\\) is composite\n\nSince \\(N>2\\), \\(\\varphi(N)\\) is even. Because \\(\\varphi(N)\\mid S\\), the number \\(S\\) is even. But\n\\[\nS=a^2+b^2+1\n\\]\nis even iff \\(a\\) and \\(b\\) have opposite parity. So \\(a,b\\) have opposite parity; swapping if necessary, assume\n\\[\na\\ \\text{even},\\qquad b\\ \\text{odd}.\n\\]\nThen\n\\[\nS=a^2+b^2+1\\equiv 0+1+1\\equiv 2 \\pmod 4.\n\\]\nSo \\(S\\) is divisible by \\(2\\) but not by \\(4\\). Hence \\(\\varphi(N)\\), which divides \\(S\\), is also divisible by \\(2\\) but not by \\(4\\).\n\nNow \\(N=ab+1\\) is odd, so write\n\\[\nN=\\prod_{i=1}^r p_i^{\\alpha_i}\n\\]\nwith odd primes \\(p_i\\). Then\n\\[\n\\varphi(N)=\\prod_{i=1}^r p_i^{\\alpha_i-1}(p_i-1).\n\\]\nEach \\(p_i-1\\) is even. Since \\(\\varphi(N)\\) is not divisible by \\(4\\), there can be only one prime factor. Thus\n\\[\nN=p^\\alpha\n\\]\nfor some odd prime \\(p\\), and \\(p-1\\) is divisible by \\(2\\) but not by \\(4\\), so\n\\[\np\\equiv 3\\pmod 4. \\tag{2}\n\\]\n\n---\n\n#### Claim: \\(p=3\\)\n\nAssume \\(p\\ne 3\\), and derive a contradiction.\n\nLet\n\\[\nP:=p^{\\alpha-1}.\n\\]\nSince \\(P\\mid \\varphi(N)\\mid S\\), we have\n\\[\nP\\mid a^2S.\n\\]\nBut \\(ab=p^\\alpha-1\\), so\n\\[\na^2S=a^4+a^2b^2+a^2\n      =a^4+(ab)^2+a^2\n      \\equiv a^4+a^2+1 \\pmod P.\n\\]\nHence\n\\[\nP\\mid a^4+a^2+1=(a^2+a+1)(a^2-a+1). \\tag{3}\n\\]\n\nNow \\(a\\) is even, so both factors in (3) are odd. If a number \\(d\\) divides both, then\n\\[\nd\\mid (a^2+a+1)-(a^2-a+1)=2a.\n\\]\nSince \\(d\\) is odd, \\(d\\mid a\\). But then \\(d\\mid a^2+a+1\\) gives \\(d\\mid 1\\), so\n\\[\n\\gcd(a^2+a+1,\\ a^2-a+1)=1.\n\\]\nTherefore, from (3), one of the two factors is divisible by \\(P\\). So for some \\(\\varepsilon\\in\\{1,-1\\}\\),\n\\[\nP\\mid a^2+\\varepsilon a+1. \\tag{4}\n\\]\n\nBecause \\(ab\\equiv -1\\pmod{p^\\alpha}\\), modulo \\(P\\) we have\n\\[\nb\\equiv -a^{-1}\\pmod P.\n\\]\nFrom (4),\n\\[\na^2+\\varepsilon a+1\\equiv 0\\pmod P\n\\]\nand dividing by \\(a\\) (allowed since \\(p\\nmid a\\)) gives\n\\[\na+\\varepsilon+a^{-1}\\equiv 0\\pmod P,\n\\]\nhence\n\\[\n-a^{-1}\\equiv a+\\varepsilon \\pmod P.\n\\]\nSo\n\\[\nb=a+\\varepsilon+tP\n\\]\nfor some integer \\(t\\).\n\nNow\n\\[\np^\\alpha=ab+1=a(a+\\varepsilon+tP)+1\n       =a^2+\\varepsilon a+1+atP,\n\\]\nso\n\\[\na^2+\\varepsilon a+1=P(p-at). \\tag{5}\n\\]\n\nUsing \\(b=a+\\varepsilon+tP\\), we compute\n\\[\n\\begin{aligned}\nS&=a^2+b^2+1\\\\\n &=a^2+(a+\\varepsilon+tP)^2+1\\\\\n &=2(a^2+\\varepsilon a+1)+2\\varepsilon tP+2atP+t^2P^2.\n\\end{aligned}\n\\]\nBy (5),\n\\[\nS=P(2p+2\\varepsilon t+t^2P). \\tag{6}\n\\]\n\nSince\n\\[\n\\varphi(N)=P(p-1)\\mid S,\n\\]\nequation (6) implies\n\\[\np-1\\mid 2p+2\\varepsilon t+t^2P.\n\\]\nBut \\(P=p^{\\alpha-1}\\equiv 1\\pmod{p-1}\\), so\n\\[\np-1\\mid t^2+2\\varepsilon t+2=(t+\\varepsilon)^2+1. \\tag{7}\n\\]\n\nOn the other hand, reducing (5) modulo \\(p\\), we get\n\\[\na^2+\\varepsilon a+1\\equiv 0\\pmod p.\n\\]\nIf \\(\\varepsilon=1\\), then \\(a^3\\equiv 1\\pmod p\\) and \\(a\\not\\equiv 1\\pmod p\\) (else \\(3\\equiv 0\\pmod p\\), impossible since \\(p\\ne 3\\)); thus \\(a\\) has order \\(3\\) mod \\(p\\), so \\(3\\mid p-1\\).\n\nIf \\(\\varepsilon=-1\\), then \\(a^3\\equiv -1\\pmod p\\) and \\(a\\not\\equiv -1\\pmod p\\) (same reason), so \\(a\\) has order \\(6\\) mod \\(p\\), hence again \\(3\\mid p-1\\).\n\nThus in all cases\n\\[\n3\\mid p-1.\n\\]\nBut then (7) gives\n\\[\n3\\mid (t+\\varepsilon)^2+1,\n\\]\nimpossible, since a square is \\(0\\) or \\(1\\pmod 3\\). Contradiction.\n\nTherefore \\(p=3\\).\n\n---\n\nSo\n\\[\nN=3^\\alpha.\n\\]\n\nIf \\(\\alpha\\ge 3\\), then \\(9\\mid \\varphi(N)\\mid S\\). Also\n\\[\nab=3^\\alpha-1\\equiv -1\\pmod 9,\n\\]\nso \\(3\\nmid a,b\\). Hence \\(a^2\\equiv 1,4,\\) or \\(7\\pmod 9\\), and \\(b^2\\equiv a^{-2}\\pmod 9\\). Checking the three possibilities:\n\\[\n1+1+1\\equiv 3,\\quad 4+7+1\\equiv 3,\\quad 7+4+1\\equiv 3\\pmod 9.\n\\]\nSo always\n\\[\nS=a^2+b^2+1\\equiv 3\\pmod 9,\n\\]\ncontradicting \\(9\\mid S\\).\n\nTherefore \\(\\alpha=2\\), so\n\\[\nab=3^2-1=8.\n\\]\nSince \\(a,b\\) have opposite parity, \\(\\{a,b\\}=\\{1,8\\}\\). Both are Fibonacci numbers.\n\n---\n\nIn both cases, \\(a\\) and \\(b\\) are Fibonacci numbers.",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "GPT-5.4 (xhigh)",
+  "n_detectors": 7,
+  "n_wrong": 5,
+  "error_rate": 0.7143,
+  "mean_p_ai": 0.3365,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 0,
+    "p_ai": 0.009,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9937,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.3,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.0028,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:putnam_1970_a3|llm|openai/o3|0",
+  "problem_uid": "OPC:putnam_1970_a3",
+  "dataset": "OPC",
+  "competition": "putnam",
+  "year": 1970,
+  "category": "Number Theory",
+  "problem": "Find the length of the longest possible sequence of equal nonzero digits (in base 10) in which a perfect square can terminate. Also, find the smallest square that attains this length. Show that the maximum attainable length is $3$; the smallest such square is $38^2 = 1444$.",
+  "solution": "Let  \n\nk ≥ 1 – length of the block of identical non–zero base–10 digits that closes a perfect square;  \nd ∈ {1,2,… ,9} – that digit.  \n\nThus\n\n(1) n² ≡ d·(10ᵏ – 1)/9 (mod 10ᵏ).                             (★)\n\nWe must decide how large k can be and exhibit the smallest square for the largest\npossible k.\n\n--------------------------------------------------------------------\n1.  The case k = 1\n--------------------------------------------------------------------\nEvery square ends in 0, 1, 4, 5, 6 or 9, so k = 1 is certainly attainable.\n\n--------------------------------------------------------------------\n2.  Two equal non–zero terminal digits  \n    (why d must be 4)\n--------------------------------------------------------------------\nWrite the last two digits of a square as dd (10 ≤ dd ≤ 99).  \nA square is 0 or 1 modulo 4, hence\n\n dd ≡ 0 or 1 (mod 4).                                             (2)\n\nBecause 10 ≡ 2 (mod 4),  \n\n dd ≡ d(1+2) ≡ 3d (mod 4).                                     (3)\n\nListing 3d (mod 4) for d = 1,… ,9:\n\n3,2,1,0,3,2,1,0,3 (mod 4).\n\nOnly the residue 0 or 1 is allowed by (2); this forces d = 4.  \nTherefore\n\nAny square that ends in two identical non–zero digits must end in 44.     (4)\n\n--------------------------------------------------------------------\n3.  Three equal non-zero terminal digits are possible\n--------------------------------------------------------------------\nBecause of (4) we look for n with  \n\n n² ≡ 444 (mod 1000).                                            (5)\n\nWrite 1000 = 8·125 and solve (5) modulo 8 and 125.\n\n•  Mod 8 : 444 ≡ 4 (mod 8).  The quadratic residues mod 8 are 0,1,4, so  \n n ≡ 2 or 6 (mod 8).                                             (6)\n\n•  Mod 125 : 444 ≡ 69 (mod 125).  Solve x² ≡ 69 (mod 125).  \n\n First mod 25: 69 ≡ 19 (mod 25) and 12² ≡ 19 (mod 25).  \n Write x = 12 + 25t (t = 0,… ,4):\n\n x² ≡ 19 + 100t (mod 125).  \n Set 19 + 100t ≡ 69 ⇒ 100t ≡ 50 (mod 125) ⇒ 4t ≡ 2 (mod 5) ⇒ t ≡ 3 (mod 5).\n\n So one solution is x ≡ 12 + 25·3 ≡ 87 (mod 125).\n\n Starting instead with 13 (because 13 ≡ –12 mod 25) gives the second solution\n\n x ≡ 38 (mod 125).\n\nHence\n\n n ≡ 38 or 87 (mod 125).                                         (7)\n\nCombine (6) and (7) with the Chinese Remainder Theorem:\n\n 38 ≡ 6 (mod 8)  (admissible),  \n 87 ≡ 7 (mod 8)  (rejected).\n\nThus\n\n n ≡ 38 (mod 1000) or n ≡ 538 (mod 1000).                     (8)\n\nThe smallest positive integer is n = 38 and indeed\n\n 38² = 1444,\n\nwhich ends in the three identical digits 444.  Consequently k = 3 can occur, and\n38² is the least square that realises it.\n\n--------------------------------------------------------------------\n4.  Four (or more) equal non-zero terminal digits are impossible\n--------------------------------------------------------------------\nBecause of (4) any such square would have to finish with 4444 … .\nIn particular, if k ≥ 4 we would have\n\n n² ≡ 4444 (mod 16).                                             (9)\n\nBut 4444 ≡ 12 (mod 16) while the quadratic residues modulo 16 are\n0, 1, 4 and 9.  Therefore (9) is impossible; no square can end in 4444, and if\nk ≥ 4 equation (★) has no solution.\n\nSo k ≤ 3.\n\n--------------------------------------------------------------------\n5.  Conclusion\n--------------------------------------------------------------------\n•  The longest block of identical non-zero digits with which a perfect square\n  can terminate is 3.  \n•  The smallest square achieving that maximum is  \n\n  38² = 1444.\n\nThis completes the proof.",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "o3",
+  "n_detectors": 7,
+  "n_wrong": 5,
+  "error_rate": 0.7143,
+  "mean_p_ai": 0.3646,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 0,
+    "p_ai": 0.15,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.02,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 0,
+    "p_ai": 0.0013,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9989,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.3,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.1319,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:putnam_1979_b6|llm|openai/o4-mini--high|0",
+  "problem_uid": "OPC:putnam_1979_b6",
+  "dataset": "OPC",
+  "competition": "putnam",
+  "year": 1979,
+  "category": "Analysis",
+  "problem": "Let $z_i$ be complex numbers for $i = 1, 2, \\dots, n$. Show that\n\\[\n\\left \\lvert \\mathrm{Re} \\, [(z_1^2 + z_2^2 + \\dots + z_n^2)^{1/2} ] \\right \\rvert \\leq \\lvert \\mathrm{Re} \\, z_1 \\rvert + \\lvert \\mathrm{Re} \\, z_2 \\rvert + \\dots + \\lvert \\mathrm{Re} \\, z_n \\rvert.\n\\]",
+  "solution": "For \\(i=1,2,\\dots,n\\), write\n\\[\nz_i \\;=\\; a_i + i\\,b_i,\n\\]\nwhere \\(a_i,b_i\\in\\Bbb R\\).  Define the real quantities\n\\[\nA \\;=\\;\\sum_{i=1}^n a_i^2,\\quad\nB \\;=\\;\\sum_{i=1}^n b_i^2,\n\\quad\nC \\;=\\;\\sum_{i=1}^n a_i\\,b_i.\n\\]\nThen\n\\[\n\\sum_{i=1}^n z_i^2\n\\;=\\;\n\\sum_{i=1}^n (a_i + i\\,b_i)^2\n\\;=\\;\n\\sum_{i=1}^n\\bigl(a_i^2 - b_i^2\\bigr)\n\\;+\\;\n2\\,i\\sum_{i=1}^n a_i\\,b_i\n\\;=\\;\n(A - B) \\;+\\; 2\\,i\\,C.\n\\]\nLet\n\\[\nS \\;=\\;\\sum_{i=1}^n z_i^2\n\\;=\\;(A - B) + 2\\,i\\,C,\n\\]\nand choose a square root\n\\[\nw \\;=\\;S^{1/2},\n\\]\nso that\n\\[\nw^2 \\;=\\; (A-B) + 2\\,i\\,C.\n\\]\nSince every complex number has exactly two square‐roots differing by a sign, and our goal involves \\(\\bigl|\\Re w\\bigr|\\), it does not matter which root we choose.  Write\n\\[\nw \\;=\\; x + i\\,y,\n\\]\nwith \\(x,y\\in\\Bbb R\\).  Then\n\\[\n(x + i\\,y)^2\n\\;=\\;\nx^2 - y^2 \\;+\\; 2\\,i\\,x\\,y\n\\;=\\;\n(A - B)\\;+\\;2\\,i\\,C,\n\\]\nso by equating real and imaginary parts we obtain the system\n\\[\nx^2 - y^2 = A - B,\n\\quad\nx\\,y = C.\n\\]\nWe wish to prove\n\\[\n\\bigl|\\Re w\\bigr|\n\\;=\\;\n|x|\n\\;\\le\\;\n\\sum_{i=1}^n \\bigl|a_i\\bigr|\n\\;=\\;\n\\sum_{i=1}^n \\bigl|\\Re z_i\\bigr|.\n\\]\nSince both sides are nonnegative, it suffices to show\n\\[\nx^2 \\;\\le\\;\\Bigl(\\sum_{i=1}^n|a_i|\\Bigr)^2.\n\\]\nObserve first that\n\\[\n\\Bigl(\\sum_{i=1}^n|a_i|\\Bigr)^2\n\\;=\\;\n\\sum_{i=1}^n a_i^2\n\\;+\\;\n2\\sum_{1\\le i<j\\le n}|a_i\\,a_j|\n\\;\\ge\\;\n\\sum_{i=1}^n a_i^2\n\\;=\\;\nA.\n\\]\nHence it is enough to prove the sharper bound\n\\[\nx^2 \\;\\le\\; A.\n\\]\nTo do so, note that\n\\[\n|w|^2\n\\;=\\;\n|x + i\\,y|^2\n\\;=\\;\nx^2 + y^2,\n\\]\nand also\n\\[\n|w|^2\n\\;=\\;\n\\bigl|w^2\\bigr|\n\\;=\\;\\bigl|S\\bigr|\n\\;=\\;\n\\bigl|(A-B)+2iC\\bigr|\n\\;=\\;\n\\sqrt{(A-B)^2 + (2C)^2}.\n\\]\nTherefore\n\\[\nx^2 + y^2\n\\;=\\;\n\\sqrt{(A-B)^2 + 4C^2}.\n\\]\nNow from the two equations\n\\[\nx^2 - y^2 = A - B,\n\\quad\nx^2 + y^2 = \\sqrt{(A-B)^2 + 4C^2},\n\\]\nwe get\n\\[\n2\\,x^2\n\\;=\\;\n(A - B)\n\\;+\\;\\sqrt{(A-B)^2 + 4C^2},\n\\]\nhence\n\\[\nx^2\n\\;=\\;\n\\frac{A - B + \\sqrt{(A-B)^2 + 4C^2}}{2}.\n\\]\nWe claim that this is at most \\(A\\).  Indeed, the inequality\n\\[\n\\frac{A - B + \\sqrt{(A-B)^2 + 4C^2}}{2}\n\\;\\le\\;\nA\n\\]\nis equivalent (after multiplying by \\(2\\) and rearranging) to\n\\[\n\\sqrt{(A-B)^2 + 4C^2}\n\\;\\le\\;\nA + B.\n\\]\nSquaring both sides (both are nonnegative) gives\n\\[\n(A-B)^2 + 4C^2\n\\;\\le\\;\n(A+B)^2\n\\;=\\;\nA^2 + 2AB + B^2,\n\\]\nwhich is equivalent to\n\\[\n4C^2 \\;\\le\\;4AB,\n\\quad\\text{i.e.}\\quad\nC^2 \\;\\le\\;A\\,B.\n\\]\nBut by the Cauchy–Schwarz inequality in \\(\\Bbb R^n\\),\n\\[\n\\Bigl(\\sum_{i=1}^n a_i\\,b_i\\Bigr)^2\n\\;\\le\\;\n\\Bigl(\\sum_{i=1}^n a_i^2\\Bigr)\\,\n\\Bigl(\\sum_{i=1}^n b_i^2\\Bigr)\n\\;=\\;\nA\\,B,\n\\]\nand so \\(C^2\\le A\\,B\\) indeed holds.  We conclude \\(x^2\\le A\\), hence\n\\[\n|x|\n\\;\\le\\;\n\\sqrt{A}\n\\;\\le\\;\n\\sum_{i=1}^n |a_i|,\n\\]\nand therefore\n\\[\n\\bigl|\\Re\\,(S^{1/2})\\bigr|\n\\;=\\;\n|x|\n\\;\\le\\;\n\\sum_{i=1}^n \\bigl|\\Re\\,z_i\\bigr|.\n\\]\nThis is exactly the desired inequality.",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "o4-mini (high)",
+  "n_detectors": 7,
+  "n_wrong": 5,
+  "error_rate": 0.7143,
+  "mean_p_ai": 0.5031,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 0,
+    "p_ai": 0.1,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 0,
+    "p_ai": 0.9862,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9815,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.4,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.0539,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:putnam_2013_a1|llm|openai/o4-mini--high|0",
+  "problem_uid": "OPC:putnam_2013_a1",
+  "dataset": "OPC",
+  "competition": "putnam",
+  "year": 2013,
+  "category": "Combinatorics",
+  "problem": "A1 Recall that a regular icosahedron is a convex polyhedron having $12$ vertices and $20$ faces; the faces are congruent equilateral triangles. On each face of a regular icosahedron is written a nonnegative integer such that the sum of all $20$ integers is $39$. Show that there are two faces that share a vertex and have the same integer written on them.",
+  "solution": "We shall argue by contradiction.\n\nAssume, to the contrary, that on every pair of faces sharing a vertex the two labels are different.  In particular, at each vertex there are 5 faces meeting there, and by assumption their 5 labels are all distinct non-negative integers.  Hence at each vertex the sum of the labels of its incident faces is at least\n\\[\n0 + 1 + 2 + 3 + 4 \\;=\\;10.\n\\]\nNow let \\(a_f\\) be the non-negative integer written on face \\(f\\), and set\n\\[\nA \\;=\\;\\sum_{\\text{all 20 faces }f} a_f \\;=\\;39.\n\\]\nOn the one hand, if we sum over all 12 vertices \\(v\\) the sum of the labels of the faces meeting at \\(v\\), we get\n\\[\n\\sum_{v}\\;\\sum_{\\substack{f\\text{ a face}\\\\f\\ni v}}a_f\n\\;\\ge\\;12\\cdot 10\n\\;=\\;120.\n\\]\nOn the other hand, in this double‐sum each face \\(f\\) is counted once for each of its 3 vertices, so\n\\[\n\\sum_{v}\\;\\sum_{f\\ni v}a_f\n\\;=\\;\\sum_{f}\\;3\\,a_f\n\\;=\\;3\\sum_{f}a_f\n\\;=\\;3A\n\\;=\\;3\\cdot39\n\\;=\\;117.\n\\]\nPutting these together gives\n\\[\n117 \\;=\\;\\sum_{v}\\sum_{f\\ni v}a_f \\;\\ge\\;120,\n\\]\na contradiction.  Therefore our assumption was false: there must be some vertex at which two of the incident faces carry the same integer.  Equivalently, there exist two faces sharing a vertex that have equal labels, as claimed.",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "o4-mini (high)",
+  "n_detectors": 7,
+  "n_wrong": 4,
+  "error_rate": 0.5714,
+  "mean_p_ai": 0.3887,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.02,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 0,
+    "p_ai": 0.002,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9981,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.7,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.0009,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:BalticWay_2011_15|llm|gemini/gemini-pro-2.5|0",
+  "problem_uid": "OPC:BalticWay_2011_15",
+  "dataset": "OPC",
+  "competition": "BalticWay",
+  "year": 2011,
+  "category": "Geometry",
+  "problem": "Let \\(ABCD\\) be a convex quadrilateral such that \\(\\angle ADB = \\angle BDC\\). Suppose that a point \\(E\\) on the side \\(AD\\) satisfies the equality\n\n\\[\nAE \\cdot ED + BE^2 = CD \\cdot AE\n\\]\n\nShow that \\(\\angle EBA = \\angle DCB\\).",
+  "solution": "Let \\(AE\\), \\(ED\\), \\(BE\\), \\(CD\\), \\(AD\\), \\(AB\\), \\(BC\\), \\(BD\\) denote the lengths of the respective segments.\nWe are given that \\(E\\) is a point on the side \\(AD\\). This means \\(A, E, D\\) are collinear, and \\(AE+ED=AD\\). All lengths are positive.\nThe given equality is\n\\[ AE \\cdot ED + BE^2 = CD \\cdot AE \\quad (*). \\]\nSince \\(E\\) is on \\(AD\\), \\(AE \\neq 0\\). We can rearrange \\( (*)\\) to\n\\[ BE^2 = AE \\cdot CD - AE \\cdot ED = AE(CD-ED). \\]\nSince \\(BE^2 > 0\\) (if \\(BE=0\\), then \\(B=E\\), so \\(B\\) is on \\(AD\\), which would mean \\(\\angle ADB = 0\\), not possible for a quadrilateral), we must have \\(CD-ED > 0\\), so \\(CD > ED\\).\n\nLet \\(\\angle EBA = \\beta\\) and \\(\\angle DCB = \\gamma\\). We want to show \\(\\beta=\\gamma\\).\nBy the Law of Cosines in \\(\\triangle ABE\\),\n\\[ \\cos\\beta = \\frac{AB^2+BE^2-AE^2}{2 AB \\cdot BE}. \\]\nWe need to find an expression for \\(\\cos\\gamma\\).\nBy the Law of Cosines in \\(\\triangle BCD\\),\n\\[ BD^2 = BC^2+CD^2-2BC \\cdot CD \\cos\\gamma. \\]\nSo,\n\\[ \\cos\\gamma = \\frac{BC^2+CD^2-BD^2}{2 BC \\cdot CD}. \\]\nWe need to relate these quantities.\n\nStep 1: Use Stewart's Theorem.\nIn \\(\\triangle ABD\\), \\(BE\\) is a cevian from \\(B\\) to \\(E\\) on \\(AD\\). Stewart's Theorem states:\n\\[ AB^2 \\cdot ED + BD^2 \\cdot AE = AD (BE^2 + AE \\cdot ED). \\]\nSubstitute the given equality \\( (*) \\), \\(AE \\cdot ED + BE^2 = CD \\cdot AE\\), into Stewart's Theorem:\n\\[ AB^2 \\cdot ED + BD^2 \\cdot AE = AD \\cdot (CD \\cdot AE). \\]\nSince \\(AE \\neq 0\\), we can divide by \\(AE\\):\n\\[ AB^2 \\frac{ED}{AE} + BD^2 = AD \\cdot CD \\quad (1). \\]\nThis gives an expression for \\(BD^2\\):\n\\[ BD^2 = AD \\cdot CD - AB^2 \\frac{ED}{AE}. \\]\n\nStep 2: Use the given condition \\(\\angle ADB = \\angle BDC = \\alpha\\).\nIn \\(\\triangle ADB\\), by the Law of Cosines:\n\\[ AB^2 = AD^2+BD^2-2AD \\cdot BD \\cos\\alpha. \\]\nSo \\(2AD \\cdot BD \\cos\\alpha = AD^2+BD^2-AB^2\\).\nIn \\(\\triangle CDB\\), by the Law of Cosines:\n\\[ BC^2 = CD^2+BD^2-2CD \\cdot BD \\cos\\alpha. \\]\nSo \\(2CD \\cdot BD \\cos\\alpha = CD^2+BD^2-BC^2\\).\nAssuming \\(\\cos\\alpha \\neq 0\\) (if \\(\\cos\\alpha=0\\), \\(\\alpha=90^\\circ\\), the argument still holds by equating the expressions to 0). Also \\(BD \\neq 0\\).\n\\[ \\frac{AD^2+BD^2-AB^2}{AD} = \\frac{CD^2+BD^2-BC^2}{CD}. \\]\nCross-multiply:\n\\[ CD(AD^2+BD^2-AB^2) = AD(CD^2+BD^2-BC^2). \\]\n\\[ CD \\cdot AD^2 + CD \\cdot BD^2 - CD \\cdot AB^2 = AD \\cdot CD^2 + AD \\cdot BD^2 - AD \\cdot BC^2. \\]\n\\[ AD \\cdot CD(AD-CD) + BD^2(CD-AD) - CD \\cdot AB^2 + AD \\cdot BC^2 = 0. \\]\n\\[ (AD-CD)(AD \\cdot CD - BD^2) - CD \\cdot AB^2 + AD \\cdot BC^2 = 0 \\quad (2). \\]\nThis is a general relation for a quadrilateral where \\(BD\\) bisects \\(\\angle ADC\\).\n\nStep 3: Combine (1) and (2).\nFrom (1), \\(AD \\cdot CD - BD^2 = AB^2 \\frac{ED}{AE}\\). Substitute this into (2):\n\\[ (AD-CD) \\left(AB^2 \\frac{ED}{AE}\\right) - CD \\cdot AB^2 + AD \\cdot BC^2 = 0. \\]\nMultiply by \\(AE\\) (which is non-zero):\n\\[ (AD-CD) AB^2 \\cdot ED - CD \\cdot AB^2 \\cdot AE + AD \\cdot BC^2 \\cdot AE = 0. \\]\n\\[ AD \\cdot AB^2 \\cdot ED - CD \\cdot AB^2 \\cdot ED - CD \\cdot AB^2 \\cdot AE + AD \\cdot BC^2 \\cdot AE = 0. \\]\n\\[ AB^2 (AD \\cdot ED - CD \\cdot ED - CD \\cdot AE) + AD \\cdot BC^2 \\cdot AE = 0. \\]\n\\[ AB^2 (AD \\cdot ED - CD(ED+AE)) + AD \\cdot BC^2 \\cdot AE = 0. \\]\nSince \\(AE+ED=AD\\) (because \\(E\\) is on segment \\(AD\\)):\n\\[ AB^2 (AD \\cdot ED - CD \\cdot AD) + AD \\cdot BC^2 \\cdot AE = 0. \\]\nDivide by \\(AD\\) (which is non-zero):\n\\[ AB^2 (ED - CD) + BC^2 \\cdot AE = 0. \\]\nRearranging gives\n\\[ AB^2 (CD - ED) = BC^2 \\cdot AE \\quad (3). \\]\n\nStep 4: Use the initial expression \\(BE^2 = AE(CD-ED)\\).\nFrom this, \\(CD-ED = \\frac{BE^2}{AE}\\). (Note: we established \\(CD>ED\\), so \\(CD-ED > 0\\)).\nSubstitute this into (3):\n\\[ AB^2 \\frac{BE^2}{AE} = BC^2 \\cdot AE. \\]\n\\[ AB^2 \\cdot BE^2 = BC^2 \\cdot AE^2. \\]\nSince lengths are positive, taking the square root of both sides gives\n\\[ AB \\cdot BE = BC \\cdot AE \\quad (4). \\]\n\nStep 5: Express \\(\\cos\\gamma\\) in terms of quantities related to \\(\\triangle ABE\\).\nFrom (4), assuming \\(BC \\neq 0\\), we have \\(BC = \\frac{AB \\cdot BE}{AE}\\). (If \\(BC=0\\), then \\(B=C\\), which is not possible for a quadrilateral).\nSubstitute this \\(BC\\) and \\(BD^2\\) from (1) into the expression for \\(\\cos\\gamma\\):\n\\[ \\cos\\gamma = \\frac{BC^2+CD^2-BD^2}{2 BC \\cdot CD} = \\frac{\\left(\\frac{AB \\cdot BE}{AE}\\right)^2 + CD^2 - \\left(AD \\cdot CD - AB^2 \\frac{ED}{AE}\\right)}{2 \\left(\\frac{AB \\cdot BE}{AE}\\right) CD}. \\]\n\\[ \\cos\\gamma = \\frac{\\frac{AB^2 \\cdot BE^2}{AE^2} + CD^2 - AD \\cdot CD + AB^2 \\frac{ED}{AE}}{2 \\frac{AB \\cdot BE \\cdot CD}{AE}}. \\]\nMultiply numerator and denominator by \\(AE^2\\):\n\\[ \\cos\\gamma = \\frac{AB^2 \\cdot BE^2 + CD^2 \\cdot AE^2 - AD \\cdot CD \\cdot AE^2 + AB^2 \\cdot ED \\cdot AE}{2 AB \\cdot BE \\cdot CD \\cdot AE}. \\]\nFrom \\(BE^2 = AE(CD-ED)\\), substitute \\(AE(CD-ED)\\) for \\(BE^2\\) in the first term of the numerator:\n\\[ \\cos\\gamma = \\frac{AB^2 \\cdot AE(CD-ED) + CD^2 \\cdot AE^2 - AD \\cdot CD \\cdot AE^2 + AB^2 \\cdot ED \\cdot AE}{2 AB \\cdot BE \\cdot CD \\cdot AE}. \\]\n\\[ \\cos\\gamma = \\frac{AB^2 \\cdot AE \\cdot CD - AB^2 \\cdot AE \\cdot ED + CD^2 \\cdot AE^2 - AD \\cdot CD \\cdot AE^2 + AB^2 \\cdot ED \\cdot AE}{2 AB \\cdot BE \\cdot CD \\cdot AE}. \\]\nThe terms \\(- AB^2 \\cdot AE \\cdot ED\\) and \\(+ AB^2 \\cdot ED \\cdot AE\\) cancel out:\n\\[ \\cos\\gamma = \\frac{AB^2 \\cdot AE \\cdot CD + CD^2 \\cdot AE^2 - AD \\cdot CD \\cdot AE^2}{2 AB \\cdot BE \\cdot CD \\cdot AE}. \\]\nFactor out \\(CD \\cdot AE\\) from the numerator:\n\\[ \\cos\\gamma = \\frac{CD \\cdot AE (AB^2 + CD \\cdot AE - AD \\cdot AE)}{2 AB \\cdot BE \\cdot CD \\cdot AE}. \\]\nAssuming \\(CD \\neq 0\\) and \\(AE \\neq 0\\), we can cancel \\(CD \\cdot AE\\):\n\\[ \\cos\\gamma = \\frac{AB^2 + AE(CD-AD)}{2 AB \\cdot BE} \\quad (5). \\]\n\nStep 6: Compare \\(\\cos\\beta\\) and \\(\\cos\\gamma\\).\nWe have \\(\\cos\\beta = \\frac{AB^2+BE^2-AE^2}{2 AB \\cdot BE}\\).\nComparing this with the expression for \\(\\cos\\gamma\\) in (5), we need to show:\n\\[ AB^2+BE^2-AE^2 = AB^2+AE(CD-AD). \\]\n\\[ BE^2-AE^2 = AE(CD-AD). \\]\n\\[ BE^2 = AE^2 + AE \\cdot CD - AE \\cdot AD = AE(AE+CD-AD). \\]\nFrom the given condition \\( (*)\\), we have \\(BE^2 = AE(CD-ED)\\).\nSo we need to show \\(AE(CD-ED) = AE(AE+CD-AD)\\).\nSince \\(AE \\neq 0\\), we can divide by \\(AE\\):\n\\[ CD-ED = AE+CD-AD. \\]\n\\[ -ED = AE-AD. \\]\n\\[ AD-ED = AE. \\]\nThis last equality is true because \\(E\\) is a point on the side \\(AD\\), so \\(AE+ED=AD\\).\nThus, \\(\\cos\\beta = \\cos\\gamma\\).\nSince \\(\\beta\\) and \\(\\gamma\\) are angles of a quadrilateral, they are typically in the range \\((0, 2\\pi)\\). However, \\(\\beta = \\angle EBA\\) is an angle within \\(\\triangle ABE\\), so \\(0 < \\beta < \\pi\\). Similarly, \\(\\gamma = \\angle DCB\\) is an interior angle of the convex quadrilateral \\(ABCD\\), so \\(0 < \\gamma < \\pi\\).\nIf \\(\\cos\\beta = \\cos\\gamma\\) for \\(\\beta, \\gamma \\in (0,\\pi)\\), then \\(\\beta=\\gamma\\).\nTherefore, \\(\\angle EBA = \\angle DCB\\).\n\nAll quantities \\(AB, BE, AE, CD, AD\\) are lengths of segments and are positive. \\(BE \\neq 0\\) as \\(B \\neq E\\). If \\(B=E\\), \\(B\\) is on \\(AD\\), so \\(\\angle ADB = \\angle EDB = 0\\), which contradicts that \\(ABCD\\) is a quadrilateral. \\(CD \\neq 0\\) as it is a side of the quadrilateral.\n\nFinal check of assumptions for cancellations:\n- \\(AE \\neq 0\\): True as \\(E\\) is on side \\(AD\\) and distinct from \\(D\\) (unless \\(AD=0\\), not possible). If \\(AE=0\\), then \\(A=E\\). The given equation becomes \\(BE^2 = CD \\cdot 0 = 0\\), so \\(BE=0\\), \\(B=E=A\\). So \\(AB=0\\), which is not possible for a quadrilateral.\n- \\(AD \\neq 0\\): True.\n- \\(CD \\neq 0\\): True.\n- \\(BC \\neq 0\\): True.\n- \\(AB \\neq 0\\): True.\n- \\(BE \\neq 0\\): True, as shown above.\n- Denominators \\(2 AB \\cdot BE \\neq 0\\) and \\(2 BC \\cdot CD \\neq 0\\): True.\n\nThe proof holds.",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "Gemini 2.5 Pro",
+  "n_detectors": 7,
+  "n_wrong": 4,
+  "error_rate": 0.5714,
+  "mean_p_ai": 0.4096,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.1,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 0,
+    "p_ai": 0.0153,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9891,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.75,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.0125,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:JMO_2019_1|llm|openai/o4-mini--high|0",
+  "problem_uid": "OPC:JMO_2019_1",
+  "dataset": "OPC",
+  "competition": "JMO",
+  "year": 2019,
+  "category": "Number Theory",
+  "problem": "There are \\(a+b\\) bowls arranged in a row, numbered \\(1\\) through \\(a+b\\), where \\(a\\) and \\(b\\) are given positive integers. Initially, each of the first \\(a\\) bowls contains an apple, and each of the last \\(b\\) bowls contains a pear. A legal move consists of moving an apple from bowl \\(i\\) to bowl \\(i+1\\) and a pear from bowl \\(j\\) to bowl \\(j-1\\), provided that the difference \\(i-j\\) is even. We permit multiple fruits in the same bowl at the same time. The goal is to end up with the first \\(b\\) bowls each containing a pear and the last \\(a\\) bowls each containing an apple. Show that this is possible if and only if the product \\(ab\\) is even.",
+  "solution": "Let \\(N=a+b\\).  We number the bowls \\(1,2,\\dots,N\\).  Initially there is exactly one apple in each bowl \\(1,2,\\dots,a\\) and exactly one pear in each bowl \\(a+1,a+2,\\dots,N\\).  A “legal move” picks an apple in bowl \\(i\\) and a pear in bowl \\(j\\) with \\(i-j\\) even, moves the apple from \\(i\\) to \\(i+1\\) and (simultaneously) the pear from \\(j\\) to \\(j-1\\).  One may have more than one fruit in a bowl, and one may never move a fruit off the ends \\(1\\) or \\(N\\).\n\nWe must show that one can reach the configuration “pear-pear-⋯-pear (in bowls \\(1\\) through \\(b\\)), apple-⋯-apple (in bowls \\(b+1\\) through \\(N\\))” if and only if \\(ab\\) is even.\n\n---\n\n1.  Necessity.  \nSuppose to the contrary that \\(a\\) and \\(b\\) are both odd and yet one reaches the desired final configuration.  We will exhibit a quantity that is invariant under each legal move, but whose value differs at the start and at the end.\n\nDefine\n\\[\nF(\\text{configuration})\n\\;=\\;\n(\\#\\text{ of apples on odd-numbered bowls})\n\\;-\\;\n(\\#\\text{ of pears on odd-numbered bowls}).\n\\]\nWe check that each legal move leaves \\(F\\) unchanged.  In one move, an apple goes from bowl \\(i\\) to \\(i+1\\).  If \\(i\\) is odd then the apple leaves an odd bowl (so “apples on odd” decreases by \\(1\\)) and enters an even bowl; if \\(i\\) is even it leaves an even bowl and enters an odd bowl (so “apples on odd” increases by \\(1\\)).  Thus the change in “apples on odd” is\n\\[\n\\Delta_A \\;=\\;\n\\begin{cases}\n-1,& i\\text{ odd},\\\\\n+1,& i\\text{ even}.\n\\end{cases}\n\\]\nSimilarly the chosen pear goes from \\(j\\) to \\(j-1\\).  If \\(j\\) is odd then it leaves an odd bowl (so “pears on odd” decreases by \\(1\\)); if \\(j\\) is even it leaves an even bowl and enters an odd bowl (so “pears on odd” increases by \\(1\\)).  Thus the change in “pears on odd” is\n\\[\n\\Delta_P \\;=\\;\n\\begin{cases}\n-1,& j\\text{ odd},\\\\\n+1,& j\\text{ even}.\n\\end{cases}\n\\]\nSince the move is only allowed when \\(i-j\\) is even, we have \\(i\\equiv j\\pmod2\\), so \\(\\Delta_A=\\Delta_P\\).  Hence\n\\[\n\\Delta F \\;=\\;\\Delta_A\\;-\\;\\Delta_P \\;=\\;0,\n\\]\nand \\(F\\) is invariant under every move.\n\nNow compute \\(F\\) at the beginning and at the end, under the assumption that \\(a\\) and \\(b\\) are both odd.  \n\n— Initial configuration:  \n  •  Apples occupy bowls \\(1,2,\\dots,a\\).  Among these \\(a\\) consecutive integers exactly \\(\\lceil a/2\\rceil=(a+1)/2\\) are odd.  \n  •  Pears occupy bowls \\(a+1,a+2,\\dots,a+b\\).  Since \\(a\\) is odd, \\(a+1\\) is even, so over these \\(b\\) consecutive bowls exactly \\(\\lfloor b/2\\rfloor=(b-1)/2\\) are odd.  \nHence\n\\[\nF_{\\rm init}\n\\;=\\;\n\\bigl(\\tfrac{a+1}2\\bigr)\n\\;-\\;\n\\bigl(\\tfrac{b-1}2\\bigr)\n\\;=\\;\\frac{a-b+2}2.\n\\]\n\n— Final configuration:  \n  •  Pears occupy bowls \\(1,2,\\dots,b\\).  Since \\(b\\) is odd, exactly \\(\\lceil b/2\\rceil=(b+1)/2\\) of these are odd.  \n  •  Apples occupy bowls \\(b+1,b+2,\\dots,b+a\\).  Since \\(b\\) is odd, \\(b+1\\) is even, so among these \\(a\\) bowls exactly \\(\\lfloor a/2\\rfloor=(a-1)/2\\) are odd.  \nHence\n\\[\nF_{\\rm final}\n\\;=\\;\n\\bigl(\\tfrac{a-1}2\\bigr)\n\\;-\\;\n\\bigl(\\tfrac{b+1}2\\bigr)\n\\;=\\;\\frac{a-b-2}2.\n\\]\nBut\n\\[\nF_{\\rm init}\\;-\\;F_{\\rm final}\n\\;=\\;\n\\frac{a-b+2}2\n\\;-\\;\n\\frac{a-b-2}2\n\\;=\\;2\n\\;\\neq\\;0.\n\\]\nThat contradicts the invariance of \\(F\\).  Therefore if \\(a,b\\) are both odd there is no sequence of legal moves achieving the goal.  Equivalently, if a solution exists then \\(ab\\) must be even.\n\n---\n\n2.  Sufficiency.  \nWe now assume \\(ab\\) is even.  Then at least one of \\(a,b\\) is even.  By the symmetry which swaps “apple” with “pear” and reverses the row (i.e.\\ sends bowl \\(k\\mapsto N+1-k\\)) one sees that the problem with parameters \\((a,b)\\) is equivalent to that with \\((b,a)\\).  Hence it suffices to exhibit a solution whenever \\(a\\) is even (the case “\\(b\\) even” follows by symmetry).\n\nSo assume \\(a\\) is even.  We shall carry each of the \\(b\\) pears one by one from its initial position \\(a+k\\) (\\(k=1,2,\\dots,b\\)) to its final position \\(k\\), and at the same time “push” the block of apples steadily to the right.  Concretely we perform exactly \\(ab\\) moves, arranged in \\(b\\) blocks of \\(a\\) moves each.  In the \\(k\\)-th block (\\(1\\le k\\le b\\)) we perform, for \\(\\ell=1,2,\\dots,a\\), the single move\n\n\\[\n   \\text{Move the apple in bowl }i=k+\\ell-1\n   \\quad\\Longleftrightarrow\\quad\n   \\text{Move the pear in bowl }j=a+k-(\\ell-1),\n\\]\nnamely send the apple from \\(i\\) to \\(i+1\\) and the pear from \\(j\\) to \\(j-1\\).  We check:\n\n(a)  Parity is respected:  \n   \\[\n     i-j \\;=\\;(k+\\ell-1)\\;-\\;\\bigl(a+k-(\\ell-1)\\bigr)\n     \\;=\\;2\\ell\\;-\\;a\\;-\\;2\n     \\quad\\equiv\\;0\\pmod2\n   \\]\n   since \\(a\\) is even.  Thus each move is legal.\n\n(b)  Bounds are respected:  \n   \\[\n     i=k+\\ell-1\\in [\\,k,\\;k+a-1\\,]\\subset[1,N-1],\n     \\quad\n     j=a+k-(\\ell-1)\\in[\\,k+1,\\;a+k]\\subset[2,N],\n   \\]\n   so \\(i+1\\le N\\) and \\(j-1\\ge1\\).\n\n(c)  Correct occupancy:  We claim that at the start of block \\(k\\), the \\(b\\) pears numbered \\(1,\\dots,k-1\\) already occupy bowls \\(1,\\dots,k-1\\); the pears \\(k+1,\\dots,b\\) remain at their original bowls \\(a+k+1,\\dots,a+b\\); and the \\(a\\) apples occupy the \\(a\\) consecutive bowls \\(k,k+1,\\dots,k+a-1\\).  \n\n  – This is true for \\(k=1\\) by the initial condition.  \n  – In block \\(k\\), only pear \\(\\#k\\) is ever moved, and it starts at \\(a+k\\).  After \\(\\ell\\) moves in that block it has advanced left to bowl\n  \\[\n     j_{\\ell}\\;=\\;a+k-(\\ell-1),\n  \\]\n  and at the \\(\\ell\\)th move it goes to \\(j_{\\ell}-1\\).  Hence after all \\(a\\) moves of block \\(k\\) it reaches bowl\n  \\[\n    a+k-(a-1)\\;-\\;1 \\;=\\;k,\n  \\]\n  as desired.  Meanwhile the single apple chosen in move \\(\\ell\\) of the block is exactly the one sitting at \\(i=k+\\ell-1\\), and it moves to \\(i+1=k+\\ell\\).  Hence over the \\(a\\) steps of block \\(k\\) each of the \\(a\\) apples initially in bowls \\(k,k+1,\\dots,k+a-1\\) is shifted exactly one step to the right, ending in bowls \\(k+1,k+2,\\dots,k+a\\).  Thus the claimed description is preserved and carries over to the next block.\n\nAfter \\(b\\) blocks in this way, pears \\(\\#1,\\dots,\\#b\\) occupy bowls \\(1,2,\\dots,b\\), and the apples occupy bowls \\(b+1,b+2,\\dots,b+a\\).  That is exactly the desired final configuration.  This concludes the construction when \\(a\\) is even.\n\nBy the apple–pear symmetry and reversing the line, the same construction applies whenever \\(b\\) is even.  Altogether we have shown:\n\n– If \\(ab\\) is odd (so \\(a,b\\) both odd) the invariant \\(F\\) forbids reaching the goal.  \n– If \\(ab\\) is even, at least one of \\(a,b\\) is even, and in that case the above explicit \\(ab\\)-move procedure succeeds.\n\nTherefore the goal is achievable if and only if \\(ab\\) is even.",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "o4-mini (high)",
+  "n_detectors": 7,
+  "n_wrong": 4,
+  "error_rate": 0.5714,
+  "mean_p_ai": 0.4208,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 0,
+    "p_ai": 0.15,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 0,
+    "p_ai": 0.0017,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9896,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.8,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.004,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:putnam_2007_b1|llm|openai/o4-mini--high|0",
+  "problem_uid": "OPC:putnam_2007_b1",
+  "dataset": "OPC",
+  "competition": "putnam",
+  "year": 2007,
+  "category": "Algebra",
+  "problem": "Let $f$ be a nonconstant polynomial with positive integer coefficients. Prove that if $n$ is a positive integer, then $f(n)$ divides $f(f(n) + 1)$ if and only if $n = 1$",
+  "solution": "Write  \n\\[\n   f(x)\\;=\\;a_d x^d + a_{d-1} x^{d-1} + \\cdots + a_1 x + a_0,\n\\]  \nwhere \\(d\\ge1\\) and each \\(a_i\\) is a positive integer.  We show:\n\n(i) If \\(n=1\\) then \\(f(1)\\) divides \\(f\\bigl(f(1)+1\\bigr)\\).\n\n(ii) If \\(n\\ge2\\) then \\(f(n)\\) does not divide \\(f\\bigl(f(n)+1\\bigr)\\).\n\nTogether these two statements prove that the only positive integer \\(n\\) for which\n\\[\n   f(n)\\;\\bigm|\\; f\\bigl(f(n)+1\\bigr)\n\\]\nis \\(n=1\\).\n\n---\n\nProof of (i).  Let \\(m=f(1)=a_d+\\cdots+a_0\\).  We claim\n\\[\n   f\\bigl(m+1\\bigr)\\;\\equiv\\;0\\;\\pmod{m}.\n\\]\nIndeed, by the Binomial Theorem, for each integer \\(k\\ge0\\),\n\\[\n   (m+1)^k \\;=\\;\\sum_{j=0}^k \\binom{k}{j}m^j\n   =\\;1 \\;+\\; m\\cdot\\Bigl(\\sum_{j=1}^k \\binom{k}{j}m^{\\,j-1}\\Bigr),\n\\]\nso \\((m+1)^k\\equiv1\\pmod m\\).  Hence\n\\[\n   f(m+1)\n   \\;=\\;\\sum_{i=0}^d a_i\\,(m+1)^i\n   \\;\\equiv\\;\\sum_{i=0}^d a_i\\cdot1\n   \\;=\\;m\n   \\quad\\bigl(\\bmod\\,m\\bigr).\n\\]\nThus \\(m=f(1)\\) divides \\(f(m+1)=f\\bigl(f(1)+1\\bigr)\\), proving (i).\n\n---\n\nProof of (ii).  Now let \\(n\\ge2\\) and set \\(m=f(n)\\).  Exactly the same argument shows\n\\[\n   (m+1)^k\\equiv1\\pmod m,\n   \\quad\n   \\text{so}\n   \\quad\n   f(m+1)=\\sum_{i=0}^d a_i\\,(m+1)^i\\equiv\\sum_{i=0}^d a_i = f(1)\n   \\pmod m.\n\\]\nHence\n\\[\n   f\\bigl(f(n)+1\\bigr)\\;=\\;f(m+1)\n   \\;\\equiv\\;f(1)\\pmod m,\n\\]\nand \\(m\\) divides \\(f(m+1)\\) if and only if \\(m\\) divides \\(f(1)\\).  But since \\(n\\ge2\\) and all coefficients \\(a_i\\) are positive,\n\\[\n   f(n)\\;=\\;\\sum_{i=0}^d a_i\\,n^i\n   \\;>\\;\\sum_{i=0}^d a_i \\;=\\;f(1).\n\\]\nThus \\(m=f(n)\\) is strictly larger than \\(f(1)\\), so it cannot divide the smaller positive integer \\(f(1)\\).  Consequently \\(m\\) does not divide \\(f(m+1)\\), proving (ii).\n\n---\n\nBy (i) and (ii) the only positive integer \\(n\\) for which\n\\(\\,f(n)\\mid f\\bigl(f(n)+1\\bigr)\\)\nis \\(n=1\\), as required.",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "o4-mini (high)",
+  "n_detectors": 7,
+  "n_wrong": 4,
+  "error_rate": 0.5714,
+  "mean_p_ai": 0.4355,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.1,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 0,
+    "p_ai": 0.0063,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9913,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.15,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.0007,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:IMOSL_2011_20|llm|openai/o3|0",
+  "problem_uid": "OPC:IMOSL_2011_20",
+  "dataset": "OPC",
+  "competition": "IMOSL",
+  "year": 2011,
+  "category": "Number Theory",
+  "problem": "Let \\( f \\) be a function from the set of integers to the set of positive integers. Suppose that for any two integers \\( m \\) and \\( n \\), the difference \\( f(m)-f(n) \\) is divisible by \\( f(m-n) \\). Prove that for all integers \\( m, n \\) with \\( f(m) \\leq f(n) \\), the number \\( f(n) \\) is divisible by \\( f(m) \\).",
+  "solution": "Let  \n\n\\[\nf:\\mathbb Z\\longrightarrow \\mathbb Z_{>0},\\qquad  \nf(m)-f(n)\\;\\equiv\\;0\\pmod{f(m-n})\\qquad(\\forall m,n\\in\\mathbb Z)\n\\tag{1}\n\\]\n\nbe given.  \nWe have to prove  \n\n\\[\nf(m)\\le f(n)\\ \\Longrightarrow\\ f(m)\\mid f(n)\\qquad(\\forall m,n\\in\\mathbb Z).\n\\tag{2}\n\\]\n\n--------------------------------------------------------------------\n1.  A useful consequence of (1).\n\nPut \\(n=0\\) in (1).  Because \\(m-0=m\\),\n\n\\[\nf(m)-f(0)\\quad\\text{is divisible by}\\quad f(m)\n\\]\n\nhence \\(f(m)\\mid f(0)\\) for every integer \\(m\\).  Thus every value of\n\\(f\\) is a positive divisor of the fixed number \\(F:=f(0)\\).\n\n--------------------------------------------------------------------\n2.  Setting up a minimal counter–example.\n\nAssume, for the sake of contradiction, that (2) is false.  \nThen there are integers \\(p,q\\) with  \n\n\\[\nf(p)\\le f(q)\\quad\\text{and}\\quad f(p)\\nmid f(q).\n\\]\n\nAmong all such pairs choose \\((m,n)\\) so that  \n(i) \\(b:=f(n)\\) is minimal, and (ii) subject to that,  \n\\(a:=f(m)\\) is minimal.  \nNecessarily \\(a<b\\).\n\nWrite  \n\n\\[\nd:=m-n\\neq 0,\\qquad c:=f(d).\n\\]\n\n--------------------------------------------------------------------\n3.  The value \\(c\\) is smaller than \\(b\\).\n\nFrom (1) with the pair \\((m,n)\\) we have  \n\n\\[\nf(m)-f(n)=a-b\\quad\\text{is divisible by}\\quad f(m-n)=c,\n\\]\n\nso \\(c\\mid (b-a)\\).  \nBecause \\(0<b-a<b\\), this implies  \n\n\\[\nc<b.\n\\tag{3}\n\\]\n\n--------------------------------------------------------------------\n4.  Two cases for the size of \\(c\\).\n\n--------------------------------------------------\nCase 1. \\(a\\le c<b\\).\n\nIf \\(a\\mid c\\) then, as \\(c\\mid(b-a)\\), we get \\(a\\mid b\\), contradicting\nthe choice of \\((m,n)\\).\nHence \\(a\\nmid c\\).\n\nBut now \\(a\\le c<b\\) and \\(a\\nmid c\\), so the pair \\((m,d)\\)\nviolates (2) while its second value \\(c\\) is strictly smaller than\n\\(b\\); this contradicts the minimality of \\(b\\).\nTherefore Case 1 is impossible.\n\n--------------------------------------------------\nCase 2. \\(c<a<b\\).\n\nBecause \\(c\\mid(b-a)\\), either \\(c\\mid b\\) or \\(c\\nmid b\\).\n\n•  If \\(c\\nmid b\\), then \\(c<b\\) and the pair \\((d,n)\\) contradicts the\nminimal choice of \\(a\\) (its first value is \\(c<a\\)).\nSo we must have\n\n\\[\nc\\mid b.\n\\tag{4}\n\\]\n\nWrite  \n\n\\[\na=c\\,u,\\qquad b=c\\,v\\qquad(u,v\\in\\mathbb Z_{>0},\\ v>u),\n\\tag{5}\n\\]\n(the inequalities follow from \\(c<a<b\\)).\n\n--------------------------------------------------------------------\n5.  A decisive divisibility relation.\n\nApply (1) to the pair \\((m,d)\\).\nSince \\(m-d=n\\),\n\n\\[\nf(m)-f(d)=a-c\\quad\\text{is divisible by}\\quad f(n)=b.\n\\]\n\nWith (5):\n\n\\[\nb\\mid(a-c)\\;\\Longrightarrow\\; c\\,v\\mid c\\,(u-1)\\;\\Longrightarrow\\; v\\mid u-1.\n\\tag{6}\n\\]\n\nYet \\(v>u\\) (again by (5)), so \\(v\\) cannot divide the smaller\npositive integer \\(u-1\\).  \nThis contradicts (6).\n\nThus Case 2 is also impossible.\n\n--------------------------------------------------------------------\n6.  Conclusion.\n\nBoth possible relative orders of \\(a=f(m)\\) and \\(c=f(m-n)\\) lead to\ncontradictions; hence our original assumption that a counter-example to\n(2) exists is false.  Therefore (2) is true:\n\n\\[\n\\;f(m)\\le f(n)\\ \\Longrightarrow\\ f(m)\\mid f(n)\\;\n\\qquad\\text{for all }m,n\\in\\mathbb Z.\n\\]",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "o3",
+  "n_detectors": 7,
+  "n_wrong": 4,
+  "error_rate": 0.5714,
+  "mean_p_ai": 0.4601,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 0,
+    "p_ai": 0.0288,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9903,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.25,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.1014,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "ProofBench:EGMO-2025-P2|llm|OpenAI-o3|0",
+  "problem_uid": "ProofBench:EGMO-2025-P2",
+  "dataset": "ProofBench",
+  "competition": "EGMO",
+  "year": 2025,
+  "category": "Algebra",
+  "problem": "An infinite increasing sequence a_{1}<a_{2}<a_{3}<\\cdots of positive integers is called central if for every positive integer n, the arithmetic mean of the first a_{n} terms of the sequence is equal to a_{n}. Show that there exists an infinite sequence b_{1}, b_{2}, b_{3}, \\ldots of positive integers such that for every central sequence a_{1}, a_{2}, a_{3}, \\ldots, there are infinitely many positive integers n with a_{n}=b_{n}.",
+  "solution": "Let  \n\n\\[\nb_{n}=2n-1\\qquad (n=1,2,3,\\dots )\n\\]\n\n(the sequence of the odd positive integers).  \nWe prove that \\(b_{1},b_{2},\\dots\\) has the demanded universality\nproperty.\n\n--------------------------------------------------------------------\n1.  Preliminary facts on a central sequence\n--------------------------------------------------------------------\nFix an arbitrary central sequence  \n\n\\[\na_{1} < a_{2} < a_{3} < \\dots \\]\n\nof positive integers, i.e.  \n\n\\[\n\\frac{1}{a_{n}}\\sum_{k=1}^{a_{n}}a_{k}=a_{n}\\qquad\\text{for every }n\\ge 1.\n\\tag{1}\n\\]\n\nEquality (1) is equivalent to  \n\n\\[\n\\sum_{k=1}^{a_{n}}a_{k}=a_{n}^{2}\\qquad\\text{for every }n\\ge 1.\n\\tag{2}\n\\]\n\nFact 1.  \\(a_{1}=1\\).\n\nIndeed, if \\(a_{1}\\ge 2\\) then among the first \\(a_{1}\\) terms the\nsmallest is \\(a_{1}\\) and the other \\(a_{1}-1\\) terms are larger,\nhence their average exceeds \\(a_{1}\\), contradicting (1) for \\(n=1\\).\n\n--------------------------------------------------------------------\n2.  The deviation sequence \\(d_{n}\\)\n--------------------------------------------------------------------\nDefine  \n\n\\[\nd_{n}=a_{n}-(2n-1)\\qquad (n\\ge 1).\n\\]\n\nThus \\(d_{n}\\) measures by how much the \\(n\\)-th term of the central\nsequence exceeds (or falls short of) the \\(n\\)-th odd integer.\nFrom the strict increase of \\((a_{n})\\) we have \\(a_{n+1}-a_{n}\\ge 1\\),\nand therefore  \n\n\\[\nd_{n+1}-d_{n}=(a_{n+1}-a_{n})-2\\ge -1.\n\\tag{3}\n\\]\n\nConsequently \\(d_{n}\\) can never fall by more than \\(1\\) in one step.\nIn particular\n\n• if \\(d_{n} > 0\\) and later \\(d_{m} < 0\\) (with \\(m > n\\)),\nthen (3) forces some index between \\(n\\) and \\(m\\) at which \\(d_{k}=0\\);\n  \n• the analogous statement holds when the roles of the signs are\ninterchanged.\n\n--------------------------------------------------------------------\n3.  The partial sums of the deviations\n--------------------------------------------------------------------\nPut  \n\n\\[\nD_{m}=\\sum_{k=1}^{m}d_{k}\\qquad (m\\ge 1)\n\\]\n\nand agree that \\(D_{0}=0\\).\nSumming the definition of \\(d_{k}\\) gives  \n\n\\[\nD_{m}=\\sum_{k=1}^{m}a_{k}-m^{2}.\n\\]\n\nTaking \\(m=a_{n}\\) and using (2) we obtain  \n\n\\[\nD_{a_{n}}=0\\qquad\\text{for every }n\\ge 1.\n\\tag{4}\n\\]\n\nHence the sequence \\((D_{m})_{m\\ge 0}\\) takes the value \\(0\\)\ninfinitely many times, namely at the indices\n\\(m=a_{1},a_{2},a_{3},\\dots\\).\n\n--------------------------------------------------------------------\n4.  Zeros of the deviation sequence\n--------------------------------------------------------------------\nLet  \n\n\\[\n0=m_{0} < m_{1} < m_{2} < \\dots \\]\n\nbe the (infinite) list of indices at which \\(D_{m}=0\\); by (4) each\n\\(m_{t}\\) equals some \\(a_{s}\\).\n\nFix \\(t\\ge 1\\) and consider the interval  \n\n\\[\nI_{t}=\\{m_{t-1}+1,m_{t-1}+2,\\dots ,m_{t}\\}.\n\\]\n\nFrom \\(D_{m_{t-1}}=D_{m_{t}}=0\\) we have  \n\n\\[\n\\sum_{k\\in I_{t}}d_{k}=0.\n\\tag{5}\n\\]\n\nAssume, for a contradiction, that \\(d_{k}\\ne 0\\) for every\n\\(k\\in I_{t}\\).\nBecause the sum of non–zero integers is zero, some of the\n\\(d_{k}\\) in \\(I_{t}\\) are positive and some are negative.\nPick the first index \\(p\\in I_{t}\\) with \\(d_{p} > 0\\) and the\nlast index \\(q\\in I_{t}\\) with \\(d_{q} < 0\\); we have \\(p < q\\).\nBy the remark after (3) the signs of consecutive\n\\(d_{k}\\) can change only by passing through \\(0\\), contradicting\nthe assumption that no \\(d_{k}\\) in \\(I_{t}\\) equals \\(0\\).\nTherefore each interval \\(I_{t}\\) contains at least one index\n\\(n\\) with  \n\n\\[\nd_{n}=0\\quad\\Longleftrightarrow\\quad a_{n}=2n-1.\n\\]\n\nBecause there are infinitely many intervals \\(I_{t}\\),\nthere are infinitely many such indices \\(n\\).\n\n--------------------------------------------------------------------\n5.  Finishing the proof\n--------------------------------------------------------------------\nWe have proved that for the fixed but arbitrary central sequence\n\\((a_{n})\\) the equality \\(a_{n}=2n-1\\) holds for infinitely many\n\\(n\\).\nSince \\(b_{n}=2n-1\\) for every \\(n\\), this means that\n\\((b_{n})_{n\\ge 1}\\) meets \\((a_{n})\\) at infinitely many positions.\nAs the choice of the central sequence was arbitrary, the sequence  \n\n\\[\n\\,b_{n}=2n-1\\,(n\\ge 1)\\,\n\\]\n\nhas the required universality property:  \nfor every central sequence \\(a_{1},a_{2},a_{3},\\dots\\) there are\ninfinitely many positive integers \\(n\\) with \\(a_{n}=b_{n}\\).\n\n\\(\\qquad\\qquad\\blacksquare\\)",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "o3",
+  "n_detectors": 7,
+  "n_wrong": 4,
+  "error_rate": 0.5714,
+  "mean_p_ai": 0.4663,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 1.0,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9887,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.15,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.0754,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:putnam_1988_a6|llm|xai/grok-3-mini-high|0",
+  "problem_uid": "OPC:putnam_1988_a6",
+  "dataset": "OPC",
+  "competition": "putnam",
+  "year": 1988,
+  "category": "Algebra",
+  "problem": "If a linear transformation $A$ on an $n$-dimensional vector space has $n+1$ eigenvectors such that any $n$ of them are linearly independent, does it follow that $A$ is a scalar multiple of the identity? Prove your answer. Show that the answer is yes, $A$ must be a scalar multiple of the identity.",
+  "solution": "First, the question is: If a linear transformation \\( A \\) on an \\( n \\)-dimensional vector space has \\( n+1 \\) eigenvectors such that any \\( n \\) of them are linearly independent, does it follow that \\( A \\) is a scalar multiple of the identity? I need to prove that yes, it must be.\n\nEigenvectors are vectors that, when \\( A \\) is applied, get scaled by some eigenvalue. So for each eigenvector \\( v \\), \\( A v = \\lambda v \\) for some scalar \\( \\lambda \\).\n\nThere are \\( n+1 \\) eigenvectors, and any \\( n \\) of them are linearly independent. Since the space is \\( n \\)-dimensional, any set of \\( n \\) linearly independent vectors forms a basis. So, for any choice of \\( n \\) eigenvectors out of these \\( n+1 \\), they span the entire space.\n\nLet me denote the eigenvectors as \\( v_1, v_2, \\dots, v_{n+1} \\), with corresponding eigenvalues \\( \\lambda_1, \\lambda_2, \\dots, \\lambda_{n+1} \\). The eigenvalues might not all be distinct, but they could be.\n\nThe condition is that any \\( n \\) are linearly independent. That means no \\( n \\) of them are linearly dependent, which is strong.\n\nI need to show that \\( A \\) is a scalar multiple of the identity, meaning that for all vectors \\( x \\), \\( A x = c x \\) for some constant \\( c \\), which implies that all eigenvalues are the same, and in fact, every vector is an eigenvector.\n\nSo, perhaps I need to show that all \\( \\lambda_i \\) are equal.\n\nSuppose that not all eigenvalues are equal. Say, \\( \\lambda_1 \\neq \\lambda_2 \\).\n\nSince any \\( n \\) eigenvectors are linearly independent, and there are \\( n+1 \\) of them, this reminds me of the property that in a vector space, if you have more vectors than the dimension and they are in general position, but here it's specified that any subset of size \\( n \\) is independent.\n\nIn fact, this means that the set \\( \\{ v_1, \\dots, v_{n+1} \\} \\) is in general position or something.\n\nPerhaps I can consider the linear dependence.\n\nSince there are \\( n+1 \\) vectors in \\( n \\)-dimensional space, they must be linearly dependent. So there exist scalars \\( c_1, c_2, \\dots, c_{n+1} \\), not all zero, such that \\( \\sum_{i=1}^{n+1} c_i v_i = 0 \\).\n\nBecause any \\( n \\) are independent, none of the \\( c_i \\) can be zero; if some \\( c_k = 0 \\), then the equation would hold with fewer than \\( n+1 \\) vectors, but since any \\( n \\) are independent, the dependence must involve all \\( n+1 \\) vectors, so all \\( c_i \\neq 0 \\).\n\nYes, so there is a linear dependence relation \\( \\sum_{i=1}^{n+1} c_i v_i = 0 \\) with all \\( c_i \\neq 0 \\).\n\nNow, apply \\( A \\) to this equation.\n\n\\( A \\left( \\sum_{i=1}^{n+1} c_i v_i \\right) = A(0) = 0 \\), so \\( \\sum_{i=1}^{n+1} c_i A v_i = 0 \\).\n\nBut \\( A v_i = \\lambda_i v_i \\), so \\( \\sum_{i=1}^{n+1} c_i \\lambda_i v_i = 0 \\).\n\nNow, I have two equations:\n\n1. \\( \\sum_{i=1}^{n+1} c_i v_i = 0 \\)\n\n2. \\( \\sum_{i=1}^{n+1} c_i \\lambda_i v_i = 0 \\)\n\nSince the \\( v_i \\) are linearly dependent, but any \\( n \\) are independent, the dependence is unique up to scalar multiple.\n\nIn a vector space, if you have a set of vectors where any subset of size \\( n \\) is independent in \\( n \\)-dimensions, then the dependence relations are minimal.\n\nSpecifically, the kernel of the map from scalars to the linear combination has dimension 1.\n\nConsider the vectors \\( v_i \\) as columns.\n\nSince \\( \\sum c_i v_i = 0 \\) and \\( \\sum c_i \\lambda_i v_i = 0 \\), and the \\( v_i \\) span a space of dimension less than or equal to n, but actually, since any n are independent, the span has dimension n, I think, wait no.\n\nThe span of all n+1 vectors: since any n are independent, adding the (n+1)th must be dependent, so the span is exactly n-dimensional.\n\nYes.\n\nNow, the two linear combinations are equal to zero.\n\nBut \\( \\sum c_i v_i = 0 \\) and \\( \\sum c_i \\lambda_i v_i = 0 \\).\n\nSince the \\( v_i \\) are linearly dependent, these are two vectors in the dual or something.\n\nConsider that the coefficients must satisfy that \\( c_i \\) and \\( c_i \\lambda_i \\) give the same linear dependence.\n\nIn other words, the vector \\( (c_1, c_2, \\dots, c_{n+1}) \\) is in the kernel of the matrix whose columns are the v_i, but perhaps it's better to think of the dependence.\n\nSince \\( \\sum c_i v_i = 0 \\), and this is the only linear dependence (up to scalar), meaning that the c_i are proportional to some fixed coefficients.\n\nIn fact, because the set has the property that any n are independent, the linear dependencies are spanned by a single relation.\n\nThat is, all linear dependence relations are multiples of one another.\n\nSo, there is a unique (up to scalar) set of coefficients such that sum c_i v_i = 0.\n\nNow, we have that sum c_i lambda_i v_i = 0, which means that the coefficients (c_1 lambda_1, c_2 lambda_2, ..., c_{n+1} lambda_{n+1}) also give a linear dependence relation.\n\nBut since there's only one linear dependence relation (up to scalar), it must be that (c_1 lambda_1, ..., c_{n+1} lambda_{n+1}) is a scalar multiple of (c_1, ..., c_{n+1}).\n\nThat is, there exists some k such that c_i lambda_i = k c_i for all i.\n\nSince all c_i ≠ 0, we can divide: lambda_i = k for all i.\n\nIs that right?\n\nc_i lambda_i = k c_i for each i, so lambda_i = k for each i, since c_i ≠ 0.\n\nSo all lambda_i are equal to k.\n\nOh! So all eigenvalues are equal.\n\nLet me write it down.\n\nFrom c_i lambda_i = k c_i for all i, and c_i ≠ 0, so lambda_i = k for all i.\n\nYes, so all eigenvalues lambda_1 to lambda_{n+1} are equal.\n\nSay, all equal to lambda.\n\nNow, does that mean A is scalar multiple of identity?\n\nNot necessarily, because these are only n+1 eigenvectors, but there might be other vectors that are not eigenvectors.\n\nBut in this case, since any n of them form a basis, and there are n+1 such, but since all eigenvalues are the same, say lambda.\n\nNow, take any vector x in the space.\n\nSince any n eigenvectors form a basis, I can express x in terms of any basis.\n\nSpecifically, fix a basis consisting of n of the eigenvectors, say v1 to vn, all with eigenvalue lambda.\n\nThen, for any vector x, x = sum a_i v_i for some coefficients, since {v1,...,vn} is a basis.\n\nThen A x = A (sum a_i v_i) = sum a_i A v_i = sum a_i lambda v_i = lambda sum a_i v_i = lambda x.\n\nOh! So for any x, A x = lambda x.\n\nBecause in this basis, A acts as multiplication by lambda.\n\nSince {v1,...,vn} are eigenvectors with same eigenvalue lambda, and they form a basis, so A is diagonal with lambda on diagonal, so yes, A is lambda times identity.\n\nBut I used only n eigenvectors, but I have n+1, but I didn't need the extra one.\n\nIn this proof, I showed that all lambda_i are equal, and then using any n of them, which form a basis with the same eigenvalue, so A is scalar multiple.\n\nBut in the proof, I assumed that the linear dependence gives that all lambda_i equal.\n\nAnd since any n form a basis, yes.\n\nBut is there a catch?\n\nWhat if some eigenvalues are the same, but perhaps not all vectors are eigenvectors, but in this case, since the basis consists of eigenvectors, yes.\n\nIn my proof, I think it's complete.\n\nLet me summarize.\n\nWe have n+1 eigenvectors v1 to v_{n+1} with eigenvalues lambda1 to lambda_{n+1}.\n\nAny n are linearly independent, so the set is linearly dependent, and the dependence relation involves all vectors with non-zero coefficients.\n\nThere exist c_i not all zero (in fact all non-zero) such that sum c_i v_i = 0.\n\nApply A: sum c_i lambda_i v_i = 0.\n\nBut sum c_i v_i = 0 is a linear dependence, and since the only linear dependencies are multiples of this one (because any n independent), so sum c_i lambda_i v_i = 0 must be a multiple of sum c_i v_i = 0.\n\nMore precisely, the vector (c1 lambda1, ..., c_{n+1} lambda_{n+1}) must be proportional to (c1, ..., c_{n+1}), because both define the same linear functional or something.\n\nSince sum a_i v_i = 0 iff a is proportional to c.\n\nYes, the kernel of the map from R^{n+1} to V given by (a1,...,a_{n+1}) mapsto sum a_i v_i has dimension 1, since the v_i span a n-dimensional space.\n\nThe map from R^{n+1} to V, with V n-dimensional, and the image has dimension n, since rank is n (because any n v_i independent), so nullity is (n+1) - n = 1, by rank-nullity.\n\nYes, so the kernel has dimension 1, so all vectors in the kernel are scalar multiples of one another.\n\nNow, (c1, c2, ..., c_{n+1}) is in the kernel, since sum c_i v_i = 0.\n\nAlso, (c1 lambda1, c2 lambda2, ..., c_{n+1} lambda_{n+1}) is such that sum (c_i lambda_i) v_i = sum c_i (lambda_i v_i), no.\n\nsum (c_i lambda_i) v_i = sum c_i lambda_i v_i, but earlier we have sum c_i lambda_i v_i = 0, because A(sum c_i v_i)=0, etc.\n\nsum c_i lambda_i v_i = 0, so the vector (c1 lambda1, c2 lambda2, ..., c_{n+1} lambda_{n+1}) dotted with the v_i gives sum a_i v_i with a_i = c_i lambda_i, and it sums to zero, so (c1 lambda1, ..., c_{n+1} lambda_{n+1}) is also in the kernel of the map.\n\nSince the kernel is one-dimensional, (c1 lambda1, ..., c_{n+1} lambda_{n+1}) must be a scalar multiple of (c1, ..., c_{n+1}).\n\nSay, (c1 lambda1, ..., c_{n+1} lambda_{n+1}) = k (c1, ..., c_{n+1}) for some k.\n\nThus, for each i, c_i lambda_i = k c_i.\n\nSince all c_i ≠ 0, lambda_i = k for all i.\n\nSo all eigenvalues are equal to k.\n\nNow, since any n of the v_i form a basis, and each has eigenvalue k, so for any vector x, in the basis of say v1 to vn, A x = k x, as computed earlier.\n\nTherefore, A is k times the identity.\n\nSo, yes.\n\nThe answer is yes.\n\nNow, I need to write this in a thorough, step-by-step proof with LaTeX.\n\nLet me outline the proof.\n\n**Proof:**\n\nLet \\( V \\) be an \\( n \\)-dimensional vector space over a field (assume it's the same field, probably real or complex, but it works for any field, I think, as long as characteristic doesn't cause issues, but probably fine).\n\nLet \\( A: V \\to V \\) be a linear transformation with \\( n+1 \\) eigenvectors \\( v_1, v_2, \\dots, v_{n+1} \\) such that for any subset of \\( n \\) of them, they are linearly independent.\n\nLet the corresponding eigenvalues be \\( \\lambda_1, \\lambda_2, \\dots, \\lambda_{n+1} \\), so \\( A v_i = \\lambda_i v_i \\) for each \\( i \\).\n\nSince \\( V \\) is \\( n \\)-dimensional and there are \\( n+1 \\) vectors, they are linearly dependent. Moreover, because any \\( n \\) are linearly independent, the linear dependence relation must involve all \\( n+1 \\) vectors with non-zero coefficients. That is, there exist scalars \\( c_1, c_2, \\dots, c_{n+1} \\), all non-zero, such that\n\n\\[ \\sum_{i=1}^{n+1} c_i v_i = 0. \\]\n\nNow, apply \\( A \\) to this equation:\n\n\\[ A \\left( \\sum_{i=1}^{n+1} c_i v_i \\right) = A(0) = 0, \\]\n\nso\n\n\\[ \\sum_{i=1}^{n+1} c_i A v_i = \\sum_{i=1}^{n+1} c_i \\lambda_i v_i = 0. \\]\n\nThus, we have\n\n\\[ \\sum_{i=1}^{n+1} c_i \\lambda_i v_i = 0. \\]\n\nNow, consider the linear map \\( T: \\mathbb{F}^{n+1} \\to V \\) defined by \\( T(a_1, a_2, \\dots, a_{n+1}) = \\sum_{i=1}^{n+1} a_i v_i \\), where \\( \\mathbb{F} \\) is the field.\n\nThe kernel of \\( T \\) consists of all tuples \\( (a_1, \\dots, a_{n+1}) \\) such that \\( \\sum a_i v_i = 0 \\).\n\nSince the image of \\( T \\) has dimension \\( n \\) (because any \\( n \\) v_i are independent, so rank is at least n, and since dim V = n, rank is n), by rank-nullity theorem, dim ker T = (n+1) - n = 1.\n\nThus, ker T is one-dimensional, so all non-zero elements in ker T are scalar multiples of each other.\n\nIn particular, \\( (c_1, c_2, \\dots, c_{n+1}) \\in \\ker T \\), and also \\( (c_1 \\lambda_1, c_2 \\lambda_2, \\dots, c_{n+1} \\lambda_{n+1}) \\) satisfies \\( \\sum (c_i \\lambda_i) v_i = 0 \\), so it is also in ker T.\n\nTherefore, \\( (c_1 \\lambda_1, \\dots, c_{n+1} \\lambda_{n+1}) = k (c_1, \\dots, c_{n+1}) \\) for some scalar k.\n\nThus, for each i, \\( c_i \\lambda_i = k c_i \\).\n\nSince all c_i ≠ 0, we have \\( \\lambda_i = k \\) for all i.\n\nTherefore, all eigenvalues are equal, say to λ.\n\nNow, since any n of the eigenvectors, say v1 to vn, are linearly independent and thus form a basis for V, and each satisfies A v_i = λ v_i, for any vector x in V, we can write x = sum_{i=1}^n a_i v_i for some scalars a_i.\n\nThen,\n\n\\[ A x = A \\left( \\sum_{i=1}^n a_i v_i \\right) = \\sum_{i=1}^n a_i A v_i = \\sum_{i=1}^n a_i \\lambda v_i = \\lambda \\sum_{i=1}^n a_i v_i = \\lambda x. \\]\n\nThus, A x = λ x for all x in V, so A is a scalar multiple of the identity.\n\n\\[ \\text{yes} \\]\n\nThe question asks to prove that the answer is yes, and I did.\n\nI think that's thorough.\n\nThe question asks whether a linear transformation \\( A \\) on an \\( n \\)-dimensional vector space, which has \\( n+1 \\) eigenvectors such that any \\( n \\) of them are linearly independent, must be a scalar multiple of the identity. The answer is yes, and the proof is provided below.\n\n---\n\n**Proof:**\n\nLet \\( V \\) be an \\( n \\)-dimensional vector space over a field \\( \\mathbb{F} \\) (such as the real or complex numbers), and let \\( A: V \\to V \\) be a linear transformation. Suppose \\( A \\) has \\( n+1 \\) eigenvectors \\( v_1, v_2, \\dots, v_{n+1} \\) such that any \\( n \\) of them are linearly independent. Let the corresponding eigenvalues be \\( \\lambda_1, \\lambda_2, \\dots, \\lambda_{n+1} \\), so that\n\\[\nA v_i = \\lambda_i v_i\n\\]\nfor each \\( i = 1, 2, \\dots, n+1 \\).\n\nSince \\( V \\) is \\( n \\)-dimensional and there are \\( n+1 \\) vectors, the set \\( \\{ v_1, v_2, \\dots, v_{n+1} \\} \\) is linearly dependent. Moreover, because any \\( n \\) of the vectors are linearly independent, the linear dependence relation must involve all \\( n+1 \\) vectors with non-zero coefficients. That is, there exist scalars \\( c_1, c_2, \\dots, c_{n+1} \\in \\mathbb{F} \\), all non-zero, such that\n\\[\n\\sum_{i=1}^{n+1} c_i v_i = 0.\n\\]\n\nNow, apply the linear transformation \\( A \\) to this equation:\n\\[\nA \\left( \\sum_{i=1}^{n+1} c_i v_i \\right) = A(0) = 0,\n\\]\nso\n\\[\n\\sum_{i=1}^{n+1} c_i A v_i = 0.\n\\]\nSubstituting \\( A v_i = \\lambda_i v_i \\), we get\n\\[\n\\sum_{i=1}^{n+1} c_i \\lambda_i v_i = 0.\n\\]\n\nConsider the linear map \\( T: \\mathbb{F}^{n+1} \\to V \\) defined by\n\\[\nT(a_1, a_2, \\dots, a_{n+1}) = \\sum_{i=1}^{n+1} a_i v_i.\n\\]\nThe kernel of \\( T \\) consists of all tuples \\( (a_1, \\dots, a_{n+1}) \\) such that \\( \\sum_{i=1}^{n+1} a_i v_i = 0 \\). Since any \\( n \\) of the \\( v_i \\) are linearly independent, the image of \\( T \\) has dimension \\( n \\) (as the rank is at least \\( n \\) and \\( \\dim V = n \\)). By the rank-nullity theorem,\n\\[\n\\dim \\ker T = (n+1) - n = 1.\n\\]\nThus, the kernel of \\( T \\) is one-dimensional, meaning all non-zero elements in \\( \\ker T \\) are scalar multiples of each other.\n\nThe tuple \\( (c_1, c_2, \\dots, c_{n+1}) \\) is in \\( \\ker T \\) because \\( \\sum c_i v_i = 0 \\). Similarly, the tuple \\( (c_1 \\lambda_1, c_2 \\lambda_2, \\dots, c_{n+1} \\lambda_{n+1}) \\) is in \\( \\ker T \\) because \\( \\sum c_i \\lambda_i v_i = 0 \\). Therefore, there exists a scalar \\( k \\in \\mathbb{F} \\) such that\n\\[\n(c_1 \\lambda_1, c_2 \\lambda_2, \\dots, c_{n+1} \\lambda_{n+1}) = k (c_1, c_2, \\dots, c_{n+1}).\n\\]\nThis implies that for each \\( i \\),\n\\[\nc_i \\lambda_i = k c_i.\n\\]\nSince all \\( c_i \\neq 0 \\), we can divide by \\( c_i \\) to obtain\n\\[\n\\lambda_i = k\n\\]\nfor all \\( i = 1, 2, \\dots, n+1 \\). Thus, all eigenvalues are equal, say to \\( \\lambda \\).\n\nNow, since any \\( n \\) of the eigenvectors are linearly independent, the set \\( \\{ v_1, v_2, \\dots, v_n \\} \\) forms a basis for \\( V \\), and each \\( v_i \\) satisfies \\( A v_i = \\lambda v_i \\). For any vector \\( x \\in V \\), we can write\n\\[\nx = \\sum_{i=1}^n a_i v_i\n\\]\nfor some scalars \\( a_i \\in \\mathbb{F} \\). Then,\n\\[\nA x = A \\left( \\sum_{i=1}^n a_i v_i \\right) = \\sum_{i=1}^n a_i A v_i = \\sum_{i=1}^n a_i \\lambda v_i = \\lambda \\sum_{i=1}^n a_i v_i = \\lambda x.\n\\]\nThus, \\( A x = \\lambda x \\) for all \\( x \\in V \\), so \\( A \\) is a scalar multiple of the identity.\n\n---\n\nThis completes the proof that \\( A \\) must be a scalar multiple of the identity. The reasoning is based on the linear dependence of the eigenvectors, the uniqueness of the dependence relation, and the fact that any \\( n \\) eigenvectors form a basis with the same eigenvalue.",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "Grok 3 Mini (high)",
+  "n_detectors": 7,
+  "n_wrong": 4,
+  "error_rate": 0.5714,
+  "mean_p_ai": 0.4714,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.0,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9999,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9893,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.3,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.0108,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:EGMO_2016_1|llm|openai/o3|0",
+  "problem_uid": "OPC:EGMO_2016_1",
+  "dataset": "OPC",
+  "competition": "EGMO",
+  "year": 2016,
+  "category": "Algebra",
+  "problem": "Let \\( n \\) be an odd positive integer, and let \\( x_{1}, x_{2}, \\ldots, x_{n} \\) be nonnegative real numbers. Show that\n\n\\[\n\\min \\left(x_{i}^{2}+x_{i+1}^{2}\\right) \\leq \\max \\left(2 x_{j} x_{j+1}\\right)\n\\]\n\nwhere \\( 1 \\leq i, j \\leq n \\) and \\( x_{n+1}=x_{1} \\).",
+  "solution": "Let  \n\n\\[\nS_{i}=x_{i}^{2}+x_{i+1}^{2}\\qquad\\text{and}\\qquad  \nP_{i}=2x_{i}x_{i+1}\\qquad(1\\le i\\le n),\n\\]\n\nthe indices being taken modulo \\(n\\;(x_{n+1}=x_{1})\\).\nWe have to prove  \n\n\\[\n\\min_{1\\le i\\le n}S_{i}\\;\\le\\;\\max_{1\\le j\\le n}P_{j}\\qquad\\qquad(\\ast)\n\\]\nfor every odd positive integer \\(n\\) and all non-negative reals\n\\(x_{1},x_{2},\\dots ,x_{n}\\).\n\nThe inequality is obvious when all \\(x_{k}=0\\); hence at least one \\(x_{k}\\)\nis positive.  \nBecause the statement is preserved by taking limits,\nit is enough to prove \\((\\ast)\\) under the slightly stronger\nassumption  \n\n\\[\nx_{1},x_{2},\\dots ,x_{n}>0 .\\tag{A}\n\\]\n\n(The general non–negative case follows by replacing each\n\\(x_{k}\\) with \\(x_{k}+\\varepsilon ,\\;\\varepsilon>0\\),\nletting \\(\\varepsilon\\to 0\\) at the end.)\n\n--------------------------------------------------------------------\n1.  Two consecutive comparisons must be identical\n--------------------------------------------------------------------\nFor every \\(i\\) put  \n\n\\[\n\\varepsilon_{i}=\\operatorname{sgn}(x_{i+1}-x_{i})=\n\\begin{cases}\n\\phantom{+}1,&x_{i+1}>x_{i},\\\\\n0,&x_{i+1}=x_{i},\\\\\n-1,&x_{i+1}<x_{i}.\n\\end{cases}\n\\]\n\nThe sequence \\(\\varepsilon_{1},\\varepsilon_{2},\\dots ,\\varepsilon_{n}\\)\nconsists of \\(n\\) terms arranged on a circle.\nIf no two adjacent terms were equal,\nthe non–zero signs would have to alternate\n\\(+1,-1,+1,-1,\\dots\\) (or \\(-1,+1,-1,+1,\\dots\\)) all around the circle.\nSuch perfect alternation is only possible when \\(n\\) is even,\ncontradicting that \\(n\\) is odd.\nHence\n\nthere exists an index \\(k\\) with \\(\\varepsilon_{k}=\\varepsilon_{k+1}\\).  (1)\n\n------------------------------------------------------------------------\n2.  Extracting a monotone triple\n------------------------------------------------------------------------\nBecause of (1) there are three consecutive numbers\n\\(x_{k},x_{k+1},x_{k+2}\\) obeying either  \n\n\\[\nx_{k}\\le x_{k+1}\\le x_{k+2}\\qquad\\text{or}\\qquad\nx_{k}\\ge x_{k+1}\\ge x_{k+2}.  \\tag{2}\n\\]\n\n(The indices are again understood modulo \\(n\\).)\n\n-----------------------------------------------------------------------\n3.  From a monotone triple to the desired inequality\n-----------------------------------------------------------------------\nCase 1.  \\(x_{k}\\le x_{k+1}\\le x_{k+2}\\).\n\nThen \\(x_{k}^{2}+x_{k+1}^{2}\\le 2x_{k+1}^{2}\\)\nand, because \\(x_{k+2}\\ge x_{k+1}\\),\n\n\\[\nS_{k}=x_{k}^{2}+x_{k+1}^{2}\\le 2x_{k+1}^{2}\\le 2x_{k+1}x_{k+2}=P_{k+1}.\n\\]\n\nCase 2.  \\(x_{k}\\ge x_{k+1}\\ge x_{k+2}\\).\n\nNow \\(x_{k+1}^{2}+x_{k+2}^{2}\\le 2x_{k+1}^{2}\\)\nand, since \\(x_{k}\\ge x_{k+1}\\),\n\n\\[\nS_{k+1}=x_{k+1}^{2}+x_{k+2}^{2}\\le 2x_{k+1}^{2}\\le 2x_{k}x_{k+1}=P_{k}.\n\\]\n\n-----------------------------------------------------------------------\n4.  Finishing the proof\n-----------------------------------------------------------------------\nIn either case we have found indices \\(i,j\\) with  \n\n\\[\nS_{i}\\le P_{j}.\n\\]\n\nConsequently\n\n\\[\n\\min_{1\\le i\\le n}S_{i}\\le S_{i}\\le P_{j}\\le\n\\max_{1\\le j\\le n}P_{j},\n\\]\n\nwhich is exactly \\((\\ast)\\).\n\nTherefore, for every odd positive integer \\(n\\) and all\nnon-negative reals \\(x_{1},x_{2},\\dots ,x_{n}\\) we indeed have  \n\n\\[\n\\displaystyle\n\\min_{1\\le i\\le n}\\bigl(x_{i}^{2}+x_{i+1}^{2}\\bigr)\\le\n\\max_{1\\le j\\le n}\\bigl(2x_{j}x_{j+1}\\bigr).\n\\]",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "o3",
+  "n_detectors": 7,
+  "n_wrong": 4,
+  "error_rate": 0.5714,
+  "mean_p_ai": 0.5318,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 0,
+    "p_ai": 0.15,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9999,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9902,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.1,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.4826,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:putnam_1962_a6|llm|openai/o4-mini--high|0",
+  "problem_uid": "OPC:putnam_1962_a6",
+  "dataset": "OPC",
+  "competition": "putnam",
+  "year": 1962,
+  "category": "Algebra",
+  "problem": "Let $S$ be a set of rational numbers such that whenever $a$ and $b$ are members of $S$, so are $a+b$ and $ab$, and having the property that for every rational number $r$ exactly one of the following three statements is true: \\[ r \\in S, -r \\in S, r = 0. \\] Prove that $S$ is the set of all positive rational numbers.",
+  "solution": "We let  \n\\[P=\\{r\\in\\Bbb Q:\\text{there exist integers }a,b\\text{ with }b>0,\\;a>0,\\;\\text{and }r=\\tfrac a b\\}\\]  \nbe the “usual” set of positive rationals, and we show that any set \\(S\\subset\\Q\\) satisfying\n\n  (i) If \\(a,b\\in S\\) then \\(a+b\\in S\\) and \\(ab\\in S\\).\n\n  (ii) For every \\(r\\in\\Q\\), exactly one of  \n\\[\nr\\in S,\\quad -r\\in S,\\quad r=0\n\\]\nholds,\n\nmust coincide with \\(P\\).\n\n---\n\nProof:\n\n1.  **\\(1\\in S\\).**  \n   Since \\(1\\neq0\\), by (ii) exactly one of \\(1\\in S\\) or \\(-1\\in S\\) holds.  If \\(-1\\in S\\), then by closure under multiplication\n   \\[\n     (-1)\\cdot(-1)=1\n   \\]\n   would also lie in \\(S\\), yielding both \\(1\\in S\\) and \\(-1\\in S\\), contradicting uniqueness in (ii).  Hence\n   \\[\n     1\\in S.\n   \\]\n\n2.  **All positive integers lie in \\(S\\).**  \n   We prove by induction on \\(n\\ge1\\) that \\(n\\in S\\).\n   \n   •  Base \\(n=1\\): we just showed \\(1\\in S\\).  \n   •  Inductive step: if \\(n\\in S\\), then since \\(1\\in S\\) and \\(S\\) is closed under addition,  \n     \\[\n       n+(1)=n+1\\in S.\n     \\]\n   Thus \\(n\\in S\\) for every positive integer \\(n\\).\n\n3.  **Every positive rational lies in \\(S\\).**  \n   Let \\(r\\in\\Q\\) be positive in the usual sense.  Write it in lowest terms\n   \\[\n     r=\\frac a b,\n   \\]\n   with integers \\(a,b>0\\).  We know \\(a\\in S\\) and \\(b\\in S\\).  Suppose, aiming for a contradiction, that \\(r\\notin S\\).  Then by (ii) (and \\(r\\neq0\\)) we must have\n   \\[\n     -r\\in S.\n   \\]\n   Closure under multiplication then gives\n   \\[\n     b\\in S,\\quad -r\\in S\n     \\quad\\Longrightarrow\\quad\n     b\\cdot(-r)=-a\\in S.\n   \\]\n   But also \\(a\\in S\\).  Hence by closure under addition,\n   \\[\n     a+(-a)=0\\in S.\n   \\]\n   This contradicts (ii) applied to \\(0\\), since for \\(0\\) the only allowed case is \\(0=0\\), and both \\(0\\in S\\) and \\(-0\\in S\\) must be false.  Therefore our assumption \\(r\\notin S\\) is impossible, so\n   \\[\n     r\\in S.\n   \\]\n   We have shown \\(P\\subset S\\).\n\n4.  **No negative rational can lie in \\(S\\).**  \n   If \\(r\\) is negative then \\(-r\\) is a positive rational, so by the previous step \\(-r\\in S\\).  Since \\(r\\neq0\\), (ii) then forces \\(r\\notin S\\).  Hence\n   \\[\n     S\\subset P.\n   \\]\n\nCombining \\(P\\subset S\\) and \\(S\\subset P\\) we conclude \\(S=P\\).  That is, \\(S\\) is exactly the set of all positive rational numbers.",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "o4-mini (high)",
+  "n_detectors": 7,
+  "n_wrong": 4,
+  "error_rate": 0.5714,
+  "mean_p_ai": 0.541,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 0,
+    "p_ai": 0.9954,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9872,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.75,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.0046,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:irish_2003_4|llm|openai/o3|0",
+  "problem_uid": "OPC:irish_2003_4",
+  "dataset": "OPC",
+  "competition": "irish",
+  "year": 2003,
+  "category": "Combinatorics",
+  "problem": "4. Eight players, Ann, Bob, Con, Dot, Eve, Fay, Guy and Hal compete in a chess tournament. No pair plays together more than once and there is no group of five people in which each one plays against all of the other four.\n(a) Write down an arrangement for a tournament of $24$ games satisfying these conditions.\n(b) Show that it is impossible to have a tournament of more than $24$ games satisfying these conditions.",
+  "solution": "We translate the situation into the language of graph theory.  \nPut a vertex for every player and join two vertices by an edge when the corresponding pair of players meet.  \nThe two requirements of the question are therefore:\n\n1. The graph is simple (no multiple edges, no loops).  \n2. It contains no complete sub-graph on five vertices, i.e. it is $K_{5}$–free.\n\nFor eight vertices the complete graph $K_{8}$ has  \n$\\binom 82 = 28$ edges, so a tournament of $m$ games corresponds to a $K_{5}$-free graph on eight vertices with $m$ edges.\n\nPart (a)   A $24$-game tournament without a $K_{5}$  \n\nPartition the eight players into four pairs\n\nGroup 1 : Ann, Bob  \nGroup 2 : Con, Dot  \nGroup 3 : Eve, Fay  \nGroup 4 : Guy, Hal  \n\nLet every player meet everyone who is **not in the same group**, and let the two members of each group **not** meet.  \nThe 24 games are listed once only:\n\nAnn–Con Ann–Dot Ann–Eve Ann–Fay Ann–Guy Ann–Hal  \nBob–Con Bob–Dot Bob–Eve Bob–Fay Bob–Guy Bob–Hal  \nCon–Eve Con–Fay Con–Guy Con–Hal  \nDot–Eve Dot–Fay Dot–Guy Dot–Hal  \nEve–Guy Eve–Hal  \nFay–Guy Fay–Hal  \n\nNumber of games.  \nThe four parts are of size $2,2,2,2$.  \nBetween any two different parts there are $2\\times2 = 4$ games; there are $\\binom 42 = 6$ pairs of parts, so\n\n$\\;6\\times4 = 24$ games.\n\nWhy there is no $K_{5}$.  \nTake any five players.  By the pigeon-hole principle two of them must come from the same group, and those two never meet.  \nHence the five players cannot form a complete sub-graph.  \nTherefore the arrangement above satisfies both requirements.\n\n(What we have constructed is the balanced Turán graph $T_{4}(8)$.)\n\nPart (b)   $24$ games are the most possible  \n\nAssume, for contradiction, that a tournament with **more than** 24 games exists;  \nso there are at least $25$ games.  \nConsequently at most $28-25=3$ pairs of players do **not** meet.  \nCall these missing games the *non-edges*; the sub-graph they form is a graph $H$ on eight vertices with at most three edges.\n\nCovering the non-edges.  \nFor every edge of $H$ choose one of its two end-vertices and collect these chosen vertices in a set $X$.  \nBecause $H$ has at most three edges we have $|X|\\le 3$.\n\nLet $Y=\\;V\\setminus X$.  \nSince $|V|=8$, we have $|Y|\\ge 8-3 =5$.\n\nNo non-edge lies wholly inside $Y$.  \nIndeed, if $uv$ were a missing game with $u,v\\in Y$, that edge would not be incident with any vertex of $X$, contradicting the way $X$ was chosen.  \nTherefore every pair of vertices in $Y$ **does** meet; i.e. $Y$ spans a complete graph $K_{|Y|}$, and $|Y|\\ge5$ gives a $K_{5}$.\n\nBut the problem statement forbids a group of five players each of whom meets all the other four, so we have obtained a contradiction.  \nHence a $K_{5}$-free graph on eight vertices can have **at most 24 edges**.\n\nSince part (a) shows that 24 edges are attainable, 24 is the maximum possible.\n\nTherefore\n\n(a) the schedule displayed above realises 24 games and meets the conditions;  \n(b) any schedule with more than 24 games would necessarily contain a forbidden\nset of five mutually-playing players, so 24 is the greatest possible number of games.",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "o3",
+  "n_detectors": 7,
+  "n_wrong": 4,
+  "error_rate": 0.5714,
+  "mean_p_ai": 0.5809,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 0,
+    "p_ai": 0.9767,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9885,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.25,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.0009,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:EGMO_2016_1|llm|openai/o4-mini--high|0",
+  "problem_uid": "OPC:EGMO_2016_1",
+  "dataset": "OPC",
+  "competition": "EGMO",
+  "year": 2016,
+  "category": "Algebra",
+  "problem": "Let \\( n \\) be an odd positive integer, and let \\( x_{1}, x_{2}, \\ldots, x_{n} \\) be nonnegative real numbers. Show that\n\n\\[\n\\min \\left(x_{i}^{2}+x_{i+1}^{2}\\right) \\leq \\max \\left(2 x_{j} x_{j+1}\\right)\n\\]\n\nwhere \\( 1 \\leq i, j \\leq n \\) and \\( x_{n+1}=x_{1} \\).",
+  "solution": "We index cyclically mod \\(n\\), so \\(x_{n+1}=x_{1}\\).\n\nProof.  Let  \n\\[\nA_i \\;=\\; x_i^2 + x_{i+1}^2\n\\quad\\text{and}\\quad\nB_i \\;=\\; 2\\,x_i\\,x_{i+1},\n\\]\nand set  \n\\[\nM \\;=\\;\\max_{1\\le j\\le n}B_j\n\\;=\\;\\max_{j}2\\,x_j\\,x_{j+1}.\n\\]\nWe must show\n\\[\n\\min_{1\\le i\\le n}A_i \\;\\le\\;M.\n\\]\nSuppose, for the sake of contradiction, that\n\\[\n\\min_iA_i \\;>\\;M.\n\\]\nThen in particular\n\\[\n\\forall i,\\quad\nA_i \\;>\\;M\n\\quad\\Longrightarrow\\quad\nA_i \\;>\\;B_i\n\\quad\\Longrightarrow\\quad\nx_i^2 + x_{i+1}^2 \\;>\\;2\\,x_i\\,x_{i+1}.\n\\]\nBut\n\\[\nx_i^2 + x_{i+1}^2 \\;>\\;2\\,x_i\\,x_{i+1}\n\\quad\\Longleftrightarrow\\quad\n(x_i - x_{i+1})^2 > 0\n\\quad\\Longrightarrow\\quad\nx_i\\neq x_{i+1}.\n\\]\nHence no two consecutive \\(x\\)’s are equal, so there are at least two distinct values among the \\(x_i\\).\n\nLet\n\\[\nS=\\{\\,x_1,\\dots,x_n\\},\n\\quad\na=\\max S,\n\\quad\nc=\\min S,\n\\]\nand note \\(a>c\\ge0\\).  We claim in fact \\(S=\\{a,c\\}\\).  If not, pick\n\\(\\displaystyle b\\in S\\) with \\(c<b<a\\), and let \\(i\\) be such that\n\\(x_i=b\\).  Then \\(x_{i-1}\\) and \\(x_{i+1}\\) lie in \\(\\{c,b,a\\}\\), but\nthey cannot both be \\(b\\) (no two neighbors are equal), nor can either\nneighbor be strictly between \\(c\\) and \\(a\\) by the following argument:\n\n– If \\(x_{i+1}=c\\), then since \\(M=\\max_j(2x_jx_{j+1})\\) and \\(a>b>c\\) we have\n\\[\nM \\;=\\;2\\,a\\,b\n\\]\n(because \\(ab>ac\\) and \\(ab>bc\\)).  But then\n\\[\nA_i\n\\;=\\;\nx_i^2+x_{i+1}^2\n\\;=\\;\nb^2 + c^2\n\\;\\le\\;\nb^2 + b^2\n\\;=\\;\n2b^2\n\\;<\\;\n2ab\n\\;=\\;\nM,\n\\]\ncontradicting \\(A_i>M\\).  \n\n– Likewise if \\(x_{i-1}=c\\) one reaches the same contradiction.\n\nThus neither neighbor of the chosen \\(b\\) can be \\(c\\); hence both\n\\(x_{i-1}=x_{i+1}=a\\).  In particular, every occurrence of the “middle”\nvalue \\(b\\) is flanked by \\(a\\)’s.  But then the values of \\(x_1,\\dots,x_n\\)\ncan only be drawn from \\(\\{a,b\\}\\), and around an odd cycle one cannot\nalternate \\(a,b,a,b,\\dots\\) without eventually repeating—so one would\nbe forced to have two equal neighbors, contradicting\n\\((x_k-x_{k+1})^2>0\\).  This contradiction shows that no such\n\\(b\\) can exist, so \\(S=\\{a,c\\}\\).\n\nNow the cycle uses only \\(a\\) and \\(c\\), and \\(a>c\\).  Again, since \\(n\\)\nis odd, in the cyclic list \\(x_1,\\dots,x_n\\) there must be two\nconsecutive entries both equal to \\(a\\) (they cannot both be \\(c\\),\nelse \\(x_k=x_{k+1}=c\\) would violate \\((x_k-x_{k+1})^2>0\\)).  Say\n\\(x_p=x_{p+1}=a\\).  Then\n\\[\n\\min_iA_i \\;\\le\\;A_p \n\\;=\\;a^2+a^2=2a^2,\n\\quad\n\\max_jB_j \\;\\ge\\;B_p\n\\;=\\;2\\,a\\,a=2a^2.\n\\]\nHence\n\\[\n\\min_iA_i \\;\\le\\;2a^2\n\\;=\\;\\max_jB_j,\n\\]\ncontradicting our assumption \\(\\min_iA_i>M=\\max_jB_j\\).  This\nfinal contradiction shows that it is impossible to have \\(\\min_iA_i>M\\),\nand therefore necessarily\n\\[\n\\min_{1\\le i\\le n}\\bigl(x_i^2 + x_{i+1}^2\\bigr)\n\\;\\le\\;\n\\max_{1\\le j\\le n}\\bigl(2\\,x_j\\,x_{j+1}\\bigr),\n\\]\nas claimed.",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "o4-mini (high)",
+  "n_detectors": 7,
+  "n_wrong": 4,
+  "error_rate": 0.5714,
+  "mean_p_ai": 0.5979,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 0,
+    "p_ai": 0.9646,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9767,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.25,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9439,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:bulgarian-PMS_2005_10_3|llm|openai/o4-mini--high|0",
+  "problem_uid": "OPC:bulgarian-PMS_2005_10_3",
+  "dataset": "OPC",
+  "competition": "bulgarian-PMS",
+  "year": 2005,
+  "category": "Geometry",
+  "problem": "In \\(\\triangle ABC\\), the altitude \\(CH\\) is drawn to the side \\(AB\\), with point \\(H\\) being inside \\(AB\\). Let \\(P\\) and \\(Q\\) denote the centers of the circles inscribed in \\(\\triangle AHC\\) and \\(\\triangle BHC\\), respectively. Prove that the quadrilateral \\(ABQP\\) is cyclic if and only if \\(AC=BC\\) or \\(\\angle ACB=90^\\circ\\).",
+  "solution": "We shall use coordinates.  Place  \n\\[\nA=(0,0),\\quad B=(b,0),\\quad C=(p,q),\n\\]  \nwith \\(b>0\\) and \\(q>0\\).  Then the altitude from \\(C\\) to \\(AB\\) meets \\(AB\\) at  \n\\[\nH=(p,0).\n\\]  \n\n---\n\n1.  **The incenter \\(P\\) of \\(\\triangle AHC\\).**  \nIn \\(\\triangle AHC\\) the side-lengths are\n\\[\nAH = p,\\quad HC = q,\\quad AC = d_1 := \\sqrt{p^2+q^2}.\n\\]\nA standard formula for the incenter gives\n\\[\nP \\;=\\;\\frac{AH\\cdot C \\;+\\;HC\\cdot A\\;+\\;AC\\cdot H}{AH+HC+AC}\n\\;=\\;\n\\frac{q\\,(0,0)\\;+\\;d_1\\,(p,0)\\;+\\;p\\,(p,q)}{p+q+d_1}.\n\\]\nHence\n\\[\nP\n=\\Bigl(\\,\\frac{d_1\\,p + p^2}{p+q+d_1}\\,,\\,\n       \\frac{p\\,q}{p+q+d_1}\\Bigr)\n=\\Bigl(p - r_1,\\;r_1\\Bigr),\n\\]\nwhere\n\\[\nr_1=\\frac{p\\,q}{p+q+d_1}\n=\\frac{AH+HC-AC}{2}\n=\\frac{p+q-d_1}{2}.\n\\]\n\n2.  **The incenter \\(Q\\) of \\(\\triangle BHC\\).**  \nSimilarly, in \\(\\triangle BHC\\) the side-lengths are\n\\[\nBH = b-p,\\quad HC=q,\\quad BC = d_2 := \\sqrt{(b-p)^2+q^2},\n\\]\nand one finds\n\\[\nQ\n=\\frac{q\\,(b,0)+d_2\\,(p,0)+(b-p)\\,(p,q)}{(b-p)+q+d_2}\n=\\Bigl(p + r_2,\\;r_2\\Bigr),\n\\]\nwhere\n\\[\nr_2=\\frac{(b-p)\\,q}{(b-p)+q+d_2}\n=\\frac{BH+HC-BC}{2}\n=\\frac{(b-p)+q-d_2}{2}.\n\\]\n\n3.  **Equation of the circle through \\(A,B,P\\).**  \nAny circle through \\(A=(0,0)\\) and \\(B=(b,0)\\) has equation\n\\[\nx^2+y^2 \\;-\\;b\\,x\\;+\\;E\\,y\\;=\\;0,\n\\]\nand substituting \\(P=(p-r_1,r_1)\\) gives\n\\[\n(p-r_1)^2 + r_1^2 \\;-\\,b\\,(p-r_1)\\;+\\;E\\,r_1 \\;=\\;0.\n\\]\nHence\n\\[\nE \\;=\\;\n\\frac{\\,b\\,p - (p-r_1)^2 - r_1^2\\,}{\\,r_1\\,}\n\\;=\\;\n\\frac{b\\,p - \\bigl[(p-r_1)^2 + r_1^2\\bigr]}{r_1}.\n\\]\n\n4.  **Cyclicity \\(\\iff\\) \\(Q\\) lies on that circle.**  \nWe now impose that \\(Q=(p+r_2,r_2)\\) also satisfies\n\\[\nx^2+y^2 - b\\,x + E\\,y \\;=\\;0.\n\\]\nSubstitute \\(x=p+r_2,\\;y=r_2\\), and also substitute the above formula for \\(E\\).  A straightforward, if somewhat lengthy, expansion shows that the resulting equation in \\(p,q,b\\) and \\(r_1,r_2\\) is algebraically equivalent to\n\\[\n\\bigl(p - \\tfrac b2\\bigr)\\,\\bigl(p^2 + q^2 - b\\,p\\bigr)\\;=\\;0.\n\\]\n(One checks that no extraneous factors can vanish, since \\(r_1,r_2>0\\) and \\(b>0\\).)\n\n5.  **Interpreting the two factors.**  \n(a)  \\(p-\\tfrac b2=0\\) means \\(p=\\tfrac b2\\), i.e.\\ \\(AH=BH\\).  But then in the right triangles \\(AHC\\) and \\(BHC\\) we have \\(AH=BH\\) and the common leg \\(HC\\), so \\(AC=BC\\).  \n\n(b)  \\(p^2 + q^2 - b\\,p=0\\) means\n\\[\np^2+q^2 = b\\,p\n\\;\\Longleftrightarrow\\;\n(C-A)\\cdot (C-B)=0\n\\;\\Longleftrightarrow\\;\n\\angle ACB = 90^\\circ.\n\\]\n\nHence we have shown:\n\n \\(\\;ABQP\\) is cyclic \n\\(\\Longleftrightarrow\\)\n\\(\\bigl(p-\\tfrac b2\\bigr)\\bigl(p^2+q^2-bp\\bigr)=0\\)\n\\(\\Longleftrightarrow\\)\n\\(\\;AC=BC\\) or \\(\\angle ACB=90^\\circ.\\)\n\nThis completes the proof.",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "o4-mini (high)",
+  "n_detectors": 7,
+  "n_wrong": 4,
+  "error_rate": 0.5714,
+  "mean_p_ai": 0.6038,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.1,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 0,
+    "p_ai": 0.9823,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9933,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.25,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.0007,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:IMOSL_2012_3|llm|openai/o4-mini--high|0",
+  "problem_uid": "OPC:IMOSL_2012_3",
+  "dataset": "OPC",
+  "competition": "IMOSL",
+  "year": 2012,
+  "category": "Algebra",
+  "problem": "Let \\(a_{2}, \\ldots, a_{n}\\) be \\(n-1\\) positive real numbers, where \\(n \\geq 3\\), such that \\(a_{2} a_{3} \\cdots a_{n}=1\\). Prove that\n\n\\[\n\\left(1+a_{2}\\right)^{2}\\left(1+a_{3}\\right)^{3} \\cdots\\left(1+a_{n}\\right)^{n}>n^{n}.\n\\]",
+  "solution": "Let \\(n\\ge3\\) and let \\(a_{2},a_{3},\\dots,a_{n}>0\\) satisfy  \n\\[\na_{2}a_{3}\\cdots a_{n}=1.\n\\]  \nDefine a sequence of positive reals \\(x_{1},x_{2},\\dots,x_{n}\\) by  \n\\[\nx_{1}=1,\\qquad\nx_{k}=a_{2}a_{3}\\cdots a_{k}\\quad (2\\le k\\le n).\n\\]  \nThen for each \\(k=2,3,\\dots,n\\) we have  \n\\[\n\\frac{x_{k}}{x_{k-1}}\n=\\frac{a_{2}a_{3}\\cdots a_{k}}{a_{2}a_{3}\\cdots a_{k-1}}\n=a_{k},\n\\]  \nand in particular  \n\\[\nx_{n}=a_{2}a_{3}\\cdots a_{n}=1=x_{1}.\n\\]\n\nObserve that for \\(2\\le k\\le n\\)  \n\\[\n1+a_{k}\n=1+\\frac{x_{k}}{x_{k-1}}\n=\\frac{x_{k-1}+x_{k}}{x_{k-1}},\n\\]  \nand hence  \n\\[\n(1+a_{k})^{k}\n=\\biggl(\\frac{x_{k-1}+x_{k}}{x_{k-1}}\\biggr)^{k}\n=\\frac{(x_{k-1}+x_{k})^{k}}{x_{k-1}^{k}}.\n\\]  \nReindexing by \\(j=k-1\\), we get\n\\[\n\\prod_{k=2}^n(1+a_{k})^{k}\n=\\prod_{j=1}^{n-1}\\frac{(x_{j}+x_{j+1})^{\\,j+1}}{x_{j}^{\\,j+1}}\n=\\frac{\\displaystyle\\prod_{j=1}^{n-1}(x_{j}+x_{j+1})^{\\,j+1}}\n{\\displaystyle\\prod_{j=1}^{n-1}x_{j}^{\\,j+1}}.\n\\]\n\nWe now bound the numerator via the AM–GM inequality.  Recall:\n\n AM–GM.  For any positive numbers \\(u_{1},\\dots,u_{m}\\),\n\\[\n\\frac{u_{1}+\\cdots+u_{m}}{m}\\;\\ge\\;(u_{1}u_{2}\\cdots u_{m})^{1/m},\n\\]\nwith equality if and only if \\(u_{1}=\\cdots=u_{m}.\\)\n\nFix an index \\(j\\in\\{1,2,\\dots,n-1\\}\\).  Apply AM–GM to the \\(j+1\\) positive numbers\n\\[\n\\underbrace{\\frac{x_{j}}{j},\\dots,\\frac{x_{j}}{j}}_{j\\text{ copies}}\n\\quad\\text{and}\\quad\nx_{j+1}.\n\\]\nThen\n\\[\n\\frac{j\\cdot\\frac{x_{j}}{j}+x_{j+1}}{\\,j+1\\,}\n\\;\\ge\\;\n\\Bigl(\\bigl(\\tfrac{x_{j}}{j}\\bigr)^{j}\\cdot x_{j+1}\\Bigr)^{1/(j+1)},\n\\]\ni.e.\n\\[\n\\frac{x_{j}+x_{j+1}}{\\,j+1\\,}\n\\;\\ge\\;\n\\frac{x_{j}^{\\,j/(j+1)}\\;x_{j+1}^{1/(j+1)}}{\\,j^{\\,j/(j+1)}},\n\\]\nand multiplying both sides by \\((j+1)\\) and then raising to the \\((j+1)\\)-st power gives\n\\[\n(x_{j}+x_{j+1})^{\\,j+1}\n\\;\\ge\\;\n(j+1)^{\\,j+1}\\,\n\\frac{x_{j}^{\\,j}\\,x_{j+1}}{j^{\\,j}}.\n\\]\nSince this holds for each \\(j=1,2,\\dots,n-1\\), we multiply over \\(j\\) to obtain\n\\[\n\\prod_{j=1}^{n-1}(x_{j}+x_{j+1})^{\\,j+1}\n\\;\\ge\\;\n\\prod_{j=1}^{n-1}\\Bigl((j+1)^{\\,j+1}\\,\\frac{x_{j}^{\\,j}x_{j+1}}{j^{\\,j}}\\Bigr)\n=\n\\Bigl[\\prod_{j=1}^{n-1}\\frac{(j+1)^{\\,j+1}}{j^{\\,j}}\\Bigr]\n\\;\\cdot\\;\n\\prod_{j=1}^{n-1}x_{j}^{\\,j}x_{j+1}.\n\\]\nNow\n\\[\n\\prod_{j=1}^{n-1}x_{j}^{\\,j}x_{j+1}\n=\\Bigl(\\prod_{j=1}^{n-1}x_{j}^{\\,j}\\Bigr)\\,\n\\Bigl(\\prod_{j=1}^{n-1}x_{j+1}\\Bigr)\n=x_{1}^{1}x_{2}^{2}\\cdots x_{n-1}^{\\,n-1}\\;\\cdot\\;x_{2}x_{3}\\cdots x_{n}.\n\\]\nBut \\(x_{1}=x_{n}=1\\), so\n\\[\n\\prod_{j=1}^{n-1}x_{j}^{\\,j}x_{j+1}\n=1^{1}\\;x_{2}^{2+1}\\;x_{3}^{3+1}\\;\\cdots\\;x_{n-1}^{(n-1)+1}\\;1\n=\\prod_{j=1}^{n-1}x_{j}^{\\,j+1}.\n\\]\nHence\n\\[\n\\prod_{j=1}^{n-1}(x_{j}+x_{j+1})^{\\,j+1}\n\\;\\ge\\;\n\\Bigl[\\prod_{j=1}^{n-1}\\frac{(j+1)^{\\,j+1}}{j^{\\,j}}\\Bigr]\n\\;\\cdot\\;\n\\prod_{j=1}^{n-1}x_{j}^{\\,j+1}.\n\\]\nDividing by \\(\\prod_{j=1}^{n-1}x_{j}^{\\,j+1}\\) gives\n\\[\n\\prod_{k=2}^{n}(1+a_{k})^{k}\n\\;=\\;\n\\frac{\\displaystyle\\prod_{j=1}^{n-1}(x_{j}+x_{j+1})^{\\,j+1}}\n{\\displaystyle\\prod_{j=1}^{n-1}x_{j}^{\\,j+1}}\n\\;\\ge\\;\n\\prod_{j=1}^{n-1}\\frac{(j+1)^{\\,j+1}}{j^{\\,j}}.\n\\]\nFinally observe the telescoping product\n\\[\n\\prod_{j=1}^{n-1}\\frac{(j+1)^{\\,j+1}}{j^{\\,j}}\n=\\frac{2^{2}\\,3^{3}\\,\\cdots\\,n^{n}}{1^{1}\\,2^{2}\\,\\cdots\\,(n-1)^{\\,n-1}}\n=n^{n}.\n\\]\nThus\n\\[\n\\prod_{k=2}^{n}(1+a_{k})^{k}\\;\\ge\\;n^{n}.\n\\]\nMoreover, each application of AM–GM is strict unless\n\\[\n\\underbrace{\\frac{x_{j}}{j}=\\cdots=\\frac{x_{j}}{j}}_{j\\text{ times}}\n=x_{j+1},\n\\]\ni.e.\\ \\(x_{j+1}=x_{j}/j\\) for \\(j=1,\\dots,n-1\\).  Iterating that would force\n\\[\nx_{n}=\\frac{x_{1}}{1\\cdot2\\cdots(n-1)}=\\frac1{(n-1)!},\n\\]\ncontradicting \\(x_{n}=1\\) when \\(n\\ge3\\).  Hence in fact we have the strict inequality\n\\[\n\\;(1+a_{2})^{2}(1+a_{3})^{3}\\cdots(1+a_{n})^{n}\\;>\\;n^{n},\n\\]\nas required.",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "o4-mini (high)",
+  "n_detectors": 7,
+  "n_wrong": 4,
+  "error_rate": 0.5714,
+  "mean_p_ai": 0.6117,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.05,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 0,
+    "p_ai": 0.9956,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9959,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.25,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.1902,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:irish_2002_9|llm|openai/o4-mini--high|0",
+  "problem_uid": "OPC:irish_2002_9",
+  "dataset": "OPC",
+  "competition": "irish",
+  "year": 2002,
+  "category": "Algebra",
+  "problem": "For each real number \\( x \\), define \\(\\lfloor x\\rfloor\\) to be the greatest integer less than or equal to \\( x \\).\n\nLet \\(\\alpha=2+\\sqrt{3}\\). Prove that\n\n\\[\n\\alpha^{n}-\\left\\lfloor\\alpha^{n}\\right\\rfloor=1-\\alpha^{-n}, \\text{ for } n=0,1,2, \\ldots\n\\]",
+  "solution": "Define the conjugate number\n\\[\n\\beta \\;=\\; 2 - \\sqrt{3}.\n\\]\nThen \\(\\alpha=2+\\sqrt3\\) and \\(\\beta\\) are exactly the two (real) roots of the quadratic equation\n\\[\nx^2 \\;-\\;4x\\;+\\;1\\;=\\;0.\n\\]\nIndeed, one checks\n\\[\n(2+\\sqrt3)^2 \\;-\\;4(2+\\sqrt3)\\;+\\;1 \\;=\\;4+4\\sqrt3+3 \\;-\\;8-4\\sqrt3\\;+\\;1\\;=\\;0,\n\\]\nand similarly for \\(2-\\sqrt3\\).  From Vieta’s relations it follows that\n\\[\n\\alpha+\\beta \\;=\\;4,\n\\qquad\n\\alpha\\beta \\;=\\;1.\n\\]\nIn particular,\n\\[\n\\alpha>1\n\\quad\\Longrightarrow\\quad\n\\beta \\;=\\;\\frac1\\alpha\n\\quad\\Longrightarrow\\quad\n0<\\beta<1.\n\\]\n\nNext, for each integer \\(n\\ge0\\) set\n\\[\nS_n \\;=\\;\\alpha^n+\\beta^n.\n\\]\nWe claim that \\(S_n\\in\\Bbb Z\\) for all \\(n\\).  We prove this by induction on \\(n\\).\n\nBase cases:\n\\[\nS_0 \\;=\\;\\alpha^0+\\beta^0 \\;=\\;1+1\\;=\\;2\\in\\Bbb Z,\n\\qquad\nS_1 \\;=\\;\\alpha+\\beta \\;=\\;4\\in\\Bbb Z.\n\\]\n\nInductive step:  suppose \\(S_n\\) and \\(S_{n+1}\\) are integers.  Since \\(\\alpha\\) and \\(\\beta\\) each satisfy\n\\[\nx^2 \\;=\\;4x-1,\n\\]\nwe have\n\\[\n\\alpha^{n+2}\n\\;=\\;\n4\\alpha^{n+1}\n\\;-\\;\n\\alpha^n,\n\\qquad\n\\beta^{n+2}\n\\;=\\;\n4\\beta^{n+1}\n\\;-\\;\n\\beta^n.\n\\]\nAdding these two identities gives the recurrence\n\\[\nS_{n+2}\n\\;=\\;\n\\alpha^{n+2}+\\beta^{n+2}\n\\;=\\;\n4(\\alpha^{n+1}+\\beta^{n+1})\n\\;-\\;\n(\\alpha^n+\\beta^n)\n\\;=\\;\n4S_{n+1}-S_n.\n\\]\nSince \\(S_n\\) and \\(S_{n+1}\\) are integers by the inductive hypothesis, it follows that \\(S_{n+2}\\) is also an integer.  This completes the induction and proves \\(S_n\\in\\Bbb Z\\) for all \\(n\\ge0\\).\n\n---\n\nBecause \\(S_n=\\alpha^n+\\beta^n\\), we can solve for \\(\\alpha^n\\):\n\\[\n\\alpha^n\n\\;=\\;\nS_n \\;-\\;\\beta^n.\n\\]\nSince \\(0<\\beta<1\\), we have for \\(n\\ge1\\) the strict inequalities\n\\[\n0<\\beta^n<1,\n\\]\nand for \\(n=0\\) the value \\(\\beta^0=1\\).  Hence:\n\n– If \\(n\\ge1\\), then\n\\[\nS_n-1 \\;<\\;S_n-\\beta^n\\;<\\;S_n,\n\\]\nthat is\n\\[\nS_n-1 \\;<\\;\\alpha^n\\;<\\;S_n.\n\\]\n– If \\(n=0\\), then\n\\[\n\\alpha^0 \\;=\\;1\n\\;=\\;\nS_0-\\beta^0\n\\;=\\;\n2-1,\n\\]\nso\n\\[\nS_0-1 \\;=\\;1 \\;\\le\\;\\alpha^0\\;\\le\\;2=S_0.\n\\]\nIn either case we obtain\n\\[\nS_n-1\\;\\le\\;\\alpha^n\\;<\\;S_n,\n\\]\nand since \\(S_n\\) is an integer this implies\n\\[\n\\lfloor \\alpha^n\\rfloor \\;=\\;S_n-1.\n\\]\n\nFinally, the fractional part of \\(\\alpha^n\\) is\n\\[\n\\alpha^n-\\lfloor\\alpha^n\\rfloor\n\\;=\\;\n\\alpha^n-(S_n-1)\n\\;=\\;\n\\bigl(S_n-\\beta^n\\bigr)\\;-\\;(S_n-1)\n\\;=\\;\n1-\\beta^n.\n\\]\nBut \\(\\beta=1/\\alpha\\), so \\(\\beta^n=\\alpha^{-n}\\).  Therefore\n\\[\n\\alpha^n-\\lfloor\\alpha^n\\rfloor\n\\;=\\;\n1-\\alpha^{-n},\n\\]\nas required.",
+  "author": "llm",
+  "is_ai": 1,
+  "generator_model": "o4-mini (high)",
+  "n_detectors": 7,
+  "n_wrong": 4,
+  "error_rate": 0.5714,
+  "mean_p_ai": 0.6401,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 0,
+    "p_ai": 0.15,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.98,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 0,
+    "p_ai": 0.9913,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9932,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 0,
+    "p_ai": 0.3,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 0,
+    "p_ai": 0.1163,
+    "parse_error": false
+   }
+  }
+ }
+]

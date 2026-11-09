@@ -1,0 +1,886 @@
+[
+ {
+  "uid": "OPC:BalticWay_2002_17|human|human|0",
+  "problem_uid": "OPC:BalticWay_2002_17",
+  "dataset": "OPC",
+  "competition": "BalticWay",
+  "year": 2002,
+  "category": "Number Theory",
+  "problem": "Show that the sequence\n$$\n\\binom{2002}{2002},\\binom{2003}{2002},\\binom{2004}{2002}, \\ldots\n$$\nconsidered modulo 2002, is periodic.",
+  "solution": "Define\n\n$$\nx_{n}^{k}=\\binom{n}{k}\n$$\nand note that\n$$\nx_{n+1}^{k}-x_{n}^{k}=\\binom{n+1}{k}-\\binom{n}{k}=\\binom{n}{k-1}=x_{n}^{k-1} .\n$$\n\nLet $m$ be any positive integer. We will prove by induction on $k$ that the sequence $\\left\\{x_{n}^{k}\\right\\}_{n=k}^{\\infty}$ is periodic modulo $m$. For $k=1$ it is obvious that $x_{n}^{k}=n$ is periodic modulo $m$ with period $m$. Therefore it will suffice to show that the following is true: the sequence $\\left\\{x_{n}\\right\\}$ is periodic modulo $m$ if its difference sequence, $d_{n}=x_{n+1}-x_{n}$, is periodic modulo $m$.\nFurthermore, if $t$ then the period of $\\left\\{x_{n}\\right\\}$ is equal to $h t$ where $h$ is the smallest positive integer such that $h\\left(x_{t}-x_{0}\\right) \\equiv 0$ modulo $m$.\nIndeed, let $t$ be the period of $\\left\\{d_{n}\\right\\}$ and $h$ be the smallest positive integer such that $h\\left(x_{t}-x_{0}\\right) \\equiv 0$ modulo $m$. Then\n\n$$\n\\begin{aligned}\nx_{n+h t} & =x_{0}+\\sum_{j=0}^{n+h t-1} d_{j}=x_{0}+\\sum_{j=0}^{n-1} d_{j}+h\\left(\\sum_{j=0}^{t-1} d_{j}\\right)= \\\\\n& =x_{n}+h\\left(x_{t}-x_{0}\\right) \\equiv x_{n}(\\bmod m)\n\\end{aligned}\n$$\n\nfor all $n$, so the sequence $\\left\\{x_{n}\\right\\}$ is in fact periodic modulo $m$ (with a period dividing $h t$ ).",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9998,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9919,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.75,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9766,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:EGMO_2012_1|human|human|0",
+  "problem_uid": "OPC:EGMO_2012_1",
+  "dataset": "OPC",
+  "competition": "EGMO",
+  "year": 2012,
+  "category": "Geometry",
+  "problem": "Let \\( ABC \\) be a triangle with circumcenter \\( O \\). The points \\( D, E, F \\) lie in the interiors of the sides \\( BC, CA, AB \\) respectively, such that \\(\\overline{DE} \\perp \\overline{CO}\\) and \\(\\overline{DF} \\perp \\overline{BO}\\). Let \\( K \\) be the circumcenter of triangle \\( AFE \\). Prove that the lines \\(\\overline{DK}\\) and \\(\\overline{BC}\\) are perpendicular.",
+  "solution": "First, note $\\measuredangle E D F=180^{\\circ}-\\measuredangle B O C=180^{\\circ}-2 A$, so $\\measuredangle F D E=2 A$.\n\nObserve that $\\measuredangle F K E=2 A$ as well; hence $K F D E$ is cyclic. Hence\n\n$$\n\\begin{aligned}\n\\measuredangle K D B & =\\measuredangle K D F+\\measuredangle F D B \\\\\n& =\\measuredangle K E F+\\left(90^{\\circ}-\\measuredangle D B O\\right) \\\\\n& =\\left(90^{\\circ}-A\\right)+\\left(90^{\\circ}-\\left(90^{\\circ}-A\\right)\\right) \\\\\n& =90^{\\circ} .\n\\end{aligned}\n$$\n\nand the proof ends here.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9989,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9902,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.7,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9859,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:IMC_2007_1|human|human|0",
+  "problem_uid": "OPC:IMC_2007_1",
+  "dataset": "OPC",
+  "competition": "IMC",
+  "year": 2007,
+  "category": "Number Theory",
+  "problem": "Let \\( f \\) be a polynomial of degree \\( 2 \\) with integer coefficients. Suppose that \\( f(k) \\) is divisible by \\( 5 \\) for every integer \\( k \\). Prove that all coefficients of \\( f \\) are divisible by \\( 5 \\).",
+  "solution": "Let $f(x)=a x^{2}+b x+c$. Substituting $x=0, x=1$ and $x=-1$, we obtain that $5 \\mid f(0)=c$, $5 \\mid f(1)=(a+b+c)$ and $5 \\mid f(-1)=(a-b+c)$. Then $5 \\mid f(1)+f(-1)-2 f(0)=2 a$ and $5 \\mid f(1)-f(-1)=2 b$. Therefore $5$ divides $2 a, 2 b$ and $c$ and the statement follows.\nSolution 2. Consider $f(x)$ as a polynomial over the $5$-element field (i.e. modulo 5). The polynomial has $5$ roots while its degree is at most $2$. Therefore $f \\equiv 0(\\bmod 5)$ and all of its coefficients are divisible by $5$.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9976,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.989,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.8,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9967,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:izho_2022_4|human|human|0",
+  "problem_uid": "OPC:izho_2022_4",
+  "dataset": "OPC",
+  "competition": "izho",
+  "year": 2022,
+  "category": "Algebra",
+  "problem": "A quadratic trinomial \\( p(x) \\) with real coefficients is given. Prove that there is a positive integer \\( n \\) such that the equation \\( p(x) = \\frac{1}{n} \\) has no rational roots.",
+  "solution": "Assume that a quadratic trinomial \\( p(x) = a x^{2} + b x + c \\) takes all values of the form \\( \\frac{1}{n} \\) at rational points. It is easy to see that the coefficients \\( a, b, c \\) are rational. Indeed, if \\( p(r_{i}) = \\frac{1}{n_{i}} \\) for \\( i = 1, 2, 3 \\), where \\( r_{i} \\) are rational, then the numbers \\( a(r_{1} + r_{2}) + b = \\frac{p(r_{2}) - p(r_{1})}{r_{2} - r_{1}} \\) and \\( a(r_{2} + r_{3}) + b = \\frac{p(r_{3}) - p(r_{2})}{r_{3} - r_{2}} \\) are also rational, and so is their difference \\( a(r_{1} - r_{3}) \\). It follows immediately that \\( a \\), and therefore \\( b \\) and \\( c \\), are rational.\n\nIf \\( a, b, c \\) are represented as irreducible fractions, there is a prime \\( q \\) that does not divide their denominators and numerators. When a rational \\( r \\) is written as an irreducible fraction \\( \\frac{m}{n} \\) and \\( q^{k} \\), \\( k > 0 \\), is the maximum power of \\( q \\) dividing \\( n \\), the denominator of the irreducible fraction equal to \\( p(r) = a r^{2} + b r + c = \\frac{a m^{2} + b m n + c n^{2}}{n^{2}} \\) is divisible by \\( q^{2k} \\) and not by \\( q^{2k + 1} \\). Therefore, \\( p(r) \\) cannot be equal to \\( \\frac{1}{q^{s}} \\) for any odd \\( s \\). Since \\( q \\) does not divide the denominators of \\( a, b, c \\), for \\( n \\) not divisible by \\( q \\), the equation \\( p\\left(\\frac{m}{n}\\right) = \\frac{1}{q^{s}} \\) is also impossible. Thus \\( n = q^{s} \\) satisfies the condition for any odd \\( s \\).",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9996,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9907,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.5572,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OPC:putnam_1965_b1|human|human|0",
+  "problem_uid": "OPC:putnam_1965_b1",
+  "dataset": "OPC",
+  "competition": "putnam",
+  "year": 1965,
+  "category": "Analysis",
+  "problem": "Find $$\\lim_{n \\to \\infty} \\int_{0}^{1} \\int_{0}^{1} \\cdots \\int_{0}^{1} \\cos^2\\left(\\frac{\\pi}{2n}(x_1 + x_2 + \\cdots + x_n)\\right) dx_1 dx_2 \\cdots dx_n.$$ Show that the limit is $\\frac{1}{2}$.",
+  "solution": "B-1. The change of variables $x_{k} \\rightarrow 1-x_{k}$ yields\n\n$$\n\\begin{aligned}\n\\int_{0}^{1} \\int_{0}^{1} \\cdots \\int_{0}^{1} \\cos ^{2} & \\left\\{\\frac{\\pi}{2 n}\\left(x_{1}+x_{2}+\\cdots+x_{n}\\right)\\right\\} d x_{1} d x_{2} \\cdots d x_{n} \\\\\n& =\\int_{0}^{1} \\int_{0}^{1} \\cdots \\int_{0}^{1} \\sin ^{2}\\left\\{\\frac{\\pi}{2 n}\\left(x_{1}+x_{2}+\\cdots+x_{n}\\right)\\right\\} d x_{1} d x_{2} \\cdots d x_{n}\n\\end{aligned}\n$$\n\nEach of these expressions, being equal to half their sum, must equal $\\frac{1}{2}$. The limit is also $\\frac{1}{2}$.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9994,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9935,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.75,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9814,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "HARP:USAJMO_2010_1|human|human|3",
+  "problem_uid": "HARP:USAJMO_2010_1",
+  "dataset": "HARP",
+  "competition": "USAJMO",
+  "year": 2010,
+  "category": "Number Theory",
+  "problem": "A permutation of the set of positive integers $[n] = \\{1, 2, \\ldots, n\\}$ is a sequence $(a_1, a_2, \\ldots, a_n)$ such that each element of $[n]$ appears precisely one time as a term of the sequence. For example, $(3, 5, 1, 2, 4)$ is a permutation of $[5]$. Let $P(n)$ be the number of permutations of $[n]$ for which $ka_k$ is a perfect square for all $1\\leq k\\leq n$. Find with proof the smallest $n$ such that $P(n)$ is a multiple of $2010$.",
+  "solution": "It's well known that there exists $f(n)$ and $g(n)$ such that $n = f(n) \\cdot g(n)$, no square divides $f(n)$ other than 1, and $g(n)$ is a perfect square.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.98,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9999,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.987,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 1.0,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 1.0,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9931,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "HARP:USAJMO_2018_3|human|human|1",
+  "problem_uid": "HARP:USAJMO_2018_3",
+  "dataset": "HARP",
+  "competition": "USAJMO",
+  "year": 2018,
+  "category": "Geometry",
+  "problem": "($*$) Let $ABCD$ be a quadrilateral inscribed in circle $\\omega$ with $\\overline{AC} \\perp \\overline{BD}$. Let $E$ and $F$ be the reflections of $D$ over lines $BA$ and $BC$, respectively, and let $P$ be the intersection of lines $BD$ and $EF$. Suppose that the circumcircle of $\\triangle EPD$ meets $\\omega$ at $D$ and $Q$, and the circumcircle of $\\triangle FPD$ meets $\\omega$ at $D$ and $R$. Show that $EQ = FR$. [asy] unitsize(3cm); real labelscalefactor = 1.5; /* changes label-to-point distance */ pen dps = linewidth(0.7) + fontsize(10); defaultpen(dps); /* default pen style */ pen dotstyle = black; /* point style */ pen wrwrwr = rgb(0.3803921568627451,0.3803921568627451,0.3803921568627451); pen rvwvcq = rgb(0.08235294117647059,0.396078431372549,0.7529411764705882); draw((0.5922362871684147,0.8057643453026269)--(0.8660254037844386,-0.5)--(0.06064145095757084,-0.9981596137020172)--(-0.9987724554622847,0.04953364724950819)--cycle, linewidth(2) + rvwvcq); /* draw figures */ draw(circle((0,0), 1), linewidth(2) + wrwrwr); draw((0.8660254037844386,-0.5)--(-0.9987724554622847,0.04953364724950819), linewidth(2) + wrwrwr); draw((0.5922362871684147,0.8057643453026269)--(0.8660254037844386,-0.5), linewidth(2) + rvwvcq); draw((0.8660254037844386,-0.5)--(0.06064145095757084,-0.9981596137020172), linewidth(2) + rvwvcq); draw((0.06064145095757084,-0.9981596137020172)--(-0.9987724554622847,0.04953364724950819), linewidth(2) + rvwvcq); draw((-0.9987724554622847,0.04953364724950819)--(0.5922362871684147,0.8057643453026269), linewidth(2) + rvwvcq); draw((0.5922362871684147,0.8057643453026269)--(0.06064145095757084,-0.9981596137020172), linewidth(2) + wrwrwr); draw((0.5249726058304045,-2.4139334560841545)--(2.3530139989292476,0.7523271151020314), linewidth(2) + wrwrwr); draw((-0.9987724554622847,0.04953364724950819)--(1.5189031419104242,-0.6923952683993904), linewidth(2) + wrwrwr); draw((-0.9987724554622847,0.04953364724950819)--(0.5249726058304045,-2.4139334560841545), linewidth(2) + wrwrwr); draw((-0.9987724554622847,0.04953364724950819)--(2.3530139989292476,0.7523271151020314), linewidth(2) + wrwrwr); draw((0.8660254037844386,-0.5)--(2.3530139989292476,0.7523271151020314), linewidth(2) + wrwrwr); draw((0.8660254037844386,-0.5)--(0.5249726058304045,-2.4139334560841545), linewidth(2) + wrwrwr); draw(circle((0.5922362871684147,0.8057643453026269), 1.7615883990890795), linewidth(2) + linetype(\"4 4\") + wrwrwr); draw(circle((0.06064145095757076,-0.9981596137020177), 1.4899728165839203), linewidth(2) + linetype(\"4 4\") + wrwrwr); draw((0.5249726058304045,-2.4139334560841545)--(0.9854301844182564,0.17008042696736536), linewidth(2) + wrwrwr); draw((2.3530139989292476,0.7523271151020314)--(0.3454211217688861,-0.9384477868458769), linewidth(2) + wrwrwr); /* dots and labels */ dot((0,0),dotstyle); label(\"$O$\", (0.03388760411534265,0.08889671794036069), NE * 0.5); dot((0.8660254037844386,-0.5),dotstyle); label(\"$B$\", (0.9043736119372844,-0.4159851665963708), S * 3.5 * labelscalefactor); dot((-0.9987724554622847,0.04953364724950819),dotstyle); label(\"$D$\", (-0.9671713048798903,0.13242101833145825), W * 3.5 * labelscalefactor); dot((0.5922362871684147,0.8057643453026269),dotstyle); label(\"$A$\", (0.625818089434263,0.8897438451365556), NE * labelscalefactor); dot((0.06064145095757084,-0.9981596137020172),linewidth(4pt) + dotstyle); label(\"$C$\", (0.09482162466287856,-0.9295719112113219), S * 3); dot((2.3530139989292476,0.7523271151020314),dotstyle); label(\"$E$\", (2.3841998252345853,0.8375146846672384), NE * labelscalefactor); dot((0.5249726058304045,-2.4139334560841545),dotstyle); label(\"$F$\", (0.5561792088085077,-2.3310543838046627), S * 3.5 * labelscalefactor); dot((1.5189031419104242,-0.6923952683993904),linewidth(4pt) + dotstyle); label(\"$P$\", (1.5572381178037407,-0.6249018084736391), SE * 3); dot((0.3454211217688861,-0.9384477868458769),linewidth(4pt) + dotstyle); label(\"$Q$\", (0.38208200724411934,-0.8686378906637853), S * 3); dot((0.9854301844182564,0.17008042696736536),linewidth(4pt) + dotstyle); label(\"$R$\", (1.0175367929541368,0.23687933927009236), NE * labelscalefactor); [/asy]",
+  "solution": "We begin with the following claims.\nClaim. $B$ is the circumcenter of $\\triangle DEF$.\nProof. By reflection $BD=BE=BF$.\nClaim. $A$ is the circumcenter of $\\triangle EPD$.\nProof. First, we have",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 1.0,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9777,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.7,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9978,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:1608|human|human|0",
+  "problem_uid": "OlympiadBench:1608",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Geometry",
+  "problem": "Let $A B C$ be a triangle, let $D$ be the touchpoint of the side $B C$ and the incircle of the triangle $A B C$, and let $J_{b}$ and $J_{c}$ be the incentres of the triangles $A B D$ and $A C D$, respectively. Prove that the circumcentre of the triangle $A J_{b} J_{c}$ lies on the bisectrix of the angle $B A C$.",
+  "solution": "Let the incircle of the triangle $A B C$ meet $C A$ and $A B$ at points $E$ and $F$, respectively. Let the incircles of the triangles $A B D$ and $A C D$ meet $A D$ at points $X$ and $Y$, respectively. Then $2 D X=D A+D B-A B=D A+D B-B F-A F=D A-A F$; similarly, $2 D Y=D A-A E=2 D X$. Hence the points $X$ and $Y$ coincide, so $J_{b} J_{c} \\perp A D$.\n\nNow let $O$ be the circumcentre of the triangle $A J_{b} J_{c}$. Then $\\angle J_{b} A O=\\pi / 2-\\angle A O J_{b} / 2=$ $\\pi / 2-\\angle A J_{c} J_{b}=\\angle X A J_{c}=\\frac{1}{2} \\angle D A C$. Therefore, $\\angle B A O=\\angle B A J_{b}+\\angle J_{b} A O=\\frac{1}{2} \\angle B A D+$ $\\frac{1}{2} \\angle D A C=\\frac{1}{2} \\angle B A C$, and the conclusion follows.\n\nFig. 1",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9994,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9913,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.7,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.587,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:1698|human|human|0",
+  "problem_uid": "OlympiadBench:1698",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Geometry",
+  "problem": "Let $A B C$ be an acute triangle. Let $\\omega$ be a circle whose center $L$ lies on the side $B C$. Suppose that $\\omega$ is tangent to $A B$ at $B^{\\prime}$ and to $A C$ at $C^{\\prime}$. Suppose also that the circumcenter $O$ of the triangle $A B C$ lies on the shorter arc $B^{\\prime} C^{\\prime}$ of $\\omega$. Prove that the circumcircle of $A B C$ and $\\omega$ meet at two points.",
+  "solution": "The point $B^{\\prime}$, being the perpendicular foot of $L$, is an interior point of side $A B$. Analogously, $C^{\\prime}$ lies in the interior of $A C$. The point $O$ is located inside the triangle $A B^{\\prime} C^{\\prime}$, hence $\\angle C O B<\\angle C^{\\prime} O B^{\\prime}$.\n\nLet $\\alpha=\\angle C A B$. The angles $\\angle C A B$ and $\\angle C^{\\prime} O B^{\\prime}$ are inscribed into the two circles with centers $O$ and $L$, respectively, so $\\angle C O B=2 \\angle C A B=2 \\alpha$ and $2 \\angle C^{\\prime} O B^{\\prime}=360^{\\circ}-\\angle C^{\\prime} L B^{\\prime}$. From the kite $A B^{\\prime} L C^{\\prime}$ we have $\\angle C^{\\prime} L B^{\\prime}=180^{\\circ}-\\angle C^{\\prime} A B^{\\prime}=180^{\\circ}-\\alpha$. Combining these, we get\n\n$$\n2 \\alpha=\\angle C O B<\\angle C^{\\prime} O B^{\\prime}=\\frac{360^{\\circ}-\\angle C^{\\prime} L B^{\\prime}}{2}=\\frac{360^{\\circ}-\\left(180^{\\circ}-\\alpha\\right)}{2}=90^{\\circ}+\\frac{\\alpha}{2}\n$$\n\nso\n\n$$\n\\alpha<60^{\\circ}\n$$\n\nLet $O^{\\prime}$ be the reflection of $O$ in the line $B C$. In the quadrilateral $A B O^{\\prime} C$ we have\n\n$$\n\\angle C O^{\\prime} B+\\angle C A B=\\angle C O B+\\angle C A B=2 \\alpha+\\alpha<180^{\\circ},\n$$\n\nso the point $O^{\\prime}$ is outside the circle $A B C$. Hence, $O$ and $O^{\\prime}$ are two points of $\\omega$ such that one of them lies inside the circumcircle, while the other one is located outside. Therefore, the two circles intersect.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9999,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9893,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.6,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.6069,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:1702|human|human|0",
+  "problem_uid": "OlympiadBench:1702",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Geometry",
+  "problem": "Let $A B C$ be a triangle with incenter $I$ and circumcircle $\\omega$. Let $D$ and $E$ be the second intersection points of $\\omega$ with the lines $A I$ and $B I$, respectively. The chord $D E$ meets $A C$ at a point $F$, and $B C$ at a point $G$. Let $P$ be the intersection point of the line through $F$ parallel to $A D$ and the line through $G$ parallel to $B E$. Suppose that the tangents to $\\omega$ at $A$ and at $B$ meet at a point $K$. Prove that the three lines $A E, B D$, and $K P$ are either parallel or concurrent.",
+  "solution": "Since\n\n$$\n\\angle I A F=\\angle D A C=\\angle B A D=\\angle B E D=\\angle I E F\n$$\n\nthe quadrilateral $A I F E$ is cyclic. Denote its circumcircle by $\\omega_{1}$. Similarly, the quadrilateral $B D G I$ is cyclic; denote its circumcircle by $\\omega_{2}$.\n\nThe line $A E$ is the radical axis of $\\omega$ and $\\omega_{1}$, and the line $B D$ is the radical axis of $\\omega$ and $\\omega_{2}$. Let $t$ be the radical axis of $\\omega_{1}$ and $\\omega_{2}$. These three lines meet at the radical center of the three circles, or they are parallel to each other. We will show that $t$ is in fact the line $P K$.\n\nLet $L$ be the second intersection point of $\\omega_{1}$ and $\\omega_{2}$, so $t=I L$. (If the two circles are tangent to each other then $L=I$ and $t$ is the common tangent.)\n\nLet the line $t$ meet the circumcircles of the triangles $A B L$ and $F G L$ at $K^{\\prime} \\neq L$ and $P^{\\prime} \\neq L$, respectively. Using oriented angles we have\n\n$$\n\\angle\\left(A B, B K^{\\prime}\\right)=\\angle\\left(A L, L K^{\\prime}\\right)=\\angle(A L, L I)=\\angle(A E, E I)=\\angle(A E, E B)=\\angle(A B, B K),\n$$\n\nso $B K^{\\prime} \\| B K$. Similarly we have $A K^{\\prime} \\| A K$, and therefore $K^{\\prime}=K$. Next, we have\n\n$$\n\\angle\\left(P^{\\prime} F, F G\\right)=\\angle\\left(P^{\\prime} L, L G\\right)=\\angle(I L, L G)=\\angle(I D, D G)=\\angle(A D, D E)=\\angle(P F, F G),\n$$\n\nhence $P^{\\prime} F \\| P F$ and similarly $P^{\\prime} G \\| P G$. Therefore $P^{\\prime}=P$. This means that $t$ passes through $K$ and $P$, which finishes the proof.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9979,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9891,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.965,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:1743|human|human|0",
+  "problem_uid": "OlympiadBench:1743",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Algebra",
+  "problem": "The sequence of real numbers $a_{0}, a_{1}, a_{2}, \\ldots$ is defined recursively by\n\n$$\na_{0}=-1, \\quad \\sum_{k=0}^{n} \\frac{a_{n-k}}{k+1}=0 \\quad \\text { for } \\quad n \\geq 1\n$$\n\nShow that $a_{n}>0$ for $n \\geq 1$.",
+  "solution": "The proof goes by induction. For $n=1$ the formula yields $a_{1}=1 / 2$. Take $n \\geq 1$, assume $a_{1}, \\ldots, a_{n}>0$ and write the recurrence formula for $n$ and $n+1$, respectively as\n\n$$\n\\sum_{k=0}^{n} \\frac{a_{k}}{n-k+1}=0 \\quad \\text { and } \\quad \\sum_{k=0}^{n+1} \\frac{a_{k}}{n-k+2}=0\n$$\n\nSubtraction yields\n\n$$\n\\begin{aligned}\n0=(n+2) \\sum_{k=0}^{n+1} \\frac{a_{k}}{n-k+2}-(n+1) \\sum_{k=0}^{n} \\frac{a_{k}}{n-k+1} \\\\\n=(n+2) a_{n+1}+\\sum_{k=0}^{n}\\left(\\frac{n+2}{n-k+2}-\\frac{n+1}{n-k+1}\\right) a_{k} .\n\\end{aligned}\n$$\n\nThe coefficient of $a_{0}$ vanishes, so\n\n$$\na_{n+1}=\\frac{1}{n+2} \\sum_{k=1}^{n}\\left(\\frac{n+1}{n-k+1}-\\frac{n+2}{n-k+2}\\right) a_{k}=\\frac{1}{n+2} \\sum_{k=1}^{n} \\frac{k}{(n-k+1)(n-k+2)} a_{k} .\n$$\n\nThe coefficients of $a_{1}, \\ldots, a_{n}$ are all positive. Therefore, $a_{1}, \\ldots, a_{n}>0$ implies $a_{n+1}>0$.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.999,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9911,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.75,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.6894,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:1868|human|human|1",
+  "problem_uid": "OlympiadBench:1868",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Number Theory",
+  "problem": "Let $a$ be a positive integer which is not a square number. Denote by $A$ the set of all positive integers $k$ such that\n\n$$\nk=\\frac{x^{2}-a}{x^{2}-y^{2}}\n\\tag{1}\n$$\n\nfor some integers $x$ and $y$ with $x>\\sqrt{a}$. Denote by $B$ the set of all positive integers $k$ such that (1) is satisfied for some integers $x$ and $y$ with $0 \\leqslant x<\\sqrt{a}$. Prove that $A=B$.",
+  "solution": "The relation (1) is equivalent to\n\n$$\nk y^{2}-(k-1) x^{2}=a .\n\\tag{2}\n$$\n\nMotivated by Pell's Equation, we prove the following, which is essentially the same as the Claim in",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9997,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9867,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9978,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:1999|human|human|0",
+  "problem_uid": "OlympiadBench:1999",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Algebra",
+  "problem": "Let $n \\geqslant 3$ be an integer, and let $x_{1}, x_{2}, \\ldots, x_{n}$ be real numbers in the interval $[0,1]$. Let $s=x_{1}+x_{2}+\\ldots+x_{n}$, and assume that $s \\geqslant 3$. Prove that there exist integers $i$ and $j$ with $1 \\leqslant i<j \\leqslant n$ such that\n\n$$\n2^{j-i} x_{i} x_{j}>2^{s-3}\n$$",
+  "solution": "Let $1 \\leqslant a<b \\leqslant n$ be such that $2^{b-a} x_{a} x_{b}$ is maximal. This choice of $a$ and $b$ implies that $x_{a+t} \\leqslant 2^{t} x_{a}$ for all $1-a \\leqslant t \\leqslant b-a-1$, and similarly $x_{b-t} \\leqslant 2^{t} x_{b}$ for all $b-n \\leqslant t \\leqslant b-a+1$. Now, suppose that $x_{a} \\in\\left(\\frac{1}{2^{u+1}}, \\frac{1}{2^{u}}\\right]$ and $x_{b} \\in\\left(\\frac{1}{2^{v+1}}, \\frac{1}{2^{v}}\\right]$, and write $x_{a}=2^{-\\alpha}, x_{b}=2^{-\\beta}$. Then\n\n$$\n\\sum_{i=1}^{a+u-1} x_{i} \\leqslant 2^{u} x_{a}\\left(\\frac{1}{2}+\\frac{1}{4}+\\ldots+\\frac{1}{2^{a+u-1}}\\right)<2^{u} x_{a} \\leqslant 1\n$$\n\nand similarly,\n\n$$\n\\sum_{i=b-v+1}^{n} x_{i} \\leqslant 2^{v} x_{b}\\left(\\frac{1}{2}+\\frac{1}{4}+\\ldots+\\frac{1}{2^{n-b+v}}\\right)<2^{v} x_{b} \\leqslant 1\n$$\n\nIn other words, the sum of the $x_{i}$ 's for $i$ outside of the interval $[a+u, b-v]$ is strictly less than 2. Since the total sum is at least 3 , and each term is at most 1 , it follows that this interval must have at least two integers. i.e., $a+u<b-v$. Thus, by bounding the sum of the $x_{i}$ for $i \\in[1, a+u] \\cup[b-v, n]$ like above, and trivially bounding each $x_{i} \\in(a+u, b-v)$ by 1 , we obtain\n\n$$\ns<2^{u+1} x_{a}+2^{v+1} x_{b}+((b-v)-(a+u)-1)=b-a+\\left(2^{u+1-\\alpha}+2^{v+1-\\beta}-(u+v+1)\\right)\n$$\n\nNow recall $\\alpha \\in(u, u+1]$ and $\\beta \\in(v, v+1]$, so applying Bernoulli's inequality yields $\\left.2^{u+1-\\alpha}+2^{v+1-\\beta}-u-v-1 \\leqslant(1+(u+1-\\alpha))\\right)+(1+(v+1-\\beta))-u-v-1=3-\\alpha-\\beta$.\n\nIt follows that $s-3<b-a-\\alpha-\\beta$, and so\n\n$$\n2^{s-3}<2^{b-a-\\alpha-\\beta}=2^{b-a} x_{a} x_{b} .\n$$",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9999,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.992,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.75,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.8881,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:2291|human|human|0",
+  "problem_uid": "OlympiadBench:2291",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Number Theory",
+  "problem": "Prove that the integer $\\frac{(1 !)(2 !)(3 !) \\cdots(398 !)(399 !)(400 !)}{200 !}$ is a perfect square. (In this fraction, the numerator is the product of the factorials of the integers from 1 to 400 , inclusive.)",
+  "solution": "Let $N=\\frac{(1 !)(2 !)(3 !) \\cdots(398 !)(399 !)(400 !)}{200 !}$.\n\nFor each integer $k$ from 1 to 200 , inclusive, we rewrite $(2 k)$ ! as $2 k \\cdot(2 k-1)$ !.\n\nTherefore, $(2 k-1) !(2 k) !=(2 k-1) ! \\cdot 2 k \\cdot(2 k-1) !=2 k((2 k-1) !)^{2}$.\n\n(In particular, $(1 !)(2 !)=2(1 !)^{2},(3 !)(4 !)=4(3 !)^{2}$, and so on.)\n\nThus,\n\n$$\nN=\\frac{2(1 !)^{2} \\cdot 4(3 !)^{2} \\cdots \\cdot 398(397 !)^{2} \\cdot 400(399 !)^{2}}{200 !}\n$$\n\nRe-arranging the numerator of the expression, we obtain\n\n$$\nN=\\frac{(1 !)^{2}(3 !)^{2} \\cdots(397 !)^{2}(399 !)^{2} \\cdot(2 \\cdot 4 \\cdot \\cdots 398 \\cdot 400)}{200 !}\n$$\n\nWe can now re-write $2 \\cdot 4 \\cdot \\cdots 398 \\cdot 400$ as $(2 \\cdot 1) \\cdot(2 \\cdot 2) \\cdots(2 \\cdot 199) \\cdot(2 \\cdot 200)$.\n\nSince there are 200 sets of parentheses, we obtain\n\n$$\nN=\\frac{(1 !)^{2}(3 !)^{2} \\cdots(397 !)^{2}(399 !)^{2} \\cdot 2^{200} \\cdot(1 \\cdot 2 \\cdots \\cdots 199 \\cdot 200)}{200 !}\n$$\n\nSince $1 \\cdot 2 \\cdot \\cdots \\cdot 199 \\cdot 200=200$ !, we can conclude that\n\n$$\nN=2^{200}(1 !)^{2}(3 !)^{2} \\cdots(397 !)^{2}(399 !)^{2}\n$$\n\nTherefore,\n\n$$\n\\sqrt{N}=2^{100}(1 !)(3 !) \\cdots(397 !)(399 !)\n$$\n\nwhich is a product of integers and thus an integer itself.\n\nSince $\\sqrt{N}$ is an integer, $N$ is a perfect square, as required.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9999,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9919,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.75,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9208,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:2433|human|human|0",
+  "problem_uid": "OlympiadBench:2433",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Number Theory",
+  "problem": "Consider a set $S$ that contains $m \\geq 4$ elements, each of which is a positive integer and no two of which are equal. We call $S$ boring if it contains four distinct integers $a, b, c, d$ such that $a+b=c+d$. We call $S$ exciting if it is not boring. For example, $\\{2,4,6,8,10\\}$ is boring since $4+8=2+10$. Also, $\\{1,5,10,25,50\\}$ is exciting.\nProve that, if $S$ is an exciting set of $m \\geq 4$ positive integers, then $S$ contains an integer greater than or equal to $\\frac{m^{2}-m}{4}$.",
+  "solution": "Suppose that $S$ is an exciting set that contains exactly $m$ elements.\n\nThere are $\\left(\\begin{array}{c}m \\\\ 2\\end{array}\\right)=\\frac{m(m-1)}{2}$ pairs of elements of $S$.\n\nSince $S$ is exciting, the sums of these pairs of elements are all distinct positive integers.\n\nThis means that the largest of these sums is greater than or equal to $\\frac{m(m-1)}{2}$.\n\nWhen two numbers add to $\\frac{m(m-1)}{2}$ or greater, then at least one of them must be at least as large as $\\frac{1}{2} \\cdot \\frac{m(m-1)}{2}=\\frac{m^{2}-m}{4}$.\n\nTherefore, there is an element of $S$ that is greater than or equal to $\\frac{m^{2}-m}{4}$.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 1.0,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9911,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.8727,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:2688|human|human|0",
+  "problem_uid": "OlympiadBench:2688",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Geometry",
+  "problem": "In ARMLopolis, every house number is a positive integer, and City Hall's address is 0. However, due to the curved nature of the cowpaths that eventually became the streets of ARMLopolis, the distance $d(n)$ between house $n$ and City Hall is not simply the value of $n$. Instead, if $n=3^{k} n^{\\prime}$, where $k \\geq 0$ is an integer and $n^{\\prime}$ is an integer not divisible by 3 , then $d(n)=3^{-k}$. For example, $d(18)=1 / 9$ and $d(17)=1$. Notice that even though no houses have negative numbers, $d(n)$ is well-defined for negative values of $n$. For example, $d(-33)=1 / 3$ because $-33=3^{1} \\cdot-11$. By definition, $d(0)=0$. Following the dictum \"location, location, location,\" this Power Question will refer to \"houses\" and \"house numbers\" interchangeably.\n\nCuriously, the arrangement of the houses is such that the distance from house $n$ to house $m$, written $d(m, n)$, is simply $d(m-n)$. For example, $d(3,4)=d(-1)=1$ because $-1=3^{0} \\cdot-1$. In particular, if $m=n$, then $d(m, n)=0$.\n\nA visitor to ARMLopolis is surprised by the ARMLopolitan distance formula, and starts to wonder about ARMLopolitan geometry. An ARMLopolitan triangle is a triangle, all of whose vertices are ARMLopolitan houses.\nShow that $d(17,51) \\leq d(17,34)+d(34,51)$ and that $d(17,95) \\leq d(17,68)+d(68,95) . \\quad[1 \\mathrm{pt}]$",
+  "solution": "Because $d(17,34)=d(17)=1, d(34,51)=d(17)=1$, and $d(17,51)=d(34)=1$, it follows that $d(17,51) \\leq d(17,34)+d(34,51)$. Because $d(17,68)=d(51)=1 / 3$, $d(68,95)=d(27)=1 / 27$, and $d(17,95)=d(78)=1 / 3$, it follows that $d(17,95) \\leq$ $d(17,68)+d(68,95)$.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.85,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9977,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.9913,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9344,
+    "parse_error": false
+   }
+  }
+ },
+ {
+  "uid": "OlympiadBench:2750|human|human|0",
+  "problem_uid": "OlympiadBench:2750",
+  "dataset": "OlympiadBench",
+  "competition": null,
+  "year": null,
+  "category": "Algebra",
+  "problem": "In a sequence of $n$ consecutive positive integers, where $n>1$, an element of the sequence is said to be cromulent if it is relatively prime to all other numbers in the sequence. Every element of a sequence with $n=2$ is cromulent because any two consecutive integers are relatively prime to each other.\nShow that every sequence of three consecutive positive integers contains a cromulent element.",
+  "solution": "Consider the sequence $a-1, a, a+1$. Note that $a$ is relatively prime to $a-1$ and $a+1$ because any common divisor must divide their difference, and the differences are both 1 . Thus $a$ is a cromulent element of the sequence.",
+  "author": "human",
+  "is_ai": 0,
+  "generator_model": null,
+  "n_detectors": 7,
+  "n_wrong": 7,
+  "detector_preds": {
+   "gemma4_e4b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "gemma4_e4b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.9,
+    "parse_error": false
+   },
+   "mage": {
+    "pred_AI": 1,
+    "p_ai": 0.9993,
+    "parse_error": false
+   },
+   "modernbert": {
+    "pred_AI": 1,
+    "p_ai": 0.8695,
+    "parse_error": false
+   },
+   "qwen3_8b_nothink": {
+    "pred_AI": 1,
+    "p_ai": 0.95,
+    "parse_error": false
+   },
+   "qwen3_8b_think": {
+    "pred_AI": 1,
+    "p_ai": 0.7,
+    "parse_error": false
+   },
+   "roberta": {
+    "pred_AI": 1,
+    "p_ai": 0.9953,
+    "parse_error": false
+   }
+  }
+ }
+]
