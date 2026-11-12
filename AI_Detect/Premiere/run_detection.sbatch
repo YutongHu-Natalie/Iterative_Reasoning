@@ -31,6 +31,11 @@ source ./venv/bin/activate
 #     python ./AI_Detect/Premiere/run_detection.py --data full --sample 200 --models qwen3_8b_think
 #   only problems with both an LLM and a human proof (controls for source):
 #     python ./AI_Detect/Premiere/run_detection.py --data full --paired-only --out-dir ./AI_Detect/Premiere/TestResult/full_paired --models mage
+# Hard-case subset, with and without the structural annotation from
+# extract_structure.py (run that first; it caches to Data/structure/):
+#     python ./AI_Detect/Premiere/run_detection.py --data hard_balanced --models qwen3_8b_think gemma4_e4b_think
+#     python ./AI_Detect/Premiere/run_detection.py --data hard_balanced --models qwen3_8b_think gemma4_e4b_think --structure gpt_6_luna_xhigh
+#     python ./AI_Detect/Premiere/compare_structure.py --data hard_balanced
 python ./AI_Detect/Premiere/run_detection.py --data full --models gemma4_e4b_think 
 #gemma4_e4b_think gemma4_e4b_nothink 
 

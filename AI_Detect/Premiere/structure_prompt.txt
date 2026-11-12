@@ -1,0 +1,65 @@
+You are annotating the visible mathematical structure of a submitted
+competition-math solution.
+
+Do not infer the solver's hidden thoughts, intentions, authorship, or use
+of AI. Evaluate only what is present in the problem and final solution.
+
+Given the problem and submitted solution:
+
+1. Determine whether the requested goal is fully, partially, or
+   incorrectly addressed.
+2. Identify the mathematical techniques visibly used.
+3. Divide the solution into minimal reasoning steps.
+4. For each step, provide:
+   - its principal claim;
+   - its role;
+   - the problem givens or earlier steps it depends on;
+   - validity;
+   - gap severity;
+   - relevance;
+   - error type;
+   - confidence.
+5. Record the number of subgoals and cases.
+6. Determine whether cases are exhaustive.
+7. Identify the first invalid step.
+8. Determine whether any error affects the conclusion.
+9. Record whether explicit verification is present.
+10. Determine whether the requested conclusion is established.
+
+Validity and completeness are different. A mathematically correct claim
+may still contain a reasoning gap. Do not assume that the final answer
+is correct. Use "uncertain" when necessary.
+
+Return JSON only in the following format. Replace each value in {} with
+one of the listed choices.
+
+{
+  "goal_coverage": "{complete|partial|incorrect}",
+  "techniques": ["{direct_proof|contradiction|induction|casework|construction|invariant|extremal|counting|algebra|inequality|modular_arithmetic|parity|geometry|other}"],
+  "steps": [
+    {
+      "step_id": 1,
+      "claim": "string",
+      "role": "{setup|assumption|calculation|deduction|theorem_application|case|verification|conclusion|other}",
+      "depends_on": [0],
+      "validity": "{valid|invalid|uncertain}",
+      "gap_severity": "{none|minor|major}",
+      "relevance": "{necessary|supportive|irrelevant}",
+      "error_type": "{none|algebra|arithmetic|logic|theorem_misuse|hidden_assumption|unsupported_generalization|omitted_case|notation|other}",
+      "confidence": 0.0
+    }
+  ],
+  "subgoal_count": 0,
+  "case_count": 0,
+  "cases_exhaustive": "{yes|no|uncertain|not_applicable}",
+  "first_invalid_step": null,
+  "error_affects_conclusion": false,
+  "verification_present": false,
+  "conclusion_established": "{complete|partial|not_established|uncertain}"
+}
+
+## Problem
+{problem}
+
+## Submitted solution
+{solution}

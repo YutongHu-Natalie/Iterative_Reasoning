@@ -1,6 +1,6 @@
 """AI-text detection on LLM-generated vs human-written olympiad proofs.
 
-Two datasets (--data):
+Datasets (--data, see detect_common.DATA_PATHS):
   premiere  Data/premiere_data.json: 20 problems, each one LLM + one human
             solution (40 items).
   full      Data/full_data.json (built by build_full_data.py): ~2.4k proofs
@@ -8,6 +8,14 @@ Two datasets (--data):
             record per solution. Use --sample N for a balanced, dataset-
             stratified subset of N LLM + N human proofs, and --paired-only to
             restrict to problems that have both an LLM and a human solution.
+  hard_balanced / hard_all_wrong / hard_majority
+            hard-case subsets of full, or any JSON file path in full format.
+
+--structure EXTRACTOR additionally shows the LLM judges the structural
+annotation of each solution produced by extract_structure.py (prompt
+prompt_template_structure.txt); results go to <model_key>__struct-EXTRACTOR.json
+so they sit next to the plain run for compare_structure.py. Classifiers are
+skipped in that mode.
 
 Each item is scored independently by every model chosen with --models:
 
@@ -17,7 +25,7 @@ Each item is scored independently by every model chosen with --models:
     mage, modernbert, roberta
 
 Writes one file per model to <out-dir>/<model_key>.json (default
-TestResult/ for premiere, TestResult/full/ for full) containing the run
+TestResult/ for premiere, TestResult/<data>/ otherwise) containing the run
 config, a summary (accuracy / AUROC / per-class recall, broken down by
 dataset and by generator model) and per-item results. Every item gets
 pred_AI (0/1), certainty (0-100, confidence in pred_AI) and p_ai (0-1,
@@ -32,31 +40,21 @@ Usage:
   python AI_Detect/Premiere/run_detection.py --models all --limit 2   # smoke test
   python AI_Detect/Premiere/run_detection.py --data full --models mage modernbert roberta
   python AI_Detect/Premiere/run_detection.py --data full --sample 200 --models qwen3_8b_think
+  python AI_Detect/Premiere/run_detection.py --data hard_balanced --models qwen3_8b_think \
+      --structure gpt_6_luna_xhigh
 """
 import argparse
 import gc
-import hashlib
 import json
-import random
-import sys
 import time
 from pathlib import Path
 
 import torch
 from tqdm import tqdm
 
-HERE = Path(__file__).resolve().parent
-REPO_ROOT = HERE.parent.parent
-sys.path.insert(0, str(REPO_ROOT / "proof_eval_codes"))
-from eval_utils import atomic_write_json, extract_json  # noqa: E402
-
-DATA_PATHS = {
-    "premiere": HERE / "Data" / "premiere_data.json",
-    "full": HERE / "Data" / "full_data.json",
-}
-PROMPT_PATH = HERE / "prompt_template.txt"
-OUT_DIRS = {"premiere": HERE / "TestResult", "full": HERE / "TestResult" / "full"}
-ITEM_META = ("id", "problem_id", "source", "competition", "category", "is_ai", "author")
+from detect_common import (REPO_ROOT, add_data_args, aggregate_runs, build_prompt, default_out_dir,
+                           detection_template, item_meta, item_set_info, load_items, load_results,
+                           load_structures, output_name, parse_verdict, save_results, summarize)
 
 LLM_MODELS = {
     "qwen3_8b_think": dict(family="qwen3", path="../models/Qwen3-8B", thinking=True),
@@ -86,69 +84,6 @@ QWEN3_THINK_END_TOKEN_ID = 151668  # </think>
 QWEN3_THINKING_GEN_KWARGS = dict(temperature=0.6, top_p=0.95, top_k=20, min_p=0)
 QWEN3_NON_THINKING_GEN_KWARGS = dict(temperature=0.7, top_p=0.8, top_k=20, min_p=0)
 GEMMA4_GEN_KWARGS = dict(temperature=1.0, top_p=0.95, top_k=64)
-
-
-# ---------------------------------------------------------------- data
-
-def load_items(data, limit=None, sample=None, paired_only=False, seed=42):
-    """Return a list of items: {id, problem_id, source, competition, category,
-    is_ai, author, problem, solution}. `author` is the generator model or 'human'."""
-    with open(DATA_PATHS[data], encoding="utf-8") as f:
-        records = json.load(f)
-
-    if data == "premiere":
-        if limit:
-            records = records[:limit]
-        items = []
-        for r in records:
-            base = {"problem_id": r["id"], "source": r["source"], "competition": None,
-                    "category": None, "problem": r["problem"]}
-            items.append({**base, "id": f"{r['id']}__llm", "is_ai": 1,
-                          "author": r["llm_model"], "solution": r["llm_solution"]})
-            items.append({**base, "id": f"{r['id']}__human", "is_ai": 0,
-                          "author": "human", "solution": r["human_solution"]})
-        return items
-
-    items = [{
-        "id": r["uid"], "problem_id": r["problem_uid"], "source": r["dataset"],
-        "competition": r.get("competition"), "category": r.get("category"),
-        "is_ai": r["is_ai"], "author": r["generator_model"] or "human",
-        "problem": r["problem"], "solution": r["solution"],
-    } for r in records]
-    if paired_only:
-        has = {(i["problem_id"], i["is_ai"]) for i in items}
-        items = [i for i in items if (i["problem_id"], 1) in has and (i["problem_id"], 0) in has]
-    if sample:
-        items = balanced_sample(items, sample, seed)
-    if limit:
-        items = items[:limit]
-    return items
-
-
-def balanced_sample(items, n_per_class, seed):
-    """n_per_class LLM + n_per_class human items, each class allocated across
-    datasets in proportion to its size there (largest-remainder rounding)."""
-    rng = random.Random(seed)
-    picked = []
-    for is_ai in (1, 0):
-        pool = sorted((i for i in items if i["is_ai"] == is_ai), key=lambda i: i["id"])
-        n = min(n_per_class, len(pool))
-        by_source = {}
-        for i in pool:
-            by_source.setdefault(i["source"], []).append(i)
-        quotas = {s: n * len(v) / len(pool) for s, v in by_source.items()}
-        alloc = {s: int(q) for s, q in quotas.items()}
-        for s in sorted(quotas, key=lambda s: quotas[s] - alloc[s], reverse=True)[:n - sum(alloc.values())]:
-            alloc[s] += 1
-        for s, group in sorted(by_source.items()):
-            picked += rng.sample(group, alloc[s])
-    rng.shuffle(picked)
-    return picked
-
-
-def build_prompt(template, problem, solution):
-    # str.replace, not str.format: the template contains literal JSON braces.
-    return template.replace("{problem}", problem).replace("{solution}", solution)
 
 
 # ---------------------------------------------------------------- LLM judges
@@ -235,54 +170,16 @@ def generate_gemma4(processor, model, prompt, thinking, max_new_tokens):
     return parsed.get("thinking"), answer, n_tokens
 
 
-def _parse_ai(value):
-    if isinstance(value, bool):
-        return int(value)
-    if isinstance(value, (int, float)) and value in (0, 1):
-        return int(value)
-    if isinstance(value, str):
-        v = value.strip().lower()
-        if v in ("1", "true", "yes", "ai"):
-            return 1
-        if v in ("0", "false", "no", "human"):
-            return 0
-    return None
-
-
-def _parse_certainty(value):
-    if isinstance(value, str):
-        value = value.strip().rstrip("%").strip()
-    try:
-        c = float(value)
-    except (TypeError, ValueError):
-        return None
-    if 0 < c <= 1 and not float(c).is_integer():
-        c *= 100  # model answered on a 0-1 scale
-    return max(0.0, min(100.0, c))
-
-
-def parse_verdict(answer):
-    parsed, error = extract_json(answer)
-    if parsed is None:
-        return {"pred_AI": None, "certainty": None, "p_ai": None, "parse_error": True, "parse_msg": error}
-    pred = _parse_ai(parsed.get("AI", parsed.get("ai")))
-    cert = _parse_certainty(parsed.get("certainty"))
-    if pred is None or cert is None:
-        return {"pred_AI": pred, "certainty": cert, "p_ai": None, "parse_error": True,
-                "parse_msg": f"bad fields: {parsed}"}
-    p_ai = cert / 100 if pred == 1 else 1 - cert / 100
-    return {"pred_AI": pred, "certainty": cert, "p_ai": p_ai, "parse_error": False, "parse_msg": None}
-
-
-def run_llm(key, items, args, emit):
+def run_llm(key, items, args, emit, structures=None):
     cfg = LLM_MODELS[key]
-    template = PROMPT_PATH.read_text(encoding="utf-8")
+    template = detection_template(structures is not None)
     max_new_tokens = args.max_new_tokens or (8192 if cfg["thinking"] else 1024)
     tok_or_proc, model = load_llm(cfg)
     generate = generate_qwen3 if cfg["family"] == "qwen3" else generate_gemma4
 
     for item in tqdm(items, desc=key):
-        prompt = build_prompt(template, item["problem"], item["solution"])
+        prompt = build_prompt(template, item["problem"], item["solution"],
+                              structures[item["id"]] if structures else None)
         runs = []
         for run_idx in range(args.n_runs):
             thinking, answer, n_tokens = generate(tok_or_proc, model, prompt, cfg["thinking"], max_new_tokens)
@@ -293,25 +190,13 @@ def run_llm(key, items, args, emit):
                 "raw_response": answer,
                 "thinking": thinking,
             })
-        emit({**_item_meta(item), **_aggregate_runs(runs), "runs": runs})
+        emit({**item_meta(item), **aggregate_runs(runs), "runs": runs})
 
     config = {"family": cfg["family"], "model_path": cfg["path"], "thinking": cfg["thinking"],
               "max_new_tokens": max_new_tokens, "n_runs": args.n_runs, "seed": args.seed,
-              "prompt_template": template}
+              "structure_extractor": args.structure, "prompt_template": template}
     del model, tok_or_proc
     return config
-
-
-def _aggregate_runs(runs):
-    """Majority vote over parsed runs; p_ai / certainty are run means."""
-    ok = [r for r in runs if not r["parse_error"]]
-    if not ok:
-        return {"pred_AI": None, "certainty": None, "p_ai": None, "parse_error": True}
-    p_ai = sum(r["p_ai"] for r in ok) / len(ok)
-    votes = sum(r["pred_AI"] for r in ok)
-    pred = 1 if votes * 2 > len(ok) else 0 if votes * 2 < len(ok) else int(p_ai >= 0.5)
-    certainty = sum(r["certainty"] if r["pred_AI"] == pred else 100 - r["certainty"] for r in ok) / len(ok)
-    return {"pred_AI": pred, "certainty": certainty, "p_ai": p_ai, "parse_error": False}
 
 
 # ---------------------------------------------------------------- classifiers
@@ -363,7 +248,7 @@ def load_classifier_config(hf_id):
     return AutoConfig.for_model(**config_dict)
 
 
-def run_classifier(key, items, args, emit):
+def run_classifier(key, items, args, emit, structures=None):
     from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
     cfg = CLASSIFIER_MODELS[key]
@@ -382,7 +267,7 @@ def run_classifier(key, items, args, emit):
         logits, n_chunks = classifier_logits(text, tokenizer, model, cfg["max_len"], device)
         p_ai = torch.softmax(logits, dim=-1)[ai_index].item()
         pred = int(p_ai >= 0.5)
-        record = {**_item_meta(item), "logits": logits.tolist(), "n_chunks": n_chunks}
+        record = {**item_meta(item), "logits": logits.tolist(), "n_chunks": n_chunks}
         if key == "mage":
             # Official decision rule; p_ai stays the softmax probability.
             record["pred_AI_argmax"] = pred
@@ -400,81 +285,23 @@ def run_classifier(key, items, args, emit):
     return config
 
 
-# ---------------------------------------------------------------- summary
-
-def _item_meta(item):
-    return {k: item.get(k) for k in ITEM_META}
-
-
-def auroc(labels, scores):
-    """Mann-Whitney AUROC; ties count half."""
-    pos = [s for y, s in zip(labels, scores) if y == 1]
-    neg = [s for y, s in zip(labels, scores) if y == 0]
-    if not pos or not neg:
-        return None
-    wins = sum((p > n) + 0.5 * (p == n) for p in pos for n in neg)
-    return wins / (len(pos) * len(neg))
-
-
-def summarize(results):
-    def stats(rs):
-        valid = [r for r in rs if not r["parse_error"]]
-        ai = [r for r in valid if r["is_ai"] == 1]
-        human = [r for r in valid if r["is_ai"] == 0]
-        acc = lambda xs: sum(r["pred_AI"] == r["is_ai"] for r in xs) / len(xs) if xs else None
-        return {
-            "n": len(rs),
-            "n_parse_errors": len(rs) - len(valid),
-            "accuracy": acc(valid),
-            "ai_recall": acc(ai),
-            "human_recall": acc(human),
-            "pred_ai_rate": sum(r["pred_AI"] for r in valid) / len(valid) if valid else None,
-            "auroc": auroc([r["is_ai"] for r in valid], [r["p_ai"] for r in valid]),
-            "mean_certainty": sum(r["certainty"] for r in valid) / len(valid) if valid else None,
-        }
-
-    summary = stats(results)
-    summary["by_source"] = {s: stats([r for r in results if r["source"] == s])
-                            for s in sorted({r["source"] for r in results})}
-
-    summary["by_category"] = {c: stats([r for r in results if r.get("category") == c])
-                              for c in sorted({r.get("category") or "unlabeled" for r in results} - {"unlabeled"})}
-
-    # Per generator: how detectable that model's proofs are. AUROC compares
-    # them against ALL human proofs, so generators share the same negatives.
-    human = [r for r in results if r["is_ai"] == 0]
-    summary["by_generator"] = {
-        g: stats([r for r in results if r["is_ai"] == 1 and r["author"] == g] + human)
-        for g in sorted({r["author"] for r in results if r["is_ai"] == 1})
-    }
-    for g, st in summary["by_generator"].items():
-        st["n_ai"] = sum(1 for r in results if r["is_ai"] == 1 and r["author"] == g)
-        for k in ("accuracy", "human_recall", "pred_ai_rate", "mean_certainty"):
-            st.pop(k)  # mixed with the shared human pool, these would mislead
-    return summary
-
-
 # ---------------------------------------------------------------- main
 
 def parse_args():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--models", nargs="+", required=True, choices=ALL_MODELS + ["all"])
-    parser.add_argument("--data", choices=list(DATA_PATHS), default="premiere")
-    parser.add_argument("--sample", type=int, default=None,
-                        help="full only: balanced sample of N LLM + N human proofs, stratified by dataset.")
-    parser.add_argument("--paired-only", action="store_true",
-                        help="full only: keep problems that have both an LLM and a human solution.")
-    parser.add_argument("--limit", type=int, default=None,
-                        help="Smoke test. premiere: first N problems (2N items); full: first N items.")
+    add_data_args(parser)
+    parser.add_argument("--structure", default=None, metavar="EXTRACTOR",
+                        help="Also show LLM judges the structural annotation from extract_structure.py "
+                             "--models EXTRACTOR (e.g. gpt_6_luna_xhigh). Classifiers are skipped.")
     parser.add_argument("--n-runs", type=int, default=1,
                         help="Samples per item for LLM judges (majority vote). Ignored by classifiers.")
     parser.add_argument("--max-new-tokens", type=int, default=None,
                         help="LLM judges only. Defaults to 8192 with thinking, else 1024.")
-    parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--mage-raw", action="store_true",
                         help="Feed MAGE the raw solution instead of its official preprocessing "
                              "(which strips LaTeX symbols like $ \\ ^ _).")
-    parser.add_argument("--out-dir", default=None, help="Defaults to TestResult/ (premiere) or TestResult/full/.")
+    parser.add_argument("--out-dir", default=None, help="Defaults to TestResult/ (premiere) or TestResult/<data>/.")
     parser.add_argument("--save-every", type=int, default=20)
     parser.add_argument("--no-resume", action="store_true", help="Ignore an existing result file and start over.")
     return parser.parse_args()
@@ -486,24 +313,23 @@ def main():
 
     keys = ALL_MODELS if "all" in args.models else list(dict.fromkeys(args.models))
     items = load_items(args.data, args.limit, args.sample, args.paired_only, args.seed)
-    item_set = {"data": args.data, "sample": args.sample, "paired_only": args.paired_only,
-                "limit": args.limit, "n_items": len(items),
-                "ids_sha1": hashlib.sha1("\n".join(sorted(i["id"] for i in items)).encode()).hexdigest()}
-    out_dir = Path(args.out_dir or OUT_DIRS[args.data])
+    item_set = item_set_info(args, items)
+    out_dir = Path(args.out_dir or default_out_dir(args.data))
+    structures = None
+    if args.structure:
+        structures = load_structures(args.structure, items)
+        skipped = [k for k in keys if k not in LLM_MODELS]
+        if skipped:
+            print(f"--structure only applies to LLM judges; skipping {skipped}")
+        keys = [k for k in keys if k in LLM_MODELS]
     print(f"{len(items)} items ({sum(i['is_ai'] for i in items)} LLM), models: {keys}")
 
     for key in keys:
         set_seed(args.seed)
         start = time.time()
-        out_path = out_dir / f"{key}.json"
+        out_path = out_dir / f"{output_name(key, args.structure)}.json"
 
-        results = []
-        if out_path.exists() and not args.no_resume:
-            saved = json.load(open(out_path, encoding="utf-8"))
-            if saved.get("item_set", {}).get("ids_sha1") != item_set["ids_sha1"]:
-                sys.exit(f"{out_path} was produced for a different item set; "
-                         "use --out-dir for a new run or --no-resume to overwrite.")
-            results = saved["results"]
+        results = load_results(out_path, item_set, args.no_resume)
         done = {r["id"] for r in results}
         todo = [i for i in items if i["id"] not in done]
         if not todo:
@@ -513,9 +339,7 @@ def main():
             print(f"[{key}] resuming: {len(done)} done, {len(todo)} to go")
 
         def save(config, complete):
-            atomic_write_json(out_path, {
-                "model": key, "complete": complete, "item_set": item_set, "config": config,
-                "summary": summarize(results) if results else None, "results": results})
+            save_results(out_path, key, item_set, config, results, complete)
 
         def emit(record):
             results.append(record)
@@ -523,7 +347,7 @@ def main():
                 save(None, complete=False)
 
         runner = run_llm if key in LLM_MODELS else run_classifier
-        config = runner(key, todo, args, emit)
+        config = runner(key, todo, args, emit, structures)
         save(config, complete=True)
         summary = summarize(results)
         print(f"[{key}] acc={summary['accuracy']} auroc={summary['auroc']} "
